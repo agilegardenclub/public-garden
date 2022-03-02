@@ -7,7 +7,7 @@ import { greenColorCode } from './Constants';
 /**
  * Display the "NavBar" at the top of the page.
  */
-function Top() {
+function Overview() {
   const navbarStyle = { backgroundColor: greenColorCode, color: 'white', fontWeight: 'bold' };
   return (
     <div>

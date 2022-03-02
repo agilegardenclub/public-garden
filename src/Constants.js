@@ -2,5 +2,5 @@
  * Provide some global constants.
  */
 
-export const greenColorCode = '#376551';
+export const greenColorCode = '#0D5C30';
 export const lightGreenColorCode = '#ecedeb';

@@ -1,10 +1,16 @@
 ## To Do
 
-* Install CI to build automatically.
-* Fix footer to include last update and app store play store logos
+### Navbar
 
+* Include logo
 
-Overview
+### Footer
+
+* Include last update and app store play store logos.
+
+### Overview
+
+Consider using cards. 
 
 * About this garden
   - Name
@@ -22,3 +28,11 @@ Overview
   - Most popular plants
   - Most successfully grown
   - Local seed availability
+
+### Plans
+
+* Create dummy section with background shading.
+
+### Seeds
+
+* Create dummy section with background shading.

@@ -17,6 +17,8 @@ jobs:
           node-version: '16.x'
       - name: Install dependencies
         run: npm install
+      - name: Run ESLint
+        run: npm run lint
       - name: Publish github pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/agilegardenclub/public-garden-45ght3cf.git

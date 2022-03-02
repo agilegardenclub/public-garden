@@ -4,7 +4,7 @@ import Bottom from './Bottom.js';
 
 const App = () => {
   useEffect(() => {
-    document.title = 'AGC Public Garden 2';
+    document.title = 'AGC Public Garden 22';
   }, []);
 
   return (

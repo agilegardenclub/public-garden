@@ -11,14 +11,14 @@ function Bottom() {
   const bottomStyle = { backgroundColor: greenColorCode, color: 'white', fontWeight: 'bold', paddingTop: '20px', paddingBottom: '20px' };
   return (
     <div style={bottomStyle}>
-        <Container>
-          <Row className="justify-content-center">
+      <Container>
+        <Row className="justify-content-center">
           <p>
             Agile Garden Club<br/>
             For more information, go to agilegardenclub.com<br/>
           </p>
-          </Row>
-        </Container>
+        </Row>
+      </Container>
     </div>
   );
 }

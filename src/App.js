@@ -4,15 +4,15 @@ import Bottom from './Bottom.js';
 
 const App = () => {
   useEffect(() => {
-    document.title = "AGC Public Garden"
-  }, [])
+    document.title = 'AGC Public Garden 2';
+  }, []);
 
   return (
     <div>
       <Top/>
       <Bottom/>
     </div>
-  )
+  );
 };
 
 export default App;

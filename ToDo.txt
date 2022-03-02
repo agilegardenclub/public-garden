@@ -1,0 +1,24 @@
+## To Do
+
+* Install CI to build automatically.
+* Fix footer to include last update and app store play store logos
+
+
+Overview
+
+* About this garden
+  - Name
+  - Size
+  - Age (in seasons)
+  - Number of beds
+  - Plants grown
+  - Pictures
+
+* About this chapter
+  - Name
+  - Geography (map)
+  - Number of members
+  - Age (in seasons)
+  - Most popular plants
+  - Most successfully grown
+  - Local seed availability

@@ -1,17 +1,17 @@
 # AGC Public Garden Web Page Mockup
 
-This repository contains code to generate an example Public Garden web page.  
+This repository contains code to generate an example Public Garden web page using React and Bootstrap. 
 
 ## Installation
 
-Please be sure to be using Node 16:
+Please check that you are using Node 16 with `node -v`:
 
 ```
 $ node -v             
 v16.14.0
 ```
 
-Now clone the repository, and then install the system using:
+Now clone the repository, and then install the system using `npm install`:
 
 ```
 $ npm install       
@@ -33,7 +33,7 @@ Note: Yes, there are some security vulnerabilities, but they won't be a problem 
 
 ## Run the system locally
 
-To run the system locally:
+To run the system locally, invoke `npm start`:
 
 ```
 $ npm start
@@ -97,7 +97,7 @@ This approach avoids committing and publishing broken versions of the page.
 
 ### ESLint
 
-We use ESLint to enforce coding standards.  If you are using IntelliJ, this should be enabled automatically. You can run ESLint from the command line like this:
+We use ESLint to enforce coding standards.  If you are using IntelliJ, this should be enabled automatically. You can run ESLint from the command line with `npm run lint`:
 
 ```
 $ npm run lint   

@@ -19,6 +19,7 @@ Consider using cards.
   - Number of beds
   - Plants grown
   - Pictures
+  - Last updated
 
 * About this chapter
   - Name

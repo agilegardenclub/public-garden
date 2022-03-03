@@ -21,6 +21,7 @@ Consider using cards.
   - Plants grown
   - Pictures
   - Last updated
+  - Gardener(s): name (badges), name (badges)
 
 * About this chapter
   - Name

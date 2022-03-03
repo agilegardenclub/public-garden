@@ -1,12 +1,13 @@
 ## To Do
 
-### Navbar
-
-* Include logo
-
 ### Footer
 
 * Include last update and app store play store logos.
+* Clicking on them pops up a "Coming Soon" toast.
+
+### Custom theme
+
+* Set up our color scheme.
 
 ### Overview
 

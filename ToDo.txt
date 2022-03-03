@@ -10,7 +10,7 @@
 
 ### Overview
 
-Consider using cards. 
+Consider using cards.
 
 * About this garden
   - Name

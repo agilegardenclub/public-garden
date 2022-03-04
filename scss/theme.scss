@@ -1,0 +1,12 @@
+// Override Bootstrap's Sass default variables
+
+// Customize some defaults
+$body-color: #333;
+$body-bg: #aad;
+$border-radius: .4rem;
+$success: #7952b3;
+
+// Import all of bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// Custom styles

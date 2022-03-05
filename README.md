@@ -95,6 +95,16 @@ If you are making significant changes, please consider the following workflow:
 
 This approach avoids committing and publishing broken versions of the page. 
 
+### Custom theme
+
+This repo is set up to implement a custom bootstrap theme, using the approach in [https://github.com/twbs/bootstrap-npm-starter/](https://github.com/twbs/bootstrap-npm-starter/).  Briefly, 
+
+* The file scss/theme.scss defines the custom theme. You modify this file to change theme colors and/or global style definitions. 
+
+* Each time you invoke `npm start` (or `npm build`), this file is compiled into a new bootstrap css file, which is located in src/css/theme.css. Then the system is started normally. This means that you will always see the latest version of the theme whenever you run or deploy the system.  This delays startup by a couple of seconds but guarantees you'll see any theme changes. 
+
+* For more information on how to customize the Bootstrap theme, see [https://getbootstrap.com/docs/5.1/customize/sass/](https://getbootstrap.com/docs/5.1/customize/sass/). 
+
 ### ESLint
 
 We use ESLint to enforce coding standards.  If you are using IntelliJ, this should be enabled automatically. You can run ESLint from the command line with `npm run lint`:

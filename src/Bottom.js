@@ -1,25 +1,43 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import { greenColorCode } from './Constants';
+import { Container, Navbar, Nav, Popover, OverlayTrigger, Button, Image } from 'react-bootstrap';
 
 /**
  * Display the footer.
  * Uses the preval macro so that the "deployed" version of the site has a Last update timestamp.
  */
+
+const popover = (
+  <Popover id="popover-basic">
+    <Popover.Header as="h3">Coming Soon!</Popover.Header>
+    <Popover.Body>
+      We expect our app to be available for both iOS and Android by the end of 2022.
+    </Popover.Body>
+  </Popover>
+);
+
+const AppStoreLink = () => (
+  <OverlayTrigger trigger="click" placement="top" overlay={popover}>
+    <Button variant="success"><Image height='50px' src={`${process.env.PUBLIC_URL}/download-from-app-store.png`} /></Button>
+  </OverlayTrigger>
+);
+
+const PlayStoreLink = () => (
+  <OverlayTrigger trigger="click" placement="top" overlay={popover}>
+    <Button variant="success"><Image height='50px' src={`${process.env.PUBLIC_URL}/download-from-google-play.png`} /></Button>
+  </OverlayTrigger>
+);
+
 function Bottom() {
-  const bottomStyle = { backgroundColor: greenColorCode, color: 'white', fontWeight: 'bold', paddingTop: '20px', paddingBottom: '20px' };
   return (
-    <div style={bottomStyle}>
+    <Navbar bg="dark" variant="dark">
       <Container>
-        <Row className="justify-content-center">
-          <p>
-            Agile Garden Club<br/>
-            For more information, go to agilegardenclub.com<br/>
-          </p>
-        </Row>
+        <Navbar.Brand>&copy; 2022 Agile Garden Club</Navbar.Brand>
+        <Nav>
+          <Nav.Item><AppStoreLink/></Nav.Item>
+          <Nav.Item><PlayStoreLink/></Nav.Item>
+        </Nav>
       </Container>
-    </div>
+    </Navbar>
   );
 }
 

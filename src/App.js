@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import Top from './Top.js';
 import Bottom from './Bottom.js';
+import Overview from './Overview';
+import About from './About';
 
 const App = () => {
   useEffect(() => {
@@ -10,6 +12,8 @@ const App = () => {
   return (
     <div>
       <Top/>
+      <About/>
+      <Overview/>
       <Bottom/>
     </div>
   );

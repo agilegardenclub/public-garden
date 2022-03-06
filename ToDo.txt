@@ -27,10 +27,12 @@ Consider using cards.
   - Name
   - Geography (map)
   - Number of members
+  - Number of gardens
   - Age (in seasons)
-  - Most popular plants
-  - Most successfully grown
-  - Local seed availability
+  - Top 10 Lists
+    - Plants (popularity)
+    - Plants (success)
+    - Local seeds
 
 ### Plans
 

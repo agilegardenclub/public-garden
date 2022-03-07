@@ -1,38 +1,19 @@
 ## To Do
 
-### Footer
+### Navbar
 
-* Include last update and app store play store logos.
-* Clicking on them pops up a "Coming Soon" toast.
+* Make navbar stick to top.
 
-### Custom theme
-
-* Set up our color scheme.
 
 ### Overview
 
-Consider using cards.
+* Convert to use of a data.json file.
+* Add badges for gardeners.
+* Embed carousel in card for multiple pictures of garden. Add captions for year and month.
+* Add badge for garden (climate victory garden)
+* Make a badge component that pops up an explanation when you click on it.
+* Make a plant component that pops up more info when you click on it.
 
-* About this garden
-  - Name
-  - Size
-  - Age (in seasons)
-  - Number of beds
-  - Plants grown
-  - Pictures
-  - Last updated
-  - Gardener(s): name (badges), name (badges)
-
-* About this chapter
-  - Name
-  - Geography (map)
-  - Number of members
-  - Number of gardens
-  - Age (in seasons)
-  - Top 10 Lists
-    - Plants (popularity)
-    - Plants (success)
-    - Local seeds
 
 ### Plans
 

@@ -1,13 +1,16 @@
-// Override Bootstrap's Sass default variables
+// Customize Bootstrap default variables, and define custom CSS classes.
 
-// Customize some defaults
+// You must control-c and re-run 'npm start' to see changes to this file.
+
+// Change variable values.
 $dark: #198754;
 
-// Import all of bootstrap
+// Import bootstrap
 @import "bootstrap/scss/bootstrap";
 
-// Custom styles
-
+// Define custom styles
 .gray-background {
   background-color: $gray-200;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }

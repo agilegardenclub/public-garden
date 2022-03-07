@@ -65,6 +65,9 @@ function Overview() {
                   <Field title='Age:'>
                     <p>6 seasons</p>
                   </Field>
+                  <Field title='Zip Codes:'>
+                    <p>98225, 98226</p>
+                  </Field>
                   <Field title='Number of members:'>
                     <p>123</p>
                   </Field>

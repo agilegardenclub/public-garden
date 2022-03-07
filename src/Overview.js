@@ -25,7 +25,7 @@ function Overview() {
       <Container>
         <h2>Overview</h2>
         <Documentation>
-          <p>To provide gardeners with locally relevant information, each AGC garden is assigned to a single &quot;Chapter&quot;. Data about seeds, plants, and weather patterns are shared only between gardens sharing chapter membership. </p>
+          <p>To provide gardeners with locally relevant information, each AGC garden is assigned to a single <b>Chapter</b>. Chapters are defined by AGC administrators, and consist of one or more continguous Zip Codes. Data about seeds, plants, and weather patterns are shared between gardens in the same chapter. </p>
         </Documentation>
         <Row>
           <Col md className="pb-3">
@@ -67,6 +67,9 @@ function Overview() {
                   </Field>
                   <Field title='Zip Codes:'>
                     <p>98225, 98226</p>
+                  </Field>
+                  <Field title='Hardiness Zone(s):'>
+                    <p>8a, 8b</p>
                   </Field>
                   <Field title='Number of members:'>
                     <p>123</p>

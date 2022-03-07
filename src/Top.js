@@ -16,7 +16,7 @@ function Top() {
             height="30"
             className="d-inline-block align-top"
           />{' '}
-          Agile Garden Club (Public Garden View)
+          Agile Garden Club: Public Garden View (45ght3cf)
         </Navbar.Brand>
         <Nav>
           <Nav.Item><Nav.Link href="#overview">Overview</Nav.Link></Nav.Item>

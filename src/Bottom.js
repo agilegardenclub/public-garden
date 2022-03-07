@@ -17,13 +17,13 @@ const popover = (
 
 const AppStoreLink = () => (
   <OverlayTrigger trigger="click" placement="top" overlay={popover}>
-    <Button variant="success"><Image height='50px' src={`${process.env.PUBLIC_URL}/download-from-app-store.png`} /></Button>
+    <Button variant="success"><Image height='50px' src={`${process.env.PUBLIC_URL}/img/download-from-app-store.png`} /></Button>
   </OverlayTrigger>
 );
 
 const PlayStoreLink = () => (
   <OverlayTrigger trigger="click" placement="top" overlay={popover}>
-    <Button variant="success"><Image height='50px' src={`${process.env.PUBLIC_URL}/download-from-google-play.png`} /></Button>
+    <Button variant="success"><Image height='50px' src={`${process.env.PUBLIC_URL}/img/download-from-google-play.png`} /></Button>
   </OverlayTrigger>
 );
 

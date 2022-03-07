@@ -6,7 +6,7 @@ import About from './About';
 
 const App = () => {
   useEffect(() => {
-    document.title = 'AGC Public Garden 22';
+    document.title = 'AGC Public Garden (45ght3cf)';
   }, []);
 
   return (

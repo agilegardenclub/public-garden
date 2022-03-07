@@ -10,7 +10,7 @@ function Documentation(props) {
       <div style={{ paddingTop: '1em' }}>
         <Container>
           <Alert variant="success" onClose={() => setShow(false)} dismissible>
-            <Alert.Heading>{props.heading}</Alert.Heading>
+            {props.heading && <Alert.Heading>{props.heading}</Alert.Heading>}
             {props.children}
           </Alert>
         </Container>
@@ -21,8 +21,8 @@ function Documentation(props) {
 }
 
 Documentation.propTypes = {
-  heading: PropTypes.array.isRequired,
-  children: PropTypes.bool.isRequired,
+  heading: PropTypes.string,
+  children: PropTypes.any,
 };
 
 export default Documentation;

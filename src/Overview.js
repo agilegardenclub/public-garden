@@ -28,7 +28,7 @@ function Overview() {
           <p>To provide gardeners with locally relevant information, each AGC garden is assigned to a single &quot;Chapter&quot;. Data about seeds, plants, and weather patterns are shared only between gardens sharing chapter membership. </p>
         </Documentation>
         <Row>
-          <Col md>
+          <Col md className="pb-3">
             <Card>
               <Card.Header>Garden: 45ght3cf</Card.Header>
               <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/img/garden.jpg`}/>

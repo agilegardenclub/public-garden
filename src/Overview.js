@@ -25,7 +25,7 @@ function Overview() {
       <Container>
         <h2>Overview</h2>
         <Documentation>
-          <p>To provide gardeners with locally relevant information, each AGC garden is assigned to a single <b>Chapter</b>. Chapters are defined by AGC administrators, and consist of one or more continguous Zip Codes. Data about seeds, plants, and weather patterns are shared between gardens in the same chapter. </p>
+          <p>To provide gardeners with locally relevant information, each AGC garden is assigned to a single <b>Chapter</b>. Chapters are defined by AGC administrators, and consist of one or more continguous Zip Codes. Insights about seeds, plants, pests, weather, outcomes, and so forth are shared between gardens in the same chapter. </p>
         </Documentation>
         <Row>
           <Col md className="pb-3">

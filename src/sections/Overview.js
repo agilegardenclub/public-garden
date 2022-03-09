@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, Stack } from 'react-bootstrap';
 import PropTypes from 'prop-types';
-import Documentation from './Documentation';
+import Documentation from '../components/Documentation';
 
 const Field = (props) => (
   <div>

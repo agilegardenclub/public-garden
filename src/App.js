@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import Top from './Top.js';
-import Bottom from './Bottom.js';
-import Overview from './Overview';
-import About from './About';
+import Top from './sections/Top.js';
+import Bottom from './sections/Bottom.js';
+import Overview from './sections/Overview';
+import About from './sections/About';
 
 const App = () => {
   useEffect(() => {

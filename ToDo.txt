@@ -4,16 +4,14 @@
 
 * Make navbar stick to top.
 
-
 ### Overview
 
-* Convert to use of a data.json file.
-* Add badges for gardeners.
+* Implement ChapterOverview from data model.
 * Embed carousel in card for multiple pictures of garden. Add captions for year and month.
-* Add badge for garden (climate victory garden)
-* Make a badge component that pops up an explanation when you click on it.
-* Make a plant component that pops up more info when you click on it.
-
+* Implement badges:
+  * Gardeners: Master Gardener.
+  * Gardens: Climate Victory Garden.
+  * Seeds: Provide info about seeds.
 
 ### Plans
 

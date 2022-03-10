@@ -2,7 +2,6 @@
 
 ### Overview
 
-* Implement ChapterOverview from data model.
 * Embed carousel in card for multiple pictures of garden. Add captions for year and month.
 * Implement badges:
   * Gardeners: Master Gardener.

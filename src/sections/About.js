@@ -1,5 +1,5 @@
 import React from 'react';
-import Documentation from '../components/Documentation';
+import { Documentation } from '../components/Documentation';
 
 /**
  * Overview of AGC and the Public Garden View.

@@ -81,7 +81,17 @@ Note that the build will fail if there are any ESLint errors. See below for inst
 
 The most recent successfully deployed version of the page is always available at [https://agilegardenclub.com/public-garden-45ght3cf/](https://agilegardenclub.com/public-garden-45ght3cf/)
 
-## Development tips
+## Developer Guide
+
+### Code organization
+
+The src/ directory is organized as follows:
+
+ * `App.js, index.js`:  These two top-level files are the entry-point for displaying the page.   
+ * `sections/`: This directory contains the components that implement the "sections" of the page.
+ * `components/`: This directory contains components that implement various widgets, cards, and so forth that appear in a section.
+ * `datamodel/`: This directory implements a simple mockup of a backend database. It includes mockups of individual collections (i.e. chapters.js, gardeners.js, etc.) as well as higher level singleton classes that process the collections for use by components (i.e. ChapterOverview.js, GardenOverview.js).
+ * `css/`: This directory contains the custom Bootstrap theme definition. It is regenerated each time the system is started.
 
 ### Suggested workflow
 

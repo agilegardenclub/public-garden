@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Alert } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 
-function Documentation(props) {
+export function Documentation(props) {
   const [show, setShow] = useState(true);
 
   if (show) {
@@ -24,5 +24,3 @@ Documentation.propTypes = {
   heading: PropTypes.string,
   children: PropTypes.any,
 };
-
-export default Documentation;

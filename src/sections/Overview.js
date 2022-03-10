@@ -1,19 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Card, Stack } from 'react-bootstrap';
-import PropTypes from 'prop-types';
-import Documentation from '../components/Documentation';
-
-const Field = (props) => (
-  <div>
-    <small>{props.title}</small>
-    {props.children}
-  </div>
-);
-
-Field.propTypes = {
-  title: PropTypes.string,
-  children: PropTypes.any,
-};
+import { Field } from '../components/Field';
+import { Documentation } from '../components/Documentation';
+import { GardenOverviewCard } from '../components/GardenOverviewCard';
 
 /**
  * Overview of the gardener and the chapter.
@@ -29,32 +18,7 @@ function Overview() {
         </Documentation>
         <Row>
           <Col md className="pb-3">
-            <Card>
-              <Card.Header>Garden: 45ght3cf</Card.Header>
-              <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/img/garden.jpg`}/>
-              <Card.Body>
-                <Stack gap={1}>
-                  <Field title='Age:'>
-                    <p>4 seasons</p>
-                  </Field>
-                  <Field title='Size:'>
-                    <p>300 sq ft. (2022)</p>
-                  </Field>
-                  <Field title='Number of beds:'>
-                    <p>12 (2022)</p>
-                  </Field>
-                  <Field title='Plants:'>
-                    <p>Asparagus, Broccoli, Carrots, Echinacea, Kale, Potatoes, Radish, Turnip, Watermelon, Zucchini (2022)</p>
-                  </Field>
-                  <Field title='Gardener(s):'>
-                    <p>J.D., K.A. (2022)</p>
-                  </Field>
-                  <Field title='Last Updated:'>
-                    <p>March 12, 2022</p>
-                  </Field>
-                </Stack>
-              </Card.Body>
-            </Card>
+            <GardenOverviewCard/>
           </Col>
           <Col md>
             <Card>

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Container, Row, Col, Card, Stack } from 'react-bootstrap';
-import { Field } from '../components/Field';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Documentation } from '../components/Documentation';
 import { GardenOverviewCard } from '../components/GardenOverviewCard';
+import { ChapterOverviewCard } from '../components/ChapterOverviewCard';
 
 /**
  * Overview of the gardener and the chapter.
@@ -21,42 +21,9 @@ function Overview() {
             <GardenOverviewCard/>
           </Col>
           <Col md>
-            <Card>
-              <Card.Header>Chapter: Bellingham, WA</Card.Header>
-              <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/img/bellingham-chapter-map.png`}/>
-              <Card.Body>
-                <Stack gap={1}>
-                  <Field title='Age:'>
-                    <p>6 seasons</p>
-                  </Field>
-                  <Field title='Zip Codes:'>
-                    <p>98225, 98226</p>
-                  </Field>
-                  <Field title='Hardiness Zone(s):'>
-                    <p>8a, 8b</p>
-                  </Field>
-                  <Field title='Number of members:'>
-                    <p>123</p>
-                  </Field>
-                  <Field title='Number of gardens:'>
-                    <p>87</p>
-                  </Field>
-                  <Field title='Top 10 Seeds (popularity):'>
-                    <p>Asparagus, Broccoli, Carrots, Echinacea, Kale, Potatoes, Radish, Turnip, Watermelon, Zucchini</p>
-                  </Field>
-                  <Field title='Top 10 Seeds (success):'>
-                    <p>Asparagus, Broccoli, Carrots, Echinacea, Kale, Potatoes, Radish, Turnip, Watermelon, Zucchini</p>
-                  </Field>
-                  <Field title='Top 10 Seeds (locally sourced)'>
-                    <p>Asparagus, Broccoli, Carrots, Echinacea, Kale, Potatoes, Radish, Turnip, Watermelon, Zucchini</p>
-                  </Field>
-                </Stack>
-              </Card.Body>
-            </Card>
+            <ChapterOverviewCard/>
           </Col>
-
         </Row>
-
       </Container>
     </div>
   );

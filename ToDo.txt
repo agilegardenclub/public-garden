@@ -1,9 +1,5 @@
 ## To Do
 
-### Navbar
-
-* Make navbar stick to top.
-
 ### Overview
 
 * Implement ChapterOverview from data model.
@@ -12,6 +8,7 @@
   * Gardeners: Master Gardener.
   * Gardens: Climate Victory Garden.
   * Seeds: Provide info about seeds.
+  * Hardiness Zones.
 
 ### Plans
 

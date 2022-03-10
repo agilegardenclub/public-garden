@@ -6,7 +6,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
  */
 function Top() {
   return (
-    <Navbar bg="dark" variant="dark">
+    <Navbar sticky="top" bg="dark" variant="dark">
       <Container>
         <Navbar.Brand href="#home">
           <img

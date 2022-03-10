@@ -20,3 +20,8 @@
 ### Seeds
 
 * Create dummy section with background shading.
+
+
+### Workflow
+
+* Create issues in project board.

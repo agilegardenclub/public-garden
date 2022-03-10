@@ -7,6 +7,13 @@ export function ChapterOverviewCard() {
   const name = chapterOverview.name();
   const picture = chapterOverview.pictures()[0];
   const age = chapterOverview.age();
+  const zipCodes = chapterOverview.zipCodes().join(', ');
+  const zones = chapterOverview.zoneIDs().join(', ');
+  const members = chapterOverview.members();
+  const gardens = chapterOverview.gardens();
+  const popularSeeds = chapterOverview.popularSeeds().join(', ');
+  const outcomeSeeds = chapterOverview.outcomeSeeds().join(', ');
+  const localSeeds = chapterOverview.localSeeds().join(', ');
   return (
     <Card>
       <Card.Header>Chapter: {name}</Card.Header>
@@ -17,25 +24,25 @@ export function ChapterOverviewCard() {
             <p>{age} seasons</p>
           </Field>
           <Field title='Zip Codes:'>
-            <p>98225, 98226</p>
+            <p>{zipCodes}</p>
           </Field>
           <Field title='Hardiness Zone(s):'>
-            <p>8a, 8b</p>
+            <p>{zones}</p>
           </Field>
           <Field title='Number of members:'>
-            <p>123</p>
+            <p>{members}</p>
           </Field>
           <Field title='Number of gardens:'>
-            <p>87</p>
+            <p>{gardens}</p>
           </Field>
           <Field title='Top 10 Seeds (popularity):'>
-            <p>Asparagus, Broccoli, Carrots, Echinacea, Kale, Potatoes, Radish, Turnip, Watermelon, Zucchini</p>
+            <p>{popularSeeds}</p>
           </Field>
-          <Field title='Top 10 Seeds (success):'>
-            <p>Asparagus, Broccoli, Carrots, Echinacea, Kale, Potatoes, Radish, Turnip, Watermelon, Zucchini</p>
+          <Field title='Top 10 Seeds (outcome):'>
+            <p>{outcomeSeeds}</p>
           </Field>
           <Field title='Top 10 Seeds (locally sourced)'>
-            <p>Asparagus, Broccoli, Carrots, Echinacea, Kale, Potatoes, Radish, Turnip, Watermelon, Zucchini</p>
+            <p>{localSeeds}</p>
           </Field>
         </Stack>
       </Card.Body>

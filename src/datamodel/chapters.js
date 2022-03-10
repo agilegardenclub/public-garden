@@ -16,12 +16,12 @@ export const chapters = [
         seedIDs: ['seed-01', 'seed-02', 'seed-03', 'seed-04', 'seed-05', 'seed-06', 'seed-07', 'seed-08', 'seed-09', 'seed-10'],
       },
       {
-        type: 'success',
-        seedIDs: ['seed-01', 'seed-02', 'seed-03', 'seed-04', 'seed-05', 'seed-06', 'seed-07', 'seed-08', 'seed-09', 'seed-10'],
+        type: 'outcome',
+        seedIDs: ['seed-03', 'seed-07', 'seed-01', 'seed-04', 'seed-10', 'seed-06', 'seed-02', 'seed-08', 'seed-09', 'seed-05'],
       },
       {
         type: 'local',
-        seedIDs: ['seed-01', 'seed-02', 'seed-03', 'seed-04', 'seed-05', 'seed-06', 'seed-07', 'seed-08', 'seed-09', 'seed-10'],
+        seedIDs: ['seed-09', 'seed-07', 'seed-05', 'seed-04', 'seed-03', 'seed-06', 'seed-02', 'seed-08', 'seed-01', 'seed-10'],
       },
     ],
   },

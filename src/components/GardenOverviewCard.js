@@ -10,8 +10,8 @@ export function GardenOverviewCard() {
   const age = gardenOverview.age();
   const size = gardenOverview.currentSize();
   const beds = gardenOverview.currentBeds();
-  const seeds = gardenOverview.currentSeedNames().toString();
-  const gardeners = gardenOverview.currentGardenerNames().toString();
+  const seeds = gardenOverview.currentSeedNames().join(', ');
+  const gardeners = gardenOverview.currentGardenerNames().join(', ');
   const lastUpdate = gardenOverview.lastUpdate();
   return (
     <Card>

@@ -33,8 +33,13 @@ class ChapterOverview {
     return this.chapter.members;
   }
 
+  gardens() {
+    return this.chapter.gardens;
+  }
+
   _getSeedIDs(type) {
-    return this.chapter.seedInfo.find(element => element.type === type);
+    const seedObj = this.chapter.seedInfo.find(element => element.type === type);
+    return seedObj.seedIDs;
   }
 
   _getSeedName(seedID) {
@@ -51,8 +56,8 @@ class ChapterOverview {
     return this._getSeedNamesOfType('popular');
   }
 
-  successfulSeeds() {
-    return this._getSeedNamesOfType('success');
+  outcomeSeeds() {
+    return this._getSeedNamesOfType('outcome');
   }
 
   localSeeds() {

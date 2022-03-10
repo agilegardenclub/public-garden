@@ -69,6 +69,8 @@ modules by path ./src/*.js 11.3 KiB
 webpack 5.69.1 compiled successfully in 2086 ms
 ```
 
+You should now be able to display the page at [http://localhost:3000/public-garden-45ght3cf](http://localhost:3000/public-garden-45ght3cf).
+
 ## Deploying your changes
 
 This repository contains a GitHub action to automatically build and deploy the page whenever a push is made to the `main` branch.  
@@ -91,7 +93,7 @@ The src/ directory is organized as follows:
  * `sections/`: This directory contains the components that implement the "sections" of the page.
  * `components/`: This directory contains components that implement various widgets, cards, and so forth that appear in a section.
  * `datamodel/`: This directory implements a simple mockup of a backend database. It includes mockups of individual collections (i.e. chapters.js, gardeners.js, etc.) as well as higher level singleton classes that process the collections for use by components (i.e. ChapterOverview.js, GardenOverview.js).
- * `css/`: This directory contains the custom Bootstrap theme definition. It is regenerated each time the system is started.
+ * `css/`: This directory contains automatically generated custom Bootstrap theme definition. It is regenerated each time the system is started. Do not edit this directory; to change the theme, edit the files in `scss/`.
 
 ### Suggested workflow
 

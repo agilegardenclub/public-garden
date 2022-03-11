@@ -1,6 +1,6 @@
-import { gardens } from './gardens';
-import { gardeners } from './gardeners';
-import { seeds } from './seeds';
+import { gardenData } from './gardenData';
+import { gardenerData } from './gardenerData';
+import { seedData } from './seedData';
 
 /* Processes raw data for use by GardenOverviewCard. */
 class GardenOverview {
@@ -58,4 +58,4 @@ class GardenOverview {
   }
 }
 
-export const gardenOverview = new GardenOverview(gardens[0], gardeners, seeds);
+export const gardenOverview = new GardenOverview(gardenData[0], gardenerData, seedData);

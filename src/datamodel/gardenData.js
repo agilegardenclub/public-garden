@@ -1,6 +1,6 @@
 /* Raw data regarding gardens. */
 
-export const gardens = [
+export const gardenData = [
   {
     id: 'garden-01',
     name: '45ght3cf',

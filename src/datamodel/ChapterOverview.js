@@ -1,5 +1,5 @@
-import { chapters } from './chapters';
-import { seeds } from './seeds';
+import { chapterData } from './chapterData';
+import { seedData } from './seedData';
 
 /* Processes raw data for use by ChapterOverviewCard. */
 class ChapterOverview {
@@ -65,4 +65,4 @@ class ChapterOverview {
   }
 }
 
-export const chapterOverview = new ChapterOverview(chapters[0], seeds);
+export const chapterOverview = new ChapterOverview(chapterData[0], seedData);

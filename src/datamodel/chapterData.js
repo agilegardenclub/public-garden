@@ -1,6 +1,6 @@
 /* Raw Data to define chapters. */
 
-export const chapters = [
+export const chapterData = [
   {
     id: 'chapter-01',
     name: 'Bellingham, WA',

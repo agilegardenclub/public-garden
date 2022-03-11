@@ -2,18 +2,20 @@ import React from 'react';
 import { Card, Stack } from 'react-bootstrap';
 import { Field } from './Field';
 import { chapterOverview } from '../datamodel/ChapterOverview';
+import { ZoneBadge } from './ZoneBadge';
 
 export function ChapterOverviewCard() {
   const name = chapterOverview.name();
   const picture = chapterOverview.pictures()[0];
   const age = chapterOverview.age();
   const zipCodes = chapterOverview.zipCodes().join(', ');
-  const zones = chapterOverview.zoneIDs().join(', ');
+  // const zones = chapterOverview.zoneIDs().join(', ');
   const members = chapterOverview.members();
   const gardens = chapterOverview.gardens();
   const popularSeeds = chapterOverview.popularSeeds().join(', ');
   const outcomeSeeds = chapterOverview.outcomeSeeds().join(', ');
   const localSeeds = chapterOverview.localSeeds().join(', ');
+  const zoneBadges = chapterOverview.zoneIDs().map((zoneID, index) => ZoneBadge({ zoneID, index }));
   return (
     <Card>
       <Card.Header>Chapter: {name}</Card.Header>
@@ -27,7 +29,7 @@ export function ChapterOverviewCard() {
             <p>{zipCodes}</p>
           </Field>
           <Field title='Hardiness Zone(s):'>
-            <p>{zones}</p>
+            {zoneBadges}
           </Field>
           <Field title='Number of members:'>
             <p>{members}</p>

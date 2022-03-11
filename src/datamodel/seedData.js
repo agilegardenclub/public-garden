@@ -2,7 +2,7 @@
 
 // What is the difference, if any, between a "seed" and a "plant"?
 
-export const seeds = [
+export const seedData = [
   {
     id: 'seed-01',
     name: 'Asparagus',

@@ -6,8 +6,12 @@ export const chapterData = [
     name: 'Bellingham, WA',
     pictures: [
       {
-        url: 'https://agilegardenclub.com/public-garden-45ght3cf/img/bellingham-chapter-map.png',
-        caption: 'Bellingham area',
+        url: `${process.env.PUBLIC_URL}/img/bellingham-chapter-map.png`,
+        caption: 'Chapter Map',
+      },
+      {
+        url: `${process.env.PUBLIC_URL}/img/bellingham-climate.png`,
+        caption: 'Climate Overview',
       },
     ],
     age: 6,

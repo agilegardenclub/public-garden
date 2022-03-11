@@ -2,11 +2,10 @@
 
 ### Overview
 
-* Embed carousel in card for multiple pictures of garden. Add captions for year and month.
 * Implement badges:
   * Gardeners: Master Gardener.
   * Gardens: Climate Victory Garden.
-  * Seeds: Provide info about seeds.
+  * Chapter Seeds: Convert to table
   * Trewartha Zone data: https://www.reddit.com/r/MapPorn/comments/7yt1pj/trewartha_climate_types_of_washington_state_1260/
 
 ### Plans

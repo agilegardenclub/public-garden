@@ -6,7 +6,7 @@ export const gardenData = [
     name: '45ght3cf',
     pictures: [
       {
-        url: 'https://agilegardenclub.com/public-garden-45ght3cf/img/garden.jpg',
+        url: `${process.env.PUBLIC_URL}/img/garden.jpg`,
         caption: 'Spring, 2022',
       },
       {

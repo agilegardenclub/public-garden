@@ -3,13 +3,13 @@ import { Card, Stack } from 'react-bootstrap';
 import { Field } from './Field';
 import { chapterOverview } from '../datamodel/ChapterOverview';
 import { ZoneBadge } from './ZoneBadge';
+import { PictureCarousel } from './PictureCarousel';
 
 export function ChapterOverviewCard() {
   const name = chapterOverview.name();
-  const picture = chapterOverview.pictures()[0];
+  const pictureData = chapterOverview.pictures();
   const age = chapterOverview.age();
   const zipCodes = chapterOverview.zipCodes().join(', ');
-  // const zones = chapterOverview.zoneIDs().join(', ');
   const members = chapterOverview.members();
   const gardens = chapterOverview.gardens();
   const popularSeeds = chapterOverview.popularSeeds().join(', ');
@@ -19,7 +19,7 @@ export function ChapterOverviewCard() {
   return (
     <Card>
       <Card.Header>Chapter: {name}</Card.Header>
-      <Card.Img variant="top" src={picture}/>
+      <PictureCarousel pictureData={pictureData}/>
       <Card.Body>
         <Stack gap={1}>
           <Field title='Age:'>

@@ -4,7 +4,12 @@ export const chapterData = [
   {
     id: 'chapter-01',
     name: 'Bellingham, WA',
-    pictures: ['https://agilegardenclub.com/public-garden-45ght3cf/img/bellingham-chapter-map.png'],
+    pictures: [
+      {
+        url: 'https://agilegardenclub.com/public-garden-45ght3cf/img/bellingham-chapter-map.png',
+        caption: 'Bellingham area',
+      },
+    ],
     age: 6,
     zipCodes: ['98225', '98226', '98227', '98228', '98229'],
     zoneIDs: ['zone-8a', 'zone-8b'],

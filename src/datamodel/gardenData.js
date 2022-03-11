@@ -4,7 +4,16 @@ export const gardenData = [
   {
     id: 'garden-01',
     name: '45ght3cf',
-    pictures: ['https://agilegardenclub.com/public-garden-45ght3cf/img/garden.jpg'],
+    pictures: [
+      {
+        url: 'https://agilegardenclub.com/public-garden-45ght3cf/img/garden.jpg',
+        caption: 'Spring, 2022',
+      },
+      {
+        url: `${process.env.PUBLIC_URL}/img/garden-2.jpg`,
+        caption: 'August, 2021',
+      },
+    ],
     // History must be in reverse chronological order.
     history: [
       {

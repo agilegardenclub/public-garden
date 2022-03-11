@@ -95,6 +95,16 @@ The src/ directory is organized as follows:
  * `datamodel/`: This directory implements a simple mockup of a backend database. It includes mockups of individual collections (i.e. chapters.js, gardeners.js, etc.) as well as higher level singleton classes that process the collections for use by components (i.e. ChapterOverview.js, GardenOverview.js).
  * `css/`: This directory contains automatically generated custom Bootstrap theme definition. It is regenerated each time the system is started. Do not edit this directory; to change the theme, edit the files in `scss/`.
 
+There are two different ways to familiarize yourself with the code:
+
+  1. *UI, Top-Down*:  Start with `src/index.js`, then look at `src/App.js`, then follow the component hierarchy down. That shows you the structure of the UI and how the components compose together to form the page.
+
+  2. *Data, Bottom-Up*: Another way is to follow the data.  Start in the `src/datamodel/` directory, and look at the lower case files (`chapters.js`, `gardeners.js`, `gardens.js`, etc.) Then see how these mockups of MongoDB-style collections are wrapped in that directory by capitalized classes (`ChapterOverview.js`, `GardenOverview.js`, etc.) Singleton instances of these classes are exported and then used by components (`ChapterOverviewCard.js`, `GardenOverviewCard.js`) to display the data.
+
+### Images
+
+Please crop all images to be exactly 600px wide and 400px high. This eliminates layout irregularities.  
+
 ### Suggested workflow
 
 If you are making significant changes, please consider the following workflow:

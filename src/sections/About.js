@@ -18,7 +18,7 @@ function About() {
           <li>Superior support for collaboration, for historical insights over multiple seasons, and for building &quot;local communities of practice&quot;.</li>
           <li>Unlike many other garden planning tools, AGC is not sponsored by a seed company. We are committed to locally produced seeds, and all seed data comes from members.</li>
         </ol>
-        <p>The <b>Public Garden View</b> is an option available to owner(s) of an AGC garden. Enabling this view tells the system to generate a web page like this one. Garden owners can share its URL with anyone to provide details about their garden
+        <p>The <b>Public Garden View</b> is an option available to owner(s) of an AGC garden. Enabling this view tells the system to generate a web page like this one. Garden owners can share the web page to provide details about their garden
           without requiring the AGC app. This Public Garden View does not reveal the identity of gardeners or the specific location of the garden. </p>
       </Documentation>
 

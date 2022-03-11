@@ -18,7 +18,7 @@ export function ChapterOverviewCard() {
   const zoneBadges = chapterOverview.zoneIDs().map((zoneID, index) => ZoneBadge({ zoneID, index }));
   return (
     <Card>
-      <Card.Header>Chapter: {name}</Card.Header>
+      <Card.Header><h5>Chapter: {name}</h5></Card.Header>
       <PictureCarousel pictureData={pictureData}/>
       <Card.Body>
         <Stack gap={1}>

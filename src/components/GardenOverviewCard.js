@@ -16,7 +16,7 @@ export function GardenOverviewCard() {
   const lastUpdate = gardenOverview.lastUpdate();
   return (
     <Card>
-      <Card.Header>Garden: {name}</Card.Header>
+      <Card.Header><h5>Garden: {name}</h5></Card.Header>
       <PictureCarousel pictureData={pictureData}/>
       <Card.Body>
         <Stack gap={1}>

@@ -99,7 +99,7 @@ There are two different ways to familiarize yourself with the code:
 
   1. *UI, Top-Down*:  Start with `src/index.js`, then look at `src/App.js`, then follow the component hierarchy down. That shows you the structure of the UI and how the components compose together to form the page.
 
-  2. *Data, Bottom-Up*: Another way is to follow the data.  Start in the `src/datamodel/` directory, and look at the lower case files (`chapterData.js`, `gardenerData.js`, `gardenData.js`, etc.) Then see how these mockups of MongoDB-style collections are wrapped in that directory by capitalized classes (`ChapterOverview.js`, `GardenOverview.js`, etc.) Singleton instances of these classes are exported and then used by components (`ChapterOverviewCard.js`, `GardenOverviewCard.js`) to display the data.
+  2. *Data, Bottom-Up*: Another way is to follow the data.  Start in the `src/datamodel/` directory, and look at the lower case "data" files (`chapterData.js`, `gardenerData.js`, `gardenData.js`, etc.) Then see how these mockups of MongoDB-style collections are wrapped in that directory by capitalized classes (`ChapterOverview.js`, `GardenOverview.js`, etc.) Singleton instances of these classes are exported and then used by components (`ChapterOverviewCard.js`, `GardenOverviewCard.js`) to display the data.
 
 ### Images
 

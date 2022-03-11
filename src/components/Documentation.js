@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Alert } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 
-export function Documentation(props) {
+export function Documentation({ heading, children }) {
   const [show, setShow] = useState(true);
 
   if (show) {
@@ -10,8 +10,8 @@ export function Documentation(props) {
       <div style={{ paddingTop: '1em' }}>
         <Container>
           <Alert variant="success" onClose={() => setShow(false)} dismissible>
-            {props.heading && <Alert.Heading>{props.heading}</Alert.Heading>}
-            {props.children}
+            {heading && <Alert.Heading>{heading}</Alert.Heading>}
+            {children}
           </Alert>
         </Container>
       </div>

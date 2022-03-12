@@ -4,7 +4,7 @@ import { Field } from './Field';
 import { chapterOverview } from '../datamodel/ChapterOverview';
 import { ZoneBadge } from './ZoneBadge';
 import { PictureCarousel } from './PictureCarousel';
-import { TopTenList } from './TopTenList';
+import { RatingList } from './RatingList';
 
 export function ChapterOverviewCard() {
   const name = chapterOverview.name();
@@ -39,15 +39,15 @@ export function ChapterOverviewCard() {
             <p>{gardens}</p>
           </Field>
           <Field title='Top 5 Seeds (popularity):'>
-            <TopTenList topTenData={popularRatings}/>
+            <RatingList ratingData={popularRatings}/>
             <p></p>
           </Field>
           <Field title='Top 5 Seeds (outcome):'>
-            <TopTenList topTenData={outcomeRatings}/>
+            <RatingList ratingData={outcomeRatings}/>
             <p></p>
           </Field>
           <Field title='Top 5 Seeds (locally sourced)'>
-            <TopTenList topTenData={localRatings}/>
+            <RatingList ratingData={localRatings}/>
             <p></p>
           </Field>
         </Stack>

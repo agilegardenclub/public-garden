@@ -37,31 +37,15 @@ class ChapterOverview {
     return this.chapter.gardens;
   }
 
-  _getSeedIDs(type) {
-    const seedObj = this.chapter.seedInfo.find(element => element.type === type);
-    return seedObj.seedIDs;
-  }
-
   _getSeedName(seedID) {
     const seedInfo = this.seeds.find(element => element.id === seedID);
     return seedInfo ? seedInfo.name : 'Seed Not Found';
   }
 
-  _getSeedNamesOfType(type) {
-    const seedIDs = this._getSeedIDs(type);
-    return seedIDs.map(id => this._getSeedName(id));
-  }
-
-  popularSeeds() {
-    return this._getSeedNamesOfType('popular');
-  }
-
-  outcomeSeeds() {
-    return this._getSeedNamesOfType('outcome');
-  }
-
-  localSeeds() {
-    return this._getSeedNamesOfType('local');
+  ratings(type) {
+    const seedRatingObj = this.chapter.seedRatings.find(element => element.type === type);
+    const ratings = seedRatingObj.ratings;
+    return ratings.map(rating => ({ item: this._getSeedName(rating.seedID), rating: rating.rating }));
   }
 }
 

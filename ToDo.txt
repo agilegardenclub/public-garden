@@ -20,3 +20,9 @@
 ### Workflow
 
 * Create issues in project board.
+
+### Implications
+
+We need to provide support for "backfilling" of the seed database by members with outcome data from prior seasons.
+
+"Pest resilience" is an important feature of a seed.

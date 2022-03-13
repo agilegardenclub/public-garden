@@ -15,6 +15,10 @@ class GardenOverview {
     return this.garden.history.length;
   }
 
+  climateVictoryGarden() {
+    return !!this.garden.climateVictoryGarden;
+  }
+
   currentYear() {
     return this.garden.history[0].year;
   }
@@ -36,13 +40,19 @@ class GardenOverview {
     return seedIDs.map(id => getSeedName(id));
   }
 
-  currentGardenerNames() {
-    const getGardenerName = (id) => {
-      const gardenerInfo = this.gardeners.find(element => element.id === id);
-      return gardenerInfo ? gardenerInfo.name : 'Gardener Not Found';
-    };
-    const gardenerIDs = this.garden.history[0].gardenerIDs;
-    return gardenerIDs.map(id => getGardenerName(id));
+  currentGardenerIDs() {
+    return this.garden.history[0].gardenerIDs;
+  }
+
+  gardenerName(gardenerID) {
+    const gardenerInfo = this.gardeners.find(element => element.id === gardenerID);
+    return gardenerInfo ? gardenerInfo.name : 'Gardener Not Found';
+
+  }
+
+  isMasterGardener(gardenerID) {
+    const gardenerInfo = this.gardeners.find(element => element.id === gardenerID);
+    return gardenerInfo ? !!gardenerInfo.masterGardener : 'Gardener Not Found';
   }
 
   name() {

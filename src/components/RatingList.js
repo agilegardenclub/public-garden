@@ -5,7 +5,7 @@ import { Stack } from 'react-bootstrap';
 
 function RatingRow({ item, rating }) {
   return (
-    <Stack direction="horizontal" gap={3}>
+    <Stack direction="horizontal">
       <div>{item}</div>
       <div className="ms-auto"><Rating readonly initialValue={rating} size={20}/></div>
     </Stack>

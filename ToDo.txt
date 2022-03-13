@@ -3,8 +3,6 @@
 ### Overview
 
 * Implement badges:
-  * Gardeners: Master Gardener.
-  * Gardens: Climate Victory Garden.
   * Chapter Seeds: Convert to table
   * Trewartha Zone data: https://www.reddit.com/r/MapPorn/comments/7yt1pj/trewartha_climate_types_of_washington_state_1260/
 

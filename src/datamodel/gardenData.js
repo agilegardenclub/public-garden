@@ -24,6 +24,7 @@ export const gardenData = [
         gardenerIDs: ['gardener-01', 'gardener-02'],
       },
     ],
+    climateVictoryGarden: true,
     lastUpdate: 'March 12, 2022',
   },
 ];

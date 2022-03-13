@@ -3,6 +3,8 @@ import { Card, Stack } from 'react-bootstrap';
 import { Field } from './Field';
 import { gardenOverview } from '../datamodel/GardenOverview';
 import { PictureCarousel } from './PictureCarousel';
+import { ClimateVictoryGardenBadge } from './ClimateVictoryGardenBadge';
+import { GardenerLabel } from './GardenerLabel';
 
 export function GardenOverviewCard() {
   const year = `(${gardenOverview.currentYear()})`;
@@ -12,31 +14,32 @@ export function GardenOverviewCard() {
   const size = gardenOverview.currentSize();
   const beds = gardenOverview.currentBeds();
   const seeds = gardenOverview.currentSeedNames().join(', ');
-  const gardeners = gardenOverview.currentGardenerNames().join(', ');
+  const gardeners = gardenOverview.currentGardenerIDs().map((gardenerID, index) => <GardenerLabel key={index} gardenerID={gardenerID}/>);
   const lastUpdate = gardenOverview.lastUpdate();
+  const climateVictoryGarden = gardenOverview.climateVictoryGarden();
   return (
     <Card>
-      <Card.Header><h5>Garden: {name}</h5></Card.Header>
+      <Card.Header><h5>Garden: {name} {climateVictoryGarden && <ClimateVictoryGardenBadge/> }</h5> </Card.Header>
       <PictureCarousel pictureData={pictureData}/>
       <Card.Body>
         <Stack gap={1}>
           <Field title='Age:'>
-            <p>{age} season(s)</p>
+            {age} season(s)
           </Field>
           <Field title='Size:'>
-            <p>{size} sq ft. {year}</p>
+            {size} sq ft. {year}
           </Field>
           <Field title='Number of beds:'>
-            <p>{beds} {year}</p>
+            {beds} {year}
           </Field>
           <Field title='Seeds:'>
-            <p>{seeds} {year}</p>
+            {seeds} {year}
           </Field>
           <Field title='Gardener(s):'>
-            <p>{gardeners} {year}</p>
+            {gardeners} {year}
           </Field>
           <Field title='Last Update:'>
-            <p>{lastUpdate}</p>
+            {lastUpdate}
           </Field>
         </Stack>
       </Card.Body>

@@ -24,31 +24,28 @@ export function ChapterOverviewCard() {
       <Card.Body>
         <Stack gap={1}>
           <Field title='Age:'>
-            <p>{age} seasons</p>
+            {age} seasons
           </Field>
           <Field title='Zip Codes:'>
-            <p>{zipCodes}</p>
+            {zipCodes}
           </Field>
           <Field title='Hardiness Zone(s):'>
             {zoneBadges}
           </Field>
           <Field title='Number of members:'>
-            <p>{members}</p>
+            {members}
           </Field>
           <Field title='Number of gardens:'>
-            <p>{gardens}</p>
+            {gardens}
           </Field>
-          <Field title='Top 5 Seeds (popularity):'>
+          <Field title='Top 5 Seeds (popularity):' direction='vertical'>
             <RatingList ratingData={popularRatings}/>
-            <p></p>
           </Field>
-          <Field title='Top 5 Seeds (outcome):'>
+          <Field title='Top 5 Seeds (outcome):' direction='vertical'>
             <RatingList ratingData={outcomeRatings}/>
-            <p></p>
           </Field>
-          <Field title='Top 5 Seeds (locally sourced)'>
+          <Field title='Top 5 Seeds (locally sourced):' direction='vertical'>
             <RatingList ratingData={localRatings}/>
-            <p></p>
           </Field>
         </Stack>
       </Card.Body>

@@ -1,6 +1,24 @@
 # AGC Public Garden Web Page Mockup
 
-This repository contains code to generate an example Public Garden web page using React and Bootstrap. 
+## Goals
+
+This repository contains code to generate an example Public Garden web page using React and Bootstrap. The intended goals of this mockup include:
+
+  * Illustrate the benefits of AGC as a community of practice. The page should illustrate how gardeners are helped by being part of a Chapter. These benefits include access to the accumulated experience of all chapter members.
+
+  * Illustrate the benefits of crowd-sourced, local seed data.  The page should illustrate how independence from seed vendors enables AGC gardeners to find the best seeds for their situation and/or to grow their own. 
+
+  * Support the design of the data model. All of the data that populates this page come from a set of javascript files that simulate MongoDB collections.
+
+  * Provide a public mockup to support usability and business model testing. By illustrating as many of the "outcomes" of using AGC as possible, without having to explain the process by which these outcomes were arrived at, we can assess whether users would find this system of interest.
+
+  * Investigate privacy issues. This mockup is intended to not reveal the identity of gardeners or the exact location of gardens. What functionality, if any, must be sacrificed to preserve privacy?
+
+The latest version of the page is available at: [https://agilegardenclub.com/public-garden-45ght3cf/](https://agilegardenclub.com/public-garden-45ght3cf/).
+
+## To Do
+
+To see the current list of tasks associated with this mockup, please see the [Project Board]()
 
 ## Installation
 

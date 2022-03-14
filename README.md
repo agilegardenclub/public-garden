@@ -110,7 +110,7 @@ The src/ directory is organized as follows:
  * `App.js, index.js`:  These two top-level files are the entry-point for displaying the page.   
  * `sections/`: This directory contains the components that implement the "sections" of the page.
  * `components/`: This directory contains components that implement various widgets, cards, and so forth that appear in a section.
- * `datamodel/`: This directory implements a simple example of a backend database. It includes examples of individual collections (i.e. chapterData.js, gardenerData.js, etc.) as well as higher level singleton classes that process the collections for use by components (i.e. ChapterOverview.js, GardenOverview.js).
+ * `datamodel/`: This directory simulates aspects of the design of the backend database. It includes examples of individual collections (i.e. chapterData.js, gardenerData.js, etc.) as well as higher level singleton classes that process the collections for use by components (i.e. ChapterOverview.js, GardenOverview.js).
  * `css/`: This directory contains automatically generated custom Bootstrap theme definition. It is regenerated each time the system is started. Do not edit this directory; to change the theme, edit the files in `scss/`.
 
 There are two different ways to familiarize yourself with the code:

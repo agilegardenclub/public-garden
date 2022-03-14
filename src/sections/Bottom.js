@@ -10,7 +10,7 @@ const popover = (
   <Popover id="popover-basic">
     <Popover.Header as="h3">Coming Soon!</Popover.Header>
     <Popover.Body>
-      We expect our app to be available for both iOS and Android by the end of 2022.
+      We expect the Agile Garden Club Member App to be available by the end of 2022.
     </Popover.Body>
   </Popover>
 );

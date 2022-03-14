@@ -5,6 +5,7 @@ import { chapterOverview } from '../datamodel/ChapterOverview';
 import { ZoneBadge } from './ZoneBadge';
 import { PictureCarousel } from './PictureCarousel';
 import { SeedRatingList } from './SeedRatingList';
+import { SeedPopularityList } from './SeedPopularityList';
 
 export function ChapterOverviewCard() {
   const name = chapterOverview.name();
@@ -39,7 +40,7 @@ export function ChapterOverviewCard() {
             {gardens}
           </Field>
           <Field title='Top 5 Seeds (popularity):' direction='vertical'>
-            <SeedRatingList ratingData={popularSeedRatings}/>
+            <SeedPopularityList ratingData={popularSeedRatings}/>
           </Field>
           <Field title='Top 5 Seeds (yield):' direction='vertical'>
             <SeedRatingList ratingData={yieldSeedRatings}/>

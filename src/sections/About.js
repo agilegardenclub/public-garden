@@ -19,7 +19,7 @@ function About() {
           <li>Many garden technologies tether you to your computer. In contrast, AGC believes the best time to gather data about your garden is when you&lsquo;re actually in your garden. We provide native mobile apps so that all features of AGC are available on your Apple or Android phone. (We also support the desktop for those long winter nights.)</li>
           <li>AGC data is Chapter-specific. If you live in Alaska, garden data from Florida is of limited use. AGC divides our overall community into local Chapters covering a small geographic region. This helps ensure the relevance of community-supplied data on plant and seed outcomes, and means you can actually meet up with your fellow chapter members if you want. </li>
         </ol>
-        <p>This <b>Public Garden View</b> is an option available to AGC Chapter members. Enabling this view tells our technology to generate a web page like this one. AGC Chapter members can share the web page address to provide details about their garden to others regardless of whether they are a Chapter member or not. This Public Garden View is designed to not reveal the identity of gardeners or the specific location of the garden. </p>
+        <p>This <b>Public Garden View</b> is an option available to AGC members. Enabling this view tells our technology to generate a web page like this one. AGC members can share this web page to provide details about their garden to others regardless of whether they are an AGC member or not. This Public Garden View is designed to not reveal the identity of gardeners or the specific location of the garden. </p>
       </Documentation>
 
       <Documentation variant="info">

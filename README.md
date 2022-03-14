@@ -18,7 +18,7 @@ The latest version of the page is available at: [https://agilegardenclub.com/pub
 
 ## To Do
 
-To see the current list of tasks associated with this mockup, please see the [Project Board]()
+To see the current list of tasks associated with this mockup, please see the [Project Board](https://github.com/agilegardenclub/public-garden-45ght3cf/projects/1).
 
 ## Installation
 

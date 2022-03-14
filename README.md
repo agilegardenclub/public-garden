@@ -1,8 +1,8 @@
-# AGC Public Garden Web Page Mockup
+# AGC Public Garden Web Page Example
 
 ## Goals
 
-This repository contains code to generate an example Public Garden web page using React and Bootstrap. The intended goals of this mockup include:
+This repository contains code to generate an example Public Garden web page using React and Bootstrap. The intended goals of this example include:
 
   * Illustrate the benefits of AGC as a community of practice. The page should illustrate how gardeners are helped by being part of a Chapter. These benefits include access to the accumulated experience of all chapter members.
 
@@ -10,15 +10,15 @@ This repository contains code to generate an example Public Garden web page usin
 
   * Support the design of the data model. All of the data that populates this page come from a set of javascript files that simulate MongoDB collections.
 
-  * Provide a public mockup to support usability and business model testing. By illustrating as many of the "outcomes" of using AGC as possible, without having to explain the process by which these outcomes were arrived at, we can assess whether users would find this system of interest.
+  * Provide a public example to support usability and business model testing. By illustrating as many of the "outcomes" of using AGC as possible, without having to explain the process by which these outcomes were arrived at, we can assess whether users would find this system of interest.
 
-  * Investigate privacy issues. This mockup is intended to not reveal the identity of gardeners or the exact location of gardens. What functionality, if any, must be sacrificed to preserve privacy?
+  * Investigate privacy issues. This example is intended to not reveal the identity of gardeners or the exact location of gardens. What functionality, if any, must be sacrificed to preserve privacy?
 
 The latest version of the page is available at: [https://agilegardenclub.com/public-garden-45ght3cf/](https://agilegardenclub.com/public-garden-45ght3cf/).
 
 ## To Do
 
-To see the current list of tasks associated with this mockup, please see the [Project Board](https://github.com/agilegardenclub/public-garden-45ght3cf/projects/1).
+To see the current list of tasks associated with this example, please see the [Project Board](https://github.com/agilegardenclub/public-garden-45ght3cf/projects/1).
 
 ## Installation
 
@@ -110,14 +110,14 @@ The src/ directory is organized as follows:
  * `App.js, index.js`:  These two top-level files are the entry-point for displaying the page.   
  * `sections/`: This directory contains the components that implement the "sections" of the page.
  * `components/`: This directory contains components that implement various widgets, cards, and so forth that appear in a section.
- * `datamodel/`: This directory implements a simple mockup of a backend database. It includes mockups of individual collections (i.e. chapterData.js, gardenerData.js, etc.) as well as higher level singleton classes that process the collections for use by components (i.e. ChapterOverview.js, GardenOverview.js).
+ * `datamodel/`: This directory implements a simple example of a backend database. It includes examples of individual collections (i.e. chapterData.js, gardenerData.js, etc.) as well as higher level singleton classes that process the collections for use by components (i.e. ChapterOverview.js, GardenOverview.js).
  * `css/`: This directory contains automatically generated custom Bootstrap theme definition. It is regenerated each time the system is started. Do not edit this directory; to change the theme, edit the files in `scss/`.
 
 There are two different ways to familiarize yourself with the code:
 
   1. *UI, Top-Down*:  Start with `src/index.js`, then look at `src/App.js`, then follow the component hierarchy down. That shows you the structure of the UI and how the components compose together to form the page.
 
-  2. *Data, Bottom-Up*: Another way is to follow the data.  Start in the `src/datamodel/` directory, and look at the lower case "data" files (`chapterData.js`, `gardenerData.js`, `gardenData.js`, etc.) Then see how these mockups of MongoDB-style collections are wrapped in that directory by capitalized classes (`ChapterOverview.js`, `GardenOverview.js`, etc.) Singleton instances of these classes are exported and then used by components (`ChapterOverviewCard.js`, `GardenOverviewCard.js`) to display the data.
+  2. *Data, Bottom-Up*: Another way is to follow the data.  Start in the `src/datamodel/` directory, and look at the lower case "data" files (`chapterData.js`, `gardenerData.js`, `gardenData.js`, etc.) Then see how these examples of MongoDB-style collections are wrapped in that directory by capitalized classes (`ChapterOverview.js`, `GardenOverview.js`, etc.) Singleton instances of these classes are exported and then used by components (`ChapterOverviewCard.js`, `GardenOverviewCard.js`) to display the data.
 
 ### Images
 

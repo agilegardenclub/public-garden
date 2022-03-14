@@ -10,14 +10,14 @@ function About() {
   return (
     <div>
       <Documentation>
-        <p>Welcome to a sample Agile Garden Club public garden view.</p>
-        <p><b>Agile Garden Club</b> is an organization whose mission is to help build local &quot;communities of practice&quot; that result in better planning and management of home gardens. To accomplish this, we are designing technologies that help gardeners help each other through shared experiences and insights. </p>
-        <p>AGC differs from other garden support technologies in two primary ways:</p>
+        <p>Welcome to an example Agile Garden Club public garden view.</p>
+        <p><b>Agile Garden Club</b> is an organization whose mission is to help build local &quot;communities of practice&quot; that result in better planning and management of home gardens. To accomplish this, we are designing technologies to help gardeners help each other through shared experiences and insights. </p>
+        <p>AGC technologies differ from other garden technologies in two primary ways:</p>
         <ol>
           <li>Superior support for collaboration, for historical insights over multiple seasons, and for local community building.</li>
-          <li>Unlike many other garden organizations, AGC is not funded by a seed company. Instead, AGC implements &quot;crowd sourcing&quot; of seed information by chapter members based upon real-world experience in local conditions. We want to facilitate and increase the use of home-harvested seeds and seed sharing whenever possible.</li>
+          <li>Unlike many other garden technology organizations, AGC is not funded by a seed company. Instead, AGC implements &quot;crowd sourcing&quot; of seed information by chapter members based upon real-world experience in local conditions. We want to facilitate and increase the use of home-harvested seeds and seed sharing whenever possible.</li>
         </ol>
-        <p>This <b>Public Garden View</b> is an option available to AGC Chapter members. Enabling this view tells our technology to generate a web page like this one. AGC Chapter members can share the web page address to provide details about their garden to others regardless of whether they are a Chapter member or not. This Public Garden View does not reveal the identity of gardeners or the specific location of the garden. </p>
+        <p>This <b>Public Garden View</b> is an option available to AGC Chapter members. Enabling this view tells our technology to generate a web page like this one. AGC Chapter members can share the web page address to provide details about their garden to others regardless of whether they are a Chapter member or not. This Public Garden View is designed to not reveal the identity of gardeners or the specific location of the garden. </p>
       </Documentation>
 
       <Documentation variant="info">

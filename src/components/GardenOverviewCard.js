@@ -5,6 +5,7 @@ import { gardenOverview } from '../datamodel/GardenOverview';
 import { PictureCarousel } from './PictureCarousel';
 import { ClimateVictoryGardenBadge } from './ClimateVictoryGardenBadge';
 import { GardenerLabel } from './GardenerLabel';
+import { GardenSeedBadge } from './GardenSeedBadge';
 
 export function GardenOverviewCard() {
   const year = `(${gardenOverview.currentYear()})`;
@@ -13,7 +14,7 @@ export function GardenOverviewCard() {
   const age = gardenOverview.age();
   const size = gardenOverview.currentSize();
   const beds = gardenOverview.currentBeds();
-  const seeds = gardenOverview.currentSeedNames().join(', ');
+  const seedBadges = gardenOverview.currentSeedIDs().map((seedID, index) => <GardenSeedBadge key={index} seedID={seedID} />);
   const gardeners = gardenOverview.currentGardenerIDs().map((gardenerID, index) => <GardenerLabel key={index} gardenerID={gardenerID}/>);
   const lastUpdate = gardenOverview.lastUpdate();
   const climateVictoryGarden = gardenOverview.climateVictoryGarden();
@@ -33,7 +34,7 @@ export function GardenOverviewCard() {
             {beds} {year}
           </Field>
           <Field title='Seeds:'>
-            {seeds} {year}
+            {seedBadges} {year}
           </Field>
           <Field title='Gardener(s):'>
             {gardeners} {year}

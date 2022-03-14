@@ -3,6 +3,8 @@ import Top from './sections/Top.js';
 import Bottom from './sections/Bottom.js';
 import Overview from './sections/Overview';
 import About from './sections/About';
+import Plans from './sections/Plans';
+import Seeds from './sections/Seeds';
 
 const App = () => {
   useEffect(() => {
@@ -14,6 +16,8 @@ const App = () => {
       <Top/>
       <About/>
       <Overview/>
+      <Plans/>
+      <Seeds/>
       <Bottom/>
     </div>
   );

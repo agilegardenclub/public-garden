@@ -31,6 +31,10 @@ class GardenOverview {
     return this.garden.history[0].beds;
   }
 
+  currentSeedIDs() {
+    return this.garden.history[0].seedIDs;
+  }
+
   currentSeedNames() {
     const getSeedName = (id) => {
       const seedInfo = this.seeds.find(element => element.id === id);
@@ -48,6 +52,10 @@ class GardenOverview {
     const gardenerInfo = this.gardeners.find(element => element.id === gardenerID);
     return gardenerInfo ? gardenerInfo.name : 'Gardener Not Found';
 
+  }
+
+  seedOutcomes(seedID) {
+    return this.garden.seedOutcomes.find(element => element.seedID === seedID);
   }
 
   isMasterGardener(gardenerID) {

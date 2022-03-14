@@ -20,7 +20,7 @@ function Top() {
         </Navbar.Brand>
         <Nav>
           <Nav.Item><Nav.Link href="#overview">Overview</Nav.Link></Nav.Item>
-          <Nav.Item><Nav.Link href="#plan">Plan</Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="#plans">Plans</Nav.Link></Nav.Item>
           <Nav.Item><Nav.Link href="#seeds">Seeds</Nav.Link></Nav.Item>
         </Nav>
       </Container>

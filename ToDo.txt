@@ -2,8 +2,6 @@
 
 ### Overview
 
-* Implement badges:
-  * Chapter Seeds: Convert to table
   * Trewartha Zone data: https://www.reddit.com/r/MapPorn/comments/7yt1pj/trewartha_climate_types_of_washington_state_1260/
 
 ### Plans
@@ -22,5 +20,3 @@
 ### Implications
 
 We need to provide support for "backfilling" of the seed database by members with outcome data from prior seasons.
-
-"Pest resilience" is an important feature of a seed.

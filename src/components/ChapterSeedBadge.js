@@ -12,9 +12,8 @@ export function ChapterSeedBadge({ seedID }) {
 
   return (
     <BadgeWithPopover header={name} label={name} bg='info'>
-      <p>Description: {description}</p>
-      <p>Vendor: {vendor}</p>
-      <p><a target="_blank" rel="noreferrer noopener" href={vendorURL}>(More Info)</a></p>
+      <p><b>Description:</b> {description}</p>
+      <p><b>Vendor:</b> {vendor} <a target="_blank" rel="noreferrer noopener" href={vendorURL}>(Seed Info)</a></p>
     </BadgeWithPopover>
   );
 }

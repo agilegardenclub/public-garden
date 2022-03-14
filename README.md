@@ -14,7 +14,7 @@ This repository contains code to generate an example Public Garden web page usin
 
   * Investigate privacy issues. This example is intended to not reveal the identity of gardeners or the exact location of gardens. What functionality, if any, must be sacrificed to preserve privacy?
 
-The latest version of the page is available at: [https://agilegardenclub.com/public-garden-45ght3cf/](https://agilegardenclub.com/public-garden-45ght3cf/).
+The latest version of the example Public Garden page is available at: [https://agilegardenclub.com/public-garden-45ght3cf/](https://agilegardenclub.com/public-garden-45ght3cf/).
 
 ## To Do
 

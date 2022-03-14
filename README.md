@@ -127,7 +127,7 @@ Please crop all images to be exactly 600px wide and 400px high. This eliminates 
 
 If you are making significant changes, please consider the following workflow:
 
-  1. Create an issue to document your intended change.
+  1. Create an issue to document your intended change, and add it to the [Project Board](https://github.com/agilegardenclub/public-garden-45ght3cf/projects/1).
   2. Create a branch off main called issue-NNN, where NNN is the issue number.
   3. Do all work in your development branch, updating from main as needed.
   4. When the change is complete, merge the branch into main, and close the issue.

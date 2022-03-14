@@ -4,7 +4,7 @@ import { Field } from './Field';
 import { chapterOverview } from '../datamodel/ChapterOverview';
 import { ZoneBadge } from './ZoneBadge';
 import { PictureCarousel } from './PictureCarousel';
-import { RatingList } from './RatingList';
+import { SeedRatingList } from './SeedRatingList';
 
 export function ChapterOverviewCard() {
   const name = chapterOverview.name();
@@ -14,9 +14,9 @@ export function ChapterOverviewCard() {
   const members = chapterOverview.members();
   const gardens = chapterOverview.gardens();
   const zoneBadges = chapterOverview.zoneIDs().map((zoneID, index) => ZoneBadge({ zoneID, index }));
-  const popularRatings = chapterOverview.ratings('popular');
-  const outcomeRatings = chapterOverview.ratings('outcome');
-  const localRatings = chapterOverview.ratings('local');
+  const popularSeedRatings = chapterOverview.seedRatings('popular');
+  const yieldSeedRatings = chapterOverview.seedRatings('yield');
+  const localSeedRatings = chapterOverview.seedRatings('local');
   return (
     <Card>
       <Card.Header><h5>Chapter: {name}</h5></Card.Header>
@@ -39,13 +39,13 @@ export function ChapterOverviewCard() {
             {gardens}
           </Field>
           <Field title='Top 5 Seeds (popularity):' direction='vertical'>
-            <RatingList ratingData={popularRatings}/>
+            <SeedRatingList ratingData={popularSeedRatings}/>
           </Field>
-          <Field title='Top 5 Seeds (outcome):' direction='vertical'>
-            <RatingList ratingData={outcomeRatings}/>
+          <Field title='Top 5 Seeds (yield):' direction='vertical'>
+            <SeedRatingList ratingData={yieldSeedRatings}/>
           </Field>
           <Field title='Top 5 Seeds (locally sourced):' direction='vertical'>
-            <RatingList ratingData={localRatings}/>
+            <SeedRatingList ratingData={localSeedRatings}/>
           </Field>
         </Stack>
       </Card.Body>

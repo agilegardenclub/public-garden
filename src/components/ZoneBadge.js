@@ -8,7 +8,7 @@ export function ZoneBadge({ zoneID, index = 0 }) {
   const description = hardinessZoneInfo.description(zoneID);
   return (
     <BadgeWithPopover header={name} label={name} key={index}>
-      <p>{description} F</p>
+      <p>{description} Fahrenheit</p>
     </BadgeWithPopover>
   );
 }

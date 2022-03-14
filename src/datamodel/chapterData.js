@@ -25,7 +25,7 @@ export const chapterData = [
         ],
       },
       {
-        type: 'outcome',
+        type: 'yield',
         ratings: [
           { seedID: 'seed-10', rating: 5 },
           { seedID: 'seed-06', rating: 4.5 },

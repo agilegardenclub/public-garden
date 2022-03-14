@@ -42,10 +42,18 @@ class ChapterOverview {
     return seedInfo ? seedInfo.name : 'Seed Not Found';
   }
 
+  seedInfo(seedID) {
+    return this.seeds.find(element => element.id === seedID);
+  }
+
   ratings(type) {
     const seedRatingObj = this.chapter.seedRatings.find(element => element.type === type);
     const ratings = seedRatingObj.ratings;
     return ratings.map(rating => ({ item: this._getSeedName(rating.seedID), rating: rating.rating }));
+  }
+
+  seedRatings(type) {
+    return this.chapter.seedRatings.find(element => element.type === type).ratings;
   }
 }
 

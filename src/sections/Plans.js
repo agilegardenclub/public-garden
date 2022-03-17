@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Tabs, Tab } from 'react-bootstrap';
 import { Documentation } from '../components/Documentation';
+import { PlanGrid } from '../components/PlanGrid';
 
 /**
  * Plan section
@@ -22,7 +23,7 @@ function Plans() {
             2021 Garden Plan goes here.
           </Tab>
           <Tab eventKey="2022" title="2022">
-            2022 Garden Plan goes here.
+            <PlanGrid year={2022}/>
           </Tab>
         </Tabs>
       </Container>

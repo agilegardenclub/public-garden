@@ -29,14 +29,11 @@ function Header() {
 
 function MonthCol({ monthNum, bedOccupancyMap }) {
   const bgColor = (weekNum) => (bedOccupancyMap.isOccupied(monthNum, weekNum) ? '#000' : '#FFF');
-  console.log(bgColor(1));
   return (
     <Col xs={1}>
       <Row>
-        <Col xs={3} style={{ height: '20px', backgroundColor: `${bgColor(1)}`, minWidth: '1px', padding: 0 }}/>
-        <Col xs={3} style={{ height: '20px', backgroundColor: `${bgColor(2)}`, minWidth: '1px', padding: 0 }}/>
-        <Col xs={3} style={{ height: '20px', backgroundColor: `${bgColor(3)}`, minWidth: '1px', padding: 0 }}/>
-        <Col xs={3} style={{ height: '20px', backgroundColor: `${bgColor(4)}`, minWidth: '1px', padding: 0 }}/>
+        {[1, 2, 3, 4]
+          .map((weekNum, index) => <Col key={index} xs={3} style={{ height: '20px', backgroundColor: `${bgColor(weekNum)}`, minWidth: '1px', padding: 0 }}/>)}
       </Row>
     </Col>
   );
@@ -54,19 +51,8 @@ function PlantRow({ name, startDate, endDate }) {
       <Col xs={1}>{name}</Col>
       <Col>
         <Row>
-          <MonthCol monthNum={1} bedOccupancyMap={bedOccupancyMap} />
-          <MonthCol monthNum={2} bedOccupancyMap={bedOccupancyMap} />
-          <MonthCol monthNum={3} bedOccupancyMap={bedOccupancyMap} />
-          <MonthCol monthNum={4} bedOccupancyMap={bedOccupancyMap} />
-          <MonthCol monthNum={5} bedOccupancyMap={bedOccupancyMap} />
-          <MonthCol monthNum={6} bedOccupancyMap={bedOccupancyMap} />
-          <MonthCol monthNum={7} bedOccupancyMap={bedOccupancyMap} />
-          <MonthCol monthNum={8} bedOccupancyMap={bedOccupancyMap} />
-          <MonthCol monthNum={9} bedOccupancyMap={bedOccupancyMap} />
-          <MonthCol monthNum={10} bedOccupancyMap={bedOccupancyMap} />
-          <MonthCol monthNum={11} bedOccupancyMap={bedOccupancyMap} />
-          <MonthCol monthNum={12} bedOccupancyMap={bedOccupancyMap} />
-
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+            .map((monthNum, index) => <MonthCol key={index} monthNum={monthNum} bedOccupancyMap={bedOccupancyMap} />)}
         </Row>
       </Col>
     </Row>

@@ -6,21 +6,11 @@ import { BedOccupancyMap } from './BedOccupancyMap';
 function Header() {
   return (
     <Row>
-      <Col xs={1}/>
+      <Col xs={1} style={{ padding: 0 }}/>
       <Col>
         <Row>
-          <Col className="text-start" style={{ padding: 0 }} xs={1}>Jan</Col>
-          <Col xs={1}>Feb</Col>
-          <Col xs={1}>Mar</Col>
-          <Col xs={1}>Apr</Col>
-          <Col xs={1}>May</Col>
-          <Col xs={1}>Jun</Col>
-          <Col xs={1}>Jul</Col>
-          <Col xs={1}>Aug</Col>
-          <Col xs={1}>Sep</Col>
-          <Col xs={1}>Oct</Col>
-          <Col xs={1}>Nov</Col>
-          <Col xs={1}>Dec</Col>
+          {['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            .map((month, index) => <Col key={index} style={{ padding: 0 }} xs={1}>{month}</Col>)}
         </Row>
       </Col>
     </Row>
@@ -30,7 +20,7 @@ function Header() {
 function MonthCol({ monthNum, bedOccupancyMap }) {
   const bgColor = (weekNum) => (bedOccupancyMap.isOccupied(monthNum, weekNum) ? '#000' : '#FFF');
   return (
-    <Col xs={1}>
+    <Col xs={1} style={{ padding: 0 }}>
       <Row>
         {[1, 2, 3, 4]
           .map((weekNum, index) => <Col key={index} xs={3} style={{ height: '20px', backgroundColor: `${bgColor(weekNum)}`, minWidth: '1px', padding: 0 }}/>)}

@@ -4,14 +4,14 @@ import { Documentation } from '../components/Documentation';
 import { PlanGrid } from '../components/PlanGrid';
 
 /**
- * Plan section
+ * Planting section
  */
 function Plans() {
 
   return (
     <div id="plans">
       <Container className="py-3">
-        <h2>Plan Summaries</h2>
+        <h2>Planting Summaries</h2>
         <Documentation>
           <p>(This section will provide information about the history of plans for this garden.)</p>
         </Documentation>

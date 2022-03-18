@@ -3,7 +3,7 @@ import Top from './sections/Top.js';
 import Bottom from './sections/Bottom.js';
 import Overview from './sections/Overview';
 import About from './sections/About';
-import Plans from './sections/Plans';
+import Plantings from './sections/Plantings';
 import Seeds from './sections/Seeds';
 
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
       <Top/>
       <About/>
       <Overview/>
-      <Plans/>
+      <Plantings/>
       <Seeds/>
       <Bottom/>
     </div>

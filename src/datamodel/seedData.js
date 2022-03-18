@@ -5,7 +5,6 @@
 export const seedData = [
   {
     id: 'seed-01',
-    name: 'Asparagus',
     cultivar: 'Asparagus',
     variety: 'Purple Passion',
     vendor: 'Johnnys',
@@ -14,7 +13,6 @@ export const seedData = [
   },
   {
     id: 'seed-02',
-    name: 'Broccoli',
     cultivar: 'Broccoli',
     variety: 'Solstice',
     vendor: 'Uprising Organics',
@@ -23,7 +21,6 @@ export const seedData = [
   },
   {
     id: 'seed-03',
-    name: 'Carrot',
     cultivar: 'Carrot',
     variety: 'Scarlet Nantes',
     vendor: 'Uprising Organics',
@@ -32,7 +29,6 @@ export const seedData = [
   },
   {
     id: 'seed-04',
-    name: 'Lettuce',
     cultivar: 'Lettuce',
     variety: 'Blue Rock',
     vendor: 'Johnnys',
@@ -41,7 +37,6 @@ export const seedData = [
   },
   {
     id: 'seed-05',
-    name: 'Kale',
     cultivar: 'Kale',
     variety: 'Dwarf Blue',
     vendor: 'Seed Savers',
@@ -50,7 +45,6 @@ export const seedData = [
   },
   {
     id: 'seed-06',
-    name: 'Leek',
     cultivar: 'Leek',
     variety: 'PrizeTaker',
     vendor: 'Seed Savers',
@@ -59,7 +53,6 @@ export const seedData = [
   },
   {
     id: 'seed-07',
-    name: 'Radish',
     cultivar: 'Radish',
     variety: 'China Rose',
     vendor: 'Baker Creek',
@@ -68,7 +61,6 @@ export const seedData = [
   },
   {
     id: 'seed-08',
-    name: 'Sugar Pea',
     cultivar: 'Sugar Pea',
     variety: 'Oregon Giant',
     vendor: 'Resilient Seeds',
@@ -77,7 +69,6 @@ export const seedData = [
   },
   {
     id: 'seed-09',
-    name: 'Tomato',
     cultivar: 'Tomato',
     variety: 'Orange King',
     vendor: 'Resilient Seeds',
@@ -86,7 +77,6 @@ export const seedData = [
   },
   {
     id: 'seed-10',
-    name: 'Chard',
     cultivar: 'Chard',
     variety: 'Rainbow',
     vendor: 'Resilient Seeds',

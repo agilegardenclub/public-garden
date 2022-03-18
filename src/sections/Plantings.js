@@ -6,7 +6,7 @@ import { PlanGrid } from '../components/PlanGrid';
 /**
  * Planting section
  */
-function Plans() {
+function Plantings() {
 
   return (
     <div id="plans">
@@ -31,4 +31,4 @@ function Plans() {
   );
 }
 
-export default Plans;
+export default Plantings;

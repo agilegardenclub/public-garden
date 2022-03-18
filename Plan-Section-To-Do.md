@@ -2,12 +2,11 @@
 
 ## Design thoughts
 
-Every plant has its own row. 
-Maybe left justify bed name, and right justify plant name?
+Rename seed database to plant database.
 
-plant name => Plant Badge
-put start/end dates into bar? 
-what colors? 
-move plant data into data model
-
-Is it "Plan Summaries", or "Planting Summaries" 
+Plant database updates:
+- Cultivar -> Plant
+- daysToMaturity (estimated) vs. (historical)
+- How to determine background color of the Badge.
+  - Use same color for plant bar (See Add Planting wireframe)
+- 

@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import { BedOccupancyMap } from './BedOccupancyMap';
 import { Colors } from '../Theme.js';
-import { GardenSeedBadge } from './GardenSeedBadge';
+import { GardenPlantBadge } from './GardenPlantBadge';
 
 const firstColWidth = 3;
 
@@ -38,12 +38,12 @@ MonthCol.propTypes = {
   bedOccupancyMap: PropTypes.any,
 };
 
-function PlantRow({ seedID, startDate, endDate }) {
+function PlantRow({ plantID, startDate, endDate }) {
   const bedOccupancyMap = new BedOccupancyMap(startDate, endDate);
-  const seedBadge = <GardenSeedBadge seedID={seedID}/>;
+  const plantBadge = <GardenPlantBadge plantID={plantID}/>;
   return (
     <Row>
-      <Col xs={firstColWidth}>{seedBadge}</Col>
+      <Col xs={firstColWidth}>{plantBadge}</Col>
       <Col>
         <Row>
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
@@ -55,7 +55,7 @@ function PlantRow({ seedID, startDate, endDate }) {
 }
 
 PlantRow.propTypes = {
-  seedID: PropTypes.string,
+  plantID: PropTypes.string,
   startDate: PropTypes.instanceOf(Date),
   endDate: PropTypes.instanceOf(Date),
 };
@@ -65,8 +65,8 @@ export function PlanGrid({ year }) {
   return (
     <Container>
       <Header/>
-      <PlantRow seedID="seed-01" startDate={new Date('1/12/2022')} endDate={new Date('2/14/2022')}/>
-      <PlantRow seedID="seed-02" startDate={new Date('2/15/2022')} endDate={new Date('3/14/2022')}/>
+      <PlantRow plantID="plant-01" startDate={new Date('1/12/2022')} endDate={new Date('2/14/2022')}/>
+      <PlantRow plantID="plant-02" startDate={new Date('2/15/2022')} endDate={new Date('3/14/2022')}/>
     </Container>
   );
 }

@@ -1,10 +1,8 @@
-/* Raw data regarding seeds. */
+/* Raw data regarding plants. */
 
-// What is the difference, if any, between a "seed" and a "plant"?
-
-export const seedData = [
+export const plantData = [
   {
-    id: 'seed-01',
+    id: 'plant-01',
     cultivar: 'Asparagus',
     variety: 'Purple Passion',
     vendor: 'Johnnys',
@@ -12,7 +10,7 @@ export const seedData = [
     description: 'Sweeter and more tender than green varieties, and a colorful option for raw eating in salads. Color fades when cooked, but excellent flavor is retained.',
   },
   {
-    id: 'seed-02',
+    id: 'plant-02',
     cultivar: 'Broccoli',
     variety: 'Solstice',
     vendor: 'Uprising Organics',
@@ -20,7 +18,7 @@ export const seedData = [
     description: 'Big Vigorous plants hold their tight, dark green heads high above the leaves on very long stems with excellent side shoot production.',
   },
   {
-    id: 'seed-03',
+    id: 'plant-03',
     cultivar: 'Carrot',
     variety: 'Scarlet Nantes',
     vendor: 'Uprising Organics',
@@ -28,7 +26,7 @@ export const seedData = [
     description: 'Our open-pollinated scarlet nantes have plenty of the sweetness but also a rich real carrot flavor. Widely adapted, it is very versatile for everything from fresh baby carrots to fall storage and juicing. ',
   },
   {
-    id: 'seed-04',
+    id: 'plant-04',
     cultivar: 'Lettuce',
     variety: 'Blue Rock',
     vendor: 'Johnnys',
@@ -36,7 +34,7 @@ export const seedData = [
     description: 'Attractive, dark green savoy leaves on tall, upright heads that fill out nicely and remain partially open when mature. ',
   },
   {
-    id: 'seed-05',
+    id: 'plant-05',
     cultivar: 'Kale',
     variety: 'Dwarf Blue',
     vendor: 'Seed Savers',
@@ -44,7 +42,7 @@ export const seedData = [
     description: 'Gorgeous finely curled blue-green leaves hold their color even in severe cold.',
   },
   {
-    id: 'seed-06',
+    id: 'plant-06',
     cultivar: 'Leek',
     variety: 'PrizeTaker',
     vendor: 'Seed Savers',
@@ -52,7 +50,7 @@ export const seedData = [
     description: 'Very hardy 36" tall plants with thick, solid, pure-white base. ',
   },
   {
-    id: 'seed-07',
+    id: 'plant-07',
     cultivar: 'Radish',
     variety: 'China Rose',
     vendor: 'Baker Creek',
@@ -60,7 +58,7 @@ export const seedData = [
     description: 'One of the oldest types of radish. A very hardy fall/winter variety. Roots are about 5” long and a rose color.',
   },
   {
-    id: 'seed-08',
+    id: 'plant-08',
     cultivar: 'Sugar Pea',
     variety: 'Oregon Giant',
     vendor: 'Resilient Seeds',
@@ -68,7 +66,7 @@ export const seedData = [
     description: 'Highly recommended by Carol Deppe in “The Tao of Vegetable Gardening”, this edible-pod pea has huge pods and big crinkled seeds.',
   },
   {
-    id: 'seed-09',
+    id: 'plant-09',
     cultivar: 'Tomato',
     variety: 'Orange King',
     vendor: 'Resilient Seeds',
@@ -76,7 +74,7 @@ export const seedData = [
     description: 'Early, productive, and worth growing even as a sprawling, low-maintenance outdoor tomato in the cool Pacific Northwest. ',
   },
   {
-    id: 'seed-10',
+    id: 'plant-10',
     cultivar: 'Chard',
     variety: 'Rainbow',
     vendor: 'Resilient Seeds',

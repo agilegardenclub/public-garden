@@ -4,8 +4,8 @@ import { Field } from './Field';
 import { chapterOverview } from '../datamodel/ChapterOverview';
 import { ZoneBadge } from './ZoneBadge';
 import { PictureCarousel } from './PictureCarousel';
-import { SeedRatingList } from './SeedRatingList';
-import { SeedPopularityList } from './SeedPopularityList';
+import { PlantRatingList } from './PlantRatingList';
+import { PlantPopularityList } from './PlantPopularityList';
 
 export function ChapterOverviewCard() {
   const name = chapterOverview.name();
@@ -15,9 +15,9 @@ export function ChapterOverviewCard() {
   const members = chapterOverview.members();
   const gardens = chapterOverview.gardens();
   const zoneBadges = chapterOverview.zoneIDs().map((zoneID, index) => ZoneBadge({ zoneID, index }));
-  const popularSeedRatings = chapterOverview.seedRatings('popular');
-  const yieldSeedRatings = chapterOverview.seedRatings('yield');
-  const localSeedRatings = chapterOverview.seedRatings('local');
+  const popularPlantRatings = chapterOverview.plantRatings('popular');
+  const yieldPlantRatings = chapterOverview.plantRatings('yield');
+  const localPlantRatings = chapterOverview.plantRatings('local');
   return (
     <Card>
       <Card.Header><h5>Chapter: {name}</h5></Card.Header>
@@ -39,14 +39,14 @@ export function ChapterOverviewCard() {
           <Field title='Number of gardens:'>
             {gardens}
           </Field>
-          <Field title='Top 5 Seeds (popularity):' direction='vertical'>
-            <SeedPopularityList ratingData={popularSeedRatings}/>
+          <Field title='Top 5 Plants (popularity):' direction='vertical'>
+            <PlantPopularityList ratingData={popularPlantRatings}/>
           </Field>
-          <Field title='Top 5 Seeds (yield):' direction='vertical'>
-            <SeedRatingList ratingData={yieldSeedRatings}/>
+          <Field title='Top 5 Plants (yield):' direction='vertical'>
+            <PlantRatingList ratingData={yieldPlantRatings}/>
           </Field>
-          <Field title='Top 5 Seeds (locally sourced):' direction='vertical'>
-            <SeedRatingList ratingData={localSeedRatings}/>
+          <Field title='Top 5 Plants (locally sourced):' direction='vertical'>
+            <PlantRatingList ratingData={localPlantRatings}/>
           </Field>
         </Stack>
       </Card.Body>

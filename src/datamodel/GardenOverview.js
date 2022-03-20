@@ -1,14 +1,14 @@
 import { gardenData } from './gardenData';
 import { gardenerData } from './gardenerData';
-import { seedData } from './seedData';
+import { plantData } from './plantData';
 
 /* Processes raw data for use by GardenOverviewCard. */
 class GardenOverview {
   // eslint-disable-next-line no-shadow
-  constructor(garden, gardeners, seeds) {
+  constructor(garden, gardeners, plants) {
     this.garden = garden;
     this.gardeners = gardeners;
-    this.seeds = seeds;
+    this.plants = plants;
   }
 
   age() {
@@ -31,17 +31,17 @@ class GardenOverview {
     return this.garden.history[0].beds;
   }
 
-  currentSeedIDs() {
-    return this.garden.history[0].seedIDs;
+  currentPlantIDs() {
+    return this.garden.history[0].plantIDs;
   }
 
-  currentSeedNames() {
-    const getSeedName = (id) => {
-      const seedInfo = this.seeds.find(element => element.id === id);
-      return seedInfo ? seedInfo.name : 'Seed Not Found';
+  currentPlantNames() {
+    const getPlantName = (id) => {
+      const plantInfo = this.plants.find(element => element.id === id);
+      return plantInfo ? plantInfo.name : 'Plant Not Found';
     };
-    const seedIDs = this.garden.history[0].seedIDs;
-    return seedIDs.map(id => getSeedName(id));
+    const plantIDs = this.garden.history[0].plantIDs;
+    return plantIDs.map(id => getPlantName(id));
   }
 
   currentGardenerIDs() {
@@ -54,8 +54,8 @@ class GardenOverview {
 
   }
 
-  seedOutcomes(seedID) {
-    return this.garden.seedOutcomes.find(element => element.seedID === seedID);
+  plantOutcomes(plantID) {
+    return this.garden.plantOutcomes.find(element => element.plantID === plantID);
   }
 
   isMasterGardener(gardenerID) {
@@ -76,4 +76,4 @@ class GardenOverview {
   }
 }
 
-export const gardenOverview = new GardenOverview(gardenData[0], gardenerData, seedData);
+export const gardenOverview = new GardenOverview(gardenData[0], gardenerData, plantData);

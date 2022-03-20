@@ -1,12 +1,12 @@
 import { chapterData } from './chapterData';
-import { seedData } from './seedData';
+import { plantData } from './plantData';
 
 /* Processes raw data for use by ChapterOverviewCard. */
 class ChapterOverview {
   // eslint-disable-next-line no-shadow
-  constructor(chapter, seeds) {
+  constructor(chapter, plants) {
     this.chapter = chapter;
-    this.seeds = seeds;
+    this.plants = plants;
   }
 
   name() {
@@ -37,24 +37,24 @@ class ChapterOverview {
     return this.chapter.gardens;
   }
 
-  _getSeedName(seedID) {
-    const seedInfo = this.seeds.find(element => element.id === seedID);
-    return seedInfo ? seedInfo.name : 'Seed Not Found';
+  _getPlantName(plantID) {
+    const plantInfo = this.plants.find(element => element.id === plantID);
+    return plantInfo ? plantInfo.name : 'Plant Not Found';
   }
 
-  seedInfo(seedID) {
-    return this.seeds.find(element => element.id === seedID);
+  plantInfo(plantID) {
+    return this.plants.find(element => element.id === plantID);
   }
 
   ratings(type) {
-    const seedRatingObj = this.chapter.seedRatings.find(element => element.type === type);
-    const ratings = seedRatingObj.ratings;
-    return ratings.map(rating => ({ item: this._getSeedName(rating.seedID), rating: rating.rating }));
+    const plantRatingObj = this.chapter.plantRatings.find(element => element.type === type);
+    const ratings = plantRatingObj.ratings;
+    return ratings.map(rating => ({ item: this._getPlantName(rating.plantID), rating: rating.rating }));
   }
 
-  seedRatings(type) {
-    return this.chapter.seedRatings.find(element => element.type === type).ratings;
+  plantRatings(type) {
+    return this.chapter.plantRatings.find(element => element.type === type).ratings;
   }
 }
 
-export const chapterOverview = new ChapterOverview(chapterData[0], seedData);
+export const chapterOverview = new ChapterOverview(chapterData[0], plantData);

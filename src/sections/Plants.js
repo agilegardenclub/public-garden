@@ -5,18 +5,18 @@ import { Documentation } from '../components/Documentation';
 /**
  * Seed section
  */
-function Seeds() {
+function Plants() {
 
   return (
-    <div id="seeds" className="gray-background">
+    <div id="plant-summaries" className="gray-background">
       <Container className="py-3">
-        <h2>Seed Summaries</h2>
+        <h2>Plant Summaries</h2>
         <Documentation>
-          <p>(This section could provide information about experiences with seeds in a manner different from the badges.) </p>
+          <p>(This section provides aggregate information about plants that combine chapter and gardener data.) </p>
         </Documentation>
       </Container>
     </div>
   );
 }
 
-export default Seeds;
+export default Plants;

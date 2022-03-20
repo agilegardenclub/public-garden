@@ -6,14 +6,14 @@ import { PlanGrid } from '../components/PlanGrid';
 /**
  * Planting section
  */
-function Plantings() {
+function PlantingTimelines() {
 
   return (
     <div id="plans">
       <Container className="py-3">
-        <h2>Planting Summaries</h2>
+        <h2>Planting Timelines</h2>
         <Documentation>
-          <p>(This section will provide information about the history of plans for this garden.)</p>
+          <p>This section provides a perspective on the garden as a timeline that shows what plants are in each bed of the garden for each week of the year.</p>
         </Documentation>
         <Tabs defaultActiveKey="2022" className="mb-3">
           <Tab eventKey="2020" title="2020">
@@ -31,4 +31,4 @@ function Plantings() {
   );
 }
 
-export default Plantings;
+export default PlantingTimelines;

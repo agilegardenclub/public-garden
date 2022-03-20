@@ -8,7 +8,7 @@ import { RatingList } from './RatingList';
 
 export function GardenPlantBadge({ plantID }) {
   const plantInfo = chapterOverview.plantInfo(plantID);
-  const name = `${plantInfo.cultivar} (${plantInfo.variety})`;
+  const name = `${plantInfo.plant} (${plantInfo.variety})`;
   const vendor = plantInfo.vendor;
   const vendorURL = plantInfo.vendorURL;
   const description = plantInfo.description;

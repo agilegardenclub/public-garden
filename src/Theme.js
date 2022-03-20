@@ -27,14 +27,16 @@ export const Colors = {
   dark: '#198754',
 };
 
-// Probably want a plant family collection in the datamodel.
+// See the PlantFamilyData collection
 export const PlantFamilyColors = {
-  alliums: '#EA9D9D', // Onion, garlic, leek, shallot
-  legumes: '#E5AF76', // Pea, bean
-  brassicas: '#B9FF99', // broccoli, bruseels sprout, cabbage, cauliflower, kale, arugula, turnip, pak choi
-  nightshades: '#F2EDA6', // Potato, tomato, pepper, eggplant
-  umbells: '#74BE93', // Carrot, celeriac, cilantro, fennel, parsley, dill, parsnip
-  curcurbits: '#829DC4', // Squash, zucchini, cucumber, melon, cantaloupe, pumpkin
-  beetroots: '#B5D0F8', // chard, spinach, beet
-  other: 'E0A2F6', // basil, lettuce, endive, corn, chicory
+  allium: '#EA9D9D',
+  beetroot: '#B5D0F8',
+  mustard: '#B9FF99',
+  gourd: '#829DC4',
+  legume: '#E5AF76',
+  lily: '#0dcaf0',
+  nightshade: '#F2EDA6',
+  umbell: '#74BE93',
+  daisy: '#20c997',
+  misc: 'E0A2F6',
 };

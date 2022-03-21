@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { BedOccupancyMap } from './BedOccupancyMap';
 import { Colors } from '../Theme.js';
 import { GardenPlantBadge } from './GardenPlantBadge';
+import { plantFamilyColorHex } from '../datamodel/PlantInfo';
 
 const firstColWidth = 3;
 
@@ -21,8 +22,8 @@ function Header() {
   );
 }
 
-function MonthCol({ monthNum, bedOccupancyMap }) {
-  const bgColor = (weekNum) => (bedOccupancyMap.isOccupied(monthNum, weekNum) ? Colors.blue : Colors.white);
+function MonthCol({ monthNum, bedOccupancyMap, color }) {
+  const bgColor = (weekNum) => (bedOccupancyMap.isOccupied(monthNum, weekNum) ? color : Colors.white);
   return (
     <Col xs={1} style={{ padding: 0 }}>
       <Row>
@@ -35,19 +36,21 @@ function MonthCol({ monthNum, bedOccupancyMap }) {
 
 MonthCol.propTypes = {
   monthNum: PropTypes.number,
+  color: PropTypes.any,
   bedOccupancyMap: PropTypes.any,
 };
 
 function PlantRow({ plantID, startDate, endDate }) {
   const bedOccupancyMap = new BedOccupancyMap(startDate, endDate);
   const plantBadge = <GardenPlantBadge plantID={plantID}/>;
+  const plantColorHex = plantFamilyColorHex(plantID);
   return (
     <Row>
       <Col xs={firstColWidth}>{plantBadge}</Col>
       <Col>
         <Row>
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-            .map((monthNum, index) => <MonthCol key={index} monthNum={monthNum} bedOccupancyMap={bedOccupancyMap} />)}
+            .map((monthNum, index) => <MonthCol key={index} monthNum={monthNum} bedOccupancyMap={bedOccupancyMap} color={plantColorHex}/>)}
         </Row>
       </Col>
     </Row>

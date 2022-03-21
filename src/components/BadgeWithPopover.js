@@ -22,10 +22,9 @@ _popover.propTypes = {
 
 export function BadgeWithPopover({ bg = 'primary', label = '', header = '', children }) {
   const popover = _popover({ header, children });
-  console.log(bg);
   return (
     <OverlayTrigger trigger="click" placement="top" overlay={popover}>
-      <Badge pill className='mx-1 bg-plant' style={{ cursor: 'pointer' }}>
+      <Badge pill bg={bg} className='mx-1' style={{ cursor: 'pointer' }}>
         {label}
       </Badge>
     </OverlayTrigger>

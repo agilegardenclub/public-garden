@@ -2,21 +2,74 @@
 
 // You must control-c and re-run 'npm start' to see changes to this file.
 
-// Change variable values.
+// Currently defining custom background colors using approach in:
+// https://stackoverflow.com/a/68824577/2038293
+// There should be a new way as of Bootstrap 5.2
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// 2. Customize variable and maps.
+
+// Change built-in variable values.
 $dark: #198754;
 
-// Import bootstrap
-@import "bootstrap/scss/bootstrap";
+// Define new variable values for custom background and text colors
+// Don't forget to keep this synced with the color definitions in Theme.js!
 
-// Define custom styles
+$pf-allium: $blue;
+$pf-beetroot: $indigo;
+$pf-mustard: $purple;
+$pf-gourd: $pink;
+$pf-legume: $red;
+$pf-lily: $orange;
+$pf-nightshade: $yellow;
+$pf-umbell: $green;
+$pf-daisy: $teal;
+$pf-misc: $cyan;
+// OLD
+//$pf-allium: #EA9D9D;
+//$pf-beetroot: #B5D0F8;
+//$pf-mustard: #B9FF99;
+//$pf-gourd: #829DC4;
+//$pf-legume: #E5AF76;
+//$pf-lily: #0dcaf0;
+//$pf-nightshade: #F2EDA6;
+//$pf-umbell: #74BE93;
+//$pf-daisy: #20c997;
+//$pf-misc: #E0A2F6;
+
+$plant-family-colors: (
+  "pf-allium": $pf-allium,
+  "pf-beetroot": $pf-beetroot,
+  "pf-mustard": $pf-mustard,
+  "pf-gourd": $pf-gourd,
+  "pf-legume": $pf-legume,
+  "pf-lily": $pf-lily,
+  "pf-nightshade": $pf-nightshade,
+  "pf-umbell": $pf-umbell,
+  "pf-daisy": $pf-daisy,
+  "pf-misc": $pf-misc,
+);
+
+$theme-colors: map-merge($theme-colors, $plant-family-colors);
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+$utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
+$utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
+$utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// 4. Define custom CSS styles
 .gray-background {
   background-color: $gray-200;
   padding-top: 10px;
   padding-bottom: 20px;
 }
 
-html { scroll-padding-top: 56px; }
-
-.bg-plant {
-  background-color: #0d6efd;
+html {
+  scroll-padding-top: 56px;
 }

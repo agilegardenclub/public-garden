@@ -6,6 +6,7 @@ export const plantFamilyData = [
     formal: 'Amaryllidaceae',
     common: 'Allium',
     color: PlantFamilyColors.allium,
+    bg: 'pf-allium',
     examples: 'onion, garlic, leek, shallot',
   },
   {
@@ -13,6 +14,7 @@ export const plantFamilyData = [
     formal: 'Brassicaceae',
     common: 'Mustard',
     color: PlantFamilyColors.mustard,
+    bg: 'pf-mustard',
     examples: 'broccoli, brussels sprout, cabbage, cauliflower, kale, arugula, turnip, pak choi, radish',
   },
   {
@@ -20,6 +22,7 @@ export const plantFamilyData = [
     formal: 'Chenopodioideae',
     common: 'Beetroot',
     color: PlantFamilyColors.beetroot,
+    bg: 'pf-beetroot',
     examples: 'chard, spinach, beet',
   },
   {
@@ -27,6 +30,7 @@ export const plantFamilyData = [
     formal: 'Cucurbitaceae',
     common: 'Gourd',
     color: PlantFamilyColors.gourd,
+    bg: 'pf-gourd',
     examples: 'Squash, zucchini, cucumber, melon, cantaloupe, pumpkin',
   },
   {
@@ -34,6 +38,7 @@ export const plantFamilyData = [
     formal: 'Fabaaceae',
     common: 'Legume',
     color: PlantFamilyColors.legume,
+    bg: 'pf-legume',
     examples: 'bean, pea',
   },
   {
@@ -41,6 +46,7 @@ export const plantFamilyData = [
     formal: 'Liliaceae',
     common: 'Lily',
     color: PlantFamilyColors.lily,
+    bg: 'pf-lily',
     examples: 'asparagus',
   },
   {
@@ -48,6 +54,7 @@ export const plantFamilyData = [
     formal: 'Solanaceae',
     common: 'Nightshade',
     color: PlantFamilyColors.nightshade,
+    bg: 'pf-nightshade',
     examples: 'tomato, potato, eggplant, pepper',
   },
   {
@@ -55,6 +62,7 @@ export const plantFamilyData = [
     formal: 'Umbelliferae',
     common: 'Umbell',
     color: PlantFamilyColors.umbell,
+    bg: 'pf-umbell',
     examples: 'carrot, celeriac, cilantro, fennel, parsley, dill, parsnip',
   },
   {
@@ -62,6 +70,7 @@ export const plantFamilyData = [
     formal: 'Asteraceae',
     common: 'Daisy',
     color: PlantFamilyColors.daisy,
+    bg: 'pf-daisy',
     examples: 'lettuce',
   },
   {
@@ -69,6 +78,7 @@ export const plantFamilyData = [
     formal: 'Miscellaneous',
     common: 'Misc',
     color: PlantFamilyColors.misc,
+    bg: 'pf-misc',
     examples: 'plants we havent provided families for yet.',
   },
 ];

@@ -35,6 +35,11 @@ class GardenOverview {
     return this.garden.history[0].plantIDs;
   }
 
+  plantFamily(plantID) {
+    const plantInfo = this.plants.find(element => element.id === plantID);
+    return plantInfo ? plantInfo.family : 'Plant Family Not Found';
+  }
+
   currentPlantNames() {
     const getPlantName = (id) => {
       const plantInfo = this.plants.find(element => element.id === id);

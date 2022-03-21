@@ -68,8 +68,8 @@ export function PlanGrid({ year }) {
   return (
     <Container>
       <Header/>
-      <PlantRow plantID="plant-01" startDate={new Date('1/12/2022')} endDate={new Date('2/14/2022')}/>
-      <PlantRow plantID="plant-02" startDate={new Date('2/15/2022')} endDate={new Date('3/14/2022')}/>
+      <PlantRow plantID="plant-100" startDate={new Date('1/12/2022')} endDate={new Date('2/14/2022')}/>
+      <PlantRow plantID="plant-101" startDate={new Date('2/15/2022')} endDate={new Date('3/14/2022')}/>
     </Container>
   );
 }

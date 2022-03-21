@@ -31,7 +31,7 @@ export const plantFamilyData = [
     common: 'Gourd',
     color: PlantFamilyColors.gourd,
     bg: 'pf-gourd',
-    examples: 'Squash, zucchini, cucumber, melon, cantaloupe, pumpkin',
+    examples: 'squash, zucchini, cucumber, melon, cantaloupe, pumpkin',
   },
   {
     id: 'plantfamily-05',
@@ -75,10 +75,10 @@ export const plantFamilyData = [
   },
   {
     id: 'plantfamily-10',
-    formal: 'Miscellaneous',
-    common: 'Misc',
+    formal: 'Other (Lamiaceae)',
+    common: 'Mint',
     color: PlantFamilyColors.misc,
     bg: 'pf-misc',
-    examples: 'plants we havent provided families for yet.',
+    examples: 'basil,',
   },
 ];

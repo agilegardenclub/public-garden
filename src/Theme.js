@@ -27,30 +27,16 @@ export const Colors = {
   dark: '#198754',
 };
 
-// Taken from: https://getbootstrap.com/docs/5.1/customize/color/#all-colors
-
+// Taken (mostly) from: https://getbootstrap.com/docs/5.1/customize/color/#all-colors
 export const PlantFamilyColors = {
   allium: '#0d6efd',
   beetroot: '#6610f2',
   mustard: '#6f42c1',
   gourd: '#d63384',
-  legume: '#dc3545',
+  legume: '#63595C',
   lily: '#fd7e14',
   nightshade: '#ffc107',
   umbell: '#198754',
   daisy: '#20c997',
   misc: '0dcaf0',
-};
-
-export const PlantFamilyColorsOLD = {
-  allium: '#EA9D9D',
-  beetroot: '#B5D0F8',
-  mustard: '#B9FF99',
-  gourd: '#829DC4',
-  legume: '#E5AF76',
-  lily: '#0dcaf0',
-  nightshade: '#F2EDA6',
-  umbell: '#74BE93',
-  daisy: '#20c997',
-  misc: 'E0A2F6',
 };

@@ -20,14 +20,14 @@ export const gardenData = [
         year: 2022,
         size: 300,
         beds: 12,
-        plantIDs: ['plant-01', 'plant-02', 'plant-03', 'plant-04', 'plant-05', 'plant-06', 'plant-07', 'plant-08', 'plant-09', 'plant-10'],
+        plantIDs: ['plant-100', 'plant-101', 'plant-102', 'plant-103', 'plant-104', 'plant-105', 'plant-106', 'plant-107', 'plant-108', 'plant-109'],
         gardenerIDs: ['gardener-01', 'gardener-02'],
       },
     ],
     climateVictoryGarden: true,
     plantOutcomes: [
       {
-        plantID: 'plant-01',
+        plantID: 'plant-100',
         numSeasons: 3,
         flavor: 4,
         yield: 5,
@@ -35,7 +35,7 @@ export const gardenData = [
         pestResistance: 5,
       },
       {
-        plantID: 'plant-02',
+        plantID: 'plant-101',
         numSeasons: 4,
         flavor: 2,
         yield: 3,
@@ -43,7 +43,7 @@ export const gardenData = [
         pestResistance: 1,
       },
       {
-        plantID: 'plant-03',
+        plantID: 'plant-102',
         numSeasons: 1,
         flavor: 3,
         yield: 4,
@@ -51,7 +51,15 @@ export const gardenData = [
         pestResistance: 3,
       },
       {
-        plantID: 'plant-04',
+        plantID: 'plant-103',
+        numSeasons: 1,
+        flavor: 3,
+        yield: 4,
+        appearance: 2,
+        pestResistance: 3,
+      },
+      {
+        plantID: 'plant-104',
         numSeasons: 5,
         flavor: 3,
         yield: 5,
@@ -59,7 +67,7 @@ export const gardenData = [
         pestResistance: 1,
       },
       {
-        plantID: 'plant-05',
+        plantID: 'plant-105',
         numSeasons: 2,
         flavor: 4,
         yield: 5,
@@ -67,7 +75,7 @@ export const gardenData = [
         pestResistance: 5,
       },
       {
-        plantID: 'plant-06',
+        plantID: 'plant-106',
         numSeasons: 2,
         flavor: 1,
         yield: 1,
@@ -75,7 +83,7 @@ export const gardenData = [
         pestResistance: 2,
       },
       {
-        plantID: 'plant-07',
+        plantID: 'plant-107',
         numSeasons: 4,
         flavor: 1,
         yield: 3,
@@ -83,7 +91,7 @@ export const gardenData = [
         pestResistance: 1,
       },
       {
-        plantID: 'plant-08',
+        plantID: 'plant-108',
         numSeasons: 3,
         flavor: 3,
         yield: 3,
@@ -91,19 +99,11 @@ export const gardenData = [
         pestResistance: 5,
       },
       {
-        plantID: 'plant-09',
+        plantID: 'plant-109',
         numSeasons: 3,
         flavor: 5,
         yield: 5,
         appearance: 5,
-        pestResistance: 5,
-      },
-      {
-        plantID: 'plant-10',
-        numSeasons: 3,
-        flavor: 4,
-        yield: 5,
-        appearance: 3.5,
         pestResistance: 5,
       },
     ],

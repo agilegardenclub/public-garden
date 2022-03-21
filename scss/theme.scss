@@ -8,13 +8,14 @@
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../node_modules/bootstrap/scss/functions";
+
+// 2. Change built-in variable values before loading the variables file.
+$dark: #198754;  // Same as $green.
+
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
-// 2. Customize variable and maps.
-
-// Change built-in variable values.
-$dark: #198754;
+// 3. Add custom variable definitions.
 
 // Define new variable values for custom background and text colors
 // Don't forget to keep this synced with the color definitions in Theme.js!
@@ -60,10 +61,10 @@ $utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
 $utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
 $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
-// 3. Include remainder of required Bootstrap stylesheets
+// 4. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// 4. Define custom CSS styles
+// 5. Define custom CSS styles
 .gray-background {
   background-color: $gray-200;
   padding-top: 10px;

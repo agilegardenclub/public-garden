@@ -7,7 +7,7 @@ export const gardenData = [
     pictures: [
       {
         url: `${process.env.PUBLIC_URL}/img/garden-007-birds-eye-view.jpg`,
-        caption: 'Garden layout. Each color represents a phase of garden expansion. Blue: 2018. Green: 2019. Purple: 2021. Orange: 2021.',
+        caption: 'Garden layout. Blue: 2018. Green: 2019. Purple: 2021. Orange: 2021.',
         date: 'March, 2022',
       },
       {
@@ -17,7 +17,7 @@ export const gardenData = [
       },
       {
         url: `${process.env.PUBLIC_URL}/img/garden-002.jpg`,
-        caption: 'Carrots in bed 7 were succession sowed.  Sunflowers in bed 11 happily shading out the amaranth.',
+        caption: 'Bed 7 Carrots succession sowed. Bed 11 Sunflowers & amaranth.',
         date: 'August, 2019',
       },
       {
@@ -32,7 +32,7 @@ export const gardenData = [
       },
       {
         url: `${process.env.PUBLIC_URL}/img/garden-005.jpg`,
-        caption: 'Bed 6 with two happy zuchinni, the herb boxes, and newly planted raspberries in the back',
+        caption: 'Bed 6 with zuchinni, herb boxes, and newly planted raspberries',
         date: 'May, 2020',
       },
       {

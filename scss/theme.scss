@@ -65,12 +65,23 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // 5. Define custom CSS styles
+
+// For home page, provide color blocking for alternating sections.
 .gray-background {
   background-color: $gray-200;
   padding-top: 10px;
   padding-bottom: 20px;
 }
 
+// Move page contents below fixed navbar.
 html {
   scroll-padding-top: 56px;
+}
+
+// Move carousel caption to be under images.
+.carousel-caption {
+  position: relative;
+  left: 0;
+  top: 0;
+  padding-top: 30px;
 }

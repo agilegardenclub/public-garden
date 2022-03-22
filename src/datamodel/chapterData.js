@@ -5,8 +5,16 @@ export const chapterData = [
     id: 'chapter-01',
     name: 'Bellingham, WA',
     pictures: [
-      { url: `${process.env.PUBLIC_URL}/img/bellingham-chapter-map.png`, caption: 'Chapter Map' },
-      { url: `${process.env.PUBLIC_URL}/img/bellingham-climate.png`, caption: 'Climate Overview' },
+      {
+        url: `${process.env.PUBLIC_URL}/img/bellingham-chapter-map.png`,
+        caption: 'Chapter Map',
+        date: 'March, 2022',
+      },
+      {
+        url: `${process.env.PUBLIC_URL}/img/bellingham-climate.png`,
+        caption: 'Climate Overview',
+        date: 'March, 2022',
+      },
     ],
     age: 6,
     zipCodes: ['98225', '98226', '98227', '98228', '98229'],

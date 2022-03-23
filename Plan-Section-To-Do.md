@@ -19,3 +19,17 @@
 * Add lightened colors to theme to illustrate greenhouse and harvest intervals.
 * Then show file to Jenna, request edits. 
 * Don't make a link when vendorURL is missing.
+
+* To Do from 3/23 
+  - Some dates are for 2022. Confirm.
+  - Need flavor outcome data.
+  - Need a lighter and a darker color for palette:
+    - In greenhouse
+    - In garden, growing
+    - In garden, harvesting
+    - Must get these intervals from date data. 
+    - Could have tooltips or popups to indicate this.
+    - Or just two colors, with labels inside? 
+  - Handle dates that go outside of year. 
+  - Note that location (greenhouse, garden) and "phase" (growing, harvesting) are orthogonal. 
+  - Maybe this: https://www.magicpattern.design/tools/css-backgrounds

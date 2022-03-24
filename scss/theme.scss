@@ -20,16 +20,26 @@ $dark: #198754;  // Same as $green.
 // Define new variable values for custom background and text colors
 // Don't forget to keep this synced with the color definitions in Theme.js!
 
-$pf-allium: $blue;
-$pf-beetroot: $indigo;
-$pf-mustard: $purple;
-$pf-gourd: $pink;
-$pf-legume: #63595C;  // Add a brown color.
-$pf-lily: $orange;
-$pf-nightshade: $yellow;
-$pf-umbell: $green;
-$pf-daisy: $teal;
-$pf-misc: $cyan;
+$pf-allium-dark: $blue-500;
+$pf-allium-light: $blue-400;
+$pf-beetroot-dark: $indigo-500;
+$pf-beetroot-light: $indigo-400;
+$pf-mustard-dark: $purple-500;
+$pf-mustard-light: $purple-400;
+$pf-gourd-dark: $pink-500;
+$pf-gourd-light: $pink-400;
+$pf-legume-dark: #63595C;  // Add a brown color.
+$pf-legume-light: lighten(#63595C, 10);  // Add a brown color.
+$pf-lily-dark: $orange-500;
+$pf-lily-light: $orange-400;
+$pf-nightshade-dark: $yellow-500;
+$pf-nightshade-light: $yellow-400;
+$pf-umbell-dark: $green-500;
+$pf-umbell-light: $green-400;
+$pf-daisy-dark: $teal-500;
+$pf-daisy-light: $teal-400;
+$pf-misc-dark: $cyan;
+$pf-misc-light: $cyan-400;
 // OLD
 //$pf-allium: #EA9D9D;
 //$pf-beetroot: #B5D0F8;
@@ -43,16 +53,26 @@ $pf-misc: $cyan;
 //$pf-misc: #E0A2F6;
 
 $plant-family-colors: (
-  "pf-allium": $pf-allium,
-  "pf-beetroot": $pf-beetroot,
-  "pf-mustard": $pf-mustard,
-  "pf-gourd": $pf-gourd,
-  "pf-legume": $pf-legume,
-  "pf-lily": $pf-lily,
-  "pf-nightshade": $pf-nightshade,
-  "pf-umbell": $pf-umbell,
-  "pf-daisy": $pf-daisy,
-  "pf-misc": $pf-misc,
+  "pf-allium-dark": $pf-allium-dark,
+  "pf-allium-light": $pf-allium-light,
+  "pf-beetroot-dark": $pf-beetroot-dark,
+  "pf-beetroot-light": $pf-beetroot-light,
+  "pf-mustard-dark": $pf-mustard-dark,
+  "pf-mustard-light": $pf-mustard-light,
+  "pf-gourd-dark": $pf-gourd-dark,
+  "pf-gourd-light": $pf-gourd-light,
+  "pf-legume-dark": $pf-legume-dark,
+  "pf-legume-light": $pf-legume-light,
+  "pf-lily-dark": $pf-lily-dark,
+  "pf-lily-light": $pf-lily-light,
+  "pf-nightshade-dark": $pf-nightshade-dark,
+  "pf-nightshade-light": $pf-nightshade-light,
+  "pf-umbell-dark": $pf-umbell-dark,
+  "pf-umbell-light": $pf-umbell-light,
+  "pf-daisy-dark": $pf-daisy-dark,
+  "pf-daisy-light": $pf-daisy-light,
+  "pf-misc-dark": $pf-misc-dark,
+  "pf-misc-light": $pf-misc-light,
 );
 
 $theme-colors: map-merge($theme-colors, $plant-family-colors);

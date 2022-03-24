@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { BadgeWithPopover } from './BadgeWithPopover';
 import { chapterOverview } from '../datamodel/ChapterOverview';
-import { plantFamilyColor, plantFamilyName } from '../datamodel/PlantInfo';
+import { plantFamilyColorName, plantFamilyName } from '../datamodel/PlantInfo';
 
 export function ChapterPlantBadge({ plantID }) {
   const plantInfo = chapterOverview.plantInfo(plantID);
@@ -11,8 +11,8 @@ export function ChapterPlantBadge({ plantID }) {
   const vendor = plantInfo.vendor;
   const vendorURL = plantInfo.vendorURL;
   const description = plantInfo.description;
-  const bg = plantFamilyColor(plantID);
-  const textColor = `text-${plantFamilyColor(plantID)}`;
+  const bg = plantFamilyColorName(plantID);
+  const textColor = `text-${plantFamilyColorName(plantID)}`;
 
   return (
     <BadgeWithPopover header={name} label={name} bg={bg}>

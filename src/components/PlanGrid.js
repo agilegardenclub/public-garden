@@ -44,6 +44,7 @@ function PlantRow({ plantID, startDate, endDate }) {
   const bedOccupancyMap = new BedOccupancyMap(startDate, endDate);
   const plantBadge = <GardenPlantBadge plantID={plantID}/>;
   const plantColorHex = plantFamilyColorHex(plantID);
+  console.log(plantID, plantColorHex);
   return (
     <Row>
       <Col xs={firstColWidth}>{plantBadge}</Col>

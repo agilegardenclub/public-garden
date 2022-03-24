@@ -1,5 +1,6 @@
 import { plantData } from './plantData';
 import { plantFamilyData } from './plantFamilyData';
+// import { PlantFamilyColors } from '../Theme';
 
 function getFamilyData(plantID) {
   const plantInfo = plantData.find(element => element.id === plantID);
@@ -11,19 +12,19 @@ function getFamilyData(plantID) {
 }
 
 /** Returns the plant family color associated with plantID as a Bootstrap variable name. */
-export function plantFamilyColor(plantID) {
+export function plantFamilyColorName(plantID, isLight) {
   const familyData = getFamilyData(plantID);
   if (familyData) {
-    return familyData.bg;
+    return isLight ? familyData.bgs.light : familyData.bgs.dark;
   }
   return 'black';
 }
 
 /** Returns the plant family color associated with plantID as a hex color value. */
-export function plantFamilyColorHex(plantID) {
+export function plantFamilyColorHex(plantID, isLight) {
   const familyData = getFamilyData(plantID);
   if (familyData) {
-    return familyData.color;
+    return isLight ? familyData.colors.light : familyData.colors.dark;
   }
   return '#FFF';
 }

@@ -105,3 +105,15 @@ html {
   top: 0;
   padding-bottom: 2.5rem;
 }
+
+.daisy-dark-harvest {
+  background-color: $pf-daisy-dark;
+  background-size: 10px;
+  background-image:  repeating-linear-gradient(to right, $pf-daisy-light, $pf-daisy-light 1px, $pf-daisy-dark 1px, $pf-daisy-dark);
+}
+
+.daisy-light-harvest {
+  background-color: $pf-daisy-light;
+  background-size: 10px;
+  background-image:  repeating-linear-gradient(to right, $pf-daisy-dark, $pf-daisy-dark 1px, $pf-daisy-light 1px, $pf-daisy-light);
+}

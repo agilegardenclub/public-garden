@@ -24,11 +24,12 @@ function Header() {
 
 function MonthCol({ monthNum, bedOccupancyMap, color }) {
   const bgColor = (weekNum) => (bedOccupancyMap.isOccupied(monthNum, weekNum) ? color : Colors.white);
+  const harvestClass = (weekNum) => (bedOccupancyMap.isOccupied(monthNum, weekNum) ? 'daisy-dark-harvest' : '');
   return (
     <Col xs={1} style={{ padding: 0 }}>
       <Row>
         {[1, 2, 3, 4]
-          .map((weekNum, index) => <Col key={index} xs={3} style={{ height: '24px', backgroundColor: `${bgColor(weekNum)}`, minWidth: '1px', padding: 0 }}/>)}
+          .map((weekNum, index) => <Col key={index} xs={3} className={harvestClass(weekNum)} style={{ height: '24px', backgroundColor: `${bgColor(weekNum)}`, minWidth: '1px', padding: 0 }}/>)}
       </Row>
     </Col>
   );
@@ -44,7 +45,6 @@ function PlantRow({ plantID, startDate, endDate }) {
   const bedOccupancyMap = new BedOccupancyMap(startDate, endDate);
   const plantBadge = <GardenPlantBadge plantID={plantID}/>;
   const plantColorHex = plantFamilyColorHex(plantID);
-  console.log(plantID, plantColorHex);
   return (
     <Row>
       <Col xs={firstColWidth}>{plantBadge}</Col>

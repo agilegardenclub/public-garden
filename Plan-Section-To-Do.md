@@ -33,3 +33,8 @@
   - Handle dates that go outside of year. 
   - Note that location (greenhouse, garden) and "phase" (growing, harvesting) are orthogonal. 
   - Maybe this: https://www.magicpattern.design/tools/css-backgrounds
+
+* To Do from 3/24 
+  * Create light and dark harvest patterns for all colors. 
+  * Update planGrid.js to pick the right classname to add. 
+  * Retrieve planting data and lay it out correctly:  location (greenhouse, garden) + state (growing, harvesting).

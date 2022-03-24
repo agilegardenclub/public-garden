@@ -29,14 +29,14 @@ export const Colors = {
 
 // Taken (mostly) from: https://getbootstrap.com/docs/5.1/customize/color/#all-colors
 export const PlantFamilyColors = {
-  allium: { dark: '#0d6efd', light: '#3d8bfd' },
-  beetroot: { dark: '#6610f2', light: '#8540f5' },
-  mustard: { dark: '#6f42c1', light: '#8c68cd' },
-  gourd: { dark: '#d63384', light: '#de5c9d' },
-  legume: { dark: '#63595C', light: '#7e7175' },
-  lily: { dark: '#fd7e14', light: '#fd9843' },
-  nightshade: { dark: '#ffc107', light: '#ffcd39' },
-  umbell: { dark: '#198754', light: '#479f76' },
-  daisy: { dark: '#20c997', light: '#4dd4ac' },
-  misc: { dark: '0dcaf0', light: '#3dd5f3' },
+  allium: { dark: '#6ea8fe', light: '#cfe2ff' },
+  beetroot: { dark: '#a370f7', light: '#e0cffc' },
+  mustard: { dark: '#6f42c1', light: '#c5b3e6' },
+  gourd: { dark: '#e685b5', light: '#f7d6e6' },
+  legume: { dark: '#63595C', light: '#978b8f' },
+  lily: { dark: '#feb272', light: '#ffe5d0' },
+  nightshade: { dark: '#ffc107', light: '#fff3cd' },
+  umbell: { dark: '#75b798', light: '#d1e7dd' },
+  daisy: { dark: '#20c997', light: '#a6e9d5' },
+  misc: { dark: '#3dd5f3', light: '#9eeaf9' },
 };

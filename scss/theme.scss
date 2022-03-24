@@ -20,26 +20,26 @@ $dark: #198754;  // Same as $green.
 // Define new variable values for custom background and text colors
 // Don't forget to keep this synced with the color definitions in Theme.js!
 
-$pf-allium-dark: $blue-500;
-$pf-allium-light: $blue-400;
-$pf-beetroot-dark: $indigo-500;
-$pf-beetroot-light: $indigo-400;
+$pf-allium-dark: $blue-300;
+$pf-allium-light: $blue-100;
+$pf-beetroot-dark: $indigo-300;
+$pf-beetroot-light: $indigo-100;
 $pf-mustard-dark: $purple-500;
-$pf-mustard-light: $purple-400;
-$pf-gourd-dark: $pink-500;
-$pf-gourd-light: $pink-400;
+$pf-mustard-light: $purple-200;
+$pf-gourd-dark: $pink-300;
+$pf-gourd-light: $pink-100;
 $pf-legume-dark: #63595C;  // Add a brown color.
-$pf-legume-light: lighten(#63595C, 10);  // Add a brown color.
-$pf-lily-dark: $orange-500;
-$pf-lily-light: $orange-400;
+$pf-legume-light: lighten(#63595C, 20);  // Add a brown color.
+$pf-lily-dark: $orange-300;
+$pf-lily-light: $orange-100;
 $pf-nightshade-dark: $yellow-500;
-$pf-nightshade-light: $yellow-400;
-$pf-umbell-dark: $green-500;
-$pf-umbell-light: $green-400;
+$pf-nightshade-light: $yellow-100;
+$pf-umbell-dark: $green-300;
+$pf-umbell-light: $green-100;
 $pf-daisy-dark: $teal-500;
-$pf-daisy-light: $teal-400;
-$pf-misc-dark: $cyan;
-$pf-misc-light: $cyan-400;
+$pf-daisy-light: $teal-200;
+$pf-misc-dark: $cyan-400;
+$pf-misc-light: $cyan-200;
 // OLD
 //$pf-allium: #EA9D9D;
 //$pf-beetroot: #B5D0F8;

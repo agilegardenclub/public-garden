@@ -70,7 +70,7 @@ export const plantFamilyData = [
     formal: 'Asteraceae',
     common: 'Daisy',
     colors: PlantFamilyColors.daisy,
-    bgs: { dark: 'pf-daisy-light', light: 'pf-daisy-light' },
+    bgs: { dark: 'pf-daisy-dark', light: 'pf-daisy-light' },
     examples: 'lettuce',
   },
   {

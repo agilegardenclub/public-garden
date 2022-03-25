@@ -5,13 +5,15 @@ import { BedOccupancyMap } from './BedOccupancyMap';
 import { Colors } from '../Theme.js';
 import { GardenPlantBadge } from './GardenPlantBadge';
 import { plantFamilyColorHex } from '../datamodel/PlantInfo';
+import { gardenData } from '../datamodel/gardenData';
 
 const firstColWidth = 3;
 
 function Header() {
   return (
     <Row>
-      <Col xs={firstColWidth} style={{ padding: 0 }}/>
+      <Col xs={1} style={{ padding: 0, width: '50px' }}>Bed</Col>
+      <Col xs={firstColWidth} style={{ padding: 0 }}>Plant</Col>
       <Col>
         <Row>
           {['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
@@ -47,6 +49,7 @@ function PlantRow({ plantID, startDate, endDate }) {
   const plantColorHex = plantFamilyColorHex(plantID);
   return (
     <Row>
+      <Col xs={1} style={{ padding: 0, width: '50px' }}></Col>
       <Col xs={firstColWidth}>{plantBadge}</Col>
       <Col>
         <Row>
@@ -64,11 +67,32 @@ PlantRow.propTypes = {
   endDate: PropTypes.instanceOf(Date),
 };
 
+function BedRow({ bedData }) {
+
+  return (
+    <div>{bedData.bedID}</div>
+  );
+}
+
+BedRow.propTypes = {
+  bedData: PropTypes.object,
+};
+
 // eslint-disable-next-line no-unused-vars
 export function PlanGrid({ year }) {
+  console.log(`Plan Grid: ${year}`);
+  const jennaGardenData = gardenData[0];
+  console.log('Jenna Garden', jennaGardenData);
+  const jennaHistory = jennaGardenData.history;
+  console.log('Jenna history', jennaHistory);
+  const yearData = jennaHistory.find(object => (object.year === year));
+  console.log(`Data for ${year}`, yearData);
+  const plantingData = yearData.plantingData;
+  console.log('Planting Data', plantingData);
   return (
     <Container>
       <Header/>
+      { plantingData.map((bedData, index) => <BedRow key={index} bedData={bedData}/>)}
       <PlantRow plantID="plant-100" startDate={new Date('1/12/2022')} endDate={new Date('2/14/2022')}/>
       <PlantRow plantID="plant-101" startDate={new Date('2/15/2022')} endDate={new Date('3/14/2022')}/>
     </Container>

@@ -45,7 +45,7 @@ export function ChapterOverviewCard() {
           <Field title='Top 5 Plants (yield):' direction='vertical'>
             <PlantRatingList ratingData={yieldPlantRatings}/>
           </Field>
-          <Field title='Top 5 Plants (locally sourced):' direction='vertical'>
+          <Field title='Top 5 Plants (local seeds):' direction='vertical'>
             <PlantRatingList ratingData={localPlantRatings}/>
           </Field>
         </Stack>

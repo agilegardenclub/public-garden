@@ -38,3 +38,42 @@
   * Create light and dark harvest patterns for all colors. 
   * Update planGrid.js to pick the right classname to add. 
   * Retrieve planting data and lay it out correctly:  location (greenhouse, garden) + state (growing, harvesting).
+
+# Planting Cell Background Coloring Algorithm.
+
+* There are four possible plant states, each represented by a CSS class that changes the background. 
+* For example, for allium, there is:
+  - .bg-pf-allium-light           // growing in a greenhouse
+  - .bg-pf-allium-dark            // growing in a bed
+  - .bg-pf-allium-light-harvest   // harvesting in greenhouse
+  - .bg-pf-allium-dark-harvest    // harvesting in a bed
+  - (default background)          // none of the above
+
+* We have four dates:
+  - startDate (required)
+  - transplantDate (optional)
+  - firstHarvestDate (optional)
+  - endDate (required)
+and one boolean:
+  - usedGreenhouse
+
+So, what is the mapping from a month and week number to a background class:
+  let currWeek = Convert month and week number to "canonical week" (i.e. 1 to 48).
+  let startWeek, transplantWeek, firstHarvestWeek, and endWeek = Convert date to canonical week
+  GrowingInGreenHouse:
+    IF usedGreenhouse AND transplantWeek AND (currWeek >= startWeek) AND (currWeek < transplantWeek)
+    IF usedGreenhouse AND no transplantWeek AND (currWeek >= startWeek) AND (currWeek < firstHarvestWeek)
+  GrowingInBed:
+    IF not usedGreenhouse AND (currWeek >= startWeek) AND (currWeek < firstHarvestWeek)
+    IF usedGreenhouse AND (currWeek >= transplantWeek) AND (currWeek < firstHarvestWeek) 
+  HarvestingInGreenHouse:
+    IF usedGreenhouse AND no transplantWeek AND (currWeek >= firstHarvestWeek) AND (currWeek <= endWeek)
+  HarvestingInBed:
+    IF usedGreenhouse AND transplantWeek AND (currWeek >= firstHarvestDate) AND (currWeek <= endWeek)
+    IF not usedGreenhouse AND (currWeek >= firstHarvestDate) AND (currWeek <= endWeek)
+
+Procedure:
+1. populate plantingData object with startWeek, transplantWeek, firstHarvestWeek, and endWeek.
+2. check that startWeek and endWeek exist. transplantWeek and firstHarvestWeek could be false or 0.
+3. check that all non-zero weeks are in ascending order.
+4. check that firstHarvestWeek and endWeek are not equal. If so, add one to endWeek.

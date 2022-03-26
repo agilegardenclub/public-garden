@@ -108,13 +108,13 @@ html {
 
 ////  HARVEST PATTERNED BACKGROUNDS FOR EACH PLANT FAMILY
 
-.allium-light-harvest {
+.bg-pf-allium-light-harvest {
   background-color: $pf-allium-light;
   background-size: 10px;
   background-image:  repeating-linear-gradient(to right, $pf-allium-dark, $pf-allium-dark 1px, $pf-allium-light 1px, $pf-allium-light);
 }
 
-.allium-dark-harvest {
+.bg-pf-allium-dark-harvest {
   background-color: $pf-allium-dark;
   background-size: 10px;
   background-image:  repeating-linear-gradient(to right, $pf-allium-light, $pf-allium-light 1px, $pf-allium-dark 1px, $pf-allium-dark);
@@ -122,13 +122,13 @@ html {
 
 ////////
 
-.beetroot-dark-harvest {
+.bg-pf-beetroot-dark-harvest {
   background-color: $pf-beetroot-dark;
   background-size: 10px;
   background-image:  repeating-linear-gradient(to right, $pf-beetroot-light, $pf-beetroot-light 1px, $pf-beetroot-dark 1px, $pf-beetroot-dark);
 }
 
-.beetroot-light-harvest {
+.bg-pf-beetroot-light-harvest {
   background-color: $pf-beetroot-light;
   background-size: 10px;
   background-image:  repeating-linear-gradient(to right, $pf-beetroot-dark, $pf-beetroot-dark 1px, $pf-beetroot-light 1px, $pf-beetroot-light);
@@ -136,13 +136,13 @@ html {
 
 /////////
 
-.mustard-light-harvest {
+.bg-pf-mustard-light-harvest {
   background-color: $pf-mustard-light;
   background-size: 10px;
   background-image:  repeating-linear-gradient(to right, $pf-mustard-dark, $pf-mustard-dark 1px, $pf-mustard-light 1px, $pf-mustard-light);
 }
 
-.mustard-dark-harvest {
+.bg-pf-mustard-dark-harvest {
   background-color: $pf-mustard-dark;
   background-size: 10px;
   background-image:  repeating-linear-gradient(to right, $pf-mustard-light, $pf-mustard-light 1px, $pf-mustard-dark 1px, $pf-mustard-dark);
@@ -150,13 +150,13 @@ html {
 
 ////////
 
-.gourd-light-harvest {
+.bg-pf-gourd-light-harvest {
   background-color: $pf-gourd-light;
   background-size: 10px;
   background-image:  repeating-linear-gradient(to right, $pf-gourd-dark, $pf-gourd-dark 1px, $pf-gourd-light 1px, $pf-gourd-light);
 }
 
-.gourd-dark-harvest {
+.bg-pf-gourd-dark-harvest {
   background-color: $pf-gourd-dark;
   background-size: 10px;
   background-image:  repeating-linear-gradient(to right, $pf-gourd-light, $pf-gourd-light 1px, $pf-gourd-dark 1px, $pf-gourd-dark);
@@ -164,13 +164,13 @@ html {
 
 ////////
 
-.legume-light-harvest {
+.bg-pf-legume-light-harvest {
   background-color: $pf-legume-light;
   background-size: 10px;
   background-image:  repeating-linear-gradient(to right, $pf-legume-dark, $pf-legume-dark 1px, $pf-legume-light 1px, $pf-legume-light);
 }
 
-.legume-dark-harvest {
+.bg-pf-legume-dark-harvest {
   background-color: $pf-legume-dark;
   background-size: 10px;
   background-image:  repeating-linear-gradient(to right, $pf-legume-light, $pf-legume-light 1px, $pf-legume-dark 1px, $pf-legume-dark);
@@ -178,13 +178,13 @@ html {
 
 ////////
 
-.lily-light-harvest {
+.bg-pf-lily-light-harvest {
   background-color: $pf-lily-light;
   background-size: 10px;
   background-image:  repeating-linear-gradient(to right, $pf-lily-dark, $pf-lily-dark 1px, $pf-lily-light 1px, $pf-lily-light);
 }
 
-.lily-dark-harvest {
+.bg-pf-lily-dark-harvest {
   background-color: $pf-lily-dark;
   background-size: 10px;
   background-image:  repeating-linear-gradient(to right, $pf-lily-light, $pf-lily-light 1px, $pf-lily-dark 1px, $pf-lily-dark);
@@ -192,13 +192,13 @@ html {
 
 ////////
 
-.nightshade-light-harvest {
+.bg-pf-nightshade-light-harvest {
   background-color: $pf-nightshade-light;
   background-size: 10px;
   background-image:  repeating-linear-gradient(to right, $pf-nightshade-dark, $pf-nightshade-dark 1px, $pf-nightshade-light 1px, $pf-nightshade-light);
 }
 
-.nightshade-dark-harvest {
+.bg-pf-nightshade-dark-harvest {
   background-color: $pf-nightshade-dark;
   background-size: 10px;
   background-image:  repeating-linear-gradient(to right, $pf-nightshade-light, $pf-nightshade-light 1px, $pf-nightshade-dark 1px, $pf-nightshade-dark);
@@ -206,13 +206,13 @@ html {
 
 ////////
 
-.umbell-light-harvest {
+.bg-pf-umbell-light-harvest {
   background-color: $pf-umbell-light;
   background-size: 10px;
   background-image:  repeating-linear-gradient(to right, $pf-umbell-dark, $pf-umbell-dark 1px, $pf-umbell-light 1px, $pf-umbell-light);
 }
 
-.umbell-dark-harvest {
+.bg-pf-umbell-dark-harvest {
   background-color: $pf-umbell-dark;
   background-size: 10px;
   background-image:  repeating-linear-gradient(to right, $pf-umbell-light, $pf-umbell-light 1px, $pf-umbell-dark 1px, $pf-umbell-dark);
@@ -220,13 +220,13 @@ html {
 
 ////////
 
-.daisy-light-harvest {
+.bg-pf-daisy-light-harvest {
   background-color: $pf-daisy-light;
   background-size: 10px;
   background-image:  repeating-linear-gradient(to right, $pf-daisy-dark, $pf-daisy-dark 1px, $pf-daisy-light 1px, $pf-daisy-light);
 }
 
-.daisy-dark-harvest {
+.bg-pf-daisy-dark-harvest {
   background-color: $pf-daisy-dark;
   background-size: 10px;
   background-image:  repeating-linear-gradient(to right, $pf-daisy-light, $pf-daisy-light 1px, $pf-daisy-dark 1px, $pf-daisy-dark);
@@ -234,13 +234,13 @@ html {
 
 ////////
 
-.misc-light-harvest {
+.bg-pf-misc-light-harvest {
   background-color: $pf-misc-light;
   background-size: 10px;
   background-image:  repeating-linear-gradient(to right, $pf-misc-dark, $pf-misc-dark 1px, $pf-misc-light 1px, $pf-misc-light);
 }
 
-.misc-dark-harvest {
+.bg-pf-misc-dark-harvest {
   background-color: $pf-misc-dark;
   background-size: 10px;
   background-image:  repeating-linear-gradient(to right, $pf-misc-light, $pf-misc-light 1px, $pf-misc-dark 1px, $pf-misc-dark);

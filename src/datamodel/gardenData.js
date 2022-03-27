@@ -44,7 +44,7 @@ export const gardenData = [
     // History must be in reverse chronological order.
     history: [
       {
-        year: 2022,
+        year: 2021,
         size: 300,
         beds: 18,
         plantIDs: ['plant-100', 'plant-101', 'plant-102', 'plant-103', 'plant-104', 'plant-105', 'plant-106', 'plant-107', 'plant-108', 'plant-109'],

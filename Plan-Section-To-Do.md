@@ -73,7 +73,7 @@ So, what is the mapping from a month and week number to a background class:
     IF not usedGreenhouse AND (currWeek >= firstHarvestDate) AND (currWeek <= endWeek)
 
 Procedure:
-1. populate plantingData object with startWeek, transplantWeek, firstHarvestWeek, and endWeek.
-2. check that startWeek and endWeek exist. transplantWeek and firstHarvestWeek could be false or 0.
-3. check that all non-zero weeks are in ascending order.
-4. check that firstHarvestWeek and endWeek are not equal. If so, add one to endWeek.
+1. if any date is from a prior year, then change it to Jan 1. If any date from future year, change to Dec. 31.
+2. populate plantingData object with startWeek, transplantWeek, firstHarvestWeek, and endWeek.
+3. check that startWeek and endWeek exist. transplantWeek and firstHarvestWeek could be false or 0.
+4. check that all non-zero weeks are in ascending order.

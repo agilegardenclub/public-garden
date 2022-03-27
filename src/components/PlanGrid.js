@@ -6,6 +6,7 @@ import { Colors } from '../Theme.js';
 import { GardenPlantBadge } from './GardenPlantBadge';
 import { plantFamilyColorHex } from '../datamodel/PlantInfo';
 import { gardenData } from '../datamodel/gardenData';
+import { addPlantingWeeks } from '../datamodel/PlantingWeek';
 
 const firstColWidth = 3;
 
@@ -89,6 +90,8 @@ export function PlanGrid({ year }) {
   console.log(`Data for ${year}`, yearData);
   const plantingData = yearData.plantingData;
   console.log('Planting Data', plantingData);
+  plantingData.forEach(bedData => bedData.bedPlantings.forEach(planting => addPlantingWeeks(planting, year)));
+  console.log('with week data', plantingData);
   return (
     <Container>
       <Header/>

@@ -15,15 +15,12 @@ function PlantingTimelines() {
         <Documentation>
           <p>This section provides a perspective on the garden as a timeline that shows what plants are in each bed of the garden for each week of the year.</p>
         </Documentation>
-        <Tabs defaultActiveKey="2022" className="mb-3">
-          <Tab eventKey="2020" title="2020">
-            2020 Garden Plan goes here.
-          </Tab>
+        <Tabs defaultActiveKey="2021" className="mb-3">
           <Tab eventKey="2021" title="2021">
-            2021 Garden Plan goes here.
+            <PlanGrid year={2021}/>
           </Tab>
           <Tab eventKey="2022" title="2022">
-            <PlanGrid year={2022}/>
+            2021 Garden Plan goes here.
           </Tab>
         </Tabs>
       </Container>

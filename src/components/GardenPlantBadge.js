@@ -17,12 +17,11 @@ export function GardenPlantBadge({ plantID }) {
   const description = plantInfo.description;
   const familyName = plantFamilyName(plantID);
   const plantOutcomes = gardenOverview.plantOutcomes(plantID);
-  const numSeasons = plantOutcomes.numSeasons;
   const ratingData = [
-    { item: 'Appearance', rating: plantOutcomes.appearance },
-    { item: 'Flavor', rating: plantOutcomes.flavor },
-    { item: 'Pest Resistance', rating: plantOutcomes.pestResistance },
-    { item: 'Yield', rating: plantOutcomes.yield },
+    { item: 'Appearance', rating: plantOutcomes ? plantOutcomes.appearance : 0 },
+    { item: 'Flavor', rating: plantOutcomes ? plantOutcomes.flavor : 0 },
+    { item: 'Pest Resistance', rating: plantOutcomes ? plantOutcomes.pestResistance : 0 },
+    { item: 'Yield', rating: plantOutcomes ? plantOutcomes.yield : 0 },
   ];
 
   return (
@@ -30,9 +29,6 @@ export function GardenPlantBadge({ plantID }) {
       <p><b>Family:</b> <span className={textColor}>{familyName}</span> </p>
       <p><b>Description:</b> {description}</p>
       <p><b>Vendor:</b> {vendor} <a target="_blank" rel="noreferrer noopener" href={vendorURL}>(Plant Info)</a></p>
-      <Field title="Num Seasons:">
-        {numSeasons}
-      </Field>
       <Field title="Outcome (Average)" direction="vertical">
         <RatingList ratingData={ratingData}/>
       </Field>

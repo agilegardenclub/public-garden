@@ -44,7 +44,7 @@ MonthCol.propTypes = {
   bedOccupancyMap: PropTypes.any,
 };
 
-function PlantRow({ plantID, startDate, endDate }) {
+function PlantRowOLD({ plantID, startDate, endDate }) {
   const bedOccupancyMap = new BedOccupancyMap(startDate, endDate);
   const plantBadge = <GardenPlantBadge plantID={plantID}/>;
   const plantColorHex = plantFamilyColorHex(plantID);
@@ -62,16 +62,51 @@ function PlantRow({ plantID, startDate, endDate }) {
   );
 }
 
-PlantRow.propTypes = {
+PlantRowOLD.propTypes = {
   plantID: PropTypes.string,
   startDate: PropTypes.instanceOf(Date),
   endDate: PropTypes.instanceOf(Date),
 };
 
+function PlantRow({ plantData }) {
+  console.log('in PlantRow', plantData);
+  const plantBadge = <GardenPlantBadge plantID={plantData.plantID}/>;
+  return (
+    <Row>
+      <Col xs={3}>{plantBadge}</Col>
+      {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24,
+        25, 26, 27, 28, 29, 30, 31, 32, 33, 24, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48]
+        .map((currWeek, index) => <WeekCell key={index} currWeek={currWeek} plantData={plantData} />)}
+    </Row>
+  );
+}
+
+PlantRow.propTypes = {
+  plantData: PropTypes.any,
+};
+
+function WeekCell({ currWeek, plantData }) {
+  console.log('WeekCell', currWeek, plantData);
+  return (
+    <div></div>
+  );
+}
+
+WeekCell.propTypes = {
+  currWeek: PropTypes.number,
+  plantData: PropTypes.any,
+};
+
 function BedRow({ bedData }) {
+  console.log('bedData', bedData);
 
   return (
-    <div>{bedData.bedID}</div>
+    <Row>
+      <Col xs={1} style={{ padding: 0, width: '50px' }}>{bedData.bedID}</Col>
+      <Col>
+        {bedData.bedPlantings.map((plantingData, index) => <PlantRow key={index} plantData={plantingData}/>)}
+      </Col>
+    </Row>
   );
 }
 
@@ -81,23 +116,15 @@ BedRow.propTypes = {
 
 // eslint-disable-next-line no-unused-vars
 export function PlanGrid({ year }) {
-  console.log(`Plan Grid: ${year}`);
   const jennaGardenData = gardenData[0];
-  console.log('Jenna Garden', jennaGardenData);
   const jennaHistory = jennaGardenData.history;
-  console.log('Jenna history', jennaHistory);
   const yearData = jennaHistory.find(object => (object.year === year));
-  console.log(`Data for ${year}`, yearData);
   const plantingData = yearData.plantingData;
-  console.log('Planting Data', plantingData);
   plantingData.forEach(bedData => bedData.bedPlantings.forEach(planting => addPlantingWeeks(planting, year)));
-  console.log('with week data', plantingData);
   return (
     <Container>
       <Header/>
-      { plantingData.map((bedData, index) => <BedRow key={index} bedData={bedData}/>)}
-      <PlantRow plantID="plant-100" startDate={new Date('1/12/2022')} endDate={new Date('2/14/2022')}/>
-      <PlantRow plantID="plant-101" startDate={new Date('2/15/2022')} endDate={new Date('3/14/2022')}/>
+      {plantingData.map((bedData, index) => <BedRow key={index} bedData={bedData}/>)}
     </Container>
   );
 }

@@ -4,6 +4,7 @@
  *   GrowingInGreenHouse:
  *     IF usedGreenhouse AND transplantWeek AND (currWeek >= startWeek) AND (currWeek < transplantWeek)
  *     IF usedGreenhouse AND no transplantWeek AND (currWeek >= startWeek) AND (currWeek < firstHarvestWeek)
+ *     IF usedGreenhouse AND no transplantWeek AND no firstHarvestWeek AND (currWeek >= startWeek) AND (currWeek < firstHarvestWeek)
  *   GrowingInBed:
  *     IF not usedGreenhouse AND (currWeek >= startWeek) AND (currWeek < firstHarvestWeek)
  *     IF usedGreenhouse AND (currWeek >= transplantWeek) AND (currWeek < firstHarvestWeek)
@@ -14,24 +15,61 @@
  *     IF not usedGreenhouse AND (currWeek >= firstHarvestDate) AND (currWeek <= endWeek)
  *
  *   Second, compute the background class:
+ *   If currWeek falls outside of start and end week, return '';
  *   Find the plantFamilyName (i.e. "allium"). Then map the state to the background class:
  *     * GrowinginGreenhouse => .bg-pf-allium-light
  *     * GrowinginBed => .bg-pf-allium-dark
  *     * HarvestinginGreenhouse => .bg-pf-allium-light-harvest
  *     * HarvestinginBed => .bg-pf-allium-dark-harvest
- *     * If none of the above => ''
+ *     * If none of the above => .bg-danger
  */
 export function plantingBackgroundClass(currWeek, plantingData) {
-  console.log(currWeek, plantingData);
   let state = '';
   const { usedGreenhouse, startWeek, transplantWeek, firstHarvestWeek, endWeek } = plantingData;
-  if (usedGreenhouse && transplantWeek && (currWeek >= startWeek) && (currWeek < transplantWeek)) {
-    // In the greenhouse, prior to transplanting.
-    state = 'GrowingInGreenhouse';
-  } else if (usedGreenhouse && !transplantWeek && firstHarvestWeek && (currWeek >= startWeek) && (currWeek < firstHarvestWeek)) {
-    // In the greenhouse, no transplant, prior to start of harvest.
-    state = 'GrowingInGreenhouse';
+  // return empty string for classname if currWeek falls outside of start and end week.
+  if ((currWeek < startWeek) || (currWeek > endWeek)) {
+    return '';
   }
-
-  console.log(state);
+  // Now currWeek is within start and end week of planting.
+  if (usedGreenhouse && transplantWeek && (currWeek < transplantWeek)) {
+    // In greenhouse, prior to transplanting.
+    state = 'GrowingInGreenhouse-01';
+  } else if (usedGreenhouse && !transplantWeek && firstHarvestWeek && (currWeek < firstHarvestWeek)) {
+    // In greenhouse, no transplant, prior to start of harvest.
+    state = 'GrowingInGreenhouse-02';
+  } else if (usedGreenhouse && !transplantWeek && !firstHarvestWeek) {
+    // In the greenhouse, no transplant, no firstHarvest
+    state = 'GrowingInGreenhouse-03';
+    // Move on to growing in the bed
+  } else if (!usedGreenhouse && firstHarvestWeek && (currWeek < firstHarvestWeek)) {
+    state = 'GrowingInBed-04';
+  } else if (!usedGreenhouse && !firstHarvestWeek) {
+    state = 'GrowingInBed-05';
+    // Move on to harvesting in greenhouse
+  } else if (usedGreenhouse && firstHarvestWeek && (currWeek >= firstHarvestWeek)) {
+    state = 'HarvestingInGreenhouse-06';
+  } else if (usedGreenhouse && transplantWeek && firstHarvestWeek && (currWeek >= firstHarvestWeek)) {
+    state = 'HarvestingInBed-07';
+  } else if (usedGreenhouse && transplantWeek && firstHarvestWeek && (currWeek >= firstHarvestWeek)) {
+    state = 'HarvestingInBed-08';
+  } else if (!usedGreenhouse && firstHarvestWeek && (currWeek >= firstHarvestWeek)) {
+    state = 'HarvestingInBed-09';
+  } else {
+    state = 'Unknown-10';
+  }
+  console.log('Compute Plant State', currWeek, plantingData, state);
+  const plantFamily = 'allium';
+  if (state.startsWith('GrowingInGreenhouse')) {
+    return `bg-pf-${plantFamily}-light`;
+  }
+  if (state.startsWith('GrowingInBed')) {
+    return `bg-pf-${plantFamily}-dark`;
+  }
+  if (state.startsWith('HarvestingInGreenhouse')) {
+    return `bg-pf-${plantFamily}-light-harvest`;
+  }
+  if (state.startsWith('HarvestingInBed')) {
+    return `bg-pf-${plantFamily}-dark-harvest`;
+  }
+  return 'bg-danger';
 }

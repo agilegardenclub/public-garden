@@ -20,7 +20,7 @@ RatingRow.propTypes = {
 export function RatingList({ ratingData }) {
   return (
     <Stack>
-      { ratingData.map((data, index) => <RatingRow key={index} item={data.item} rating={data.rating}></RatingRow>) }
+      { ratingData.map((data, index) => <RatingRow key={index} item={data.item} rating={data.rating || 0}></RatingRow>) }
     </Stack>
   );
 }

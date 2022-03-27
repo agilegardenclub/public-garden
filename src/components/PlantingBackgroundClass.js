@@ -1,3 +1,5 @@
+import { plantFamilyCommonName } from '../datamodel/PlantInfo';
+
 /**
  * Takes the current week (1-48) and returns the appropriate background class for the planting timeline:
  *   First, compute the state:
@@ -42,23 +44,28 @@ export function plantingBackgroundClass(currWeek, plantingData) {
     state = 'GrowingInGreenhouse-03';
     // Move on to growing in the bed
   } else if (!usedGreenhouse && firstHarvestWeek && (currWeek < firstHarvestWeek)) {
-    state = 'GrowingInBed-04';
+    state = 'GrowingInBed-01';
+  } else if (usedGreenhouse && transplantWeek && firstHarvestWeek && (currWeek >= transplantWeek) && (currWeek < firstHarvestWeek)) {
+    state = 'GrowingInBed-02';
+  } else if (usedGreenhouse && transplantWeek && !firstHarvestWeek && (currWeek >= transplantWeek) && (currWeek <= endWeek)) {
+    state = 'GrowingInBed-03';
   } else if (!usedGreenhouse && !firstHarvestWeek) {
-    state = 'GrowingInBed-05';
+    state = 'GrowingInBed-04';
     // Move on to harvesting in greenhouse
-  } else if (usedGreenhouse && firstHarvestWeek && (currWeek >= firstHarvestWeek)) {
-    state = 'HarvestingInGreenhouse-06';
+  } else if (usedGreenhouse && !transplantWeek && firstHarvestWeek && (currWeek >= firstHarvestWeek)) {
+    state = 'HarvestingInGreenhouse-01';
+    // Move on to harvesting in bed
   } else if (usedGreenhouse && transplantWeek && firstHarvestWeek && (currWeek >= firstHarvestWeek)) {
-    state = 'HarvestingInBed-07';
+    state = 'HarvestingInBed-01';
   } else if (usedGreenhouse && transplantWeek && firstHarvestWeek && (currWeek >= firstHarvestWeek)) {
-    state = 'HarvestingInBed-08';
+    state = 'HarvestingInBed-02';
   } else if (!usedGreenhouse && firstHarvestWeek && (currWeek >= firstHarvestWeek)) {
-    state = 'HarvestingInBed-09';
+    state = 'HarvestingInBed-13';
   } else {
     state = 'Unknown-10';
   }
-  console.log('Compute Plant State', currWeek, plantingData, state);
-  const plantFamily = 'allium';
+  // console.log('Plant State', plantingData.plantID, state, currWeek, plantingData);
+  const plantFamily = plantFamilyCommonName(plantingData.plantID).toLowerCase();
   if (state.startsWith('GrowingInGreenhouse')) {
     return `bg-pf-${plantFamily}-light`;
   }

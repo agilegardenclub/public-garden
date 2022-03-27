@@ -75,8 +75,8 @@ export const plantFamilyData = [
   },
   {
     id: 'plantfamily-10',
-    formal: 'Other (Lamiaceae)',
-    common: 'Mint',
+    formal: 'Misc (Lamiaceae)',
+    common: 'Misc',
     colors: PlantFamilyColors.misc,
     bgs: { dark: 'pf-misc-dark', light: 'pf-misc-light' },
     examples: 'basil,',

@@ -36,3 +36,11 @@ export function plantFamilyName(plantID) {
   }
   return 'Unknown family';
 }
+
+export function plantFamilyCommonName(plantID) {
+  const familyData = getFamilyData(plantID);
+  if (familyData) {
+    return familyData.common;
+  }
+  return 'Unknown family';
+}

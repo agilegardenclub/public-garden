@@ -109,7 +109,7 @@ export const plantData = [
     variety: 'Sugar Snap',
     familyID: 'plantfamily-05',
     gardenerIDs: ['gardener-01'], // for seeds of unknown provenance.
-    vendor: 'Unknown',
+    vendor: '',
     vendorURL: '',
     description: 'Seeds were from a friend, not sure of original vendor.',
     daysToHarvest: 60,

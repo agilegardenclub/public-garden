@@ -204,6 +204,26 @@ export const plantData = [
     description: 'Beautiful bicolor white and purple heirloom variety from Florence, Italy with a mild, creamy taste that is always delicious and never bitter. ',
     daysToHarvest: 90,
   },
+  {
+    id: 'plant-111',
+    plant: 'Kale',
+    variety: 'Red Russion',
+    familyID: 'plantfamily-02',
+    vendor: 'Uprising Seeds',
+    vendorURL: 'https://uprisingorganics.com/products/kale-red-russian',
+    description: 'Not often found in supermarkets due to their shorter shelf life, the oak-leaved kales are the most tender of all kales.  ',
+    daysToHarvest: 55,
+  },
+  {
+    id: 'plant-112',
+    plant: 'Basil',
+    variety: 'Italian',
+    familyID: 'plantfamily-10',
+    vendor: '',
+    vendorURL: '',
+    description: '(Store bought, no description)',
+    daysToHarvest: 80,
+  },
 ];
 
 // Plant Families

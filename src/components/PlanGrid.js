@@ -60,8 +60,9 @@ MonthCol.propTypes = {
 
 function WeekCol({ currWeek, plantingData }) {
   const bg = plantingBackgroundClass(currWeek, plantingData);
+  const border = (((currWeek % 4) === 0) && currWeek < 48) ? 'border-end' : '';
   return (
-    <Col xs={3} className={bg} style={{ height: '24px', minWidth: '1px', padding: 0 }}/>
+    <Col xs={3} className={`${bg} ${border}`} style={{ height: '24px', minWidth: '1px', padding: 0 }}/>
   );
 }
 

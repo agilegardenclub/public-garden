@@ -139,7 +139,7 @@ export const gardenData = [
               },
               {
                 plantID: 'plant-105',
-                usedGreenhouse: true,
+                usedGreenhouse: false,
                 startDate: '4/4/2021',
                 transplantDate: '',
                 firstHarvestDate: '6/4/2021',

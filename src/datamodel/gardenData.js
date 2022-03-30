@@ -206,6 +206,21 @@ export const gardenData = [
         gardenerIDs: ['gardener-01', 'gardener-02'],
         plantingData: [
           {
+            bedID: '01',
+            bedPlantings: [
+              {
+                plantID: 'plant-116',
+                usedGreenhouse: false,
+                fromStart: true,
+                startDate: '3/30/2020',
+                transplantDate: '',
+                firstHarvestDate: '6/10/2020',
+                endDate: '12/15/2020',
+                outcomes: { appearance: 5, resistance: 5, yield: 5, flavor: 4 },
+              },
+            ],
+          },
+          {
             bedID: '02',
             bedPlantings: [
               {
@@ -223,7 +238,7 @@ export const gardenData = [
             bedID: '03',
             bedPlantings: [
               {
-                plantID: 'plant-104',
+                plantID: 'plant-105',
                 usedGreenhouse: false,
                 startDate: '3/24/2020',
                 transplantDate: '',
@@ -251,13 +266,28 @@ export const gardenData = [
             bedID: '03',
             bedPlantings: [
               {
-                plantID: 'plant-100',
+                plantID: 'plant-113',
                 usedGreenhouse: false,
                 startDate: '3/24/2020',
                 transplantDate: '',
                 firstHarvestDate: '7/14/2020',
                 endDate: '10/01/2020',
-                outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 },
+                outcomes: { germination: 3, appearance: 4, resistance: 4, yield: 3, flavor: 3 },
+              },
+            ],
+          },
+          {
+            bedID: '04',
+            bedPlantings: [
+              {
+                plantID: 'plant-114',
+                usedGreenhouse: false,
+                fromStart: true,
+                startDate: '4/26/2020',
+                transplantDate: '',
+                firstHarvestDate: '8/1/2020',
+                endDate: '10/1/2020',
+                outcomes: { appearance: 5, resistance: 5, yield: 5, flavor: 5 },
               },
             ],
           },
@@ -267,11 +297,50 @@ export const gardenData = [
               {
                 plantID: 'plant-112',
                 usedGreenhouse: false,
+                fromStart: true,
                 startDate: '5/6/2020',
                 transplantDate: '',
                 firstHarvestDate: '7/5/2020',
                 endDate: '10/16/2020',
                 outcomes: { appearance: 5, resistance: 5, yield: 5, flavor: 5 },
+              },
+              {
+                plantID: 'plant-115',
+                usedGreenhouse: false,
+                fromStart: false,
+                startDate: '6/28/2020',
+                transplantDate: '',
+                firstHarvestDate: '8/5/2020',
+                endDate: '9/1/2020',
+                outcomes: { germination: 3, appearance: 2, resistance: 5, yield: 2, flavor: 2 },
+              },
+            ],
+          },
+          {
+            bedID: '06',
+            bedPlantings: [
+              {
+                plantID: 'plant-117',
+                usedGreenhouse: false,
+                startDate: '5/5/2020',
+                transplantDate: '',
+                firstHarvestDate: '8/1/2020',
+                endDate: '10/15/2020',
+                outcomes: { germination: 4, appearance: 4, resistance: 4, yield: 3, flavor: 5 },
+              },
+            ],
+          },
+          {
+            bedID: '07',
+            bedPlantings: [
+              {
+                plantID: 'plant-115',
+                usedGreenhouse: false,
+                startDate: '4/18/2020',
+                transplantDate: '',
+                firstHarvestDate: '7/1/2020',
+                endDate: '9/15/2020',
+                outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 4, flavor: 4 },
               },
             ],
           },

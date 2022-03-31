@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import { gardenData } from '../datamodel/gardenData';
 import { plantingBackgroundClass } from './PlantingBackgroundClass';
@@ -89,13 +89,75 @@ BedRow.propTypes = {
   bedData: PropTypes.object,
 };
 
+function BedHistoryNav({ bedHistoryData }) {
+  const bedIDs = bedHistoryData.map(entry => entry.bedID);
+  return (
+    <Nav variant="pills" className="flex-column">
+      {bedIDs.map((bedID, index) => <Nav.Item key={index}><Nav.Link eventKey={bedID}>{bedID}</Nav.Link></Nav.Item>)}
+    </Nav>
+  );
+}
+
+BedHistoryNav.propTypes = {
+  bedHistoryData: PropTypes.array,
+};
+
+function BedHistoryTabContent({ bedHistoryData }) {
+  // eslint-disable-next-line no-unused-vars
+  const bedIDs = bedHistoryData.map(entry => entry.bedID);
+  return (
+    <Tab.Content>
+      {bedIDs.map((bedID, index) => <Tab.Pane key={index} eventKey={bedID}>{bedID}</Tab.Pane>)}
+    </Tab.Content>
+  );
+}
+
+BedHistoryTabContent.propTypes = {
+  bedHistoryData: PropTypes.array,
+};
+
 // eslint-disable-next-line no-unused-vars
 export function BedHistoryGrid() {
-  // eslint-disable-next-line no-unused-vars
   const plantingHistory = new PlantingHistory({ gardenData: gardenData[0], plantData, plantFamilyData });
+  // eslint-disable-next-line no-unused-vars
+  const bedHistoryData = plantingHistory.bedHistoryData();
+  console.log('Bed History Data', bedHistoryData);
   return (
     <Container>
-      Bed History Grid
+      <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+        <Row>
+          <Col sm={1}>
+            <BedHistoryNav bedHistoryData={bedHistoryData}/>
+          </Col>
+          <Col sm={11}>
+            <BedHistoryTabContent bedHistoryData={bedHistoryData}/>
+          </Col>
+        </Row>
+      </Tab.Container>
+      <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+        <Row>
+          <Col sm={1}>
+            <Nav variant="pills" className="flex-column">
+              <Nav.Item>
+                <Nav.Link eventKey="first">Tab 1</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="second">Tab 2</Nav.Link>
+              </Nav.Item>
+            </Nav>
+          </Col>
+          <Col sm={11}>
+            <Tab.Content>
+              <Tab.Pane eventKey="first">
+                stuff here
+              </Tab.Pane>
+              <Tab.Pane eventKey="second">
+                2stuff here
+              </Tab.Pane>
+            </Tab.Content>
+          </Col>
+        </Row>
+      </Tab.Container>
     </Container>
   );
 }

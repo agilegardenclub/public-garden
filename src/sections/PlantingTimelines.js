@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Tabs, Tab } from 'react-bootstrap';
 import { Documentation } from '../components/Documentation';
 import { PlanGrid } from '../components/PlanGrid';
+import { BedHistoryGrid } from '../components/BedHistoryGrid';
 
 /**
  * Planting section
@@ -24,6 +25,9 @@ function PlantingTimelines() {
           </Tab>
           <Tab eventKey="2021" title="2021">
             <PlanGrid year={2021}/>
+          </Tab>
+          <Tab eventKey="Bed History" title="Bed History">
+            <BedHistoryGrid />
           </Tab>
         </Tabs>
       </Container>

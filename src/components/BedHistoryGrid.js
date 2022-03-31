@@ -2,12 +2,15 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import { gardenData } from '../datamodel/gardenData';
-import { addPlantingWeeks } from '../datamodel/PlantingWeek';
 import { plantingBackgroundClass } from './PlantingBackgroundClass';
 import { TimelinePlantBadge } from './TimelinePlantBadge';
+import { plantData } from '../datamodel/plantData';
+import { plantFamilyData } from '../datamodel/plantFamilyData';
+import { PlantingHistory } from '../datamodel/PlantingHistory';
 
 const firstColWidth = 3;
 
+// eslint-disable-next-line no-unused-vars
 function Header() {
   return (
     <Row>
@@ -86,20 +89,13 @@ BedRow.propTypes = {
   bedData: PropTypes.object,
 };
 
-export function PlanGrid({ year }) {
-  const jennaGardenData = gardenData[0];
-  const jennaHistory = jennaGardenData.history;
-  const yearData = jennaHistory.find(object => (object.year === year));
-  const plantingData = yearData.plantingData;
-  plantingData.forEach(bedData => bedData.bedPlantings.forEach(planting => addPlantingWeeks(planting, year)));
+// eslint-disable-next-line no-unused-vars
+export function BedHistoryGrid() {
+  // eslint-disable-next-line no-unused-vars
+  const plantingHistory = new PlantingHistory({ gardenData: gardenData[0], plantData, plantFamilyData });
   return (
     <Container>
-      <Header/>
-      {plantingData.map((bedData, index) => <BedRow key={index} bedData={bedData}/>)}
+      Bed History Grid
     </Container>
   );
 }
-
-PlanGrid.propTypes = {
-  year: PropTypes.number,
-};

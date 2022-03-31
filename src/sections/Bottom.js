@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Navbar, Nav, Popover, OverlayTrigger, Button, Image } from 'react-bootstrap';
+import { Colors } from '../Theme';
 
 /**
  * Display the footer.
@@ -17,13 +18,13 @@ const popover = (
 
 const AppStoreLink = () => (
   <OverlayTrigger trigger="click" placement="top" overlay={popover}>
-    <Button variant="success"><Image height='50px' src={`${process.env.PUBLIC_URL}/img/download-from-app-store.png`} /></Button>
+    <Button style={{ border: 'none', backgroundColor: Colors.dark }}><Image height='50px' src={`${process.env.PUBLIC_URL}/img/download-from-app-store.png`} /></Button>
   </OverlayTrigger>
 );
 
 const PlayStoreLink = () => (
   <OverlayTrigger trigger="click" placement="top" overlay={popover}>
-    <Button variant="success"><Image height='50px' src={`${process.env.PUBLIC_URL}/img/download-from-google-play.png`} /></Button>
+    <Button style={{ border: 'none', backgroundColor: Colors.dark }}><Image height='50px' src={`${process.env.PUBLIC_URL}/img/download-from-google-play.png`} /></Button>
   </OverlayTrigger>
 );
 

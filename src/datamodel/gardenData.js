@@ -55,6 +55,8 @@ export const gardenData = [
             bedPlantings: [
               {
                 plantID: 'plant-101',
+                bedID: '01',
+                year: 2021,
                 usedGreenhouse: true,
                 startDate: '2/15/2021',
                 transplantDate: '3/6/2021',
@@ -69,6 +71,8 @@ export const gardenData = [
             bedPlantings: [
               {
                 plantID: 'plant-100',
+                bedID: '03',
+                year: 2021,
                 usedGreenhouse: true,
                 startDate: '2/15/2021',
                 transplantDate: '3/18/2021',
@@ -84,6 +88,8 @@ export const gardenData = [
             bedPlantings: [
               {
                 plantID: 'plant-108',
+                bedID: '04',
+                year: 2021,
                 usedGreenhouse: false,
                 startDate: '4/4/2021',
                 transplantDate: '',
@@ -93,6 +99,8 @@ export const gardenData = [
               },
               {
                 plantID: 'plant-108',
+                bedID: '04',
+                year: 2021,
                 usedGreenhouse: false,
                 startDate: '4/29/2021',
                 transplantDate: '',
@@ -102,6 +110,8 @@ export const gardenData = [
               },
               {
                 plantID: 'plant-108',
+                bedID: '04',
+                year: 2021,
                 usedGreenhouse: true,
                 startDate: '5/7/2021',
                 transplantDate: '6/20/2021',
@@ -116,6 +126,8 @@ export const gardenData = [
             bedPlantings: [
               {
                 plantID: 'plant-107',
+                bedID: '05',
+                year: 2021,
                 usedGreenhouse: true,
                 startDate: '4/18/2021',
                 transplantDate: '5/5/2021',
@@ -130,6 +142,8 @@ export const gardenData = [
             bedPlantings: [
               {
                 plantID: 'plant-102',
+                bedID: '06',
+                year: 2021,
                 usedGreenhouse: true,
                 startDate: '2/21/2021',
                 transplantDate: '3/27/2021',
@@ -139,6 +153,8 @@ export const gardenData = [
               },
               {
                 plantID: 'plant-105',
+                bedID: '06',
+                year: 2021,
                 usedGreenhouse: false,
                 startDate: '4/4/2021',
                 transplantDate: '',
@@ -153,7 +169,8 @@ export const gardenData = [
             bedPlantings: [
               {
                 plantID: 'plant-103',
-                bedID: '7',
+                bedID: '07',
+                year: 2021,
                 usedGreenhouse: true,
                 startDate: '3/14/2021',
                 transplantDate: '5/6/2021',
@@ -163,7 +180,8 @@ export const gardenData = [
               },
               {
                 plantID: 'plant-104',
-                bedID: '7',
+                bedID: '07',
+                year: 2021,
                 usedGreenhouse: true,
                 startDate: '3/28/2021',
                 transplantDate: '5/8/2021',
@@ -178,6 +196,8 @@ export const gardenData = [
             bedPlantings: [
               {
                 plantID: 'plant-106',
+                bedID: 'GH',
+                year: 2021,
                 usedGreenhouse: true,
                 startDate: '3/28/2021',
                 transplantDate: '',
@@ -187,6 +207,8 @@ export const gardenData = [
               },
               {
                 plantID: 'plant-110',
+                bedID: 'GH',
+                year: 2021,
                 usedGreenhouse: true,
                 startDate: '3/28/2021',
                 transplantDate: '',
@@ -210,6 +232,8 @@ export const gardenData = [
             bedPlantings: [
               {
                 plantID: 'plant-116',
+                bedID: '01',
+                year: 2020,
                 usedGreenhouse: false,
                 fromStart: true,
                 startDate: '3/30/2020',
@@ -225,6 +249,8 @@ export const gardenData = [
             bedPlantings: [
               {
                 plantID: 'plant-101',
+                bedID: '02',
+                year: 2020,
                 usedGreenhouse: false,
                 startDate: '3/24/2020',
                 transplantDate: '',
@@ -239,6 +265,8 @@ export const gardenData = [
             bedPlantings: [
               {
                 plantID: 'plant-105',
+                bedID: '03',
+                year: 2020,
                 usedGreenhouse: false,
                 startDate: '3/24/2020',
                 transplantDate: '',
@@ -246,13 +274,10 @@ export const gardenData = [
                 endDate: '10/01/2020',
                 outcomes: { germination: 5, appearance: 4, resistance: 5, yield: 4, flavor: 4 },
               },
-            ],
-          },
-          {
-            bedID: '03',
-            bedPlantings: [
               {
                 plantID: 'plant-111',
+                bedID: '03',
+                year: 2020,
                 usedGreenhouse: false,
                 startDate: '3/24/2020',
                 transplantDate: '',
@@ -260,13 +285,10 @@ export const gardenData = [
                 endDate: '10/01/2020',
                 outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 },
               },
-            ],
-          },
-          {
-            bedID: '03',
-            bedPlantings: [
               {
                 plantID: 'plant-113',
+                bedID: '03',
+                year: 2020,
                 usedGreenhouse: false,
                 startDate: '3/24/2020',
                 transplantDate: '',
@@ -281,6 +303,8 @@ export const gardenData = [
             bedPlantings: [
               {
                 plantID: 'plant-114',
+                bedID: '04',
+                year: 2020,
                 usedGreenhouse: false,
                 fromStart: true,
                 startDate: '4/26/2020',
@@ -296,6 +320,8 @@ export const gardenData = [
             bedPlantings: [
               {
                 plantID: 'plant-112',
+                bedID: '05',
+                year: 2020,
                 usedGreenhouse: false,
                 fromStart: true,
                 startDate: '5/6/2020',
@@ -306,6 +332,8 @@ export const gardenData = [
               },
               {
                 plantID: 'plant-115',
+                bedID: '05',
+                year: 2020,
                 usedGreenhouse: false,
                 fromStart: false,
                 startDate: '6/28/2020',
@@ -321,6 +349,8 @@ export const gardenData = [
             bedPlantings: [
               {
                 plantID: 'plant-117',
+                bedID: '06',
+                year: 2020,
                 usedGreenhouse: false,
                 startDate: '5/5/2020',
                 transplantDate: '',
@@ -335,6 +365,8 @@ export const gardenData = [
             bedPlantings: [
               {
                 plantID: 'plant-115',
+                bedID: '07',
+                year: 2020,
                 usedGreenhouse: false,
                 startDate: '4/18/2020',
                 transplantDate: '',

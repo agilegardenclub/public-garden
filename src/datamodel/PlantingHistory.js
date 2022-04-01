@@ -5,9 +5,7 @@ export class PlantingHistory {
     this.gardenData = gardenData;
     this.plantData = plantData;
     this.plantFamilyData = plantFamilyData;
-    console.log('Planting History');
     this.plantings = this._extractPlantings();
-    console.log(this.plantings);
   }
 
   /** A temporary method to 'normalize' the history data structure. */
@@ -51,5 +49,9 @@ export class PlantingHistory {
 
   _bedYearPlantings(bedID, year) {
     return this.plantings.filter((planting => (planting.bedID === bedID) && planting.year === year));
+  }
+
+  bedIDs() {
+    return [...new Set(this.plantings.map(entry => entry.bedID))].sort();
   }
 }

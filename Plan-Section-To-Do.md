@@ -6,28 +6,10 @@
 * Need flavor outcome data.
 * Dynamically generate outcome star fields and values from the outcome object.
 * Need a vendor collection 
-* Add fromStart to Card description
+* Add startType (direct seed, greenhouse, starter) to Card description 
 
 * Plant History Tab
-  * Interior, vertical tab of plant names
-  * Then display bards, but grouped by year, not by bed
+  * Drop down list of plants, organized by plant family.
+  * Then display years, bedIDs, and PlantRows.
 
-* Bed History Tab
-    * Interior, vertical tab of bed numbers.
-    * Then display bars, but grouped by year, not by Bed.
-Data structure:
-
-```
- [
- {
-   bed: '01',
-   yearData: [
-     { year: '2020',
-       bedData: [
-        { plant data }
-       ],
-     }
-   ]
- }
- ]
-```
+* Think about dropdown for year, bed, planting. Then top-level tabs are By Year, By Bed, By Plant.

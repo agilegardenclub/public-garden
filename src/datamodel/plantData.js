@@ -304,7 +304,7 @@ export const plantData = [
 // plantfamily-03: chard, spinach, beet
 // plantfamily-04: squash, zucchini, cucumber, melon, cantaloupe, pumpkin
 // plantfamily-05: bean, pea
-// plantfamily-06: asparagus
+// plantfamily-06: asparagus, 
 // plantfamily-07: tomato, potato, eggplant, pepper
 // plantfamily-08: carrot, celeriac, cilantro, fennel, parsley, dill, parsnip
 // plantfamily-09: lettuce

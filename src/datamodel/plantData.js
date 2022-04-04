@@ -298,14 +298,14 @@ export const plantData = [
 // plantfamily-09: lettuce
 // plantfamily-10: basil, mint
 
-// Revised Plant Families
+// Revised Plant Families - note that plant numbers are slightly out order to avoid more renumbering than necessary
 // plantfamily-01: onion, garlic, leek, shallot
-// plantfamily-02: broccoli, brussels sprout, cabbage, cauliflower, kale, arugula, turnip, pak choi, radish
-// plantfamily-03: chard, spinach, beet
+// plantfamily-02: broccoli, brussels sprout, cabbage, cauliflower, kale, arugula, turnip, pak choi, radish, mustard, kohlrabi, cress, collard
+// plantfamily-03: chard, spinach, beet, amaranth
 // plantfamily-04: squash, zucchini, cucumber, melon, cantaloupe, pumpkin
-// plantfamily-05: bean, pea
-// plantfamily-06: asparagus, 
-// plantfamily-07: tomato, potato, eggplant, pepper
-// plantfamily-08: carrot, celeriac, cilantro, fennel, parsley, dill, parsnip
-// plantfamily-09: lettuce
-// plantfamily-10: basil, mint
+// plantfamily-05: bean, pea, peanuts
+// plantfamily-07: tomato, potato, eggplant, pepper, ground cherry, tomatillo
+// plantfamily-08: carrot, celeriac, cilantro, fennel, parsley, dill, parsnip, chervil
+// plantfamily-09: lettuce, radicchio, endive, sunflowers, chamomile, salsify
+// plantfamily-06: (Other annuals) corn, buckwheat, okra, wheat, basil
+// plantfamily-10: (other perennials) mint, rosemary, sage, lemon balm, asparagus, blueberries, raspberries, sorrel, artichoke, strawberries, sweet potato

@@ -5,8 +5,8 @@ import { plantFamilyData } from './plantFamilyData';
 function getFamilyData(plantID) {
   const plantInfo = plantData.find(element => element.id === plantID);
   if (plantInfo) {
-    const plantFamilyID = plantInfo.familyID;
-    return plantFamilyData.find(element => element.id === plantFamilyID);
+    const familyID = plantInfo.familyID;
+    return plantFamilyData.find(element => element.id === familyID);
   }
   return null;
 }
@@ -43,4 +43,20 @@ export function plantFamilyCommonName(plantID) {
     return familyData.common;
   }
   return 'Unknown family';
+}
+
+export function plantFamilyID(plantID) {
+  const familyData = getFamilyData(plantID);
+  if (familyData) {
+    return familyData.id;
+  }
+  return 'Unknown plantfamilyID';
+}
+
+export function plantName(plantID) {
+  const plantInfo = plantData.find(element => element.id === plantID);
+  if (plantInfo) {
+    return `${plantInfo.plant} (${plantInfo.variety})`;
+  }
+  return 'Unknown plantID';
 }

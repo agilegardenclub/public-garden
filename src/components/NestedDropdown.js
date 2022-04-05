@@ -59,10 +59,8 @@ NestedDropdownItem.propTypes = {
   onSelect: PropTypes.any,
 };
 
-function ProcessItems({ items }) {
-  return (
-    items.map((item, index) => <Dropdown.Item key={index}>{item.name}</Dropdown.Item>)
-  );
+function ProcessItems({ items, onSelect }) {
+  return items.map((item, index) => ((item.type === 'item') ? <Dropdown.Item as="button" key={index} eventKey={item.eventKey || item.label}>{item.label}</Dropdown.Item> : <NestedDropdownItem key={index} title={item.label} ><ProcessItems items={item.items} onSelect={onSelect}/></NestedDropdownItem>));
 }
 
 ProcessItems.propTypes = {
@@ -74,35 +72,28 @@ ProcessItems.propTypes = {
  * @param title The label associated with the dropdown.
  * @param items An array of item objects.
  * A "regular" item has the structure:
- *   `{ type: 'item', label: <string>, eventKey: <string> }`
+ * `{type: 'item', label: <string>, eventKey: <string> }`
  * A "nested" item has the structure:
- *   `{ type: 'nested' label: <string>, eventKey: <string>, items: [<item objects>]}`
+ *   `{type: 'nested' label: <string>, eventKey: <string>, items: [<item objects>]}`
  * For example:
  *   ```
  *     [
- *       { type: 'item', label: 'Blue', eventKey: 'blue'},
- *       { type: 'item', label: 'Orange', eventKey: 'orange'},
- *       { type: 'nested', title: 'Others', items: [ { type: 'item', label: 'Black, eventKey: 'black'}, ]}
+ *       {type: 'item', label: 'Donut'},
+ *       {type: 'item', label: 'Croissant'},
+ *       {type: 'nested', label: 'Others', items: [ {type: 'item', label: 'Eggs'}, ]}
  *     ]
  *   ```
- * @param onSelect A function called when a menu item is selected.
+ * @param onSelect A function called when a menu item is selected. Note that sometimes it will be called with null, which should be ignored.
  * @returns {JSX.Element}
  */
-export function NestedDropdown({ title, items, onSelect }) {
-  console.log(items);
+export function NestedDropdown({ title, items, onSelect, size = 'sm' }) {
   return (
-    <Dropdown>
-      <Dropdown.Toggle variant="primary" onSelect={onSelect}>
+    <Dropdown onSelect={onSelect}>
+      <Dropdown.Toggle variant="primary" size={size}>
         {title}
       </Dropdown.Toggle>
       <Dropdown.Menu>
-        <Dropdown.Item>Item 1</Dropdown.Item>
-        <Dropdown.Item>Item 2</Dropdown.Item>
-        <NestedDropdownItem title="Item 3">
-          <Dropdown.Item>Item 3.1</Dropdown.Item>
-          <Dropdown.Item>Item 3.2</Dropdown.Item>
-          <Dropdown.Item>Item 3.3</Dropdown.Item>
-        </NestedDropdownItem>
+        <ProcessItems items={items} onSelect={onSelect}/>
       </Dropdown.Menu>
     </Dropdown>
   );
@@ -110,6 +101,7 @@ export function NestedDropdown({ title, items, onSelect }) {
 
 NestedDropdown.propTypes = {
   title: PropTypes.string,
+  size: PropTypes.string,
   items: PropTypes.array,
   onSelect: PropTypes.any,
 };

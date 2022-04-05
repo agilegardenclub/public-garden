@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Dropdown } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import { gardenData } from '../datamodel/gardenData';
 import { plantData } from '../datamodel/plantData';
@@ -12,7 +12,7 @@ import { NestedDropdown } from './NestedDropdown';
 function Header() {
   return (
     <Row>
-      <Col xs={1} style={{ padding: 0 }}><small>Bed</small></Col>
+      <Col xs={1} style={{ padding: 0 }}><small>Plant</small></Col>
       <Col xs={1} style={{ padding: 0 }}><small>Year</small></Col>
       <Col>
         <Row>
@@ -72,25 +72,21 @@ SingleBedYear.propTypes = {
 export function PlantHistoryGrid() {
   const plantingHistory = new PlantingHistory({ gardenData: gardenData[0], plantData, plantFamilyData });
   const bedHistoryData = plantingHistory.bedHistoryData();
-  const bedIDs = plantingHistory.bedIDs();
-  const [selectedBedID, setBedID] = useState(bedIDs[0]);
+  // eslint-disable-next-line no-unused-vars
+  const [selectedPlantID, setPlantID] = useState();
+  const onSelect = (eventKey) => { setPlantID(eventKey); };
+  const plantItems = plantingHistory.plantDropdownMenuItems();
   return (
     <Container>
       <Row>
         <Header/>
-        <NestedDropdown />
       </Row>
       <Row>
         <Col xs={1} className="p-0">
-          <Dropdown onSelect={(eventKey) => setBedID(eventKey)}>
-            <Dropdown.Toggle size={'sm'}>{selectedBedID}</Dropdown.Toggle>
-            <Dropdown.Menu>
-              {bedIDs.map((bedID, index) => <Dropdown.Item key={index} eventKey={bedID}>{bedID}</Dropdown.Item>)}
-            </Dropdown.Menu>
-          </Dropdown>
+          <NestedDropdown title={'Plants'} items={plantItems} onSelect={onSelect} />
         </Col>
         <Col xs={11} className="p-0">
-          <SingleBedHistory bedID={selectedBedID} bedHistoryData={bedHistoryData}/>
+          <SingleBedHistory bedID={'01'} bedHistoryData={bedHistoryData}/>
         </Col>
       </Row>
     </Container>

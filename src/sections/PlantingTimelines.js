@@ -3,6 +3,7 @@ import { Container, Tabs, Tab } from 'react-bootstrap';
 import { Documentation } from '../components/Documentation';
 import { PlanGrid } from '../components/PlanGrid';
 import { BedHistoryGrid } from '../components/BedHistoryGrid';
+import { PlantHistoryGrid } from '../components/PlantHistoryGrid';
 
 /**
  * Planting section
@@ -28,6 +29,9 @@ function PlantingTimelines() {
           </Tab>
           <Tab eventKey="Bed History" title="Bed History">
             <BedHistoryGrid />
+          </Tab>
+          <Tab eventKey="Plant History" title="Plant History">
+            <PlantHistoryGrid />
           </Tab>
         </Tabs>
       </Container>

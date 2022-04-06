@@ -13,7 +13,7 @@ import PropTypes from 'prop-types';
 const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
   <Container
     fluid
-    className="px-0 d-flex justify-content-between"
+    className="p-0 m-0 d-flex justify-content-between"
     ref={ref}
     onClick={(e) => {
       e.preventDefault();

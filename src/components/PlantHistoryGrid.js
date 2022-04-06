@@ -7,6 +7,7 @@ import { plantFamilyData } from '../datamodel/plantFamilyData';
 import { PlantingHistory } from '../datamodel/PlantingHistory';
 import { PlantRow, PlantRowMonthHeaderCol, PlantRowNameHeaderCol } from './PlantRow';
 import { NestedDropdown } from './NestedDropdown';
+import { plantNameShort } from '../datamodel/PlantInfo';
 
 // eslint-disable-next-line no-unused-vars
 function Header() {
@@ -72,9 +73,12 @@ SingleBedYear.propTypes = {
 export function PlantHistoryGrid() {
   const plantingHistory = new PlantingHistory({ gardenData: gardenData[0], plantData, plantFamilyData });
   const bedHistoryData = plantingHistory.bedHistoryData();
+  const plantHistoryData = plantingHistory.plantHistoryData();
+  console.log('plantHistoryData', plantHistoryData);
   // eslint-disable-next-line no-unused-vars
   const [selectedPlantID, setPlantID] = useState();
-  const onSelect = (eventKey) => { setPlantID(eventKey); };
+  const [selectedPlantName, setPlantName] = useState('Plants');
+  const onSelect = (eventKey) => { setPlantID(eventKey); if (eventKey) setPlantName(plantNameShort(eventKey)); console.log(eventKey); };
   const plantItems = plantingHistory.plantDropdownMenuItems();
   return (
     <Container>
@@ -83,7 +87,7 @@ export function PlantHistoryGrid() {
       </Row>
       <Row>
         <Col xs={1} className="p-0">
-          <NestedDropdown title={'Plants'} items={plantItems} onSelect={onSelect} />
+          <NestedDropdown title={selectedPlantName} items={plantItems} onSelect={onSelect} />
         </Col>
         <Col xs={11} className="p-0">
           <SingleBedHistory bedID={'01'} bedHistoryData={bedHistoryData}/>

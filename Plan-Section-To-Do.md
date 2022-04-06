@@ -19,3 +19,32 @@
   * },
   * {  year: <year>, beds: [ bedInfo] }
   * ]Then display years (reverse chronological order), bedIDs, and PlantRows.
+
+
+* Structure of BedHistory
+  * Top level is a container with two rows:
+    * Row 1: consisting of the Header
+    * Row 2: Two columns:
+      * Dropdown
+      * SingleBedHistory
+  * SingleBedHistory takes the bedID and returns a list of SingleBedYears
+  * Each SingleBedYear is a Row with two columns:
+    * The Year
+    * A list of Rows, each containing a PlantRow
+  * Each PlantRow is a row with two columns
+    * The PlantBadge
+    * The Calendar view
+
+* Structure of PlantHistory
+    * Top level is a container with two rows:
+        * Row 1: consisting of the Header
+        * Row 2: Two columns:
+            * Dropdown
+            * SinglePlantHistory
+    * SinglePlantHistory takes the plantID and returns a list of SinglePlantYears
+    * Each SinglePlantYear is a Row with two columns:
+        * The Bed
+        * A list of Rows, each containing a PlantRow
+    * Each PlantRow is a row with two columns
+        * The PlantBadge
+        * The Calendar view

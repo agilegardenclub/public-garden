@@ -60,3 +60,11 @@ export function plantName(plantID) {
   }
   return 'Unknown plantID';
 }
+
+export function plantNameShort(plantID) {
+  const plantInfo = plantData.find(element => element.id === plantID);
+  if (plantInfo) {
+    return `${plantInfo.plant}`;
+  }
+  return 'Unknown plantID';
+}

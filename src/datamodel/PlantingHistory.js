@@ -93,4 +93,39 @@ export class PlantingHistory {
     });
     return dropdownItems;
   }
+
+  /**
+   * Returns the data organized as follows:
+   * [
+   *  {
+   *    plantID: 'plant-01',
+   *    yearData: [
+   *      { year: '2020',
+   *        plantData: [
+   *         { plant data }
+   *        ],
+   *      }
+   *    ]
+   *  }
+   *  ]
+   */
+  plantHistoryData() {
+    // Extract the plantIDs
+    const plantIDs = [...new Set(this.plantings.map(entry => entry.plantID))];
+    return plantIDs.map(plantID => this._plantYearData(plantID));
+  }
+
+  _plantYearData(plantID) {
+    // Find all the years associated with the plantID
+    const plantIDPlantings = this.plantings.filter(planting => planting.plantID === plantID);
+    const years = [...new Set(plantIDPlantings.map(planting => planting.year))].sort();
+    return {
+      plantID,
+      yearData: years.map(year => ({ year, plantData: this._plantYearPlantings(plantID, year) })),
+    };
+  }
+
+  _plantYearPlantings(plantID, year) {
+    return this.plantings.filter((planting => (planting.plantID === plantID) && planting.year === year));
+  }
 }

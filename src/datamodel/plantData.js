@@ -105,7 +105,7 @@ export const plantData = [
   },
   {
     id: 'plant-101',
-    plant: 'Snap Pea',
+    plant: 'Pea',
     variety: 'Sugar Snap',
     familyID: 'plantfamily-05',
     gardenerIDs: ['gardener-01'], // for seeds of unknown provenance.
@@ -156,7 +156,7 @@ export const plantData = [
   },
   {
     id: 'plant-106',
-    plant: 'Pepper (Hot)',
+    plant: 'Pepper',
     variety: 'Pimiento de Padron',
     familyID: 'plantfamily-07',
     vendor: 'Uprising Seeds',
@@ -166,8 +166,8 @@ export const plantData = [
   },
   {
     id: 'plant-107',
-    plant: 'Bean (Snap)',
-    variety: 'Empress',
+    plant: 'Bean',
+    variety: 'Empress Snap',
     familyID: 'plantfamily-05',
     vendor: 'Uprising Seeds',
     vendorURL: 'https://uprisingorganics.com/collections/vegetables/products/bean-bush-snap-empress',
@@ -176,7 +176,7 @@ export const plantData = [
   },
   {
     id: 'plant-108',
-    plant: 'Chard (Swiss)',
+    plant: 'Chard',
     variety: 'Rainbow',
     familyID: 'plantfamily-03',
     vendor: 'Uprising Seeds',
@@ -186,7 +186,7 @@ export const plantData = [
   },
   {
     id: 'plant-109',
-    plant: 'Chard (Heirloom)',
+    plant: 'Chard',
     variety: 'Garden Rainbow',
     familyID: 'plantfamily-03',
     vendor: 'Renee\'s Garden',
@@ -207,7 +207,7 @@ export const plantData = [
   {
     id: 'plant-111',
     plant: 'Kale',
-    variety: 'Red Russion',
+    variety: 'Red Russian',
     familyID: 'plantfamily-02',
     vendor: 'Uprising Seeds',
     vendorURL: 'https://uprisingorganics.com/products/kale-red-russian',

@@ -40,45 +40,41 @@ BedRow.propTypes = {
   bedData: PropTypes.object,
 };
 
-function SingleBedHistory({ bedHistoryData, bedID }) {
-  const yearData = bedHistoryData.find(element => element.bedID === bedID).yearData;
+function SinglePlantHistory({ plantHistoryData, plantID }) {
+  const yearData = plantHistoryData.find(element => element.plantID === plantID).yearData;
   return (
-    yearData.map((singleYearData, index) => <SingleBedYear key={index} singleYearData={singleYearData}/>)
+    yearData.map((singleYearData, index) => <SinglePlantYear key={index} singleYearData={singleYearData}/>)
   );
 }
 
-SingleBedHistory.propTypes = {
-  bedHistoryData: PropTypes.array,
-  bedID: PropTypes.string,
+SinglePlantHistory.propTypes = {
+  plantHistoryData: PropTypes.array,
+  plantID: PropTypes.string,
 };
 
-function SingleBedYear({ singleYearData }) {
+function SinglePlantYear({ singleYearData }) {
   return (
     <Row className='pb-3'>
       <Col xs={1}>
         {singleYearData.year}
       </Col>
       <Col xs={11}>
-        {singleYearData.bedData.map((plantingData, index) => <Row key={index}><Col><PlantRow plantingData={plantingData}/></Col></Row>)}
+        {singleYearData.plantData.map((plantingData, index) => <Row key={index}><Col><PlantRow plantingData={plantingData}/></Col></Row>)}
       </Col>
     </Row>
   );
 }
 
-SingleBedYear.propTypes = {
+SinglePlantYear.propTypes = {
   singleYearData: PropTypes.object,
 };
 
-// eslint-disable-next-line no-unused-vars
 export function PlantHistoryGrid() {
   const plantingHistory = new PlantingHistory({ gardenData: gardenData[0], plantData, plantFamilyData });
-  const bedHistoryData = plantingHistory.bedHistoryData();
   const plantHistoryData = plantingHistory.plantHistoryData();
-  console.log('plantHistoryData', plantHistoryData);
-  // eslint-disable-next-line no-unused-vars
   const [selectedPlantID, setPlantID] = useState();
   const [selectedPlantName, setPlantName] = useState('Plants');
-  const onSelect = (eventKey) => { setPlantID(eventKey); if (eventKey) setPlantName(plantNameShort(eventKey)); console.log(eventKey); };
+  const onSelect = (eventKey) => { if (eventKey) { setPlantName(plantNameShort(eventKey)); setPlantID(eventKey); } };
   const plantItems = plantingHistory.plantDropdownMenuItems();
   return (
     <Container>
@@ -90,7 +86,7 @@ export function PlantHistoryGrid() {
           <NestedDropdown title={selectedPlantName} items={plantItems} onSelect={onSelect} />
         </Col>
         <Col xs={11} className="p-0">
-          <SingleBedHistory bedID={'01'} bedHistoryData={bedHistoryData}/>
+          { selectedPlantID ? <SinglePlantHistory plantID={selectedPlantID} plantHistoryData={plantHistoryData}/> : <div></div> }
         </Col>
       </Row>
     </Container>

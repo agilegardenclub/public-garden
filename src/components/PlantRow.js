@@ -10,6 +10,12 @@ export function PlantRowNameHeaderCol() {
   );
 }
 
+export function PlantRowBedHeaderCol() {
+  return (
+    <Col xs={3} style={{ padding: 0 }}><small>Bed</small></Col>
+  );
+}
+
 export function PlantRowMonthHeaderCol() {
   return (
     <Col>

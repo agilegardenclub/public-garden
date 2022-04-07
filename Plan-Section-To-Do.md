@@ -9,32 +9,6 @@
 * Add startType (direct seed, greenhouse, starter) to Card description 
 * Think about dropdown for year, bed, planting. Then top-level tabs are By Year, By Bed, By Plant.
 
-* Plant History Tab
-  * We have a plantID. (Not always, actually).
-  * Given a plantID, we must generate the data structure:
-  * [
-  * { 
-  *     year: <year>,
-  *     beds: [ { bedID: <bedID>, month thingy?]
-  * },
-  * {  year: <year>, beds: [ bedInfo] }
-  * ]Then display years (reverse chronological order), bedIDs, and PlantRows.
-
-
-* Structure of BedHistory
-  * Top level is a container with two rows:
-    * Row 1: consisting of the Header
-    * Row 2: Two columns:
-      * Dropdown
-      * SingleBedHistory
-  * SingleBedHistory takes the bedID and returns a list of SingleBedYears
-  * Each SingleBedYear is a Row with two columns:
-    * The Year
-    * A list of Rows, each containing a PlantRow
-  * Each PlantRow is a row with two columns
-    * The PlantBadge
-    * The Calendar view
-
 * Structure of PlantHistory
     * Top level is a container with two rows:
         * Row 1: consisting of the Header
@@ -48,3 +22,46 @@
     * Each PlantRow is a row with two columns
         * The PlantBadge
         * The Calendar view
+        
+## Revised Timeline structure:
+
+* Top Level Tabs:  By Year, By Bed, By Plant.
+* When you click the tab, you get two rows:
+  * Row 1:  The selector: Select a Year, A Bed, or a Plant
+  * Row 2:  When the selected element is not null, then displays a Timeline
+
+* The timeline always has the following four rows in this order
+  * Year 
+  * Bed
+  * Plant
+  * Calendar
+
+* And plantHistory will always return a structure like this:
+
+```js
+[
+  {
+   year: "2020",
+   yearData: [
+     {
+       bed: "01",
+       bedData: [
+         { plantingdata }
+       ]
+     }
+   ] 
+  }
+]
+```
+
+All that changes is:
+* By Year:  only one entry for the specified year.
+* By Bed: The bed value will always be the selected bed.
+* By Plant:  The plantingdata will always refer to the selected plantID.
+* We start by getting all of the data for the selected year, bed, or plantID, then organizing it appropriately for display.
+
+The layout of the "return value" is fixed and consistent.
+
+All that changes for the different tabs is:
+* The selector
+* The function called to get the history data to display.

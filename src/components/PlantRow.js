@@ -27,25 +27,6 @@ export function PlantRowMonthHeaderCol() {
   );
 }
 
-export function PlantRow({ plantingData }) {
-  const plantBadge = <TimelinePlantBadge plantingData={plantingData}/>;
-  return (
-    <Row className={'mb-1'}>
-      <Col style={{ padding: 0 }} xs={3}>{plantBadge}</Col>
-      <Col xs={9}>
-        <Row>
-          {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-            .map((currMonth, index) => <MonthCol key={index} currMonth={currMonth} plantingData={plantingData}/>)}
-        </Row>
-      </Col>
-    </Row>
-  );
-}
-
-PlantRow.propTypes = {
-  plantingData: PropTypes.any,
-};
-
 function MonthCol({ currMonth, plantingData }) {
   return (
     <Col>
@@ -72,5 +53,43 @@ function WeekCol({ currWeek, plantingData }) {
 
 WeekCol.propTypes = {
   currWeek: PropTypes.number,
+  plantingData: PropTypes.any,
+};
+
+export function PlantRow({ plantingData }) {
+  const plantBadge = <TimelinePlantBadge plantingData={plantingData}/>;
+  return (
+    <Row className={'mb-1'}>
+      <Col style={{ padding: 0 }} xs={3}>{plantBadge}</Col>
+      <Col xs={9}>
+        <Row>
+          {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+            .map((currMonth, index) => <MonthCol key={index} currMonth={currMonth} plantingData={plantingData}/>)}
+        </Row>
+      </Col>
+    </Row>
+  );
+}
+
+PlantRow.propTypes = {
+  plantingData: PropTypes.any,
+};
+
+export function PlantingData({ plantingData }) {
+  const plantBadge = <TimelinePlantBadge plantingData={plantingData}/>;
+  return (
+    <Row className={'mb-1'}>
+      <Col style={{ padding: 0 }} xs={3}>{plantBadge}</Col>
+      <Col xs={9}>
+        <Row>
+          {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+            .map((currMonth, index) => <MonthCol key={index} currMonth={currMonth} plantingData={plantingData}/>)}
+        </Row>
+      </Col>
+    </Row>
+  );
+}
+
+PlantingData.propTypes = {
   plantingData: PropTypes.any,
 };

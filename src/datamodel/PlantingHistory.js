@@ -59,6 +59,10 @@ export class PlantingHistory {
     return [...new Set(this.plantings.map(entry => entry.bedID))].sort();
   }
 
+  years() {
+    return [...new Set(this.plantings.map(entry => entry.year))].sort();
+  }
+
   /**
    * Returns an array formatted to support the Plant nested dropdown:
    * ```
@@ -127,5 +131,41 @@ export class PlantingHistory {
 
   _plantYearPlantings(plantID, year) {
     return this.plantings.filter((planting => (planting.plantID === plantID) && planting.year === year));
+  }
+
+  /**
+   * Returns the data organized as follows:
+   * [
+   *  {
+   *    year: 2020
+   *    bedData: [
+   *      { bed: '01',
+   *        plantingData: [
+   *         { planting data }
+   *        ],
+   *      }
+   *    ]
+   *  }
+   *  ]
+   *
+   *  Provide either the year, bedID, or plantID to filter the results appropriately.
+   */
+  plantingHistory({ year, bedID, plantID }) {
+    // Begin by filtering the plantingData by one of year, bedID, or plantID.
+    let filteredPlantings;
+    if (year) {
+      filteredPlantings = this.plantings.filter((planting => planting.year === year));
+    } else if (bedID) {
+      filteredPlantings = this.plantings.filter((planting => planting.bedID === bedID));
+    } else if (plantID) {
+      filteredPlantings = this.plantings.filter((planting => planting.plantID === plantID));
+    }
+    // Construct the return value
+    const years = [...new Set(filteredPlantings.map(planting => planting.year))].sort();
+    return years.map(theYear => this._bedData(filteredPlantings, theYear));
+  }
+
+  _bedData(plantingData, year) {
+    console.log(plantingData, year);
   }
 }

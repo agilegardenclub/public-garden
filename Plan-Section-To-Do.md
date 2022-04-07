@@ -42,10 +42,10 @@
 [
   {
    year: "2020",
-   yearData: [
+   bedData: [
      {
        bed: "01",
-       bedData: [
+       plantingData: [
          { plantingdata }
        ]
      }

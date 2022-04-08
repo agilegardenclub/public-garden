@@ -60,7 +60,7 @@ export class PlantingHistory {
   }
 
   years() {
-    return [...new Set(this.plantings.map(entry => entry.year))].sort();
+    return [...new Set(this.plantings.map(entry => entry.year))].sort().reverse();
   }
 
   /**

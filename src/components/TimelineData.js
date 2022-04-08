@@ -6,15 +6,19 @@ import { PlantingData } from './PlantRow';
 function Header() {
   return (
     <Row>
-      <Col xs={1} className="p-0"><small>Year</small></Col>
-      <Col xs={1} className="p-0"><small>Bed</small></Col>
-      <Col className="p-0" xs={10}>
+      <Col xs={1} className=""><small>Year</small></Col>
+      <Col xs={11}>
         <Row>
-          <Col xs={3} className="p-0"><small>Plant</small></Col>
-          <Col xs={9} className="p-0">
+          <Col xs={1} className=""><small>Bed</small></Col>
+          <Col xs={11}>
             <Row>
-              {['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-                .map((month, index) => <Col key={index} className="p-0" xs={1}><small>{month}</small></Col>)}
+              <Col xs={3} className="p-0"><small>Plant</small></Col>
+              <Col xs={9} className="p-0">
+                <Row>
+                  {['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+                    .map((month, index) => <Col key={index} className="" xs={1}><small>{month}</small></Col>)}
+                </Row>
+              </Col>
             </Row>
           </Col>
         </Row>
@@ -26,8 +30,8 @@ function Header() {
 function BedData({ bedData }) {
   return (
     <Row className="pb-2">
-      <Col xs={1} className="p-0">{bedData.bedID}</Col>
-      <Col xs={11} className="p-0">
+      <Col xs={1} className="">{bedData.bedID}</Col>
+      <Col xs={11} className="">
         {bedData.plantingData.map((plantingData, index) => <PlantingData key={index} plantingData={plantingData}/>)}
       </Col>
     </Row>
@@ -41,10 +45,10 @@ BedData.propTypes = {
 function YearData({ yearData }) {
   return (
     <Row className="pb-3">
-      <Col xs={1} className="p-0">
+      <Col xs={1} className="">
         {yearData.year}
       </Col>
-      <Col xs={11} className="p-0">
+      <Col xs={11} className="">
         {yearData.bedData.map((bedData, index) => <BedData key={index} bedData={bedData}/>)}
       </Col>
     </Row>

@@ -69,11 +69,13 @@ All that changes for the different tabs is:
 Structure:
 * Row 1: Selector.
 * Row 2: Header
-  * Year: p-0 col-1
-  * Bed: p-0 col-1
-  * Planting Data: p-0 col-10
+  * YEAR: col-1
+  * (Remainder) col-11
     * Row
-      * p-0 col-3: Plant Badge
-      * p-0 col-9: Months
-        * Row
-          * p-0 col-1 X 12 = all 12 months. 
+      * BED: col-1
+      * (Remainder) col-11
+        * Row 
+          * PLANT: p-0 col-3
+          * (Months): p-0 col-9
+            * Row
+              * p-0 col X 12

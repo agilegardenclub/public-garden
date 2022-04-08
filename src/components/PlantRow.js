@@ -29,8 +29,8 @@ export function PlantRowMonthHeaderCol() {
 
 function MonthCol({ currMonth, plantingData }) {
   return (
-    <Col className="p-0">
-      <Row>
+    <Col xs={1} className="p-0">
+      <Row className="mx-auto">
         {[1, 2, 3, 4]
           .map((weekOfMonth, index) => <WeekCol key={index} currWeek={(currMonth * 4) + weekOfMonth} plantingData={plantingData}/>)}
       </Row>

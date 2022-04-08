@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { gardenData } from '../datamodel/gardenData';
 import { plantData } from '../datamodel/plantData';
 import { plantFamilyData } from '../datamodel/plantFamilyData';
@@ -11,18 +11,18 @@ export function TimelineByYear() {
   const plantingHistory = new PlantingHistory({ gardenData: gardenData[0], plantData, plantFamilyData });
   const years = plantingHistory.years();
   const menuItems = years.map(year => ({ type: 'item', label: year, eventKey: year }));
-  const [selectedYear, setYear] = useState();
-  const [historyData, setHistoryData] = useState();
+  const initialYear = `${years[0]}`;
+  const [selectedYear, setYear] = useState(initialYear);
+  const [historyData, setHistoryData] = useState(plantingHistory.historyData({ year: years[0] }));
   const onSelect = (eventKey) => {
     if (eventKey) {
       setYear(eventKey);
       setHistoryData(plantingHistory.historyData({ year: parseInt(eventKey, 10) }));
     }
   };
-  console.log('timelinebyyear', selectedYear, historyData);
   return (
     <Container>
-      <Row><NestedDropdown title={selectedYear || 'Select Year'} items={menuItems} onSelect={onSelect}/></Row>
+      <Row className="mb-3"><Col xs={2}>Select Year:</Col> <Col><NestedDropdown title={selectedYear || 'Select Year'} items={menuItems} onSelect={onSelect}/></Col></Row>
       { historyData && <TimelineData historyData={historyData}/> }
     </Container>
   );

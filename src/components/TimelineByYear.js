@@ -9,24 +9,22 @@ import { TimelineData } from './TimelineData';
 
 export function TimelineByYear() {
   const plantingHistory = new PlantingHistory({ gardenData: gardenData[0], plantData, plantFamilyData });
-  let historyData;
   const years = plantingHistory.years();
   const menuItems = years.map(year => ({ type: 'item', label: year, eventKey: year }));
   const [selectedYear, setYear] = useState();
+  // const [historyData, setHistoryData] = useState();
+  let historyData;
   const onSelect = (eventKey) => {
     if (eventKey) {
       setYear(eventKey);
-      historyData = plantingHistory.historyData({ year: eventKey });
+      historyData = plantingHistory.historyData({ year: parseInt(selectedYear, 10) });
     }
   };
+  console.log('timelinebyyear', selectedYear, historyData);
   return (
     <Container>
-      <Row>
-        <NestedDropdown title={selectedYear || 'Select Year'} items={menuItems} onSelect={onSelect}/>
-      </Row>
-      <Row>
-        <TimelineData historyData={historyData}/>
-      </Row>
+      <Row><NestedDropdown title={selectedYear || 'Select Year'} items={menuItems} onSelect={onSelect}/></Row>
+      { historyData && <Row><TimelineData historyData={historyData}/></Row> }
     </Container>
   );
 }

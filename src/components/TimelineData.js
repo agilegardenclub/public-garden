@@ -52,6 +52,7 @@ YearData.propTypes = {
 };
 
 export function TimelineData({ historyData }) {
+  console.log('timelinedata', historyData);
   return (
     <Container>
       <Row>

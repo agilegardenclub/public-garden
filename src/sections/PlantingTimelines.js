@@ -4,6 +4,7 @@ import { Documentation } from '../components/Documentation';
 import { PlanGrid } from '../components/PlanGrid';
 import { BedHistoryGrid } from '../components/BedHistoryGrid';
 import { PlantHistoryGrid } from '../components/PlantHistoryGrid';
+import { TimelineByYear } from '../components/TimelineByYear';
 
 /**
  * Planting section
@@ -32,6 +33,9 @@ function PlantingTimelines() {
           </Tab>
           <Tab eventKey="By Plant" title="By Plant">
             <PlantHistoryGrid />
+          </Tab>
+          <Tab eventKey="By Year" title="By Year">
+            <TimelineByYear />
           </Tab>
         </Tabs>
       </Container>

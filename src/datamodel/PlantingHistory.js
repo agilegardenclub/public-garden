@@ -150,22 +150,28 @@ export class PlantingHistory {
    *
    *  Provide either the year, bedID, or plantID to filter the results appropriately.
    */
-  plantingHistory({ year, bedID, plantID }) {
+  historyData({ year, bedID, plantID }) {
     // Begin by filtering the plantingData by one of year, bedID, or plantID.
     let filteredPlantings;
     if (year) {
-      filteredPlantings = this.plantings.filter((planting => planting.year === year));
+      filteredPlantings = this.plantings.filter(planting => planting.year === year);
     } else if (bedID) {
-      filteredPlantings = this.plantings.filter((planting => planting.bedID === bedID));
+      filteredPlantings = this.plantings.filter(planting => planting.bedID === bedID);
     } else if (plantID) {
-      filteredPlantings = this.plantings.filter((planting => planting.plantID === plantID));
+      filteredPlantings = this.plantings.filter(planting => planting.plantID === plantID);
     }
     // Construct the return value
     const years = [...new Set(filteredPlantings.map(planting => planting.year))].sort();
-    return years.map(theYear => this._bedData(filteredPlantings, theYear));
+    return years.map(theYear => ({ year: theYear, bedData: this._bedData(filteredPlantings, theYear) }));
   }
 
   _bedData(plantingData, year) {
     console.log(plantingData, year);
+    // First, filter data to just the plantings for the specified year.
+    const yearData = plantingData.filter(planting => planting.year === year);
+    // Now, get the bedIDs in sorted order from this set of plantings.
+    const bedIDs = [...new Set(yearData.map(planting => planting.bedID))].sort();
+    // Now, create the list of bed planting data.
+    return bedIDs.map(bedID => ({ bedID, plantingData: yearData.filter(planting => planting.bedID === bedID) }));
   }
 }

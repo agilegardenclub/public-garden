@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import { gardenData } from '../datamodel/gardenData';
-import { addPlantingWeeks } from '../datamodel/PlantingWeek';
 import { PlantRow, PlantRowMonthHeaderCol, PlantRowNameHeaderCol } from './PlantRow';
 
 function Header() {
@@ -35,7 +34,7 @@ export function PlanGrid({ year }) {
   const jennaHistory = jennaGardenData.history;
   const yearData = jennaHistory.find(object => (object.year === year));
   const plantingData = yearData.plantingData;
-  plantingData.forEach(bedData => bedData.bedPlantings.forEach(planting => addPlantingWeeks(planting, year)));
+  // plantingData.forEach(bedData => bedData.bedPlantings.forEach(planting => addPlantingWeeks(planting, year)));
   return (
     <Container>
       <Header/>

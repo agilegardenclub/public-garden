@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import { PlantingData } from './PlantRow';
+import { addPlantingWeeks } from '../datamodel/PlantingWeek';
 
 function Header() {
   return (
@@ -43,6 +44,7 @@ BedData.propTypes = {
 };
 
 function YearData({ yearData }) {
+  yearData.bedData.forEach(bedData => bedData.plantingData.forEach(planting => addPlantingWeeks(planting, yearData.year)));
   return (
     <Row className="pb-3">
       <Col xs={1} className="">

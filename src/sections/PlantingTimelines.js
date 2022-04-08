@@ -1,10 +1,9 @@
 import React from 'react';
 import { Container, Tabs, Tab } from 'react-bootstrap';
 import { Documentation } from '../components/Documentation';
-import { PlanGrid } from '../components/PlanGrid';
-import { BedHistoryGrid } from '../components/BedHistoryGrid';
 import { PlantHistoryGrid } from '../components/PlantHistoryGrid';
 import { TimelineByYear } from '../components/TimelineByYear';
+import { TimelineByBed } from '../components/TimelineByBed';
 
 /**
  * Planting section
@@ -22,20 +21,14 @@ function PlantingTimelines() {
           <p>This coloring scheme enables you to easily answer questions like: Was the plant ever in the green house? (Answer: Yes, if there is some portion of the bar that is light colored). Did the plant spend its entire life in the greenhouse? (Answer: Yes, if the entire bar is light colored.) Did the plant die without ever yielding a harvest? (Answer: Yes, if no portion of the bar is striped.) </p>
         </Documentation>
         <Tabs defaultActiveKey="By Year" className="mb-3">
-          <Tab eventKey="2020" title="2020">
-            <PlanGrid year={2020}/>
-          </Tab>
-          <Tab eventKey="2021" title="2021">
-            <PlanGrid year={2021}/>
+          <Tab eventKey="By Year" title="By Year">
+            <TimelineByYear />
           </Tab>
           <Tab eventKey="By Bed" title="By Bed">
-            <BedHistoryGrid />
+            <TimelineByBed />
           </Tab>
           <Tab eventKey="By Plant" title="By Plant">
             <PlantHistoryGrid />
-          </Tab>
-          <Tab eventKey="By Year" title="By Year">
-            <TimelineByYear />
           </Tab>
         </Tabs>
       </Container>

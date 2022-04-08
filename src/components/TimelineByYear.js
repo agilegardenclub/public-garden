@@ -22,7 +22,7 @@ export function TimelineByYear() {
   };
   return (
     <Container>
-      <Row className="mb-3"><Col xs={2}>Select Year:</Col> <Col><NestedDropdown title={selectedYear || 'Select Year'} items={menuItems} onSelect={onSelect}/></Col></Row>
+      <Row className="mb-3"><Col xs={2}>Select Year:</Col> <Col><NestedDropdown title={selectedYear} items={menuItems} onSelect={onSelect}/></Col></Row>
       { historyData && <TimelineData historyData={historyData}/> }
     </Container>
   );

@@ -17,7 +17,7 @@ export function weekOfYear(dateString, year) {
   }
   const dayOfMonth = date.getDate();
   let weekOfMonth;
-  if (dayOfMonth > 21) {
+  if (dayOfMonth > 22) {
     weekOfMonth = 4;
   } else if (dayOfMonth > 14) {
     weekOfMonth = 3;

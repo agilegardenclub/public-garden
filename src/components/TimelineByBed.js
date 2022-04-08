@@ -22,7 +22,7 @@ export function TimelineByBed() {
   };
   return (
     <Container>
-      <Row className="mb-3"><Col xs={2}>Select Bed:</Col> <Col><NestedDropdown title={selectedBed || 'Select Bed'} items={menuItems} onSelect={onSelect}/></Col></Row>
+      <Row className="mb-3"><Col xs={2}>Select Bed:</Col> <Col><NestedDropdown title={selectedBed} items={menuItems} onSelect={onSelect}/></Col></Row>
       { historyData && <TimelineData historyData={historyData}/> }
     </Container>
   );

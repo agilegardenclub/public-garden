@@ -65,3 +65,15 @@ The layout of the "return value" is fixed and consistent.
 All that changes for the different tabs is:
 * The selector
 * The function called to get the history data to display.
+
+Structure:
+* Row 1: Selector.
+* Row 2: Header
+  * Year: p-0 col-1
+  * Bed: p-0 col-1
+  * Planting Data: p-0 col-10
+    * Row
+      * p-0 col-3: Plant Badge
+      * p-0 col-9: Months
+        * Row
+          * p-0 col-1 X 12 = all 12 months. 

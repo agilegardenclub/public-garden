@@ -29,7 +29,7 @@ export function PlantRowMonthHeaderCol() {
 
 function MonthCol({ currMonth, plantingData }) {
   return (
-    <Col>
+    <Col className="p-0">
       <Row>
         {[1, 2, 3, 4]
           .map((weekOfMonth, index) => <WeekCol key={index} currWeek={(currMonth * 4) + weekOfMonth} plantingData={plantingData}/>)}
@@ -47,7 +47,7 @@ function WeekCol({ currWeek, plantingData }) {
   const bg = plantingBackgroundClass(currWeek, plantingData);
   const border = (((currWeek % 4) === 0) && currWeek < 48) ? 'border-end' : '';
   return (
-    <Col xs={3} className={`${bg} ${border}`} style={{ height: '24px', minWidth: '1px', padding: 0 }}/>
+    <Col xs={3} className={`p-0 ${bg} ${border}`} style={{ height: '24px', minWidth: '1px' }}/>
   );
 }
 
@@ -79,8 +79,8 @@ export function PlantingData({ plantingData }) {
   const plantBadge = <TimelinePlantBadge plantingData={plantingData}/>;
   return (
     <Row className={'mb-1'}>
-      <Col style={{ padding: 0 }} xs={3}>{plantBadge}</Col>
-      <Col xs={9}>
+      <Col xs={3} className="p-0">{plantBadge}</Col>
+      <Col xs={9} className="p-0">
         <Row>
           {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
             .map((currMonth, index) => <MonthCol key={index} currMonth={currMonth} plantingData={plantingData}/>)}

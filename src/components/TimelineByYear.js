@@ -23,7 +23,7 @@ export function TimelineByYear() {
   return (
     <Container>
       <Row><NestedDropdown title={selectedYear || 'Select Year'} items={menuItems} onSelect={onSelect}/></Row>
-      { historyData && <Row><TimelineData historyData={historyData}/></Row> }
+      { historyData && <TimelineData historyData={historyData}/> }
     </Container>
   );
 }

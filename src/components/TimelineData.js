@@ -6,13 +6,17 @@ import { PlantingData } from './PlantRow';
 function Header() {
   return (
     <Row>
-      <Col xs={1} className='p-0'><small>Year</small></Col>
-      <Col xs={1} className='p-0'><small>Bed</small></Col>
-      <Col xs={3} className='p-0'><small>Plant</small></Col>
-      <Col>
+      <Col xs={1} className="p-0"><small>Year</small></Col>
+      <Col xs={1} className="p-0"><small>Bed</small></Col>
+      <Col xs={10}>
         <Row>
-          {['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-            .map((month, index) => <Col key={index} className='p-0' xs={1}><small>{month}</small></Col>)}
+          <Col xs={3} className="p-0"><small>Plant</small></Col>
+          <Col xs={9}>
+            <Row>
+              {['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+                .map((month, index) => <Col key={index} className="p-0" xs={1}><small>{month}</small></Col>)}
+            </Row>
+          </Col>
         </Row>
       </Col>
     </Row>
@@ -21,8 +25,8 @@ function Header() {
 
 function BedData({ bedData }) {
   return (
-    <Row>
-      <Col xs={1} style={{ padding: 0, width: '50px' }}>{bedData.bed}</Col>
+    <Row className="pb-2">
+      <Col xs={1} style={{ padding: 0, width: '50px' }}>{bedData.bedID}</Col>
       <Col>
         {bedData.plantingData.map((plantingData, index) => <PlantingData key={index} plantingData={plantingData}/>)}
       </Col>
@@ -36,7 +40,7 @@ BedData.propTypes = {
 
 function YearData({ yearData }) {
   return (
-    <Row className='pb-3'>
+    <Row className="pb-3">
       <Col xs={1}>
         {yearData.year}
       </Col>
@@ -52,17 +56,16 @@ YearData.propTypes = {
 };
 
 export function TimelineData({ historyData }) {
-  console.log('timelinedata', historyData);
   return (
     <Container>
       <Row>
         <Header/>
       </Row>
-      { historyData.map((yearData, index) => <YearData key={index} yearData={yearData} />) }
+      {historyData.map((yearData, index) => <YearData key={index} yearData={yearData}/>)}
     </Container>
   );
 }
 
 TimelineData.propTypes = {
-  historyData: PropTypes.object,
+  historyData: PropTypes.array,
 };

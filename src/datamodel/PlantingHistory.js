@@ -152,6 +152,7 @@ export class PlantingHistory {
    */
   historyData({ year, bedID, plantID }) {
     // Begin by filtering the plantingData by one of year, bedID, or plantID.
+    // console.log('in historyData', year, bedID, plantID);
     let filteredPlantings;
     if (year) {
       filteredPlantings = this.plantings.filter(planting => planting.year === year);
@@ -166,7 +167,6 @@ export class PlantingHistory {
   }
 
   _bedData(plantingData, year) {
-    console.log(plantingData, year);
     // First, filter data to just the plantings for the specified year.
     const yearData = plantingData.filter(planting => planting.year === year);
     // Now, get the bedIDs in sorted order from this set of plantings.

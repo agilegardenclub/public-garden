@@ -12,12 +12,11 @@ export function TimelineByYear() {
   const years = plantingHistory.years();
   const menuItems = years.map(year => ({ type: 'item', label: year, eventKey: year }));
   const [selectedYear, setYear] = useState();
-  // const [historyData, setHistoryData] = useState();
-  let historyData;
+  const [historyData, setHistoryData] = useState();
   const onSelect = (eventKey) => {
     if (eventKey) {
       setYear(eventKey);
-      historyData = plantingHistory.historyData({ year: parseInt(selectedYear, 10) });
+      setHistoryData(plantingHistory.historyData({ year: parseInt(eventKey, 10) }));
     }
   };
   console.log('timelinebyyear', selectedYear, historyData);

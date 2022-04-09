@@ -1,0 +1,21 @@
+{
+  "entry": [
+    "src/index.js"
+  ],
+  "ignoreUnresolved": [
+  ],
+  "ignoreUnimported": [
+
+  ],
+  "ignoreUnused": [
+    "@testing-library/jest-dom",
+    "@testing-library/react",
+    "@testing-library/user-event",
+    "bootstrap",
+    "react-scripts",
+    "web-vitals"
+  ],
+  "ignorePatterns": [
+    "**/node_modules/**"
+  ]
+}

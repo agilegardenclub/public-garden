@@ -3,8 +3,8 @@ import Top from './sections/Top.js';
 import Bottom from './sections/Bottom.js';
 import Overview from './sections/Overview';
 import About from './sections/About';
-import PlantingTimelines from './sections/PlantingTimelines';
-import Plants from './sections/Plants';
+import GardenTimelines from './sections/GardenTimelines';
+import ChapterPlantHistory from './sections/ChapterPlantHistory';
 
 const App = () => {
   useEffect(() => {
@@ -16,8 +16,8 @@ const App = () => {
       <Top/>
       <About/>
       <Overview/>
-      <PlantingTimelines/>
-      <Plants/>
+      <GardenTimelines/>
+      <ChapterPlantHistory/>
       <Bottom/>
     </div>
   );

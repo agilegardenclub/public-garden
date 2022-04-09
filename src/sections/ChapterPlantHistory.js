@@ -5,10 +5,10 @@ import { Documentation } from '../components/Documentation';
 /**
  * Seed section
  */
-function Plants() {
+function ChapterPlantHistory() {
 
   return (
-    <div id="plant-summaries" className="gray-background">
+    <div id="chapter-plant-history" className="gray-background">
       <Container className="py-3">
         <h2>Chapter Plant History</h2>
         <Documentation>
@@ -19,4 +19,4 @@ function Plants() {
   );
 }
 
-export default Plants;
+export default ChapterPlantHistory;

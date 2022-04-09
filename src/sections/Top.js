@@ -20,8 +20,8 @@ function Top() {
         </Navbar.Brand>
         <Nav>
           <Nav.Item><Nav.Link href="#overview">Overview</Nav.Link></Nav.Item>
-          <Nav.Item><Nav.Link href="#plans">Plans</Nav.Link></Nav.Item>
-          <Nav.Item><Nav.Link href="#seeds">Seeds</Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="#garden-timelines">Timelines</Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="#chapter-plant-history">Plants</Nav.Link></Nav.Item>
         </Nav>
       </Container>
     </Navbar>

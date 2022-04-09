@@ -8,10 +8,10 @@ import { TimelineByPlant } from '../components/TimelineByPlant';
 /**
  * Planting section
  */
-function PlantingTimelines() {
+function GardenTimelines() {
 
   return (
-    <div id="plans">
+    <div id="garden-timelines">
       <Container className="py-3">
         <h2>Garden Timelines</h2>
         <Documentation>
@@ -36,4 +36,4 @@ function PlantingTimelines() {
   );
 }
 
-export default PlantingTimelines;
+export default GardenTimelines;

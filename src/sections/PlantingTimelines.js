@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, Tabs, Tab } from 'react-bootstrap';
 import { Documentation } from '../components/Documentation';
-import { PlantHistoryGrid } from '../components/PlantHistoryGrid';
 import { TimelineByYear } from '../components/TimelineByYear';
 import { TimelineByBed } from '../components/TimelineByBed';
+import { TimelineByPlant } from '../components/TimelineByPlant';
 
 /**
  * Planting section
@@ -28,7 +28,7 @@ function PlantingTimelines() {
             <TimelineByBed />
           </Tab>
           <Tab eventKey="By Plant" title="By Plant">
-            <PlantHistoryGrid />
+            <TimelineByPlant />
           </Tab>
         </Tabs>
       </Container>

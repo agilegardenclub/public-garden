@@ -1,11 +1,6 @@
 # Plan Section To Do
 
-* Implement "By Plant"
-  - find the first plant to display.
-* Clean up. 
-  * Implement and run unimported.
 * Fix data model so that we don't have to flatten.
-* Update documentation box for timelines
 * Add more data
 
 * Implement a Documentation box for plant families and colors.

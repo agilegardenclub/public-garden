@@ -10,7 +10,7 @@ function Plants() {
   return (
     <div id="plant-summaries" className="gray-background">
       <Container className="py-3">
-        <h2>Plant Summaries</h2>
+        <h2>Chapter Plant History</h2>
         <Documentation>
           <p>(This section provides aggregate information about plants that combine chapter and gardener data.) </p>
         </Documentation>

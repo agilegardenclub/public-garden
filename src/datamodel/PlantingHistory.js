@@ -63,6 +63,11 @@ export class PlantingHistory {
     return [...new Set(this.plantings.map(entry => entry.year))].sort().reverse();
   }
 
+  plantFamilyIDs() {
+    const plantIDs = [...new Set(this.plantings.map(entry => entry.plantID))];
+    return [...new Set(plantIDs.map(plantID => plantFamilyID(plantID)))];
+  }
+
   /**
    * Returns an array formatted to support the Plant nested dropdown:
    * ```
@@ -148,9 +153,9 @@ export class PlantingHistory {
    *  }
    *  ]
    *
-   *  Provide either the year, bedID, or plantID to filter the results appropriately.
+   *  Provide either the year, bedID, plantID, or plantFamilyID to filter the results appropriately.
    */
-  historyData({ year, bedID, plantID }) {
+  historyData({ year, bedID, plantID, familyID }) {
     // Begin by filtering the plantingData by one of year, bedID, or plantID.
     // console.log('in historyData', year, bedID, plantID);
     let filteredPlantings;
@@ -160,6 +165,8 @@ export class PlantingHistory {
       filteredPlantings = this.plantings.filter(planting => planting.bedID === bedID);
     } else if (plantID) {
       filteredPlantings = this.plantings.filter(planting => planting.plantID === plantID);
+    } else if (familyID) {
+      filteredPlantings = this.plantings.filter(planting => plantFamilyID(planting.plantID) === familyID);
     }
     // Construct the return value
     const years = [...new Set(filteredPlantings.map(planting => planting.year))].sort();

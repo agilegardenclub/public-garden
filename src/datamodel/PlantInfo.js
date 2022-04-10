@@ -1,6 +1,5 @@
 import { plantData } from './plantData';
 import { plantFamilyData } from './plantFamilyData';
-// import { PlantFamilyColors } from '../Theme';
 
 function getFamilyData(plantID) {
   const plantInfo = plantData.find(element => element.id === plantID);
@@ -37,8 +36,9 @@ export function plantFamilyName(plantID) {
   return 'Unknown family';
 }
 
-export function plantFamilyCommonName(plantID) {
-  const familyData = getFamilyData(plantID);
+/** id is a plantID unless fromFamilyID is true, then id is a plantFamilyID */
+export function plantFamilyCommonName(id, fromFamilyID) {
+  const familyData = fromFamilyID ? plantFamilyData.find(element => element.id === id) : getFamilyData(id);
   if (familyData) {
     return familyData.common;
   }

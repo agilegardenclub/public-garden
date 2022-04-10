@@ -13,13 +13,11 @@ export function TimelineByPlant() {
   const menuItems = plantingHistory.plantDropdownMenuItems();
   const initialPlantID = menuItems[0].items[0].eventKey;
   const initialPlantName = menuItems[0].items[0].label;
-  // const [selectedPlantID, setPlantID] = useState(initialPlantID);
   const [selectedPlantName, setPlantName] = useState(initialPlantName);
   const [historyData, setHistoryData] = useState(plantingHistory.historyData({ plantID: initialPlantID }));
   const onSelect = (eventKey) => {
     if (eventKey) {
       setPlantName(plantNameShort(eventKey));
-      // setPlantID(eventKey);
       setHistoryData(plantingHistory.historyData({ plantID: eventKey }));
     }
   };

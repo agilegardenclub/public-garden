@@ -1,5 +1,5 @@
-import { plantData } from './plantData';
-import { plantFamilyData } from './plantFamilyData';
+import { plantData } from './data/plantData';
+import { plantFamilyData } from './data/plantFamilyData';
 
 function getFamilyData(plantID) {
   const plantInfo = plantData.find(element => element.id === plantID);

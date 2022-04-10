@@ -1,5 +1,5 @@
-import { chapterData } from './chapterData';
-import { plantData } from './plantData';
+import { chapterData } from './data/chapterData';
+import { plantData } from './data/plantData';
 
 /* Processes raw data for use by ChapterOverviewCard. */
 class ChapterOverview {

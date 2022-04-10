@@ -1,6 +1,6 @@
-import { gardenData } from './gardenData';
-import { gardenerData } from './gardenerData';
-import { plantData } from './plantData';
+import { gardenData } from './data/gardenData';
+import { gardenerData } from './data/gardenerData';
+import { plantData } from './data/plantData';
 
 /* Processes raw data for use by GardenOverviewCard. */
 class GardenOverview {

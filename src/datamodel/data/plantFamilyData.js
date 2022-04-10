@@ -1,4 +1,4 @@
-import { PlantFamilyColors } from '../Theme';
+import { PlantFamilyColors } from '../../Theme';
 
 export const plantFamilyData = [
   {

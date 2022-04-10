@@ -1,4 +1,4 @@
-import { hardinessZoneData } from './zoneData';
+import { hardinessZoneData } from './data/zoneData';
 
 class HardinessZones {
   // eslint-disable-next-line no-shadow

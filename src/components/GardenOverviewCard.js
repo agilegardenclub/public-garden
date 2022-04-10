@@ -6,11 +6,11 @@ import { PictureCarousel } from './PictureCarousel';
 import { ClimateVictoryGardenBadge } from './ClimateVictoryGardenBadge';
 import { GardenerLabel } from './GardenerLabel';
 import { GardenPlantBadge } from './GardenPlantBadge';
-// import { getGardenID } from './GardenID';
+import { getGardenID } from './GardenID';
 
 export function GardenOverviewCard() {
   const year = `(${gardenOverview.currentYear()})`;
-  const name = 'foo'; // getGardenID();
+  const gardenID = getGardenID();
   const pictureData = gardenOverview.pictures();
   const age = gardenOverview.age();
   const size = gardenOverview.currentSize();
@@ -21,7 +21,7 @@ export function GardenOverviewCard() {
   const climateVictoryGarden = gardenOverview.climateVictoryGarden();
   return (
     <Card>
-      <Card.Header><h5>Garden: {name} {climateVictoryGarden && <ClimateVictoryGardenBadge/> }</h5> </Card.Header>
+      <Card.Header><h5>Garden: {gardenID} {climateVictoryGarden && <ClimateVictoryGardenBadge/> }</h5> </Card.Header>
       <PictureCarousel pictureData={pictureData}/>
       <Card.Body>
         <Stack gap={1}>

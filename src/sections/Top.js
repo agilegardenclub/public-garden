@@ -1,10 +1,12 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import { getGardenID } from '../components/GardenID';
 
 /**
  * Display the "NavBar" at the top of the page.
  */
 function Top() {
+  const gardenID = getGardenID();
   return (
     <Navbar sticky="top" bg="dark" variant="dark">
       <Container>
@@ -16,7 +18,7 @@ function Top() {
             height="30"
             className="d-inline-block align-top"
           />{' '}
-          Agile Garden Club: Public Garden View (45ght3cf)
+          Agile Garden Club: Public Garden View ({gardenID})
         </Navbar.Brand>
         <Nav>
           <Nav.Item><Nav.Link href="#overview">Overview</Nav.Link></Nav.Item>

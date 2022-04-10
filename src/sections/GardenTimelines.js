@@ -10,7 +10,6 @@ import { TimelineByFamily } from '../components/TimelineByFamily';
  * Planting section
  */
 function GardenTimelines() {
-
   return (
     <div id="garden-timelines">
       <Container className="py-3">

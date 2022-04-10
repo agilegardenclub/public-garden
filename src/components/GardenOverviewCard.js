@@ -6,10 +6,11 @@ import { PictureCarousel } from './PictureCarousel';
 import { ClimateVictoryGardenBadge } from './ClimateVictoryGardenBadge';
 import { GardenerLabel } from './GardenerLabel';
 import { GardenPlantBadge } from './GardenPlantBadge';
+// import { getGardenID } from './GardenID';
 
 export function GardenOverviewCard() {
   const year = `(${gardenOverview.currentYear()})`;
-  const name = gardenOverview.name();
+  const name = 'foo'; // getGardenID();
   const pictureData = gardenOverview.pictures();
   const age = gardenOverview.age();
   const size = gardenOverview.currentSize();

@@ -5,10 +5,10 @@ import Overview from './sections/Overview';
 import About from './sections/About';
 import GardenTimelines from './sections/GardenTimelines';
 import ChapterPlantHistory from './sections/ChapterPlantHistory';
-import { getGardenID } from './components/GardenID';
+import { getGardenName } from './components/GardenName';
 
 const App = () => {
-  const gardenID = getGardenID();
+  const gardenID = getGardenName();
   useEffect(() => {
     document.title = `AGC Public Garden (${gardenID})`;
   }, []);

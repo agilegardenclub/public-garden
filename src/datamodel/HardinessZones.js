@@ -14,7 +14,7 @@ class HardinessZones {
   description(id) {
     const zoneInfo = this.hardinessZoneData.find(element => element.id === id);
     return `
-    Minimum winter temp: ${zoneInfo.fromFarhenheit} - ${zoneInfo.toFarhenheit}
+    Minimum winter temp: ${zoneInfo.fromfahrenheit} - ${zoneInfo.tofahrenheit}
     `;
   }
 

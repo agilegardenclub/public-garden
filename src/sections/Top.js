@@ -1,12 +1,12 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import { getGardenID } from '../components/GardenID';
+import { getGardenName } from '../components/GardenName';
 
 /**
  * Display the "NavBar" at the top of the page.
  */
 function Top() {
-  const gardenID = getGardenID();
+  const gardenID = getGardenName();
   return (
     <Navbar sticky="top" bg="dark" variant="dark">
       <Container>

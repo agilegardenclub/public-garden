@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { MasterGardenerBadge } from './MasterGardenerBadge';
-import { gardenOverview } from '../datamodel/GardenOverview';
+import { GardenOverview } from '../datamodel/GardenOverview';
+import { getGardenName } from './GardenName';
 
 export function GardenerLabel({ gardenerID }) {
+  const gardenName = getGardenName();
+  const gardenOverview = new GardenOverview(gardenName);
   const name = gardenOverview.gardenerName(gardenerID);
   const isMasterGardener = gardenOverview.isMasterGardener(gardenerID);
   return (

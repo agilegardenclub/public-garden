@@ -6,9 +6,11 @@ import { plantFamilyData } from '../datamodel/data/plantFamilyData';
 import { PlantingHistory } from '../datamodel/PlantingHistory';
 import { NestedDropdown } from './NestedDropdown';
 import { TimelineData } from './TimelineData';
+import { getGardenName } from './GardenName';
 
 export function TimelineByBed() {
-  const plantingHistory = new PlantingHistory({ gardenData: gardenData[0], plantData, plantFamilyData });
+  const gardenName = getGardenName();
+  const plantingHistory = new PlantingHistory({ gardenName, plantData, plantFamilyData });
   const bedIDs = plantingHistory.bedIDs();
   const menuItems = bedIDs.map(bedID => ({ type: 'item', label: `Bed ${bedID}`, eventKey: bedID }));
   const initialBed = bedIDs[0];

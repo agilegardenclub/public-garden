@@ -1,10 +1,11 @@
 /* Provide functions to organize planting data for display in various ways */
 import { plantFamilyCommonName, plantFamilyID, plantName } from './PlantInfo';
+import { gardenData } from './data/gardenData';
 
 export class PlantingHistory {
   // eslint-disable-next-line no-shadow
-  constructor({ gardenData, plantData, plantFamilyData }) {
-    this.gardenData = gardenData;
+  constructor({ gardenName, plantData, plantFamilyData }) {
+    this.gardenData = gardenData.find(garden => garden.name === gardenName);
     this.plantData = plantData;
     this.plantFamilyData = plantFamilyData;
     // this.plantings = this._extractPlantings();

@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { gardenData } from '../datamodel/data/gardenData';
 import { plantData } from '../datamodel/data/plantData';
 import { plantFamilyData } from '../datamodel/data/plantFamilyData';
 import { PlantingHistory } from '../datamodel/PlantingHistory';
 import { NestedDropdown } from './NestedDropdown';
 import { TimelineData } from './TimelineData';
+import { getGardenName } from './GardenName';
 
 export function TimelineByYear() {
-  const plantingHistory = new PlantingHistory({ gardenData: gardenData[0], plantData, plantFamilyData });
+  const gardenName = getGardenName();
+  const plantingHistory = new PlantingHistory({ gardenName, plantData, plantFamilyData });
   const years = plantingHistory.years();
   const menuItems = years.map(year => ({ type: 'item', label: year, eventKey: year }));
   const initialYear = `${years[0]}`;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Stack } from 'react-bootstrap';
 import { Field } from './Field';
-import { gardenOverview } from '../datamodel/GardenOverview';
+import { GardenOverview } from '../datamodel/GardenOverview';
 import { PictureCarousel } from './PictureCarousel';
 import { ClimateVictoryGardenBadge } from './ClimateVictoryGardenBadge';
 import { GardenerLabel } from './GardenerLabel';
@@ -9,6 +9,8 @@ import { GardenPlantBadge } from './GardenPlantBadge';
 import { getGardenName } from './GardenName';
 
 export function GardenOverviewCard() {
+  const gardenName = getGardenName();
+  const gardenOverview = new GardenOverview(gardenName);
   const year = `(${gardenOverview.currentYear()})`;
   const gardenID = getGardenName();
   const pictureData = gardenOverview.pictures();

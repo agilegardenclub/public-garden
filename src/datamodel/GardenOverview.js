@@ -1,17 +1,17 @@
-import { gardenData } from './data/gardenData';
 import { gardenerData } from './data/gardenerData';
 import { plantData } from './data/plantData';
 import { PlantingHistory } from './PlantingHistory';
 import { plantFamilyData } from './data/plantFamilyData';
+import { gardenData } from './data/gardenData';
 
 /* Processes raw data for use by GardenOverviewCard. */
-class GardenOverview {
+export class GardenOverview {
   // eslint-disable-next-line no-shadow
-  constructor(garden, gardeners, plants) {
-    this.garden = garden;
-    this.gardeners = gardeners;
-    this.plants = plants;
-    this.plantingHistory = new PlantingHistory({ gardenData: garden, plantData, plantFamilyData });
+  constructor(gardenName) {
+    this.gardeners = gardenerData;
+    this.plants = plantData;
+    this.garden = gardenData.find(garden => garden.name === gardenName);
+    this.plantingHistory = new PlantingHistory({ gardenName, plantData, plantFamilyData });
   }
 
   age() {
@@ -83,5 +83,3 @@ class GardenOverview {
     return this.garden.lastUpdate;
   }
 }
-
-export const gardenOverview = new GardenOverview(gardenData[0], gardenerData, plantData);

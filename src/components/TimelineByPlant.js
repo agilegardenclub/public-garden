@@ -7,9 +7,11 @@ import { PlantingHistory } from '../datamodel/PlantingHistory';
 import { NestedDropdown } from './NestedDropdown';
 import { TimelineData } from './TimelineData';
 import { plantNameShort } from '../datamodel/PlantInfo';
+import { getGardenName } from './GardenName';
 
 export function TimelineByPlant() {
-  const plantingHistory = new PlantingHistory({ gardenData: gardenData[0], plantData, plantFamilyData });
+  const gardenName = getGardenName();
+  const plantingHistory = new PlantingHistory({ gardenName, plantData, plantFamilyData });
   const menuItems = plantingHistory.plantDropdownMenuItems();
   const initialPlantID = menuItems[0].items[0].eventKey;
   const initialPlantName = menuItems[0].items[0].label;

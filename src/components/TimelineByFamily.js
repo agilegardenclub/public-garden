@@ -7,9 +7,11 @@ import { PlantingHistory } from '../datamodel/PlantingHistory';
 import { NestedDropdown } from './NestedDropdown';
 import { TimelineData } from './TimelineData';
 import { plantFamilyCommonName } from '../datamodel/PlantInfo';
+import { getGardenName } from './GardenName';
 
 export function TimelineByFamily() {
-  const plantingHistory = new PlantingHistory({ gardenData: gardenData[0], plantData, plantFamilyData });
+  const gardenName = getGardenName();
+  const plantingHistory = new PlantingHistory({ gardenName, plantData, plantFamilyData });
   const familyIDs = plantingHistory.plantFamilyIDs();
   const menuItems = familyIDs.map(familyID => ({ type: 'item', label: plantFamilyCommonName(familyID, true), eventKey: familyID }));
   const initialFamilyID = familyIDs[0];

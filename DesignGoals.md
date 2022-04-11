@@ -28,11 +28,24 @@ One way to increase the verisimilitude of our simulated community data is to req
 
 #### Feature 3: AGC supports community seed saving and sharing.
 
-Assume we extend our representation with the following: (1) a flag indicating if seeds were harvested for this planting; (2) a rating from 1-5 to evaluate the seed production success of the planting; and (3) a flag indicating if the gardener has seeds available to share with others from this planting.
+Many garden planning systems are designed to "channel" gardeners to sponsoring companies for their seed purchases.
+
+AGC can distinguish itself by instead providing explicit support for seed saving and sharing. 
+
+For example, assume we extend our current representation of a planting with:
+
+  * A flag indicating if seeds were harvested for this planting; 
+  * A rating from 1-5 to evaluate the seed production success of the planting; 
+  * A flag indicating if the gardener has seeds available to share with others from this planting.
+  
 This creates infrastructure to support "community seed saving and sharing", which is useful for improving seed availability and encouraging gardeners to grow seeds, which improves community resilience.
 
 #### Feature 4: AGC supports community real-time notifications.
 
 Once we have the 2022 garden plan for Jenna, we can illustrate "community real-time notification", which is the communication of an Observation made by another community member to Jenna's garden, because the observation is related to a plant that is also growing in Jenna's garden. This is useful because (a) real-time notifications  about (say) pests can provide an actionable early warning, and (b) there is no additional overhead to the community member making the observation--they would make the Observation anyway, and the system takes care of communicating it to other gardeners for whom it would be relevant.
 
-I think these four features can be illustrated by the public page in some fashion, and that together they make the case for the design of AGC as well as we can make it at this time.
+Real-time notifications can be illustrated if we implement multiple gardens, and where some of the gardens having plantings based on the same plant in the same season.
+
+#### Feature 5: The public garden representation provides enough value to be useful to a gardener with sufficient technological expertise to update the representation of their garden manually.
+
+It would be cool if we can make the public garden representation so feature-full that someone like Jenna (who will know how to add garden data as javascript) finds it useful enough that she will update it to reflect the current state of her garden. 

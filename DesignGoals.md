@@ -1,12 +1,16 @@
-## Design goals for the public garden page
+## Design goals for the public garden site
 
-I'm realizing that there's basically an infinite amount of functionality that could potentially be put into the public garden page, and so I think it's important to establish some criteria for when the page is "done enough" for now.  My thought is that we want the page to be sufficiently feature-full to demonstrate, in some manner, all of the major advantages of AGC, but it doesn't have to go any further than that for now.  Here's my initial list:
+The fundamental design goal for the public garden site is to illustrate all of the major functional advantages of AGC. But in order to do that, we must first achieve the "baseline" design goal:
 
 #### Baseline: AGC can represent a real, non-trivial garden.
 
-This is not an advantage of AGC, this is just the entry ticket.  Fortunately, Jenna has excellent records for her garden that we can use to generate this representation.
+This is not an advantage of AGC over other systems, this is just the entry ticket.  Fortunately, Jenna has excellent records for her garden that we can use to verify whether or not we can achieve this design goal.
 
-Unfortunately, we cannot at this point demonstrate that "AGC can represent a real, non-trivial community (i.e. Chapter)". We will have to simulate Chapter data for the public garden.  It is important that we try to figure out ways to simulate this data as accurately as possible. For example, perhaps we can get information from master gardeners or local seed growers about some of the most popular plants being grown in the area, or some of the biggest problems with plants in the area. That way the simulated community data won't be wildly off the mark.
+The public garden site now has the ability to represent 
+
+#### Issue: representing a real, non-trivial community.
+
+Unfortunately, we cannot at this point demonstrate that "AGC can represent a real, non-trivial community (i.e. Chapter)". We will have to simulate Chapter data.  It is important that we try to figure out ways to simulate this data as accurately as possible. For example, perhaps we can get information from master gardeners or local seed growers about some of the most popular plants being grown in the area, or some of the biggest problems with plants in the area. That way the simulated community data won't be wildly off the mark.
 
 #### Feature 1: AGC provides useful historical perspectives.
 

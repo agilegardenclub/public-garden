@@ -50,10 +50,10 @@ $ npm start
 
 Compiled successfully!
 
-You can now view public-garden-45ght3cf in the browser.
+You can now view public-garden in the browser.
 
-  Local:            http://localhost:3000/public-garden-45ght3cf
-  On Your Network:  http://10.0.1.68:3000/public-garden-45ght3cf
+  Local:            http://localhost:3000/public-garden
+  On Your Network:  http://10.0.1.68:3000/public-garden
 
 Note that the development build is not optimized.
 To create a production build, use npm run build.
@@ -79,7 +79,9 @@ modules by path ./src/*.js 11.3 KiB
 webpack 5.69.1 compiled successfully in 2086 ms
 ```
 
-You should now be able to display the page at [http://localhost:3000/public-garden/?name=45ght3cf](http://localhost:3000/public-garden/?name=45ght3cf).
+This command will ultimately bring up a browser and go to http://localhost:3000/, which displays a blank page. It's blank because, in order to actually display a garden, you must add a "name" search parameter in the URL. 
+
+So, to actually see a public garden in your locally running instance, go to: [http://localhost:3000/public-garden/?name=45ght3cf](http://localhost:3000/public-garden/?name=45ght3cf).
 
 ## Deploying your changes
 

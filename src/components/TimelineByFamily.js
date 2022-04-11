@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { gardenData } from '../datamodel/data/gardenData';
 import { plantData } from '../datamodel/data/plantData';
 import { plantFamilyData } from '../datamodel/data/plantFamilyData';
 import { PlantingHistory } from '../datamodel/PlantingHistory';

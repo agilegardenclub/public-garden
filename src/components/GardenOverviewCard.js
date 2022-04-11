@@ -10,6 +10,7 @@ import { getGardenName } from './GardenName';
 
 export function GardenOverviewCard() {
   const gardenName = getGardenName();
+  console.log('garden name', gardenName);
   const gardenOverview = new GardenOverview(gardenName);
   const year = `(${gardenOverview.currentYear()})`;
   const gardenID = getGardenName();

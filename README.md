@@ -14,11 +14,11 @@ This repository contains code to generate an example Public Garden web page usin
 
   * Investigate privacy issues. This example is intended to not reveal the identity of gardeners or the exact location of gardens. What functionality, if any, must be sacrificed to preserve privacy?
 
-The latest version of the example Public Garden page is available at: [https://agilegardenclub.com/public-garden-45ght3cf/](https://agilegardenclub.com/public-garden-45ght3cf/).
+The latest version of the example Public Garden page is available at: [https://agilegardenclub.com/public-garden/?name=45ght3cf/](https://agilegardenclub.com/public-garden/?name=45ght3cf/).
 
 ## To Do
 
-To see the current list of tasks associated with this example, please see the [Project Board](https://github.com/agilegardenclub/public-garden-45ght3cf/projects/1).
+To see the current list of tasks associated with this example, please see the [Project Board](https://github.com/agilegardenclub/public-garden/projects/1).
 
 ## Installation
 
@@ -87,7 +87,7 @@ modules by path ./src/*.js 11.3 KiB
 webpack 5.69.1 compiled successfully in 2086 ms
 ```
 
-You should now be able to display the page at [http://localhost:3000/public-garden-45ght3cf](http://localhost:3000/public-garden-45ght3cf).
+You should now be able to display the page at [http://localhost:3000/public-garden/?name=45ght3cf](http://localhost:3000/public-garden/?name=45ght3cf).
 
 ## Deploying your changes
 
@@ -95,11 +95,11 @@ This repository contains a GitHub action to automatically build and deploy the p
 
 So, to deploy the system, simply commit (or merge changes from a development branch) into your local main branch, and then push to GitHub. This will start a GitHub Action to build and deploy the system. 
 
-You can watch the progress of the automated build and deploy [here](https://github.com/agilegardenclub/public-garden-45ght3cf/actions).
+You can watch the progress of the automated build and deploy [here](https://github.com/agilegardenclub/public-garden/actions).
 
 Note that the build will fail if there are any ESLint errors. See below for instructions on how to run ESLint.
 
-The most recent successfully deployed version of the page is always available at [https://agilegardenclub.com/public-garden-45ght3cf/](https://agilegardenclub.com/public-garden-45ght3cf/)
+The most recent successfully deployed version of the page is always available at [https://agilegardenclub.com/public-garden/?name=45ght3cf](https://agilegardenclub.com/public-garden/?name=45ght3cf)
 
 ## Developer Guide
 
@@ -110,14 +110,14 @@ The src/ directory is organized as follows:
  * `App.js, index.js`:  These two top-level files are the entry-point for displaying the page.   
  * `sections/`: This directory contains the components that implement the "sections" of the page.
  * `components/`: This directory contains components that implement various widgets, cards, and so forth that appear in a section.
- * `datamodel/`: This directory simulates aspects of the design of the backend database. It includes examples of individual collections (i.e. chapterData.js, gardenerData.js, etc.) as well as higher level singleton classes that process the collections for use by components (i.e. ChapterOverview.js, GardenOverview.js).
+ * `datamodel/`: This directory simulates aspects of the design of the backend database. The data/ subdirectory contains individual collections (i.e. chapterData.js, gardenerData.js, etc.). The top-level directory contains as higher level singleton classes and utility funcitons that process the collections for use by components (i.e. ChapterOverview.js, GardenOverview.js).
  * `css/`: This directory contains automatically generated custom Bootstrap theme definition. It is regenerated each time the system is started. Do not edit this directory; to change the theme, edit the files in `scss/`.
 
 There are two different ways to familiarize yourself with the code:
 
   1. *UI, Top-Down*:  Start with `src/index.js`, then look at `src/App.js`, then follow the component hierarchy down. That shows you the structure of the UI and how the components compose together to form the page.
 
-  2. *Data, Bottom-Up*: Another way is to follow the data.  Start in the `src/datamodel/` directory, and look at the lower case "data" files (`chapterData.js`, `gardenerData.js`, `gardenData.js`, etc.) Then see how these examples of MongoDB-style collections are wrapped in that directory by capitalized classes (`ChapterOverview.js`, `GardenOverview.js`, etc.) Singleton instances of these classes are exported and then used by components (`ChapterOverviewCard.js`, `GardenOverviewCard.js`) to display the data.
+  2. *Data, Bottom-Up*: Another way is to follow the data.  Start in the `src/datamodel/data` directory, and look at the lower case "data" files (`chapterData.js`, `gardenerData.js`, `gardenData.js`, etc.) Then see how these examples of MongoDB-style collections are wrapped in the parent directory by capitalized classes (`ChapterOverview.js`, `GardenOverview.js`, etc.) Singleton instances of these classes are exported and then used by components (`ChapterOverviewCard.js`, `GardenOverviewCard.js`) to display the data.
 
 ### Images
 
@@ -127,7 +127,7 @@ Please crop all images to be exactly 600px wide and 400px high. This eliminates 
 
 If you are making significant changes, please consider the following workflow:
 
-  1. Create an issue to document your intended change, and add it to the [Project Board](https://github.com/agilegardenclub/public-garden-45ght3cf/projects/1).
+  1. Create an issue to document your intended change, and add it to the [Project Board](https://github.com/agilegardenclub/public-garden/projects/1).
   2. Create a branch off main called issue-NNN, where NNN is the issue number.
   3. Do all work in your development branch, updating from main as needed.
   4. When the change is complete, merge the branch into main, and close the issue.
@@ -152,6 +152,6 @@ We use ESLint to enforce coding standards.  If you are using IntelliJ, this shou
 ```
 $ npm run lint   
 
-> public-garden-45ght3cf@1.0.0 lint
+> public-garden@1.0.0 lint
 > eslint --quiet --ext .js ./src
 ```

@@ -1,3 +1,6 @@
-import { useParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 
-export const getGardenName = () => useParams().gardenName || 'Missing Garden ID';
+export const getGardenName = () => {
+  const [searchParams] = useSearchParams();
+  return searchParams.get('name') || 'Missing Garden ID';
+};

@@ -9,8 +9,7 @@ import './css/theme.css';
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path="public-garden-45ght3cf/:gardenName" element={<App />} />
-      <Route path="*" element={<App />} />
+      <Route path=":path/:gardenName" element={<App />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById('root'),

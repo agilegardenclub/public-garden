@@ -6,7 +6,7 @@ The fundamental design goal for the public garden site is to illustrate all of t
 
 This is not an advantage of AGC over other systems, this is just the entry ticket.  Fortunately, Jenna has excellent records for her garden that we can use to verify whether or not we can achieve this design goal.
 
-The public garden site now has the ability to represent 
+The public garden site now has the ability to represent multiple gardens. This means that we can not simply illustrate a single, non-trivial garden, but multiple non-trivial gardens. For example, we could illustrate Jesse's garden or one or more of Common Threads gardens.
 
 #### Issue: representing a real, non-trivial community.
 
@@ -14,11 +14,17 @@ Unfortunately, we cannot at this point demonstrate that "AGC can represent a rea
 
 #### Feature 1: AGC provides useful historical perspectives.
 
-Jenna has two years of prior data (2020, 2021) plus planning data for 2022.  Currently I am planning to have two historical perspectives: a "Bed History" view and a "Plant History" view. The Bed History view is useful for (at least) verifying crop rotation. I am not sure yet what the Plant History view will be useful for, but I am confident something will emerge once we see the results.
+Jenna has two years of prior data (2020, 2021) plus planning data for 2022. Once we have added all of this data, we will need to show how the various timeline perspectives (by year, by bed, by plant, by family) of Jenna's garden provides concrete examples of useful insight.
+
+We may find concrete examples of useful insight from the implementation of other gardens as well. 
 
 #### Feature 2: AGC provides useful community plant evaluation data.
 
 There are several potentially useful forms of local, community data for each plant: (1) Aggregate "star" rankings for: germination, appearance, pest/disease resistance, yield, and flavor; and (2) Aggregate "observation" data; (3) Aggregate start times, transplant times, first harvest times, and end times.  All of these are useful for improving the ability of gardener to select the most appropriate plants for their garden, and estimate when to best plant and harvest.
+
+Unfortunately, it is unlikely that we can provide concrete, real community data that would lead to accurate evaluations. The best we can do is simulate it.   
+
+One way to increase the verisimilitude of our simulated community data is to request feedback from the Bellingham gardener facebook group. 
 
 #### Feature 3: AGC supports community seed saving and sharing.
 

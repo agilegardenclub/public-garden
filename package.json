@@ -1,7 +1,7 @@
 {
-  "name": "public-garden-45ght3cf",
+  "name": "public-garden",
   "version": "1.0.0",
-  "homepage": "https://agilegardenclub.com/public-garden-45ght3cf",
+  "homepage": "https://agilegardenclub.com/public-garden",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",

@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { BadgeWithPopover } from './BadgeWithPopover';
 import { chapterOverview } from '../datamodel/ChapterOverview';
-import { gardenOverview } from '../datamodel/GardenOverview';
 import { Field } from './Field';
 import { RatingList } from './RatingList';
 import { plantFamilyColorName, plantFamilyName } from '../datamodel/PlantInfo';
+import { vendorName, vendorUrl } from '../datamodel/VendorInfo';
 
 export function GardenPlantBadge({ plantID }) {
   const plantInfo = chapterOverview.plantInfo(plantID);
@@ -13,11 +13,11 @@ export function GardenPlantBadge({ plantID }) {
   const name = `${plantInfo.plant} (${plantInfo.variety}) ${plantNum}`;
   const bg = plantFamilyColorName(plantID);
   const textColor = `text-${plantFamilyColorName(plantID)}`;
-  const vendor = plantInfo.vendor;
-  const vendorURL = plantInfo.vendorURL;
+  const vendor = vendorName(plantID);
+  const vendorURL = vendorUrl(plantID);
   const description = plantInfo.description;
   const familyName = plantFamilyName(plantID);
-  const plantOutcomes = gardenOverview.plantOutcomes(plantID);
+  const plantOutcomes = null; // Needs to be reimplemented.
   const ratingData = [
     { item: 'Appearance', rating: plantOutcomes ? plantOutcomes.appearance : 0 },
     { item: 'Flavor', rating: plantOutcomes ? plantOutcomes.flavor : 0 },
@@ -29,7 +29,7 @@ export function GardenPlantBadge({ plantID }) {
     <BadgeWithPopover header={name} label={name} bg={bg}>
       <p><b>Family:</b> <span className={textColor}>{familyName}</span> </p>
       <p><b>Description:</b> {description}</p>
-      <p><b>Vendor:</b> {vendor} <a target="_blank" rel="noreferrer noopener" href={vendorURL}>(Plant Info)</a></p>
+      <p><b>Vendor:</b>  <a target="_blank" rel="noreferrer noopener" href={vendorURL}>{vendor}</a></p>
       <Field title="Outcome (Average)" direction="vertical">
         <RatingList ratingData={ratingData}/>
       </Field>

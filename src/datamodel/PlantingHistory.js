@@ -7,7 +7,8 @@ export class PlantingHistory {
     this.gardenData = gardenData;
     this.plantData = plantData;
     this.plantFamilyData = plantFamilyData;
-    this.plantings = this._extractPlantings();
+    // this.plantings = this._extractPlantings();
+    this.plantings = this.gardenData.plantingData;
   }
 
   /** A temporary method to 'normalize' the history data structure. */

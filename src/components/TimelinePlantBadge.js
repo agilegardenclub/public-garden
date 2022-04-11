@@ -5,6 +5,7 @@ import { chapterOverview } from '../datamodel/ChapterOverview';
 import { Field } from './Field';
 import { RatingList } from './RatingList';
 import { plantFamilyColorName, plantFamilyName } from '../datamodel/PlantInfo';
+import { vendorName, vendorUrl } from '../datamodel/VendorInfo';
 
 export function TimelinePlantBadge({ plantingData }) {
   const plantID = plantingData.plantID;
@@ -13,8 +14,8 @@ export function TimelinePlantBadge({ plantingData }) {
   const name = `${plantNum} ${plantInfo.plant} (${plantInfo.variety})`;
   const bg = plantFamilyColorName(plantID);
   const textColor = `text-${plantFamilyColorName(plantID)}`;
-  const vendor = plantInfo.vendor || '';
-  const vendorURL = plantInfo.vendorURL || '';
+  const vendor = vendorName(plantID);
+  const vendorURL = vendorUrl(plantID);
   const description = plantInfo.description;
   const familyName = plantFamilyName(plantID);
   const plantOutcomes = plantingData.outcomes;
@@ -34,7 +35,7 @@ export function TimelinePlantBadge({ plantingData }) {
     <BadgeWithPopover header={name} label={name} bg={bg}>
       <p><b>Family:</b> <span className={textColor}>{familyName}</span> </p>
       <p><b>Description:</b> {description}</p>
-      { vendor ? <p><b>Vendor:</b> {vendor} <a target="_blank" rel="noreferrer noopener" href={vendorURL}>(Plant Info)</a></p> : ''}
+      { vendor ? <p><b>Vendor:</b>  <a target="_blank" rel="noreferrer noopener" href={vendorURL}>{vendor}</a></p> : ''}
       <p><b>Used Greenhouse:</b> {usedGreenhouse}</p>
       <p><b>Start Date:</b> {startDate}</p>
       <p><b>Transplant Date:</b> {transplantDate}</p>

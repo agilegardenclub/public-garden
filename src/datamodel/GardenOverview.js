@@ -1,6 +1,8 @@
 import { gardenData } from './data/gardenData';
 import { gardenerData } from './data/gardenerData';
 import { plantData } from './data/plantData';
+import { PlantingHistory } from './PlantingHistory';
+import { plantFamilyData } from './data/plantFamilyData';
 
 /* Processes raw data for use by GardenOverviewCard. */
 class GardenOverview {
@@ -9,10 +11,11 @@ class GardenOverview {
     this.garden = garden;
     this.gardeners = gardeners;
     this.plants = plants;
+    this.plantingHistory = new PlantingHistory({ gardenData: garden, plantData, plantFamilyData });
   }
 
   age() {
-    return this.garden.history.length;
+    return this.plantingHistory.years().length;
   }
 
   climateVictoryGarden() {
@@ -20,19 +23,19 @@ class GardenOverview {
   }
 
   currentYear() {
-    return this.garden.history[0].year;
+    return this.plantingHistory.years().sort().reverse()[0];
   }
 
   currentSize() {
-    return this.garden.history[0].size;
+    return this.garden.size;
   }
 
   currentBeds() {
-    return this.garden.history[0].beds;
+    return this.plantingHistory.bedIDs().length;
   }
 
   currentPlantIDs() {
-    return this.garden.history[0].plantIDs;
+    return ['plant-01'];
   }
 
   plantFamily(plantID) {
@@ -50,7 +53,7 @@ class GardenOverview {
   }
 
   currentGardenerIDs() {
-    return this.garden.history[0].gardenerIDs;
+    return this.garden.gardenerIDs;
   }
 
   gardenerName(gardenerID) {

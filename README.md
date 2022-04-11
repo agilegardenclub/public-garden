@@ -1,18 +1,10 @@
 # AGC Public Garden Web Page Example
 
-## Goals
+## Overview
 
-This repository contains code to generate an example Public Garden web page using React and Bootstrap. The intended goals of this example include:
+This repository contains code to support the public display of gardens represented using AGC. 
 
-  * Illustrate the benefits of AGC as a community of practice. The page should illustrate how gardeners are helped by being part of a Chapter. These benefits include access to the accumulated experience of all chapter members.
-
-  * Illustrate the benefits of crowd-sourced, local seed data.  The page should illustrate how independence from seed vendors enables AGC gardeners to find the best seeds for their situation and/or to grow their own. 
-
-  * Support the design of the data model. All of the data that populates this page come from a set of javascript files that simulate MongoDB collections.
-
-  * Provide a public example to support usability and business model testing. By illustrating as many of the "outcomes" of using AGC as possible, without having to explain the process by which these outcomes were arrived at, we can assess whether users would find this system of interest.
-
-  * Investigate privacy issues. This example is intended to not reveal the identity of gardeners or the exact location of gardens. What functionality, if any, must be sacrificed to preserve privacy?
+For details on our design goals, please see the [Design Goals page](DesignGoals.md).
 
 The latest version of the example Public Garden page is available at: [https://agilegardenclub.com/public-garden/?name=45ght3cf](https://agilegardenclub.com/public-garden/?name=45ght3cf).
 

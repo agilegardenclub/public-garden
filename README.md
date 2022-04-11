@@ -1,4 +1,4 @@
-# AGC Public Garden Web Page Example
+# AGC Public Garden Site
 
 ## Overview
 

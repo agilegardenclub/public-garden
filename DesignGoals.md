@@ -8,7 +8,7 @@ This is not an advantage of AGC over other systems, this is just the entry ticke
 
 The public garden site now has the ability to represent multiple gardens. This means that we can not only illustrate a single, non-trivial garden, but potentially two or more non-trivial gardens. For example, we could illustrate Jesse's garden or one or more of Common Threads gardens.
 
-#### Issue: representing a real, non-trivial community.
+#### Feature 0: AGC can represent at least one real, non-trivial community.
 
 Unfortunately, the public site cannot at this point demonstrate an important design goal: that "AGC can represent a real, non-trivial community (i.e. Chapter)". We will have to simulate Chapter data.  It is important that we try to figure out ways to simulate this data as accurately as possible. For example, perhaps we can get information from master gardeners or local seed growers about some of the most popular plants being grown in the area, or some of the biggest problems with plants in the area. That way the simulated community data won't be wildly off the mark.
 

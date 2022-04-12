@@ -10,7 +10,7 @@ The latest version of the example Public Garden page is available at: [https://a
 
 ## To Do
 
-To see the current list of tasks associated with this example, please see the [Project Board](https://github.com/agilegardenclub/public-garden/projects/1).
+To see the current list of tasks associated with this system development process, please see the [Project Board](https://github.com/agilegardenclub/public-garden/projects/1).
 
 ## Installation
 

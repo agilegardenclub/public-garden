@@ -25,6 +25,7 @@ export const Colors = {
   danger: '#dc3545',
   light: '#f8f9fa',
   dark: '#0f9391',
+  brown: '#63595C',
 };
 
 // Taken (mostly) from: https://getbootstrap.com/docs/5.1/customize/color/#all-colors

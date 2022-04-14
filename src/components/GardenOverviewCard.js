@@ -4,9 +4,9 @@ import { Field } from './Field';
 import { GardenOverview } from '../datamodel/GardenOverview';
 import { PictureCarousel } from './PictureCarousel';
 import { ClimateVictoryGardenBadge } from './ClimateVictoryGardenBadge';
-import { GardenerLabel } from './GardenerLabel';
 import { GardenPlantBadge } from './GardenPlantBadge';
 import { getGardenName } from './GardenName';
+import { Avatar } from './Avatar';
 
 export function GardenOverviewCard() {
   const gardenName = getGardenName();
@@ -18,7 +18,7 @@ export function GardenOverviewCard() {
   const size = gardenOverview.currentSize();
   const beds = gardenOverview.currentBeds();
   const plantBadges = gardenOverview.currentPlantIDs().map((plantID, index) => <GardenPlantBadge key={index} plantID={plantID} />);
-  const gardeners = gardenOverview.currentGardenerIDs().map((gardenerID, index) => <GardenerLabel key={index} gardenerID={gardenerID}/>);
+  const gardeners = gardenOverview.currentGardenerIDs().map((gardenerID, index) => <Avatar key={index} gardenerID={gardenerID}/>);
   const lastUpdate = gardenOverview.lastUpdate();
   const climateVictoryGarden = gardenOverview.climateVictoryGarden();
   return (
@@ -40,7 +40,7 @@ export function GardenOverviewCard() {
             {plantBadges} {year}
           </Field>
           <Field title='Gardener(s):'>
-            {gardeners} {year}
+            {gardeners}
           </Field>
           <Field title='Last Update:'>
             {lastUpdate}

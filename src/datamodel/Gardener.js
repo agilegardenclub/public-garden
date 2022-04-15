@@ -6,6 +6,7 @@ export class Gardener {
   constructor(gardenerID) {
     this.gardenerInfo = gardenerData.find(element => element.id === gardenerID);
     if (!this.gardenerInfo) {
+      // eslint-disable-next-line no-console
       console.error(`No gardener with ID: ${gardenerID}`);
     }
   }

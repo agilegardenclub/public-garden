@@ -2,13 +2,6 @@
 
 ## Observation implementation
 
-* Create user avatars based on: https://codepen.io/KiranH/pen/ELamWv.  Idea is multiple sizes that support a two character abbreviation in a variety of colors, and are clickable to display gardener details.
-  * Update gardener definition with initials and background color. 
-
-* Need to create a Badge data type
-  - Example: Master Gardener
-  - description, bgColor, etc.
-
 * Add a single 2022 planting instance to Jenna's garden so she has a start. 
 
 * Update data model with:
@@ -23,6 +16,8 @@
   * Need users outside of JD and JB to illustrate community involvement. 
 
 * Add icon and popup 
+* Actually need to have both "Observations" and "Notifications"
+  * Illustrating this requires that Jesse's garden have the same planting as Jenna's. 
 
 ## Old Stuff
 

@@ -49,6 +49,8 @@ export const gardenData = [
 
       { plantingID: 'planting-011', year: 2021, bedID: 'GH', plantID: 'plant-110', startDate: '3/28/2021', transplantDate: '', firstHarvestDate: '8/10/2021', endDate: '9/14/2021', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 4 }, usedGreenhouse: true },
 
+      { plantingID: 'planting-011.1', year: 2021, bedID: '10', plantID: 'plant-118', startDate: '5/6/2021', transplantDate: '', firstHarvestDate: '7/16/2021', endDate: '9/15/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+
       /* 2020 Data */
 
       { plantingID: 'planting-012', year: 2020, bedID: '01', plantID: 'plant-116', fromStart: true, startDate: '3/30/2020', transplantDate: '', firstHarvestDate: '6/10/2020', endDate: '12/15/2020', outcomes: { appearance: 5, resistance: 5, yield: 5, flavor: 4 }, usedGreenhouse: false },
@@ -73,7 +75,7 @@ export const gardenData = [
     ],
 
     observationData: [
-      { observationID: 'observation-001', plantingID: '', type: '' },
+      { observationID: 'observation-001', plantingID: 'planting-011.1', observationDate: '9/5/2021', tags: ['disease'], description: 'Powdery mildew found on zuchinni, but still ample flowers and fruit production.' },
     ],
   },
 ];

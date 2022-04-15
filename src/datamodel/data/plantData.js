@@ -255,6 +255,15 @@ export const plantData = [
     description: 'Certified Organic Starts',
     daysToHarvest: 60,
   },
+  {
+    id: 'plant-118',
+    plant: 'Zucchini',
+    variety: 'Unknown',
+    familyID: 'plantfamily-04',
+    vendorID: 'vendor-00',
+    description: 'Store-bought starter.',
+    daysToHarvest: 60,
+  },
 ];
 
 // Plant Families

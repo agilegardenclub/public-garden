@@ -1,5 +1,5 @@
 export const vendorData = [
-  { id: 'vendor-00', name: 'From a friend', shortName: 'Friend', url: '' },
+  { id: 'vendor-00', name: 'Friend/Store', shortName: 'Friend/Store', url: '' },
   { id: 'vendor-01', name: 'Johnny\'s Selected Seeds', shortName: 'Johnny\'s', url: 'https://www.johnnyseeds.com/' },
   { id: 'vendor-02', name: 'Uprising Seeds', shortName: 'Uprising', url: 'https://uprisingorganics.com/' },
   { id: 'vendor-03', name: 'Seed Savers Exchange', shortName: 'Seed Savers', url: 'https://www.seedsavers.org/' },

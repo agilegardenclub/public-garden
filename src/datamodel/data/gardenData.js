@@ -73,7 +73,7 @@ export const gardenData = [
     ],
 
     observationData: [
-      { observationID: 'observation-001', }
-    ]
+      { observationID: 'observation-001', plantingID: '', type: '' },
+    ],
   },
 ];

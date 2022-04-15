@@ -17,4 +17,24 @@ export class Gardener {
   bgColor() {
     return this.gardenerInfo.bgColor;
   }
+
+  isMasterGardener() {
+    return !!this.gardenerInfo.masterGardener;
+  }
+
+  numGardens() {
+    return this.gardenerInfo.numGardens;
+  }
+
+  numYears() {
+    return this.gardenerInfo.numYears;
+  }
+
+  numPlantings() {
+    return this.gardenerInfo.numPlantings;
+  }
+
+  collaboratorIDs() {
+    return this.gardenerInfo.collaboratorIDs;
+  }
 }

@@ -2,27 +2,32 @@ import React from 'react';
 import { Popover, OverlayTrigger } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import { Gardener } from '../datamodel/Gardener';
+import { MasterGardenerBadge } from './MasterGardenerBadge';
 
-function _popover({ gardenerID }) {
+function _popover({ gardener }) {
   return (
     <Popover id="popover-basic">
-      <Popover.Header as="h3">The header</Popover.Header>
+      <Popover.Header as="h3">{gardener.initials()}</Popover.Header>
       <Popover.Body>
-        The body: {gardenerID}
+        <p><b>Gardens: </b> {gardener.numGardens()}</p>
+        <p><b>Years: </b> {gardener.numYears()}</p>
+        <p><b>Plantings: </b> {gardener.numPlantings()}</p>
+        <p><b>Collaborators: </b> {gardener.collaboratorIDs().map((collaborator, index) => <Avatar key={index} gardenerID={collaborator}/>)}</p>
+        {gardener.isMasterGardener() ? <MasterGardenerBadge/> : <div></div>}
       </Popover.Body>
     </Popover>
   );
 }
 
 _popover.propTypes = {
-  gardenerID: PropTypes.string,
+  gardener: PropTypes.any,
 };
 
 export function Avatar({ gardenerID, size = 16 }) {
-  const popover = _popover({ gardenerID });
+  const gardener = new Gardener(gardenerID);
+  const popover = _popover({ gardener });
   const px = `${size * 3}px`;
   const fontSize = `${size}px`;
-  const gardener = new Gardener(gardenerID);
   const initials = gardener.initials();
   const background = gardener.bgColor();
   const color = 'white';

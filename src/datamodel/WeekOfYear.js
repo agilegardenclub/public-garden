@@ -1,5 +1,6 @@
 /**
  * Return a number between 1 and 48 representing the week of the year associated with date.
+ * Year is optional. If not supplied, defaults to the year associated with dateString.
  * Caveats:
  *   * dates from a prior year are normalized to week 1.
  *   * dates from a future year are normalized to week 48
@@ -7,6 +8,9 @@
  */
 export function weekOfYear(dateString, year) {
   const date = new Date(dateString);
+  if (!year) {
+    year = date.getFullYear();
+  }
   // any date from previous year becomes week 1.
   if (date.getFullYear() < year) {
     return 1;

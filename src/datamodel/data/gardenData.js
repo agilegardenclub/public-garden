@@ -75,7 +75,8 @@ export const gardenData = [
     ],
 
     observationData: [
-      { observationID: 'observation-001', plantingID: 'planting-011.1', observationDate: '9/5/2021', tags: ['disease'], description: 'Powdery mildew found on zuchinni, but still ample flowers and fruit production.' },
+      { observationID: 'observation-001', plantingID: 'planting-011.1', observationDate: '9/5/2021', tags: ['disease'], description: 'Powdery mildew found on zuchinni, but still ample flowers and fruit production.', picture: 'observation-001.jpg', gardenerID: 'gardener-01' },
+      { observationID: 'observation-002', plantingID: 'planting-002', observationDate: '3/20/2021', tags: ['pest', 'help'], description: 'Two unknown caterpillar specis on lettuce, no substantial harm to lettuce.  Caterpillars removed and not seen again. What are these?', picture: 'observation-002.jpg', gardenerID: 'gardener-01' },
     ],
   },
 ];

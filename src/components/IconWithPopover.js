@@ -1,6 +1,7 @@
 import React from 'react';
-import { Badge, Popover, OverlayTrigger } from 'react-bootstrap';
+import { Popover, OverlayTrigger } from 'react-bootstrap';
 import PropTypes from 'prop-types';
+import { ExclamationTriangleFill as ObservationIcon } from 'react-bootstrap-icons';
 
 function _popover({ header, children }) {
   return (
@@ -18,22 +19,14 @@ _popover.propTypes = {
   children: PropTypes.any,
 };
 
-/* bg: 'primary' | 'secondary' | 'success' | 'danger' | 'warning' | 'info' | 'light' | 'dark' */
-
-export function IconWithPopover({ bg = 'primary', label = '', header = '', children }) {
-  const popover = _popover({ header, children });
+export function IconWithPopover() {
+  const popover = _popover({ header: 'header' });
   return (
     <OverlayTrigger trigger="click" placement="top" overlay={popover}>
-      <Badge pill bg={bg} className='mx-1' style={{ cursor: 'pointer' }}>
-        {label}
-      </Badge>
+      <ObservationIcon color={'red'} size={18} style={{ cursor: 'pointer' }} />
     </OverlayTrigger>
   );
 }
 
 IconWithPopover.propTypes = {
-  bg: PropTypes.string,
-  label: PropTypes.string,
-  header: PropTypes.string,
-  children: PropTypes.any,
 };

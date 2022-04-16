@@ -1,6 +1,7 @@
 /* Provide functions to organize planting data for display in various ways */
 import { plantFamilyCommonName, plantFamilyID, plantName } from './PlantInfo';
 import { gardenData } from './data/gardenData';
+import { weekOfYear } from './WeekOfYear';
 
 export class PlantingHistory {
   // eslint-disable-next-line no-shadow
@@ -10,6 +11,27 @@ export class PlantingHistory {
     this.plantFamilyData = plantFamilyData;
     // this.plantings = this._extractPlantings();
     this.plantings = this.gardenData.plantingData;
+    this._addObservationData();
+  }
+
+  _addObservationData() {
+    // first, just give every planting instance an observations field, initialized to an empty array.
+    this.plantings.forEach(planting => { planting.observations = []; });
+    // now, add each observation to the appropriate planting.
+    if (this.gardenData.observationData) {
+      this.gardenData.observationData.forEach(observation => {
+        // First, update the observation with a weekOfYear field.
+        observation.weekOfYear = weekOfYear(observation.observationDate);
+        // Now, attach it to its associated planting.
+        const obPlanting = this.plantings.find(planting => (planting.plantingID === observation.plantingID));
+        if (obPlanting) {
+          obPlanting.observations.push(observation);
+        } else {
+          // eslint-disable-next-line no-console
+          console.log(`Warning: no planting found for observation: ${observation.observationID}`);
+        }
+      });
+    }
   }
 
   /** A temporary method to 'normalize' the history data structure. */

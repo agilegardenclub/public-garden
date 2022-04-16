@@ -7,6 +7,7 @@ import { ClimateVictoryGardenBadge } from './ClimateVictoryGardenBadge';
 import { GardenPlantBadge } from './GardenPlantBadge';
 import { getGardenName } from './GardenName';
 import { Avatar } from './Avatar';
+import { IconWithPopover } from './IconWithPopover';
 
 export function GardenOverviewCard() {
   const gardenName = getGardenName();
@@ -41,6 +42,7 @@ export function GardenOverviewCard() {
           </Field>
           <Field title='Gardener(s):'>
             {gardeners}
+            <IconWithPopover/>
           </Field>
           <Field title='Last Update:'>
             {lastUpdate}

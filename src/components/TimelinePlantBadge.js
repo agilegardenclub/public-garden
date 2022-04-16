@@ -11,7 +11,8 @@ export function TimelinePlantBadge({ plantingData }) {
   const plantID = plantingData.plantID;
   const plantInfo = chapterOverview.plantInfo(plantID);
   const plantNum = plantID.substring(6);
-  const name = `${plantNum} ${plantInfo.plant} (${plantInfo.variety})`;
+  const showPlantNum = false;
+  const name = `${showPlantNum ? plantNum : ''} ${plantInfo.plant} (${plantInfo.variety})`;
   const bg = plantFamilyColorName(plantID);
   const textColor = `text-${plantFamilyColorName(plantID)}`;
   const vendor = vendorName(plantID);

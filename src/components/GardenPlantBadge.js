@@ -10,7 +10,8 @@ import { vendorName, vendorUrl } from '../datamodel/VendorInfo';
 export function GardenPlantBadge({ plantID }) {
   const plantInfo = chapterOverview.plantInfo(plantID);
   const plantNum = plantID.substring(5);
-  const name = `${plantInfo.plant} (${plantInfo.variety}) ${plantNum}`;
+  const showPlantNum = false;
+  const name = `${showPlantNum ? plantNum : ''} ${plantInfo.plant} (${plantInfo.variety})`;
   const bg = plantFamilyColorName(plantID);
   const textColor = `text-${plantFamilyColorName(plantID)}`;
   const vendor = vendorName(plantID);

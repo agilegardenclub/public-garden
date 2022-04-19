@@ -1,6 +1,7 @@
 /* Raw data regarding gardens. */
 
 export const gardenData = [
+  /*                  JENNA GARDEN         */
   {
     id: 'garden-01',
     name: '45ght3cf',
@@ -77,6 +78,24 @@ export const gardenData = [
     observationData: [
       { observationID: 'observation-001', plantingID: 'planting-011.1', observationDate: '9/5/2021', tags: ['disease'], description: 'Powdery mildew found on zuchinni, but still ample flowers and fruit production.', picture: 'observation-001.jpg', gardenerID: 'gardener-01' },
       { observationID: 'observation-002', plantingID: 'planting-002', observationDate: '3/20/2021', tags: ['pest', 'help'], description: 'Two unknown caterpillar species on lettuce, no substantial harm to lettuce.  Caterpillars removed and not seen again. What are these?', picture: 'observation-002.jpg', gardenerID: 'gardener-01' },
+    ],
+  },
+  /*                       JESSIE GARDEN               */
+  {
+    id: 'garden-02',
+    name: '67abh39db',
+    size: '1200 sq ft',
+    climateVictoryGarden: false,
+    lastUpdate: 'March 12, 2022',
+    gardenerIDs: ['gardener-02'],
+    pictures: [
+      { url: `${process.env.PUBLIC_URL}/img/garden-007-birds-eye-view.jpg`, caption: 'Layout. Blue: 2018. Green: 2019. Purple: 2021. Orange: 2021.', date: 'March, 2022' },
+
+      { url: `${process.env.PUBLIC_URL}/img/garden-001.jpg`, caption: 'Flowers at the heads of beds 4 and 5.', date: 'May, 2020' },
+    ],
+    plantingData: [
+      /* 2021 Data */
+      { plantingID: 'planting-1001', year: 2021, bedID: '1', plantID: 'plant-118', startDate: '5/6/2021', transplantDate: '', firstHarvestDate: '7/16/2021', endDate: '9/15/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
     ],
   },
 ];

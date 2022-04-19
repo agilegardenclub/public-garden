@@ -6,12 +6,35 @@ import { weekOfYear } from './WeekOfYear';
 export class PlantingHistory {
   // eslint-disable-next-line no-shadow
   constructor({ gardenName, plantData, plantFamilyData }) {
+    this.gardenName = gardenName;
     this.gardenData = gardenData.find(garden => garden.name === gardenName);
     this.plantData = plantData;
     this.plantFamilyData = plantFamilyData;
     // this.plantings = this._extractPlantings();
     this.plantings = this.gardenData.plantingData;
     this._addObservationData();
+    this._addNotificationData();
+  }
+
+  _addNotificationData() {
+    // first, give every planting instance a notifications field
+    this.plantings.forEach(planting => { planting.observations = []; });
+    // create list of all the observations from other gardens.
+    const otherObservations = [];
+    gardenData.forEach(garden => {
+      if ((garden.name !== this.gardenName) && garden.observationData) {
+        otherObservations.push(...garden.observationData);
+      }
+    });
+    // eslint-disable-next-line no-console
+    console.log('other observations', otherObservations);
+    // add a notification to a planting if it matches an observation
+    this.plantings.forEach(planting => {
+      const matchingObservations = otherObservations.filter(observation => observation.plantID === planting.plantID);
+    })
+
+
+    );
   }
 
   _addObservationData() {

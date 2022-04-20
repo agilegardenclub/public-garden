@@ -1,7 +1,7 @@
 /* Raw data regarding gardens. */
 
 export const gardenData = [
-  /*                  JENNA GARDEN         */
+  /*                  JENNA GARDEN          */
   {
     id: 'garden-01',
     name: '45ght3cf',
@@ -10,19 +10,19 @@ export const gardenData = [
     lastUpdate: 'March 12, 2022',
     gardenerIDs: ['gardener-01', 'gardener-02'],
     pictures: [
-      { url: `${process.env.PUBLIC_URL}/img/garden-007-birds-eye-view.jpg`, caption: 'Layout. Blue: 2018. Green: 2019. Purple: 2021. Orange: 2021.', date: 'March, 2022' },
+      { url: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden-007-birds-eye-view.jpg`, caption: 'Layout. Blue: 2018. Green: 2019. Purple: 2021. Orange: 2021.', date: 'March, 2022' },
 
-      { url: `${process.env.PUBLIC_URL}/img/garden-001.jpg`, caption: 'Flowers at the heads of beds 4 and 5.', date: 'May, 2020' },
+      { url: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden-001.jpg`, caption: 'Flowers at the heads of beds 4 and 5.', date: 'May, 2020' },
 
-      { url: `${process.env.PUBLIC_URL}/img/garden-002.jpg`, caption: 'Bed 7 Carrots succession sowed. Bed 11 Sunflowers & amaranth.', date: 'August, 2019' },
+      { url: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden-002.jpg`, caption: 'Bed 7 Carrots succession sowed. Bed 11 Sunflowers & amaranth.', date: 'August, 2019' },
 
-      { url: `${process.env.PUBLIC_URL}/img/garden-003.jpg`, caption: 'Sunflowers hiding the winter squash in bed 11', date: 'June, 2020' },
+      { url: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden-003.jpg`, caption: 'Sunflowers hiding the winter squash in bed 11', date: 'June, 2020' },
 
-      { url: `${process.env.PUBLIC_URL}/img/garden-004.jpg`, caption: 'Greens and herbs still growing right after the solstice', date: 'December, 2020' },
+      { url: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden-004.jpg`, caption: 'Greens and herbs still growing right after the solstice', date: 'December, 2020' },
 
-      { url: `${process.env.PUBLIC_URL}/img/garden-005.jpg`, caption: 'Bed 6 with zuchinni, herb boxes, and newly planted raspberries', date: 'May, 2020' },
+      { url: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden-005.jpg`, caption: 'Bed 6 with zuchinni, herb boxes, and newly planted raspberries', date: 'May, 2020' },
 
-      { url: `${process.env.PUBLIC_URL}/img/garden-006.jpg`, caption: 'Nice view of beds 1-8 before the plants take over', date: 'March, 2020' },
+      { url: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden-006.jpg`, caption: 'Nice view of beds 1-8 before the plants take over', date: 'March, 2020' },
     ],
     plantingData: [
       /* 2021 Data */
@@ -89,9 +89,9 @@ export const gardenData = [
     lastUpdate: 'March 12, 2022',
     gardenerIDs: ['gardener-02'],
     pictures: [
-      { url: `${process.env.PUBLIC_URL}/img/garden-007-birds-eye-view.jpg`, caption: 'Layout. Blue: 2018. Green: 2019. Purple: 2021. Orange: 2021.', date: 'March, 2022' },
+      { url: `${process.env.PUBLIC_URL}/img/gardens/67abh39db/garden-007-birds-eye-view.jpg`, caption: 'Layout. Blue: 2018. Green: 2019. Purple: 2021. Orange: 2021.', date: 'March, 2022' },
 
-      { url: `${process.env.PUBLIC_URL}/img/garden-001.jpg`, caption: 'Flowers at the heads of beds 4 and 5.', date: 'May, 2020' },
+      { url: `${process.env.PUBLIC_URL}/img/gardens/67abh39db/garden-001.jpg`, caption: 'Flowers at the heads of beds 4 and 5.', date: 'May, 2020' },
     ],
     plantingData: [
       /* 2021 Data */

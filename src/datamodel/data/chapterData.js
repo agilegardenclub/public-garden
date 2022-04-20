@@ -6,12 +6,12 @@ export const chapterData = [
     name: 'Bellingham, WA',
     pictures: [
       {
-        url: `${process.env.PUBLIC_URL}/img/bellingham-chapter-map.png`,
+        url: `${process.env.PUBLIC_URL}/img/chapters/bellingham/bellingham-chapter-map.png`,
         caption: 'Chapter Map',
         date: 'March, 2022',
       },
       {
-        url: `${process.env.PUBLIC_URL}/img/bellingham-climate.png`,
+        url: `${process.env.PUBLIC_URL}/img/chapters/bellingham/bellingham-climate.png`,
         caption: 'Climate Overview',
         date: 'March, 2022',
       },

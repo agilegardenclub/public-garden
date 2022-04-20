@@ -33,8 +33,18 @@ export class PlantingHistory {
     // add a notification to a planting if it matches an observation
     this.plantings.forEach(planting => {
       const matchingObservations = otherObservations.filter(observation => this._matchingPlant(observation.plantingID, planting.plantingID));
+      matchingObservations.forEach(observation => { observation.weekOfYear = weekOfYear(observation.observationDate); });
+      matchingObservations.forEach(observation => { observation.plantID = this._getPlantID(observation.plantingID); });
       planting.notifications.push(...matchingObservations);
+      // if (matchingObservations.length > 0) {
+      //   console.log('matching observations', matchingObservations);
+      // }
     });
+  }
+
+  _getPlantID(plantingID) {
+    const plantingInfo = this.allPlantings.find(planting => planting.plantingID === plantingID);
+    return plantingInfo.plantID;
   }
 
   /**

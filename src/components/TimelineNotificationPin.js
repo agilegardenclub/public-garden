@@ -7,7 +7,7 @@ import { ObservationCard } from './ObservationCard';
 function _popover({ notifications }) {
   return (
     <Popover id="popover-basic">
-      <Popover.Header as="h3">{'Observations'}</Popover.Header>
+      <Popover.Header as="h3">{'Notifications'}</Popover.Header>
       <Popover.Body>
         {notifications.map((notification, index) => <ObservationCard key={index} observation={notification} isNotification={true} />)}
       </Popover.Body>

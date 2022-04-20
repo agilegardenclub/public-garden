@@ -258,10 +258,10 @@ export const plantData = [
   {
     id: 'plant-118',
     plant: 'Zucchini',
-    variety: 'Unknown',
+    variety: '?',
     familyID: 'plantfamily-04',
     vendorID: 'vendor-00',
-    description: 'Store-bought starter.',
+    description: 'Starter bought at Haggen Grocery Store. Unknown varietal.',
     daysToHarvest: 60,
   },
   {

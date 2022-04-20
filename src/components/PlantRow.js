@@ -3,8 +3,9 @@ import { Col, Row } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import { TimelinePlantBadge } from './TimelinePlantBadge';
 import { plantingBackgroundClass } from './PlantingBackgroundClass';
-import { getObservations } from '../datamodel/ObservationInfo';
+import { getObservations, getNotifications } from '../datamodel/ObservationInfo';
 import { TimelineObservationPin } from './TimelineObservationPin';
+import { TimelineNotificationPin } from './TimelineNotificationPin';
 
 export function PlantRowNameHeaderCol() {
   return (
@@ -56,7 +57,7 @@ function WeekCol({ currWeek, plantingData }) {
   return (
     <Col xs={3} className={classNameString} style={style}>
       {observations.length > 0 ? <TimelineObservationPin observations={observations}/> : <div></div>}
-      {notifications.length > 0 ? <TimelineNotificationPin observations={observations}/> : <div></div>}
+      {notifications.length > 0 ? <TimelineNotificationPin notifications={notifications}/> : <div></div>}
     </Col>
   );
 }

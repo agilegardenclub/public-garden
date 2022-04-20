@@ -4,14 +4,12 @@ import { Card, Image, Stack } from 'react-bootstrap';
 import { Field } from './Field';
 import { Avatar } from './Avatar';
 import { ObservationCardTagBadge } from './ObservationCardTagBadge';
+import { GardenPlantBadge } from './GardenPlantBadge';
 
 export function ObservationCard({ observation, isNotification = false }) {
   const imageSrc = `img/observations/${observation.picture}`;
   return (
     <Card>
-      <Card.Header>
-        {isNotification ? 'Notification' : 'Observation'}
-      </Card.Header>
       <Card.Body>
         <Stack>
           <Field>
@@ -23,6 +21,7 @@ export function ObservationCard({ observation, isNotification = false }) {
           <Field title="Observed by:">
             <Avatar gardenerID={observation.gardenerID} />
           </Field>
+          {isNotification ? <Field title="Observed on:"><GardenPlantBadge plantID={observation.plantID}/></Field> : <div></div>}
           <Field>
             {observation.description}
           </Field>

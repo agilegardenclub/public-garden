@@ -264,6 +264,15 @@ export const plantData = [
     description: 'Store-bought starter.',
     daysToHarvest: 60,
   },
+  {
+    id: 'plant-119',
+    plant: 'Zucchini',
+    variety: 'Dark Star',
+    familyID: 'plantfamily-04',
+    vendorID: 'vendor-02',
+    description: 'Here is a zuke to rival all the corporate-owned hybrids currently hijacking the zucchini market. ',
+    daysToHarvest: 50,
+  },
 ];
 
 // Plant Families

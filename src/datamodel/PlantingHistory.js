@@ -1,5 +1,5 @@
 /* Provide functions to organize planting data for display in various ways */
-import { plantFamilyCommonName, plantFamilyID, plantName } from './PlantInfo';
+import { plantFamilyCommonName, plantFamilyID, plantName, plantNameShort } from './PlantInfo';
 import { gardenData } from './data/gardenData';
 import { weekOfYear } from './WeekOfYear';
 
@@ -12,29 +12,43 @@ export class PlantingHistory {
     this.plantFamilyData = plantFamilyData;
     // this.plantings = this._extractPlantings();
     this.plantings = this.gardenData.plantingData;
+    this.allPlantings = gardenData.map(garden => garden.plantingData).flat();
     this._addObservationData();
     this._addNotificationData();
   }
 
   _addNotificationData() {
     // first, give every planting instance a notifications field
-    this.plantings.forEach(planting => { planting.observations = []; });
+    this.plantings.forEach(planting => {
+      planting.notifications = [];
+    });
     // create list of all the observations from other gardens.
     const otherObservations = [];
     gardenData.forEach(garden => {
+      // eslint-disable-next-line no-lonely-if
       if ((garden.name !== this.gardenName) && garden.observationData) {
         otherObservations.push(...garden.observationData);
       }
     });
-    // eslint-disable-next-line no-console
-    console.log('other observations', otherObservations);
     // add a notification to a planting if it matches an observation
     this.plantings.forEach(planting => {
-      const matchingObservations = otherObservations.filter(observation => observation.plantID === planting.plantID);
-    })
+      const matchingObservations = otherObservations.filter(observation => this._matchingPlant(observation.plantingID, planting.plantingID));
+      planting.notifications.push(...matchingObservations);
+    });
+  }
 
-
-    );
+  /**
+   * Returns true if plantingID_1 and plantingID_2 refer to the same plant (i.e. "Tomato").
+   */
+  _matchingPlant(plantingID_1, plantingID_2) {
+    const planting_1 = this.allPlantings.find(planting => plantingID_1 === planting.plantingID);
+    const plantNameShort_1 = plantNameShort(planting_1.plantID);
+    const planting_2 = this.allPlantings.find(planting => plantingID_2 === planting.plantingID);
+    const plantNameShort_2 = plantNameShort(planting_2.plantID);
+    // if (plantNameShort_1 === plantNameShort_2) {
+    //   console.log(plantingID_1, plantingID_2);
+    // }
+    return (plantNameShort_1 === plantNameShort_2);
   }
 
   _addObservationData() {

@@ -5,20 +5,23 @@ import { Field } from './Field';
 import { Avatar } from './Avatar';
 import { ObservationCardTagBadge } from './ObservationCardTagBadge';
 
-export function ObservationCard({ observation }) {
+export function ObservationCard({ observation, isNotification = false }) {
   const imageSrc = `img/observations/${observation.picture}`;
   return (
     <Card>
+      <Card.Header>
+        {isNotification ? 'Notification' : 'Observation'}
+      </Card.Header>
       <Card.Body>
         <Stack>
           <Field>
-            <a href={imageSrc}><Image fluid src={imageSrc}/></a>
+            <a href={imageSrc}><Image fluid src={imageSrc} /></a>
           </Field>
-          <Field title='Date:'>
+          <Field title="Date:">
             {observation.observationDate}
           </Field>
-          <Field title='Observed by:'>
-            <Avatar gardenerID={observation.gardenerID}/>
+          <Field title="Observed by:">
+            <Avatar gardenerID={observation.gardenerID} />
           </Field>
           <Field>
             {observation.description}
@@ -34,4 +37,5 @@ export function ObservationCard({ observation }) {
 
 ObservationCard.propTypes = {
   observation: PropTypes.object,
+  isNotification: PropTypes.bool,
 };

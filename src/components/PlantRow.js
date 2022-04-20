@@ -49,12 +49,14 @@ function WeekCol({ currWeek, plantingData }) {
   const bg = plantingBackgroundClass(currWeek, plantingData);
   // eslint-disable-next-line no-unused-vars
   const observations = getObservations(currWeek, plantingData);
+  const notifications = getNotifications(currWeek, plantingData);
   const border = (((currWeek % 4) === 0) && currWeek < 48) ? 'border-end' : '';
   const classNameString = `p-0 ${bg} ${border}`;
   const style = { height: '24px', minWidth: '1px' };
   return (
     <Col xs={3} className={classNameString} style={style}>
       {observations.length > 0 ? <TimelineObservationPin observations={observations}/> : <div></div>}
+      {notifications.length > 0 ? <TimelineNotificationPin observations={observations}/> : <div></div>}
     </Col>
   );
 }

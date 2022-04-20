@@ -95,7 +95,7 @@ export const gardenData = [
     ],
     plantingData: [
       /* 2021 Data */
-      { plantingID: 'planting-1001', year: 2021, bedID: '1', plantID: 'plant-118', startDate: '5/6/2021', transplantDate: '', firstHarvestDate: '7/16/2021', endDate: '9/15/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1001', year: 2021, bedID: '1', plantID: 'plant-119', startDate: '5/6/2021', transplantDate: '', firstHarvestDate: '7/16/2021', endDate: '9/15/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
     ],
   },
 ];

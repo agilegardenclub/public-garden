@@ -8,7 +8,7 @@ export const gardenData = [
     size: '900 sq ft',
     climateVictoryGarden: true,
     lastUpdate: 'March 12, 2022',
-    gardenerIDs: ['gardener-01', 'gardener-02'],
+    gardeners: [{ gardenerID: 'gardener-01', role: 'owner' }, { gardenerID: 'gardener-02', role: 'editor' }, { gardenerID: 'gardener-04', role: 'viewer' }],
     pictures: [
       { url: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden-007-birds-eye-view.jpg`, caption: 'Layout. Blue: 2018. Green: 2019. Purple: 2021. Orange: 2021.', date: 'March, 2022' },
 
@@ -76,8 +76,8 @@ export const gardenData = [
     ],
 
     observationData: [
-      { observationID: 'observation-001', plantingID: 'planting-011.1', observationDate: '9/5/2021', tags: ['disease'], description: 'Powdery mildew found on zuchinni, but still ample flowers and fruit production.', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-001.jpg`, gardenerID: 'gardener-01' },
       { observationID: 'observation-002', plantingID: 'planting-002', observationDate: '3/20/2021', tags: ['pest', 'help'], description: 'Two unknown caterpillar species on lettuce, no substantial harm to lettuce.  Caterpillars removed and not seen again. What are these?', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-002.jpg`, gardenerID: 'gardener-01', replies: [{ gardenerID: 'gardener-02', date: '3/21/21', comment: 'I suspect some sort of Wooly Caterpillar, but not positive' }, { gardenerID: 'gardener-03', date: '3/22/21', comment: 'I had these and needed to apply Neem Oil and rotate my lettuce to a different bed in the following season.' }] },
+      { observationID: 'observation-002', plantingID: 'planting-002', observationDate: '3/20/2021', tags: ['pest', 'help'], description: 'Two unknown caterpillar species on lettuce, no substantial harm to lettuce.  Caterpillars removed and not seen again. What are these?', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-002.jpg`, gardenerID: 'gardener-01' },
     ],
   },
   /*                       JESSIE GARDEN               */
@@ -87,7 +87,7 @@ export const gardenData = [
     size: '1200 sq ft',
     climateVictoryGarden: false,
     lastUpdate: 'March 12, 2022',
-    gardenerIDs: ['gardener-02'],
+    gardeners: [{ gardenerID: 'gardener-02', role: 'owner' }],
     pictures: [
       { url: `${process.env.PUBLIC_URL}/img/gardens/67abh39db/garden-007-birds-eye-view.jpg`, caption: 'Layout. Blue: 2018. Green: 2019. Purple: 2021. Orange: 2021.', date: 'March, 2022' },
 

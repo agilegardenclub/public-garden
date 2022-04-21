@@ -23,7 +23,7 @@ _popover.propTypes = {
   gardener: PropTypes.any,
 };
 
-export function Avatar({ gardenerID, size = 16 }) {
+export function Avatar({ gardenerID, size = 16, role = '' }) {
   const gardener = new Gardener(gardenerID);
   const popover = _popover({ gardener });
   const px = `${size * 3}px`;
@@ -34,7 +34,10 @@ export function Avatar({ gardenerID, size = 16 }) {
   const style = { cursor: 'pointer', margin: '3px', padding: '2px', fontWeight: 700, borderRadius: '50%', fontSize, lineHeight: px, textAlign: 'center', background, color };
   return (
     <OverlayTrigger trigger="click" placement="top" overlay={popover}>
-      <span style={style}>{initials}</span>
+      <div style={{ lineHeight: '0px', display: 'inline' }}>
+        <span style={style}>{initials}</span>
+        {role && <span style={{ fontSize: '9pt', marginTop: '-7px', display: 'block' }}><em>{role}</em></span>}
+      </div>
     </OverlayTrigger>
   );
 }
@@ -42,4 +45,5 @@ export function Avatar({ gardenerID, size = 16 }) {
 Avatar.propTypes = {
   gardenerID: PropTypes.string,
   size: PropTypes.number,
+  role: PropTypes.string,
 };

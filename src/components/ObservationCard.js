@@ -7,13 +7,12 @@ import { ObservationCardTagBadge } from './ObservationCardTagBadge';
 import { GardenPlantBadge } from './GardenPlantBadge';
 
 export function ObservationCard({ observation, isNotification = false }) {
-  const imageSrc = `img/observations/${observation.picture}`;
   return (
     <Card>
       <Card.Body>
         <Stack>
           <Field>
-            <a href={imageSrc}><Image fluid src={imageSrc} /></a>
+            <a href={observation.picture}><Image fluid src={observation.picture} /></a>
           </Field>
           <Field title="Date:">
             {observation.observationDate}

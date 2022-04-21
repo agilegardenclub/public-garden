@@ -53,7 +53,12 @@ export class GardenOverview {
   }
 
   currentGardenerIDs() {
-    return this.garden.gardenerIDs;
+    return this.garden.gardeners.map(gardener => gardener.gardenerID);
+  }
+
+  gardenerRole(gardenerID) {
+    const gardenerInfo = this.garden.gardeners.find(info => info.gardenerID === gardenerID);
+    return gardenerInfo.role;
   }
 
   gardenerName(gardenerID) {

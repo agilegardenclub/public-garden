@@ -27,6 +27,9 @@ export function ObservationCard({ observation, isNotification = false }) {
           <Field>
             {observation.tags.map((tag, index) => <ObservationCardTagBadge key={index} tag={tag} />)}
           </Field>
+          <Field>
+            {observation.replies.map((reply, index) => <div key={index}><hr /><p className='mb-0'><b>Reply:&nbsp;</b><Avatar gardenerID={reply.gardenerID}/>&nbsp;{reply.date}</p><p>{reply.comment}</p></div>)}
+          </Field>
         </Stack>
       </Card.Body>
     </Card>

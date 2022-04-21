@@ -6,7 +6,7 @@ import { ObservationCard } from './ObservationCard';
 
 function _popover({ observations }) {
   return (
-    <Popover id="popover-basic">
+    <Popover id="popover-basic" style={{ maxWidth: '400px' }}>
       <Popover.Header as="h3">{'Observations'}</Popover.Header>
       <Popover.Body>
         {observations.map((observation, index) => <ObservationCard key={index} observation={observation} />)}

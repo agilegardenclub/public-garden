@@ -9,6 +9,7 @@ export const gardenData = [
     climateVictoryGarden: true,
     lastUpdate: 'March 12, 2022',
     gardenerIDs: ['gardener-01', 'gardener-02'],
+    gardeners: [{ gardenerID: 'gardener-01', role: 'owner' }, { gardenerID: 'gardener-02', role: 'editor' }, { gardenerID: 'gardener-04', role: 'viewer' }],
     pictures: [
       { url: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden-007-birds-eye-view.jpg`, caption: 'Layout. Blue: 2018. Green: 2019. Purple: 2021. Orange: 2021.', date: 'March, 2022' },
 
@@ -88,6 +89,7 @@ export const gardenData = [
     climateVictoryGarden: false,
     lastUpdate: 'March 12, 2022',
     gardenerIDs: ['gardener-02'],
+    gardeners: [{ gardenerID: 'gardener-01', role: 'owner' }],
     pictures: [
       { url: `${process.env.PUBLIC_URL}/img/gardens/67abh39db/garden-007-birds-eye-view.jpg`, caption: 'Layout. Blue: 2018. Green: 2019. Purple: 2021. Orange: 2021.', date: 'March, 2022' },
 

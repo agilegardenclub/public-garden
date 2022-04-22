@@ -12,7 +12,7 @@ function _popover({ gardener }) {
         <p><b>Gardens: </b> {gardener.numGardens()}</p>
         <p><b>Years: </b> {gardener.numYears()}</p>
         <p><b>Plantings: </b> {gardener.numPlantings()}</p>
-        <p><b>Collaborators: </b> {gardener.collaboratorIDs().map((collaborator, index) => <Avatar key={index} gardenerID={collaborator}/>)}</p>
+        <p><b>Collaborators: </b></p> {gardener.collaboratorIDs().map((collaborator, index) => <Avatar key={index} gardenerID={collaborator}/>)}
         {gardener.isMasterGardener() ? <MasterGardenerBadge/> : <div></div>}
       </Popover.Body>
     </Popover>

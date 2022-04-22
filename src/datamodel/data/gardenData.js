@@ -75,6 +75,7 @@ export const gardenData = [
       { plantingID: 'planting-021', year: 2020, bedID: '07', plantID: 'plant-115', startDate: '4/18/2020', transplantDate: '', firstHarvestDate: '7/1/2020', endDate: '9/15/2020', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 4, flavor: 4 }, usedGreenhouse: false },
     ],
 
+    // For a taxonomy of Observation types, see: https://github.com/agilegardenclub/public-garden/issues/13
     observationData: [
       { observationID: 'observation-001', plantingID: 'planting-011.1', observationDate: '9/5/2021', tags: ['disease'], description: 'Powdery mildew found on zuchinni, but still ample flowers and fruit production.', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-001.jpg`, gardenerID: 'gardener-01', replies: [] },
       { observationID: 'observation-002', plantingID: 'planting-002', observationDate: '3/20/2021', tags: ['pest', 'help'], description: 'Two unknown caterpillar species on lettuce, no substantial harm to lettuce.  Caterpillars removed and not seen again. What are these?', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-002.jpg`, gardenerID: 'gardener-01', replies: [{ gardenerID: 'gardener-02', date: '3/21/21', comment: 'I suspect some sort of Wooly Caterpillar, but not positive' }, { gardenerID: 'gardener-03', date: '3/22/21', comment: 'I had these and needed to apply Neem Oil and rotate my lettuce to a different bed in the following season.' }] },

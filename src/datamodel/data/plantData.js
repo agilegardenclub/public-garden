@@ -273,6 +273,15 @@ export const plantData = [
     description: 'Here is a zuke to rival all the corporate-owned hybrids currently hijacking the zucchini market. ',
     daysToHarvest: 50,
   },
+  {
+    id: 'plant-120',
+    plant: 'Kale',
+    variety: 'Dwarf Blue Scotch',
+    familyID: 'plantfamily-02',
+    vendorID: 'vendor-02',
+    description: 'Classic, green, curly kale.',
+    daysToHarvest: 55,
+  },
 ];
 
 // Plant Families

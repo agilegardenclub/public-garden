@@ -50,6 +50,8 @@ export const gardenData = [
 
       { plantingID: 'planting-011', year: 2021, bedID: 'GH', plantID: 'plant-110', startDate: '3/28/2021', transplantDate: '', firstHarvestDate: '8/10/2021', endDate: '9/14/2021', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 4 }, usedGreenhouse: true },
 
+      { plantingID: 'planting-011.01', year: 2021, bedID: 'GH', plantID: 'plant-120', startDate: '2/21/2021', transplantDate: '3/27/2021', firstHarvestDate: '5/2/2021', endDate: '9/15/2021', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 4 }, usedGreenhouse: true },
+
       { plantingID: 'planting-011.1', year: 2021, bedID: '10', plantID: 'plant-118', startDate: '5/6/2021', transplantDate: '', firstHarvestDate: '7/16/2021', endDate: '9/15/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
       /* 2020 Data */

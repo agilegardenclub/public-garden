@@ -35,9 +35,9 @@ export const PlantFamilyColors = {
   mustard: { dark: '#6f42c1', light: '#c5b3e6' },
   gourd: { dark: '#e685b5', light: '#f7d6e6' },
   legume: { dark: '#63595C', light: '#978b8f' },
-  lily: { dark: '#feb272', light: '#ffe5d0' },
+  miscannuals: { dark: '#feb272', light: '#ffe5d0' },
   nightshade: { dark: '#ffc107', light: '#fff3cd' },
   umbell: { dark: '#75b798', light: '#d1e7dd' },
   daisy: { dark: '#20c997', light: '#a6e9d5' },
-  misc: { dark: '#3dd5f3', light: '#9eeaf9' },
+  miscperennials: { dark: '#3dd5f3', light: '#9eeaf9' },
 };

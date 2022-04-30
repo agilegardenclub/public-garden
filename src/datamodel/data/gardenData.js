@@ -28,6 +28,8 @@ export const gardenData = [
       /* 2021 Data */
       { plantingID: 'planting-001', year: 2021, bedID: '01', plantID: 'plant-101', startDate: '2/15/2021', transplantDate: '3/6/2021', firstHarvestDate: '6/3/2021', endDate: '7/15/2021', outcomes: { germination: 5, appearance: 5, resistance: 4, yield: 5 }, usedGreenhouse: true },
 
+      { plantingID: 'planting-001.1', year: 2021, bedID: '02', plantID: 'plant-122', startDate: '2/21/2021', transplantDate: '3/27/2021', firstHarvestDate: '', endDate: '5/1/2021', outcomes: { germination: 3, appearance: 1, resistance: 1, yield: 1 }, usedGreenhouse: true },
+
       { plantingID: 'planting-002', year: 2021, bedID: '03', plantID: 'plant-100', startDate: '2/15/2021', transplantDate: '3/18/2021', firstHarvestDate: '', endDate: '4/1/2021', outcomes: { germination: 3, appearance: 1, resistance: 1, yield: 1 }, usedGreenhouse: true },
 
       { plantingID: 'planting-003', year: 2021, bedID: '04', plantID: 'plant-108', startDate: '4/4/2021', transplantDate: '', firstHarvestDate: '5/18/2021', endDate: '8/2/2021', outcomes: { germination: 2, appearance: 5, resistance: 4, yield: 5 }, usedGreenhouse: false },
@@ -50,7 +52,13 @@ export const gardenData = [
 
       { plantingID: 'planting-011', year: 2021, bedID: 'GH', plantID: 'plant-110', startDate: '3/28/2021', transplantDate: '', firstHarvestDate: '8/10/2021', endDate: '9/14/2021', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 4 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-011.01', year: 2021, bedID: 'GH', plantID: 'plant-120', startDate: '2/21/2021', transplantDate: '3/27/2021', firstHarvestDate: '5/2/2021', endDate: '9/15/2021', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 4 }, usedGreenhouse: true },
+      { plantingID: 'planting-011.01', year: 2021, bedID: '06', plantID: 'plant-120', startDate: '2/21/2021', transplantDate: '3/27/2021', firstHarvestDate: '5/2/2021', endDate: '9/15/2021', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 4 }, usedGreenhouse: true },
+
+      { plantingID: 'planting-011.02', year: 2021, bedID: 'GH', plantID: 'plant-121', startDate: '3/14/2021', transplantDate: '5/6/2021', firstHarvestDate: '7/15/2021', endDate: '9/23/2021', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 4 }, usedGreenhouse: true },
+
+      { plantingID: 'planting-011.03', year: 2021, bedID: 'GH', plantID: 'plant-123', startDate: '3/14/2021', transplantDate: '5/6/2021', firstHarvestDate: '7/25/2021', endDate: '8/15/2021', outcomes: { germination: 4, appearance: 1, resistance: 1, yield: 2 }, usedGreenhouse: true },
+
+      { plantingID: 'planting-011.04', year: 2021, bedID: 'GH', plantID: 'plant-124', startDate: '3/14/2021', transplantDate: '5/6/2021', firstHarvestDate: '7/20/2021', endDate: '9/23/2021', outcomes: { germination: 4, appearance: 4, resistance: 5, yield: 4 }, usedGreenhouse: true },
 
       { plantingID: 'planting-011.1', year: 2021, bedID: '10', plantID: 'plant-118', startDate: '5/6/2021', transplantDate: '', firstHarvestDate: '7/16/2021', endDate: '9/15/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
@@ -81,6 +89,7 @@ export const gardenData = [
     observationData: [
       { observationID: 'observation-001', plantingID: 'planting-011.1', observationDate: '9/5/2021', tags: ['disease'], description: 'Powdery mildew found on zuchinni, but still ample flowers and fruit production.', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-001.jpg`, gardenerID: 'gardener-01', replies: [] },
       { observationID: 'observation-002', plantingID: 'planting-002', observationDate: '3/20/2021', tags: ['pest', 'help'], description: 'Two unknown caterpillar species on lettuce. What are these?', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-002.jpg`, gardenerID: 'gardener-01', replies: [{ gardenerID: 'gardener-02', date: '3/21/21', comment: 'I suspect some sort of Wooly Caterpillar, but not positive' }, { gardenerID: 'gardener-03', date: '3/22/21', comment: 'I had these and needed to apply Neem Oil and rotate my lettuce to a different bed in the following season.' }, { gardenerID: 'gardener-01', date: '4/22/21', comment: 'I ended up removing them manually. After one month, no harm to lettuce and no re-appearance.' }] },
+      { observationID: 'observation-003', plantingID: 'planting-001.1', observationDate: '5/1/2021', tags: ['pest', 'help'], description: 'Lettuce died one by one after transplanted.  Wireworms?', picture: '', gardenerID: 'gardener-01', replies: [] },
     ],
   },
   /*                       JESSIE GARDEN               */

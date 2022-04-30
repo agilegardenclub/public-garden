@@ -282,6 +282,42 @@ export const plantData = [
     description: 'Classic green curly kale.',
     daysToHarvest: 55,
   },
+  {
+    id: 'plant-121',
+    plant: 'Tomato',
+    variety: 'Sheyboygan',
+    familyID: 'plantfamily-07',
+    vendorID: 'vendor-02',
+    description: 'Very early and productive indeterminate paste tomato.',
+    daysToHarvest: 80,
+  },
+  {
+    id: 'plant-122',
+    plant: 'Lettuce',
+    variety: "Flashy Trout's Back",
+    familyID: 'plantfamily-09',
+    vendorID: 'vendor-02',
+    description: 'Beautiful romaine with stunning splashes of red speckles',
+    daysToHarvest: 55,
+  },
+  {
+    id: 'plant-123',
+    plant: 'Tomato',
+    variety: 'Matina',
+    familyID: 'plantfamily-07',
+    vendorID: 'vendor-02',
+    description: 'Uniform and prolific indeterminate slicing tomato.',
+    daysToHarvest: 70,
+  },
+  {
+    id: 'plant-124',
+    plant: 'Tomato',
+    variety: 'Fiaschetto di Manduria',
+    familyID: 'plantfamily-07',
+    vendorID: 'vendor-02',
+    description: 'Small, plum/paste determinate tomato',
+    daysToHarvest: 70,
+  },
 ];
 
 // Plant Families

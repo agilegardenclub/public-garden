@@ -5,7 +5,7 @@ export const plantData = [
     id: 'plant-01',
     plant: 'Asparagus',
     variety: 'Purple Passion',
-    familyID: 'plantfamily-06',
+    familyID: 'plantfamily-10',
     vendorID: 'vendor-01',
     description: 'Sweeter and more tender than green varieties, and a colorful option for raw eating in salads. Color fades when cooked, but excellent flavor is retained.',
   },
@@ -124,7 +124,7 @@ export const plantData = [
     id: 'plant-104',
     plant: 'Basil',
     variety: 'Italian',
-    familyID: 'plantfamily-10',
+    familyID: 'plantfamily-06',
     vendorID: 'vendor-02',
     description: 'This is one large, lovely, and lush Genovese-type basil. ',
     daysToHarvest: 80,
@@ -196,7 +196,7 @@ export const plantData = [
     id: 'plant-112',
     plant: 'Basil',
     variety: 'Italian',
-    familyID: 'plantfamily-10',
+    familyID: 'plantfamily-06',
     vendorID: 'vendor-08',
     description: 'Certified Organic Starts',
     daysToHarvest: 70,
@@ -279,19 +279,19 @@ export const plantData = [
     variety: 'Dwarf Blue Scotch',
     familyID: 'plantfamily-02',
     vendorID: 'vendor-02',
-    description: 'Classic, green, curly kale.',
+    description: 'Classic green curly kale.',
     daysToHarvest: 55,
   },
 ];
 
 // Plant Families
 // plantfamily-01: onion, garlic, leek, shallot
-// plantfamily-02: broccoli, brussels sprout, cabbage, cauliflower, kale, arugula, turnip, pak choi, radish
-// plantfamily-03: chard, spinach, beet
+// plantfamily-02: broccoli, brussels sprout, cabbage, cauliflower, kale, arugula, turnip, pak choi, radish, mustard, kohlrabi, cress, collard
+// plantfamily-03: chard, spinach, beet, amaranth
 // plantfamily-04: squash, zucchini, cucumber, melon, cantaloupe, pumpkin
-// plantfamily-05: bean, pea
-// plantfamily-06: asparagus
-// plantfamily-07: tomato, potato, eggplant, pepper
-// plantfamily-08: carrot, celeriac, cilantro, fennel, parsley, dill, parsnip
-// plantfamily-09: lettuce
-// plantfamily-10: basil, mint
+// plantfamily-05: bean, pea, peanuts
+// plantfamily-06: corn, buckwheat, okra, wheat, basil ->CHANGED to other annuals
+// plantfamily-07: tomato, potato, eggplant, pepper, ground cherry, tomatillo
+// plantfamily-08: carrot, celeriac, cilantro, fennel, parsley, dill, parsnip, chervil
+// plantfamily-09: lettuce, radicchio, endive, sunflowers, chamomile, salsify
+// plantfamily-10: mint, rosemary, sage, lemon balm, asparagus, berries, sorrel, artichoke, sweet potato ->CHANGED to other perennials

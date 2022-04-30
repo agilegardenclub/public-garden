@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Tab, Tabs } from 'react-bootstrap';
 import { Documentation } from '../components/Documentation';
 
 /**
@@ -12,8 +12,19 @@ function ChapterPlantHistory() {
       <Container className="py-3">
         <h2>Chapter Plant History</h2>
         <Documentation>
-          <p>(This section provides aggregate information about plants that combine chapter and gardener data.) </p>
+          <p>This section provides aggregate information about plants from Chapter members.</p>
         </Documentation>
+        <Tabs defaultActiveKey="Outcomes" className="mb-3">
+          <Tab eventKey="Outcomes" title="Outcomes">
+            (outcomes)
+          </Tab>
+          <Tab eventKey="Timing" title="Timing">
+            (Timing)
+          </Tab>
+          <Tab eventKey="Seeds" title="Seeds">
+            (Seeds)
+          </Tab>
+        </Tabs>
       </Container>
     </div>
   );

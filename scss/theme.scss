@@ -38,8 +38,8 @@ $pf-umbell-dark: $green-300;
 $pf-umbell-light: $green-100;
 $pf-daisy-dark: $teal-500;
 $pf-daisy-light: $teal-200;
-$pf-misc-dark: $cyan-400;
-$pf-misc-light: $cyan-200;
+$pf-miscperennials-dark: $cyan-400;
+$pf-miscperennials-light: $cyan-200;
 // OLD
 //$pf-allium: #EA9D9D;
 //$pf-beetroot: #B5D0F8;
@@ -50,7 +50,7 @@ $pf-misc-light: $cyan-200;
 //$pf-nightshade: #F2EDA6;
 //$pf-umbell: #74BE93;
 //$pf-daisy: #20c997;
-//$pf-misc: #E0A2F6;
+//$pf-miscperennials: #E0A2F6;
 
 $plant-family-colors: (
   "pf-allium-dark": $pf-allium-dark,
@@ -71,8 +71,8 @@ $plant-family-colors: (
   "pf-umbell-light": $pf-umbell-light,
   "pf-daisy-dark": $pf-daisy-dark,
   "pf-daisy-light": $pf-daisy-light,
-  "pf-misc-dark": $pf-misc-dark,
-  "pf-misc-light": $pf-misc-light,
+  "pf-miscperennials-dark": $pf-miscperennials-dark,
+  "pf-miscperennials-light": $pf-miscperennials-light,
 );
 
 $theme-colors: map-merge($theme-colors, $plant-family-colors);
@@ -234,14 +234,14 @@ html {
 
 ////////
 
-.bg-pf-misc-light-harvest {
-  background-color: $pf-misc-light;
+.bg-pf-miscperennials-light-harvest {
+  background-color: $pf-miscperennials-light;
   background-size: 10px;
-  background-image:  repeating-linear-gradient(to right, $pf-misc-dark, $pf-misc-dark 1px, $pf-misc-light 1px, $pf-misc-light);
+  background-image:  repeating-linear-gradient(to right, $pf-miscperennials-dark, $pf-miscperennials-dark 1px, $pf-miscperennials-light 1px, $pf-miscperennials-light);
 }
 
-.bg-pf-misc-dark-harvest {
-  background-color: $pf-misc-dark;
+.bg-pf-miscperennials-dark-harvest {
+  background-color: $pf-miscperennials-dark;
   background-size: 10px;
-  background-image:  repeating-linear-gradient(to right, $pf-misc-light, $pf-misc-light 1px, $pf-misc-dark 1px, $pf-misc-dark);
+  background-image:  repeating-linear-gradient(to right, $pf-miscperennials-light, $pf-miscperennials-light 1px, $pf-miscperennials-dark 1px, $pf-miscperennials-dark);
 }

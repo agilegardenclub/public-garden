@@ -78,7 +78,7 @@ export const plantFamilyData = [
     formal: 'Misc Perennials',
     common: 'Misc Perennials',
     colors: PlantFamilyColors.miscperennials,
-    bgs: { dark: 'pf-misc-dark', light: 'pf-misc-light' },
+    bgs: { dark: 'pf-miscperennials-dark', light: 'pf-miscperennials-light' },
     examples: 'mint, rosemary, sage, lemon balm, asparagus, berries, sorrel, artichoke, sweet potato',
   },
 ];

@@ -46,7 +46,7 @@ export const plantFamilyData = [
     formal: 'Misc Annuals',
     common: 'Misc Annuals',
     colors: PlantFamilyColors.miscannuals,
-    bgs: { dark: 'pf-lily-dark', light: 'pf-lily-light' },
+    bgs: { dark: 'pf-miscannuals-dark', light: 'pf-miscannuals-light' },
     examples: 'corn, buckwheat, okra, wheat, basil',
   },
   {

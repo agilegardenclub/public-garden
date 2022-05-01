@@ -30,8 +30,8 @@ $pf-gourd-dark: $pink-300;
 $pf-gourd-light: $pink-100;
 $pf-legume-dark: #63595C;  // Add a brown color.
 $pf-legume-light: lighten(#63595C, 20);  // Add a brown color.
-$pf-lily-dark: $orange-300;
-$pf-lily-light: $orange-100;
+$pf-miscannuals-dark: $orange-300;
+$pf-miscannuals-light: $orange-100;
 $pf-nightshade-dark: $yellow-500;
 $pf-nightshade-light: $yellow-100;
 $pf-umbell-dark: $green-300;
@@ -46,7 +46,7 @@ $pf-misc-light: $cyan-200;
 //$pf-mustard: #B9FF99;
 //$pf-gourd: #829DC4;
 //$pf-legume: #E5AF76;
-//$pf-lily: #0dcaf0;
+//$pf-miscannuals: #0dcaf0;
 //$pf-nightshade: #F2EDA6;
 //$pf-umbell: #74BE93;
 //$pf-daisy: #20c997;
@@ -63,8 +63,8 @@ $plant-family-colors: (
   "pf-gourd-light": $pf-gourd-light,
   "pf-legume-dark": $pf-legume-dark,
   "pf-legume-light": $pf-legume-light,
-  "pf-lily-dark": $pf-lily-dark,
-  "pf-lily-light": $pf-lily-light,
+  "pf-miscannuals-dark": $pf-miscannuals-dark,
+  "pf-miscannuals-light": $pf-miscannuals-light,
   "pf-nightshade-dark": $pf-nightshade-dark,
   "pf-nightshade-light": $pf-nightshade-light,
   "pf-umbell-dark": $pf-umbell-dark,
@@ -178,16 +178,16 @@ html {
 
 ////////
 
-.bg-pf-lily-light-harvest {
-  background-color: $pf-lily-light;
+.bg-pf-miscannuals-light-harvest {
+  background-color: $pf-miscannuals-light;
   background-size: 10px;
-  background-image:  repeating-linear-gradient(to right, $pf-lily-dark, $pf-lily-dark 1px, $pf-lily-light 1px, $pf-lily-light);
+  background-image:  repeating-linear-gradient(to right, $pf-miscannuals-dark, $pf-miscannuals-dark 1px, $pf-miscannuals-light 1px, $pf-miscannuals-light);
 }
 
-.bg-pf-lily-dark-harvest {
-  background-color: $pf-lily-dark;
+.bg-pf-miscannuals-dark-harvest {
+  background-color: $pf-miscannuals-dark;
   background-size: 10px;
-  background-image:  repeating-linear-gradient(to right, $pf-lily-light, $pf-lily-light 1px, $pf-lily-dark 1px, $pf-lily-dark);
+  background-image:  repeating-linear-gradient(to right, $pf-miscannuals-light, $pf-miscannuals-light 1px, $pf-miscannuals-dark 1px, $pf-miscannuals-dark);
 }
 
 ////////

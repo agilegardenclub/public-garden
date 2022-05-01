@@ -6,7 +6,7 @@ export const plantData = [
     plant: 'Asparagus',
     variety: 'Jersey Knight',
     familyID: 'plantfamily-10',
-    vendorID: 'vendor-010',
+    vendorID: 'vendor-10',
     description: 'Sweeter and more tender than green varieties, and a colorful option for raw eating in salads. Color fades when cooked, but excellent flavor is retained.',
   },
   {

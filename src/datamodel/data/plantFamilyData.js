@@ -43,10 +43,10 @@ export const plantFamilyData = [
   },
   {
     id: 'plantfamily-06',
-    formal: 'Misc Annuals',
-    common: 'Misc Annuals',
-    colors: PlantFamilyColors.miscannuals,
-    bgs: { dark: 'pf-miscannuals-dark', light: 'pf-miscannuals-light' },
+    formal: 'Misc_Annuals',
+    common: 'Misc_Annuals',
+    colors: PlantFamilyColors.misc_annuals,
+    bgs: { dark: 'pf-misc_annuals-dark', light: 'pf-misc_annuals-light' },
     examples: 'corn, buckwheat, okra, wheat, basil',
   },
   {
@@ -75,10 +75,10 @@ export const plantFamilyData = [
   },
   {
     id: 'plantfamily-10',
-    formal: 'Misc Perennials',
-    common: 'Misc Perennials',
-    colors: PlantFamilyColors.miscperennials,
-    bgs: { dark: 'pf-miscperennials-dark', light: 'pf-miscperennials-light' },
+    formal: 'Misc_Perennials',
+    common: 'Misc_Perennials',
+    colors: PlantFamilyColors.misc_perennials,
+    bgs: { dark: 'pf-misc_perennials-dark', light: 'pf-misc_perennials-light' },
     examples: 'mint, rosemary, sage, lemon balm, asparagus, berries, sorrel, artichoke, sweet potato',
   },
 ];

@@ -30,27 +30,27 @@ $pf-gourd-dark: $pink-300;
 $pf-gourd-light: $pink-100;
 $pf-legume-dark: #63595C;  // Add a brown color.
 $pf-legume-light: lighten(#63595C, 20);  // Add a brown color.
-$pf-miscannuals-dark: $orange-300;
-$pf-miscannuals-light: $orange-100;
+$pf-misc_annuals-dark: $orange-300;
+$pf-misc_annuals-light: $orange-100;
 $pf-nightshade-dark: $yellow-500;
 $pf-nightshade-light: $yellow-100;
 $pf-umbell-dark: $green-300;
 $pf-umbell-light: $green-100;
 $pf-daisy-dark: $teal-500;
 $pf-daisy-light: $teal-200;
-$pf-miscperennials-dark: $cyan-400;
-$pf-miscperennials-light: $cyan-200;
+$pf-misc_perennials-dark: $cyan-400;
+$pf-misc_perennials-light: $cyan-200;
 // OLD
 //$pf-allium: #EA9D9D;
 //$pf-beetroot: #B5D0F8;
 //$pf-mustard: #B9FF99;
 //$pf-gourd: #829DC4;
 //$pf-legume: #E5AF76;
-//$pf-miscannuals: #0dcaf0;
+//$pf-misc_annuals: #0dcaf0;
 //$pf-nightshade: #F2EDA6;
 //$pf-umbell: #74BE93;
 //$pf-daisy: #20c997;
-//$pf-miscperennials: #E0A2F6;
+//$pf-misc_perennials: #E0A2F6;
 
 $plant-family-colors: (
   "pf-allium-dark": $pf-allium-dark,
@@ -63,16 +63,16 @@ $plant-family-colors: (
   "pf-gourd-light": $pf-gourd-light,
   "pf-legume-dark": $pf-legume-dark,
   "pf-legume-light": $pf-legume-light,
-  "pf-miscannuals-dark": $pf-miscannuals-dark,
-  "pf-miscannuals-light": $pf-miscannuals-light,
+  "pf-misc_annuals-dark": $pf-misc_annuals-dark,
+  "pf-misc_annuals-light": $pf-misc_annuals-light,
   "pf-nightshade-dark": $pf-nightshade-dark,
   "pf-nightshade-light": $pf-nightshade-light,
   "pf-umbell-dark": $pf-umbell-dark,
   "pf-umbell-light": $pf-umbell-light,
   "pf-daisy-dark": $pf-daisy-dark,
   "pf-daisy-light": $pf-daisy-light,
-  "pf-miscperennials-dark": $pf-miscperennials-dark,
-  "pf-miscperennials-light": $pf-miscperennials-light,
+  "pf-misc_perennials-dark": $pf-misc_perennials-dark,
+  "pf-misc_perennials-light": $pf-misc_perennials-light,
 );
 
 $theme-colors: map-merge($theme-colors, $plant-family-colors);
@@ -178,16 +178,16 @@ html {
 
 ////////
 
-.bg-pf-miscannuals-light-harvest {
-  background-color: $pf-miscannuals-light;
+.bg-pf-misc_annuals-light-harvest {
+  background-color: $pf-misc_annuals-light;
   background-size: 10px;
-  background-image:  repeating-linear-gradient(to right, $pf-miscannuals-dark, $pf-miscannuals-dark 1px, $pf-miscannuals-light 1px, $pf-miscannuals-light);
+  background-image:  repeating-linear-gradient(to right, $pf-misc_annuals-dark, $pf-misc_annuals-dark 1px, $pf-misc_annuals-light 1px, $pf-misc_annuals-light);
 }
 
-.bg-pf-miscannuals-dark-harvest {
-  background-color: $pf-miscannuals-dark;
+.bg-pf-misc_annuals-dark-harvest {
+  background-color: $pf-misc_annuals-dark;
   background-size: 10px;
-  background-image:  repeating-linear-gradient(to right, $pf-miscannuals-light, $pf-miscannuals-light 1px, $pf-miscannuals-dark 1px, $pf-miscannuals-dark);
+  background-image:  repeating-linear-gradient(to right, $pf-misc_annuals-light, $pf-misc_annuals-light 1px, $pf-misc_annuals-dark 1px, $pf-misc_annuals-dark);
 }
 
 ////////
@@ -234,14 +234,14 @@ html {
 
 ////////
 
-.bg-pf-miscperennials-light-harvest {
-  background-color: $pf-miscperennials-light;
+.bg-pf-misc_perennials-light-harvest {
+  background-color: $pf-misc_perennials-light;
   background-size: 10px;
-  background-image:  repeating-linear-gradient(to right, $pf-miscperennials-dark, $pf-miscperennials-dark 1px, $pf-miscperennials-light 1px, $pf-miscperennials-light);
+  background-image:  repeating-linear-gradient(to right, $pf-misc_perennials-dark, $pf-misc_perennials-dark 1px, $pf-misc_perennials-light 1px, $pf-misc_perennials-light);
 }
 
-.bg-pf-miscperennials-dark-harvest {
-  background-color: $pf-miscperennials-dark;
+.bg-pf-misc_perennials-dark-harvest {
+  background-color: $pf-misc_perennials-dark;
   background-size: 10px;
-  background-image:  repeating-linear-gradient(to right, $pf-miscperennials-light, $pf-miscperennials-light 1px, $pf-miscperennials-dark 1px, $pf-miscperennials-dark);
+  background-image:  repeating-linear-gradient(to right, $pf-misc_perennials-light, $pf-misc_perennials-light 1px, $pf-misc_perennials-dark 1px, $pf-misc_perennials-dark);
 }

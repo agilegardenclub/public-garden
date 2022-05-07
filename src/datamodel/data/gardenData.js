@@ -25,7 +25,15 @@ export const gardenData = [
       { url: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden-006.jpg`, caption: 'Nice view of beds 1-8 before the plants take over', date: 'March, 2020' },
     ],
     plantingData: [
+
+      /* 2022 Data */
+
+      { plantingID: 'planting-103', year: 2022, bedID: '03', plantID: 'plant-101', startDate: '2/20/2022', transplantDate: '3/13/2022', firstHarvestDate: '', endDate: '7/1/2022', outcomes: { germination: 5, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+
+      { plantingID: 'planting-104', year: 2022, bedID: '04', plantID: 'plant-105', startDate: '2/20/2022', transplantDate: '3/19/2022', firstHarvestDate: '', endDate: '6/7/2022', outcomes: { germination: 5, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+
       /* 2021 Data */
+
       { plantingID: 'planting-001', year: 2021, bedID: '01', plantID: 'plant-101', startDate: '2/15/2021', transplantDate: '3/6/2021', firstHarvestDate: '6/3/2021', endDate: '7/15/2021', outcomes: { germination: 5, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
       { plantingID: 'planting-001.3', year: 2021, bedID: '01', plantID: 'plant-113', startDate: '8/3/2021', transplantDate: '', firstHarvestDate: '9/17/2021', endDate: '12/31/2021', outcomes: { germination: 3, appearance: 5, resistance: 3, yield: 5, flavor: 5 }, usedGreenhouse: false },

@@ -10,4 +10,5 @@ export const vendorData = [
   { id: 'vendor-08', name: 'Sunseed Farm and Nursery', shortName: 'Sunseed', url: 'https://www.sunseedfarm.com/' },
   { id: 'vendor-09', name: 'Ed Hume Seeds', shortName: 'Ed Hume', url: 'https://humeseeds.com/' },
   { id: 'vendor-10', name: 'Cloud Mountain Farm', shortName: 'Cloud Mountain', url: 'https://www.cloudmountainfarmcenter.org/' },
+  { id: 'vendor-11', name: 'Floret FLowers', shortName: 'Floret', url: 'https://www.floretflowers.com/' },
 ];

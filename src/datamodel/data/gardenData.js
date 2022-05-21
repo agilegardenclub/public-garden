@@ -28,9 +28,11 @@ export const gardenData = [
 
       /* 2022 Data */
 
-      { plantingID: 'planting-101', year: 2022, bedID: '01', plantID: 'plant-122', startDate: '2/20/2022', transplantDate: '4/17/2022', firstHarvestDate: '', endDate: '6/17/2022', outcomes: { germination: 2, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-101', year: 2022, bedID: '01', plantID: 'plant-122', startDate: '1/1/2022', transplantDate: '', firstHarvestDate: '', endDate: '6/17/2022', outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-101.1', year: 2022, bedID: '01', plantID: 'plant-150', startDate: '4/8/2022', transplantDate: '5/21/2022', firstHarvestDate: '', endDate: '9/1/2022', outcomes: { germination: 3, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-101.1', year: 2022, bedID: '01', plantID: 'plant-150', startDate: '4/8/2022', transplantDate: '5/22/2022', firstHarvestDate: '', endDate: '9/1/2022', outcomes: { germination: 3, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+
+      { plantingID: 'planting-101.2', year: 2022, bedID: '01', plantID: 'plant-150', startDate: '5/21/2022', transplantDate: '', firstHarvestDate: '', endDate: '9/1/2022', outcomes: { germination: 3, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
       { plantingID: 'planting-102', year: 2022, bedID: '02', plantID: 'plant-104', startDate: '3/26/2022', transplantDate: '5/21/2022', firstHarvestDate: '', endDate: '10/1/2022', outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
@@ -38,7 +40,7 @@ export const gardenData = [
 
       { plantingID: 'planting-103.1', year: 2022, bedID: '03', plantID: 'plant-153', startDate: '4/8/2022', transplantDate: '5/21/2022', firstHarvestDate: '', endDate: '7/1/2022', outcomes: { germination: 2, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-103.2', year: 2022, bedID: '03', plantID: 'plant-153', startDate: '4/8/2022', transplantDate: '', firstHarvestDate: '', endDate: '7/1/2022', outcomes: { germination: 2, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
+      { plantingID: 'planting-103.2', year: 2022, bedID: '03', plantID: 'plant-153', startDate: '4/8/2022', transplantDate: '', firstHarvestDate: '', endDate: '5/1/2022', outcomes: { germination: 2, appearance: 1, resistance: 1, yield: 1 }, usedGreenhouse: false },
 
       { plantingID: 'planting-104', year: 2022, bedID: '04', plantID: 'plant-105', startDate: '2/20/2022', transplantDate: '3/19/2022', firstHarvestDate: '', endDate: '6/7/2022', outcomes: { germination: 5, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
@@ -64,9 +66,7 @@ export const gardenData = [
 
       { plantingID: 'planting-106', year: 2022, bedID: '06', plantID: 'plant-142', startDate: '3/6/2022', transplantDate: '', firstHarvestDate: '', endDate: '6/1/2022', outcomes: { germination: 5, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-106.1', year: 2022, bedID: '06', plantID: 'plant-137', startDate: '4/8/2022', transplantDate: '5/21/2022', firstHarvestDate: '', endDate: '7/15/2022', outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
-
-      { plantingID: 'planting-106.2', year: 2022, bedID: '06', plantID: 'plant-155', startDate: '5/18/2022', transplantDate: '6/1/2022', firstHarvestDate: '', endDate: '8/1/2022', outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-106.1', year: 2022, bedID: '06', plantID: 'plant-155', startDate: '5/18/2022', transplantDate: '6/1/2022', firstHarvestDate: '', endDate: '8/1/2022', outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
       { plantingID: 'planting-107', year: 2022, bedID: '07', plantID: 'plant-108', startDate: '2/27/2022', transplantDate: '4/17/2022', firstHarvestDate: '', endDate: '7/30/2022', outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
@@ -82,7 +82,15 @@ export const gardenData = [
 
       { plantingID: 'planting-108', year: 2022, bedID: '08', plantID: 'plant-152', startDate: '4/9/2022', transplantDate: '5/21/2022', firstHarvestDate: '', endDate: '7/30/2022', outcomes: { germination: 2, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-108.1', year: 2022, bedID: '08', plantID: 'plant-107', startDate: '5/21/2022', transplantDate: '', firstHarvestDate: '', endDate: '7/30/2022', outcomes: { germination: 5, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
+      { plantingID: 'planting-108.1', year: 2022, bedID: '08', plantID: 'plant-156', startDate: '5/21/2022', transplantDate: '', firstHarvestDate: '', endDate: '7/30/2022', outcomes: { germination: 5, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
+
+      { plantingID: 'planting-108.2', year: 2022, bedID: '08', plantID: 'plant-157', startDate: '5/21/2022', transplantDate: '', firstHarvestDate: '', endDate: '7/30/2022', outcomes: { germination: 5, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
+
+      { plantingID: 'planting-108.3', year: 2022, bedID: '08', plantID: 'plant-152', startDate: '5/21/2022', transplantDate: '', firstHarvestDate: '', endDate: '7/30/2022', outcomes: { germination: 2, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
+
+      { plantingID: 'planting-108.4', year: 2022, bedID: '08', plantID: 'plant-132', startDate: '5/21/2022', transplantDate: '', firstHarvestDate: '', endDate: '7/30/2022', outcomes: { germination: 2, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
+
+      { plantingID: 'planting-108.5', year: 2022, bedID: '08', plantID: 'plant-137', startDate: '4/8/2022', transplantDate: '5/21/2022', firstHarvestDate: '', endDate: '7/15/2022', outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
       { plantingID: 'planting-011.05', year: 2022, bedID: '09', plantID: 'plant-138', startDate: '1/1/2022', transplantDate: '', firstHarvestDate: '', endDate: '12/31/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
@@ -106,21 +114,25 @@ export const gardenData = [
 
       { plantingID: 'planting-113', year: 2022, bedID: '13', plantID: 'plant-142', startDate: '3/6/2022', transplantDate: '', firstHarvestDate: '', endDate: '6/1/2022', outcomes: { germination: 5, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-113.1', year: 2022, bedID: '13', plantID: 'plant-131', startDate: '4/8/2022', transplantDate: '5/21/2022', firstHarvestDate: '', endDate: '10/1/2022', outcomes: { germination: 2, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-113.1', year: 2022, bedID: '13', plantID: 'plant-130', startDate: '4/8/2022', transplantDate: '5/21/2022', firstHarvestDate: '', endDate: '10/1/2022', outcomes: { germination: 2, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true }, // delicata
 
       { plantingID: 'planting-114', year: 2022, bedID: '14', plantID: 'plant-142', startDate: '3/6/2022', transplantDate: '', firstHarvestDate: '', endDate: '6/1/2022', outcomes: { germination: 5, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-114.1', year: 2022, bedID: '14', plantID: 'plant-151', startDate: '4/8/2022', transplantDate: '5/21/2022', firstHarvestDate: '', endDate: '10/1/2022', outcomes: { germination: 2, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-114.1', year: 2022, bedID: '14', plantID: 'plant-151', startDate: '4/8/2022', transplantDate: '5/21/2022', firstHarvestDate: '', endDate: '10/1/2022', outcomes: { germination: 2, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true }, // butternut
 
-      { plantingID: 'planting-115', year: 2022, bedID: '15', plantID: 'plant-142', startDate: '3/6/2022', transplantDate: '', firstHarvestDate: '', endDate: '6/1/2022', outcomes: { germination: 5, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
+      { plantingID: 'planting-115', year: 2022, bedID: '15', plantID: 'plant-140', startDate: '1/1/2022', transplantDate: '', firstHarvestDate: '', endDate: '7/1/2022', outcomes: { germination: 5, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
+
+      { plantingID: 'planting-115.1', year: 2022, bedID: '15', plantID: 'plant-107', startDate: '7/15/2022', transplantDate: '', firstHarvestDate: '', endDate: '10/1/2022', outcomes: { germination: 5, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
       { plantingID: 'planting-116', year: 2022, bedID: '16', plantID: 'plant-142', startDate: '3/6/2022', transplantDate: '', firstHarvestDate: '', endDate: '6/1/2022', outcomes: { germination: 5, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-116.1', year: 2022, bedID: '16', plantID: 'plant-130', startDate: '4/8/2022', transplantDate: '5/21/2022', firstHarvestDate: '', endDate: '10/1/2022', outcomes: { germination: 2, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-116.1', year: 2022, bedID: '16', plantID: 'plant-133', startDate: '4/8/2022', transplantDate: '5/21/2022', firstHarvestDate: '', endDate: '10/1/2022', outcomes: { germination: 2, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true }, // pumpkin
+
+      { plantingID: 'planting-117', year: 2022, bedID: '17', plantID: 'plant-158', startDate: '4/8/2022', transplantDate: '', firstHarvestDate: '', endDate: '7/15/2022', outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
       { plantingID: 'planting-118', year: 2022, bedID: '18', plantID: 'plant-142', startDate: '3/6/2022', transplantDate: '', firstHarvestDate: '', endDate: '6/1/2022', outcomes: { germination: 5, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-118.1', year: 2022, bedID: '18', plantID: 'plant-133', startDate: '4/8/2022', transplantDate: '5/21/2022', firstHarvestDate: '', endDate: '10/1/2022', outcomes: { germination: 2, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-118.1', year: 2022, bedID: '18', plantID: 'plant-131', startDate: '4/8/2022', transplantDate: '5/21/2022', firstHarvestDate: '', endDate: '10/1/2022', outcomes: { germination: 2, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true }, // potimarron
 
       { plantingID: 'planting-120', year: 2022, bedID: 'GH', plantID: 'plant-110', startDate: '3/12/2022', transplantDate: '', firstHarvestDate: '', endDate: '10/1/2022', outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 

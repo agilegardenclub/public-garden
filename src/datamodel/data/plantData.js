@@ -588,6 +588,33 @@ export const plantData = [
     description: 'Tall plants with large, full, white kernelled ears.',
     daysToHarvest: 80,
   },
+  {
+    id: 'plant-156',
+    plant: 'Bean',
+    variety: 'Dragon Langerie',
+    familyID: 'plantfamily-05',
+    vendorID: 'vendor-02',
+    description: 'Large, flat-podded, sweet wax bean.  Creamy white and purple striped pods and beans.',
+    daysToHarvest: 55,
+  },
+  {
+    id: 'plant-157',
+    plant: 'Bean',
+    variety: "Tanya's Pink Pod",
+    familyID: 'plantfamily-05',
+    vendorID: 'vendor-02',
+    description: 'Large, flat, and tasty pink pods.',
+    daysToHarvest: 55,
+  },
+  {
+    id: 'plant-158',
+    plant: 'Potato',
+    variety: 'Rozette',
+    familyID: 'plantfamily-07',
+    vendorID: 'vendor-00',
+    description: '',
+    daysToHarvest: 75,
+  },
 ];
 
 // Plant Families

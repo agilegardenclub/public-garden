@@ -28,7 +28,7 @@ export const gardenData = [
 
       /* 2022 Data */
 
-      { plantingID: 'planting-101', year: 2022, bedID: '01', plantID: 'plant-122', startDate: '1/1/2022', transplantDate: '', firstHarvestDate: '', endDate: '6/17/2022', outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
+      { plantingID: 'planting-101', year: 2022, bedID: '01', plantID: 'plant-122', startDate: '1/1/2022', transplantDate: '', firstHarvestDate: '1/1/2022', endDate: '6/17/2022', outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
       { plantingID: 'planting-101.1', year: 2022, bedID: '01', plantID: 'plant-150', startDate: '4/8/2022', transplantDate: '5/22/2022', firstHarvestDate: '', endDate: '9/1/2022', outcomes: { germination: 3, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 

@@ -993,6 +993,15 @@ export const plantData = [
     description: '',
     daysToHarvest: 100,
   },
+  {
+    id: 'plant-201',
+    plant: 'Squash',
+    variety: 'Winter',
+    familyID: 'plantfamily-04',
+    vendorID: '',
+    description: '',
+    daysToHarvest: 95,
+  },
 ];
 
 // Plant Families

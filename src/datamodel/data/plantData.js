@@ -392,7 +392,7 @@ export const plantData = [
   },
   {
     id: 'plant-134',
-    plant: 'Carrots',
+    plant: 'Carrot',
     variety: 'Rainbow Mix',
     familyID: 'plantfamily-08',
     vendorID: 'vendor-02',

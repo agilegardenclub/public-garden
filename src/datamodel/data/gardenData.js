@@ -334,7 +334,7 @@ export const gardenData = [
 
       { plantingID: 'planting-4006', year: 2021, bedID: '6', plantID: 'plant-160', fromStart: true, startDate: '1/1/2022', transplantDate: '', firstHarvestDate: '6/1/2022', endDate: '12/31/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-3014', year: 2021, bedID: '14', plantID: 'plant-192', fromStart: false, startDate: '1/1/2022', transplantDate: '', firstHarvestDate: '5/10/2022', endDate: '12/31/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-4014', year: 2021, bedID: '14', plantID: 'plant-192', fromStart: false, startDate: '1/1/2022', transplantDate: '', firstHarvestDate: '5/10/2022', endDate: '12/31/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
       /* 2021 Data */
       { plantingID: 'planting-3001', year: 2021, bedID: '1', plantID: 'plant-175', startDate: '4/24/2021', transplantDate: '', firstHarvestDate: '7/30/2021', endDate: '9/15/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },

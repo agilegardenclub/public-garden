@@ -1002,6 +1002,42 @@ export const plantData = [
     description: '',
     daysToHarvest: 95,
   },
+  {
+    id: 'plant-202',
+    plant: 'Bean',
+    variety: 'Bush Snap',
+    familyID: 'plantfamily-05',
+    vendorID: '',
+    description: '',
+    daysToHarvest: 55,
+  },
+  {
+    id: 'plant-203',
+    plant: 'Tomato',
+    variety: 'Slicer',
+    familyID: 'plantfamily-07',
+    vendorID: '',
+    description: '',
+    daysToHarvest: 75,
+  },
+  {
+    id: 'plant-205',
+    plant: 'Pepper',
+    variety: 'Hot',
+    familyID: 'plantfamily-07',
+    vendorID: '',
+    description: '',
+    daysToHarvest: 90,
+  },
+  {
+    id: 'plant-206',
+    plant: 'Pepper',
+    variety: 'Sweet',
+    familyID: 'plantfamily-07',
+    vendorID: '',
+    description: '',
+    daysToHarvest: 90,
+  },
 ];
 
 // Plant Families

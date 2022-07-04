@@ -313,8 +313,8 @@ export const gardenData = [
       { observationID: 'observation-006', plantingID: 'planting-111.6', observationDate: '5/21/2022', tags: ['disease', 'help'], description: "Matina tomatoes showing leaf curl second year in a row.  Other tomatoes look fine.  Can they be saved?  Didn't transpant.", picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-003.jpg`, gardenerID: 'gardener-01', replies: [] },
       { observationID: 'observation-007', plantingID: 'planting-103', observationDate: '5/20/2022', tags: ['phenology', 'first flower'], description: 'First pea flower!  Peas looking very happy.', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-004.jpg`, gardenerID: 'gardener-01', replies: [] },
       { observationID: 'observation-008', plantingID: 'planting-2014.4', observationDate: '11/30/2020', tags: ['help'], description: 'Lemongrass not growing well.  Will pull and try again in another location.  Any advice for how to successfully grow it outside?', gardenerID: 'gardener-02', replies: [] },
-      { observationID: 'observation-009', plantingID: 'planting-4014.7', observationDate: '6/2/2022', tags: ['help'], description: 'Complete fail.  Will resow with sweet onions', gardenerID: 'gardener-02', replies: [] },
-      { observationID: 'observation-010', plantingID: 'planting-4013', observationDate: '6/2/2022', tags: ['help'], description: 'Slugs ate first set of greenhouse transplants, so trying again.', gardenerID: 'gardener-02', replies: [] },
+      { observationID: 'observation-019', plantingID: 'planting-4014.7', observationDate: '6/2/2022', tags: ['help'], description: 'Complete fail.  Will resow with sweet onions', gardenerID: 'gardener-02', replies: [] },
+      { observationID: 'observation-020', plantingID: 'planting-4013', observationDate: '6/2/2022', tags: ['help'], description: 'Slugs ate first set of greenhouse transplants, so trying again.', gardenerID: 'gardener-02', replies: [] },
     ],
   },
   /*                       JESSIE GARDEN               */

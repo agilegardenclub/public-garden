@@ -402,10 +402,12 @@ export const gardenData = [
       { observationID: 'observation-012', plantingID: 'planting-108.2', observationDate: '6/18/2022', tags: ['pest'], description: 'Something is eating these bean sprouts.  Perhaps the rabbit I see in the yard sometimes?', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-011.jpg`, gardenerID: 'gardener-01', replies: [] },
       { observationID: 'observation-013', plantingID: 'planting-108.3', observationDate: '6/18/2022', tags: ['pest'], description: 'Something is eating these bean sprouts.  Perhaps the rabbit I see in the yard sometimes?', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-011.jpg`, gardenerID: 'gardener-01', replies: [] },
       { observationID: 'observation-014', plantingID: 'planting-108.4', observationDate: '6/18/2022', tags: ['pest'], description: 'Something is eating these bean sprouts.  Perhaps the rabbit I see in the yard sometimes?', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-011.jpg`, gardenerID: 'gardener-01', replies: [] },
-      { observationID: 'observation-015', plantingID: 'planting-4007.2', observationDate: '6/18/2022', tags: ['success'], description: 'New strategy for growing potatoes working well!', gardenerID: 'gardener-01', replies: [{ gardenerID: 'gardener-02', date: '6/19/2022', comment: 'I want to try that next year!  Please keep posting updates!' }] },
+      { observationID: 'observation-015', plantingID: 'planting-4007.2', observationDate: '6/18/2022', tags: ['success'], description: 'New strategy for growing potatoes working well!', picture: `${process.env.PUBLIC_URL}/img/gardens/67abh39db/observation-015.jpg`, gardenerID: 'gardener-01', replies: [{ gardenerID: 'gardener-02', date: '6/19/2022', comment: 'I want to try that next year!  Please keep posting updates!' }] },
       { observationID: 'observation-016', plantingID: 'planting-105.2', observationDate: '5/22/2022', tags: ['success'], description: 'Red oak lettuce came up strong!  No real germination of trout back.', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-016.jpg`, gardenerID: 'gardener-01', replies: [] },
       { observationID: 'observation-017', plantingID: 'planting-103', observationDate: '5/22/2022', tags: ['success'], description: 'Peas status update.', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-017.jpg`, gardenerID: 'gardener-01', replies: [] },
       { observationID: 'observation-018', plantingID: 'planting-103', observationDate: '6/26/2022', tags: ['success'], description: 'Peas in full abundance.', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-018.jpg`, gardenerID: 'gardener-01', replies: [] },
+      { observationID: 'observation-019', plantingID: 'planting-4014.7', observationDate: '6/2/2022', tags: ['help'], description: 'Complete fail.  Will resow with sweet onions', gardenerID: 'gardener-02', replies: [] },
+      { observationID: 'observation-020', plantingID: 'planting-4013', observationDate: '6/2/2022', tags: ['help'], description: 'Slugs ate first set of greenhouse transplants, so trying again.', gardenerID: 'gardener-02', replies: [] },
     ],
   },
   /*                       JESSIE GARDEN               */
@@ -495,11 +497,13 @@ export const gardenData = [
 
       { plantingID: 'planting-4014.6', year: 2022, bedID: '14', plantID: 'plant-174', startDate: '6/1/2022', transplantDate: '', firstHarvestDate: '', endDate: '9/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-4014.7', year: 2022, bedID: '14', plantID: 'plant-212', startDate: '4/24/2022', transplantDate: '', firstHarvestDate: '', endDate: '6/1/2022', outcomes: { appearance: 1, resistance: 1, yield: 1, flavor: 1 }, usedGreenhouse: false },
+      { plantingID: 'planting-4014.7', year: 2022, bedID: '14', plantID: 'plant-211', startDate: '4/24/2022', transplantDate: '', firstHarvestDate: '', endDate: '6/1/2022', outcomes: { appearance: 1, resistance: 1, yield: 1, flavor: 1 }, usedGreenhouse: false },
 
       { plantingID: 'planting-4014.8', year: 2022, bedID: '14', plantID: 'plant-129', startDate: '4/24/2022', transplantDate: '', firstHarvestDate: '', endDate: '7/15/2022', outcomes: { appearance: 4, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
       { plantingID: 'planting-4014.9', year: 2022, bedID: '14', plantID: 'plant-176', startDate: '4/24/2022', transplantDate: '', firstHarvestDate: '', endDate: '7/15/2022', outcomes: { appearance: 4, resistance: 5, yield: 5, flavor: 3 }, usedGreenhouse: false },
+
+      { plantingID: 'planting-4014.10', year: 2022, bedID: '14', plantID: 'plant-212', startDate: '4/24/2022', transplantDate: '', firstHarvestDate: '', endDate: '7/15/2022', outcomes: { appearance: 4, resistance: 5, yield: 5, flavor: 3 }, usedGreenhouse: false },
 
       { plantingID: 'planting-4015', year: 2022, bedID: '15', plantID: 'plant-163', startDate: '4/2/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '8/15/2022', outcomes: { appearance: 3, resistance: 4, yield: 3, flavor: 5 }, usedGreenhouse: true },
 

@@ -108,7 +108,7 @@ export const gardenData = [
 
       { plantingID: 'planting-101.2', year: 2022, bedID: '01', plantID: 'plant-150', startDate: '5/21/2022', transplantDate: '', firstHarvestDate: '', endDate: '9/1/2022', outcomes: { germination: 3, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-102', year: 2022, bedID: '02', plantID: 'plant-104', startDate: '3/26/2022', transplantDate: '5/21/2022', firstHarvestDate: '', endDate: '10/1/2022', outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-102', year: 2022, bedID: '02', plantID: 'plant-104', startDate: '3/26/2022', transplantDate: '5/21/2022', firstHarvestDate: '7/11/2022', endDate: '10/1/2022', outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
       { plantingID: 'planting-103', year: 2022, bedID: '03', plantID: 'plant-101', startDate: '2/20/2022', transplantDate: '3/13/2022', firstHarvestDate: '6/19/2022', endDate: '7/20/2022', outcomes: { germination: 5, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
@@ -138,6 +138,11 @@ export const gardenData = [
 
       { plantingID: 'planting-105.3', year: 2022, bedID: '05', plantID: 'plant-146', startDate: '4/30/2022', transplantDate: '', firstHarvestDate: '', endDate: '8/1/2022', outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
+      { plantingID: 'planting-105.4', year: 2022, bedID: '05', plantID: 'plant-137', startDate: '7/6/2022', transplantDate: '7/26/2022', firstHarvestDate: '', endDate: '9/1/2022', outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+
+      { plantingID: 'planting-105.5', year: 2022, bedID: '05', plantID: 'plant-153', startDate: '7/6/2022', transplantDate: '7/26/2022', firstHarvestDate: '', endDate: '9/1/2022', outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+
+      { plantingID: 'planting-105.6', year: 2022, bedID: '05', plantID: 'plant-213', startDate: '6/29/2022', transplantDate: '7/26/2022', firstHarvestDate: '', endDate: '10/1/2022', outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
       { plantingID: 'planting-106', year: 2022, bedID: '06', plantID: 'plant-142', startDate: '3/6/2022', transplantDate: '', firstHarvestDate: '', endDate: '6/1/2022', outcomes: { germination: 5, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
       { plantingID: 'planting-106.1', year: 2022, bedID: '06', plantID: 'plant-155', startDate: '6/4/2022', transplantDate: '', firstHarvestDate: '', endDate: '9/1/2022', outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
@@ -174,7 +179,7 @@ export const gardenData = [
 
       { plantingID: 'planting-108.8', year: 2022, bedID: '08', plantID: 'plant-137', startDate: '6/12/2022', transplantDate: '', firstHarvestDate: '', endDate: '8/15/2022', outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-011.05', year: 2022, bedID: '09', plantID: 'plant-138', startDate: '4/1/2021', transplantDate: '', firstHarvestDate: '', endDate: '6/15/2041', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
+      { plantingID: 'planting-011.05', year: 2022, bedID: '09', plantID: 'plant-138', startDate: '4/1/2021', transplantDate: '', firstHarvestDate: '6/29/2022', endDate: '6/15/2041', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
       { plantingID: 'planting-110', year: 2022, bedID: '10', plantID: 'plant-135', startDate: '3/26/2022', transplantDate: '5/21/2022', firstHarvestDate: '', endDate: '10/1/2022', outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 

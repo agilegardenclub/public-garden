@@ -1092,6 +1092,15 @@ export const plantData = [
     description: '',
     daysToHarvest: 120,
   },
+  {
+    id: 'plant-213',
+    plant: 'Radicchio',
+    variety: 'Pasqualino',
+    familyID: 'plantfamily-09',
+    vendorID: 'vendor-02',
+    description: '',
+    daysToHarvest: 65,
+  },
 ];
 
 // Plant Families

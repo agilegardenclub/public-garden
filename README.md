@@ -81,6 +81,11 @@ webpack 5.69.1 compiled successfully in 2086 ms
 
 This command will ultimately bring up a browser and go to http://localhost:3000/, which displays a blank page. It's blank because, in order to actually display a garden, you must add a "name" search parameter in the URL. 
 
+There are two gardens that have public views so far:
+
+  1. [http://localhost:3000/public-garden/?name=45ght3cf](http://localhost:3000/public-garden/?name=45ght3cf)
+  2. [http://localhost:3000/public-garden/?name=67abh39db](http://localhost:3000/public-garden/?name=67abh39db)
+
 So, to actually see a public garden in your locally running instance, go to: [http://localhost:3000/public-garden/?name=45ght3cf](http://localhost:3000/public-garden/?name=45ght3cf).
 
 ## Deploying your changes

@@ -430,53 +430,53 @@ export const gardenData = [
     ],
     plantingData: [
       /* 2022 Data */
-      { plantingID: 'planting-4001', year: 2022, bedID: '1', plantID: 'plant-124', startDate: '4/2/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '9/15/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-4001', year: 2022, bedID: '01', plantID: 'plant-124', startDate: '4/2/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '9/15/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-4001.1', year: 2022, bedID: '1', plantID: 'plant-121', startDate: '4/2/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '9/15/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-4001.1', year: 2022, bedID: '01', plantID: 'plant-121', startDate: '4/2/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '9/15/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-4001.2', year: 2022, bedID: '1', plantID: 'plant-167', startDate: '4/2/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '9/15/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-4001.2', year: 2022, bedID: '01', plantID: 'plant-167', startDate: '4/2/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '9/15/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-4002', year: 2022, bedID: '2', plantID: 'plant-101', startDate: '4/24/2022', transplantDate: '', firstHarvestDate: '', endDate: '8/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
+      { plantingID: 'planting-4002', year: 2022, bedID: '02', plantID: 'plant-101', startDate: '4/24/2022', transplantDate: '', firstHarvestDate: '', endDate: '8/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-4002.1', year: 2022, bedID: '2', plantID: 'plant-107', startDate: '4/24/2022', transplantDate: '', firstHarvestDate: '', endDate: '8/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
+      { plantingID: 'planting-4002.1', year: 2022, bedID: '02', plantID: 'plant-107', startDate: '4/24/2022', transplantDate: '', firstHarvestDate: '', endDate: '8/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-4002.2', year: 2022, bedID: '2', plantID: 'plant-104', startDate: '4/2/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '9/15/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-4002.2', year: 2022, bedID: '02', plantID: 'plant-104', startDate: '4/2/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '9/15/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-4002.3', year: 2022, bedID: '2', plantID: 'plant-153', startDate: '4/2/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '9/15/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-4002.3', year: 2022, bedID: '02', plantID: 'plant-153', startDate: '4/2/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '9/15/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-4002.4', year: 2022, bedID: '2', plantID: 'plant-137', startDate: '4/2/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '9/15/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-4002.4', year: 2022, bedID: '02', plantID: 'plant-137', startDate: '4/2/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '9/15/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-4003', year: 2022, bedID: '3', plantID: 'plant-140', startDate: '10/1/2021', transplantDate: '', firstHarvestDate: '', endDate: '8/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
+      { plantingID: 'planting-4003', year: 2022, bedID: '03', plantID: 'plant-140', startDate: '10/1/2021', transplantDate: '', firstHarvestDate: '', endDate: '8/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-4003.1', year: 2022, bedID: '3', plantID: 'plant-174', startDate: '4/1/2022', transplantDate: '', firstHarvestDate: '', endDate: '9/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
+      { plantingID: 'planting-4003.1', year: 2022, bedID: '03', plantID: 'plant-174', startDate: '4/1/2022', transplantDate: '', firstHarvestDate: '', endDate: '9/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-4004', year: 2022, bedID: '4', plantID: 'plant-135', startDate: '4/1/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '9/15/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-4004', year: 2022, bedID: '04', plantID: 'plant-135', startDate: '4/1/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '9/15/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-4004.1', year: 2022, bedID: '4', plantID: 'plant-145', startDate: '4/1/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '9/15/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-4004.1', year: 2022, bedID: '04', plantID: 'plant-145', startDate: '4/1/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '9/15/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-4004.2', year: 2022, bedID: '4', plantID: 'plant-123', startDate: '4/1/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '9/15/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-4004.2', year: 2022, bedID: '04', plantID: 'plant-123', startDate: '4/1/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '9/15/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-4005', year: 2022, bedID: '5', plantID: 'plant-01', fromStart: false, startDate: '4/1/2020', transplantDate: '', firstHarvestDate: '5/1/2022', endDate: '12/15/2052', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-4005', year: 2022, bedID: '05', plantID: 'plant-01', fromStart: false, startDate: '4/1/2020', transplantDate: '', firstHarvestDate: '5/1/2022', endDate: '12/15/2052', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-4006', year: 2022, bedID: '6', plantID: 'plant-160', fromStart: true, startDate: '4/1/2019', transplantDate: '', firstHarvestDate: '6/1/2022', endDate: '12/15/2052', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-4006', year: 2022, bedID: '06', plantID: 'plant-160', fromStart: true, startDate: '4/1/2019', transplantDate: '', firstHarvestDate: '6/1/2022', endDate: '12/15/2052', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-4006.1', year: 2022, bedID: '6', plantID: 'plant-162', startDate: '4/24/2022', transplantDate: '', firstHarvestDate: '', endDate: '8/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
+      { plantingID: 'planting-4006.1', year: 2022, bedID: '06', plantID: 'plant-162', startDate: '4/24/2022', transplantDate: '', firstHarvestDate: '', endDate: '8/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-4006.2', year: 2022, bedID: '6', plantID: 'plant-02', startDate: '4/24/2022', transplantDate: '', firstHarvestDate: '', endDate: '8/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
+      { plantingID: 'planting-4006.2', year: 2022, bedID: '06', plantID: 'plant-02', startDate: '4/24/2022', transplantDate: '', firstHarvestDate: '', endDate: '8/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-4006.3', year: 2022, bedID: '6', plantID: 'plant-201', startDate: '4/2/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '8/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-4006.3', year: 2022, bedID: '06', plantID: 'plant-201', startDate: '4/2/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '8/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-4006.4', year: 2022, bedID: '6', plantID: 'plant-108', startDate: '4/2/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '8/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-4006.4', year: 2022, bedID: '06', plantID: 'plant-108', startDate: '4/2/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '8/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-4007', year: 2022, bedID: '7', plantID: 'plant-180', startDate: '6/26/2022', transplantDate: '', firstHarvestDate: '', endDate: '9/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
+      { plantingID: 'planting-4007', year: 2022, bedID: '07', plantID: 'plant-180', startDate: '6/26/2022', transplantDate: '', firstHarvestDate: '', endDate: '9/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-4007.1', year: 2022, bedID: '7', plantID: 'plant-190', startDate: '4/24/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '10/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-4007.1', year: 2022, bedID: '07', plantID: 'plant-190', startDate: '4/24/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '10/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-4007.2', year: 2022, bedID: '7', plantID: 'plant-199', fromStart: false, startDate: '4/24/2022', transplantDate: '', firstHarvestDate: '', endDate: '8/15/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-4007.2', year: 2022, bedID: '07', plantID: 'plant-199', fromStart: false, startDate: '4/24/2022', transplantDate: '', firstHarvestDate: '', endDate: '8/15/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-4008', year: 2022, bedID: '8', plantID: 'plant-151', startDate: '4/24/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '10/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-4008', year: 2022, bedID: '08', plantID: 'plant-151', startDate: '4/24/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '10/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-4009', year: 2022, bedID: '9', plantID: 'plant-202', startDate: '4/24/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '10/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-4009', year: 2022, bedID: '09', plantID: 'plant-202', startDate: '4/24/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '10/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
       { plantingID: 'planting-4010', year: 2022, bedID: '10', plantID: 'plant-130', startDate: '4/24/2022', transplantDate: '5/26/2022', firstHarvestDate: '', endDate: '10/1/2022', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
@@ -517,45 +517,45 @@ export const gardenData = [
       { plantingID: 'planting-4016', year: 2022, bedID: '16', plantID: 'plant-115', startDate: '4/24/2022', transplantDate: '', firstHarvestDate: '', endDate: '8/15/2022', outcomes: { appearance: 5, resistance: 4, yield: 4, flavor: 5 }, usedGreenhouse: false },
 
       /* 2021 Data */
-      { plantingID: 'planting-3001', year: 2021, bedID: '1', plantID: 'plant-175', startDate: '4/24/2021', transplantDate: '', firstHarvestDate: '7/30/2021', endDate: '9/15/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-3001', year: 2021, bedID: '01', plantID: 'plant-175', startDate: '4/24/2021', transplantDate: '', firstHarvestDate: '7/30/2021', endDate: '9/15/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-3001.1', year: 2021, bedID: '1', plantID: 'plant-107', startDate: '4/24/2021', transplantDate: '', firstHarvestDate: '6/30/2021', endDate: '8/1/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-3001.1', year: 2021, bedID: '01', plantID: 'plant-107', startDate: '4/24/2021', transplantDate: '', firstHarvestDate: '6/30/2021', endDate: '8/1/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-3001.2', year: 2021, bedID: '1', plantID: 'plant-101', startDate: '4/24/2021', transplantDate: '', firstHarvestDate: '6/30/2021', endDate: '8/1/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-3001.2', year: 2021, bedID: '01', plantID: 'plant-101', startDate: '4/24/2021', transplantDate: '', firstHarvestDate: '6/30/2021', endDate: '8/1/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-3002', year: 2021, bedID: '2', plantID: 'plant-194', startDate: '4/24/2021', transplantDate: '', firstHarvestDate: '6/30/2021', endDate: '9/1/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-3002', year: 2021, bedID: '02', plantID: 'plant-194', startDate: '4/24/2021', transplantDate: '', firstHarvestDate: '6/30/2021', endDate: '9/1/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-3002.1', year: 2021, bedID: '2', plantID: 'plant-174', startDate: '4/24/2021', transplantDate: '', firstHarvestDate: '7/30/2021', endDate: '9/15/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-3002.1', year: 2021, bedID: '02', plantID: 'plant-174', startDate: '4/24/2021', transplantDate: '', firstHarvestDate: '7/30/2021', endDate: '9/15/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-3002.2', year: 2021, bedID: '2', plantID: 'plant-162', startDate: '4/24/2021', transplantDate: '', firstHarvestDate: '6/30/2021', endDate: '9/15/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-3002.2', year: 2021, bedID: '02', plantID: 'plant-162', startDate: '4/24/2021', transplantDate: '', firstHarvestDate: '6/30/2021', endDate: '9/15/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-3002.3', year: 2021, bedID: '2', plantID: 'plant-145', fromStart: true, startDate: '5/14/2021', transplantDate: '5/14/2021', firstHarvestDate: '7/30/2021', endDate: '9/15/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-3002.3', year: 2021, bedID: '02', plantID: 'plant-145', fromStart: true, startDate: '5/14/2021', transplantDate: '5/14/2021', firstHarvestDate: '7/30/2021', endDate: '9/15/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-3003', year: 2021, bedID: '3', plantID: 'plant-135', fromStart: true, startDate: '5/14/2021', transplantDate: '5/14/2021', firstHarvestDate: '8/15/2021', endDate: '9/30/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-3003', year: 2021, bedID: '03', plantID: 'plant-135', fromStart: true, startDate: '5/14/2021', transplantDate: '5/14/2021', firstHarvestDate: '8/15/2021', endDate: '9/30/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-3003.1', year: 2021, bedID: '3', plantID: 'plant-121', fromStart: true, startDate: '5/14/2021', transplantDate: '5/14/2021', firstHarvestDate: '8/1/2021', endDate: '9/30/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-3003.1', year: 2021, bedID: '03', plantID: 'plant-121', fromStart: true, startDate: '5/14/2021', transplantDate: '5/14/2021', firstHarvestDate: '8/1/2021', endDate: '9/30/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-3003.2', year: 2021, bedID: '3', plantID: 'plant-124', fromStart: true, startDate: '5/14/2021', transplantDate: '5/14/2021', firstHarvestDate: '8/1/2021', endDate: '9/30/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-3003.2', year: 2021, bedID: '03', plantID: 'plant-124', fromStart: true, startDate: '5/14/2021', transplantDate: '5/14/2021', firstHarvestDate: '8/1/2021', endDate: '9/30/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-3004', year: 2021, bedID: '4', plantID: 'plant-175', fromStart: false, startDate: '5/14/2021', transplantDate: '', firstHarvestDate: '8/15/2021', endDate: '9/15/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-3004', year: 2021, bedID: '04', plantID: 'plant-175', fromStart: false, startDate: '5/14/2021', transplantDate: '', firstHarvestDate: '8/15/2021', endDate: '9/15/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-3004.1', year: 2021, bedID: '4', plantID: 'plant-03', fromStart: false, startDate: '5/14/2021', transplantDate: '', firstHarvestDate: '8/15/2021', endDate: '10/15/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-3004.1', year: 2021, bedID: '04', plantID: 'plant-03', fromStart: false, startDate: '5/14/2021', transplantDate: '', firstHarvestDate: '8/15/2021', endDate: '10/15/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-3004.2', year: 2021, bedID: '4', plantID: 'plant-129', fromStart: false, startDate: '5/14/2021', transplantDate: '', firstHarvestDate: '7/15/2021', endDate: '8/15/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-3004.2', year: 2021, bedID: '04', plantID: 'plant-129', fromStart: false, startDate: '5/14/2021', transplantDate: '', firstHarvestDate: '7/15/2021', endDate: '8/15/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-3004.3', year: 2021, bedID: '4', plantID: 'plant-140', fromStart: false, startDate: '10/14/2021', transplantDate: '', firstHarvestDate: '', endDate: '12/31/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-3004.3', year: 2021, bedID: '04', plantID: 'plant-140', fromStart: false, startDate: '10/14/2021', transplantDate: '', firstHarvestDate: '', endDate: '12/31/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2005', year: 2021, bedID: '5', plantID: 'plant-01', fromStart: false, startDate: '4/1/2020', transplantDate: '', firstHarvestDate: '', endDate: '6/15/2041', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2005', year: 2021, bedID: '05', plantID: 'plant-01', fromStart: false, startDate: '4/1/2020', transplantDate: '', firstHarvestDate: '', endDate: '6/15/2041', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1006', year: 2021, bedID: '6', plantID: 'plant-160', fromStart: true, startDate: '5/12/2019', transplantDate: '', firstHarvestDate: '5/15/2021', endDate: '6/15/2041', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1006', year: 2021, bedID: '06', plantID: 'plant-160', fromStart: true, startDate: '5/12/2019', transplantDate: '', firstHarvestDate: '5/15/2021', endDate: '6/15/2041', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-3006.1', year: 2021, bedID: '6', plantID: 'plant-165', fromStart: false, startDate: '5/1/2021', transplantDate: '', firstHarvestDate: '8/15/2021', endDate: '10/1/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-3006.1', year: 2021, bedID: '06', plantID: 'plant-165', fromStart: false, startDate: '5/1/2021', transplantDate: '', firstHarvestDate: '8/15/2021', endDate: '10/1/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-3007', year: 2021, bedID: '7', plantID: 'plant-155', fromStart: false, startDate: '6/10/2021', transplantDate: '', firstHarvestDate: '8/15/2021', endDate: '9/1/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-3007', year: 2021, bedID: '07', plantID: 'plant-155', fromStart: false, startDate: '6/10/2021', transplantDate: '', firstHarvestDate: '8/15/2021', endDate: '9/1/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-3008', year: 2021, bedID: '8', plantID: 'plant-193', fromStart: true, startDate: '5/14/2021', transplantDate: '5/14/2021', firstHarvestDate: '8/15/2021', endDate: '9/15/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-3008', year: 2021, bedID: '08', plantID: 'plant-193', fromStart: true, startDate: '5/14/2021', transplantDate: '5/14/2021', firstHarvestDate: '8/15/2021', endDate: '9/15/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-3009', year: 2021, bedID: '9', plantID: 'plant-167', fromStart: true, startDate: '5/14/2021', transplantDate: '5/14/2021', firstHarvestDate: '8/1/2021', endDate: '9/1/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-3009', year: 2021, bedID: '09', plantID: 'plant-167', fromStart: true, startDate: '5/14/2021', transplantDate: '5/14/2021', firstHarvestDate: '8/1/2021', endDate: '9/1/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
       { plantingID: 'planting-3010', year: 2021, bedID: '10', plantID: 'plant-123', fromStart: true, startDate: '5/14/2021', transplantDate: '5/14/2021', firstHarvestDate: '8/1/2021', endDate: '9/15/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
@@ -578,69 +578,69 @@ export const gardenData = [
       { plantingID: 'planting-3016', year: 2021, bedID: '16', plantID: 'plant-115', fromStart: false, startDate: '5/14/2021', transplantDate: '', firstHarvestDate: '8/15/2021', endDate: '9/30/2021', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
       /* 2020 Data */
-      { plantingID: 'planting-2001', year: 2020, bedID: '1', plantID: 'plant-175', startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '7/30/2020', endDate: '8/15/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2001', year: 2020, bedID: '01', plantID: 'plant-175', startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '7/30/2020', endDate: '8/15/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2001.1', year: 2020, bedID: '1', plantID: 'plant-03', startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '7/30/2020', endDate: '9/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2001.1', year: 2020, bedID: '01', plantID: 'plant-03', startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '7/30/2020', endDate: '9/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2001.2', year: 2020, bedID: '1', plantID: 'plant-176', startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '6/30/2020', endDate: '7/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2001.2', year: 2020, bedID: '01', plantID: 'plant-176', startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '6/30/2020', endDate: '7/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2001.3', year: 2020, bedID: '1', plantID: 'plant-167', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '6/30/2020', endDate: '7/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2001.3', year: 2020, bedID: '01', plantID: 'plant-167', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '6/30/2020', endDate: '7/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2001.4', year: 2020, bedID: '1', plantID: 'plant-184', startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '7/30/2020', endDate: '8/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2001.4', year: 2020, bedID: '01', plantID: 'plant-184', startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '7/30/2020', endDate: '8/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2002', year: 2020, bedID: '2', plantID: 'plant-104', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '7/1/2020', endDate: '8/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2002', year: 2020, bedID: '02', plantID: 'plant-104', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '7/1/2020', endDate: '8/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2002.1', year: 2020, bedID: '2', plantID: 'plant-137', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '7/1/2020', endDate: '8/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2002.1', year: 2020, bedID: '02', plantID: 'plant-137', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '7/1/2020', endDate: '8/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2002.2', year: 2020, bedID: '2', plantID: 'plant-153', startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '6/25/2020', endDate: '7/25/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2002.2', year: 2020, bedID: '02', plantID: 'plant-153', startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '6/25/2020', endDate: '7/25/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2002.3', year: 2020, bedID: '2', plantID: 'plant-170', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '7/25/2020', endDate: '8/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2002.3', year: 2020, bedID: '02', plantID: 'plant-170', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '7/25/2020', endDate: '8/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2002.4', year: 2020, bedID: '2', plantID: 'plant-172', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '8/1/2020', endDate: '8/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2002.4', year: 2020, bedID: '02', plantID: 'plant-172', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '8/1/2020', endDate: '8/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2003.1', year: 2020, bedID: '3', plantID: 'plant-182', startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '6/15/2020', endDate: '7/15/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2003.1', year: 2020, bedID: '03', plantID: 'plant-182', startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '6/15/2020', endDate: '7/15/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2003.2', year: 2020, bedID: '3', plantID: 'plant-145', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '6/15/2020', endDate: '7/15/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2003.2', year: 2020, bedID: '03', plantID: 'plant-145', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '6/15/2020', endDate: '7/15/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2003.3', year: 2020, bedID: '3', plantID: 'plant-183', fromStart: false, startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '7/15/2020', endDate: '7/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2003.3', year: 2020, bedID: '03', plantID: 'plant-183', fromStart: false, startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '7/15/2020', endDate: '7/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2003.4', year: 2020, bedID: '3', plantID: 'plant-173', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '7/15/2020', endDate: '8/15/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2003.4', year: 2020, bedID: '03', plantID: 'plant-173', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '7/15/2020', endDate: '8/15/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2003.5', year: 2020, bedID: '3', plantID: 'plant-171', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '7/5/2020', endDate: '8/15/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2003.5', year: 2020, bedID: '03', plantID: 'plant-171', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '7/5/2020', endDate: '8/15/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2004', year: 2020, bedID: '4', plantID: 'plant-194', fromStart: false, startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '6/24', endDate: '7/39/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2004', year: 2020, bedID: '04', plantID: 'plant-194', fromStart: false, startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '6/24', endDate: '7/39/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2004.1', year: 2020, bedID: '4', plantID: 'plant-195', fromStart: false, startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '6/24/2020', endDate: '7/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2004.1', year: 2020, bedID: '04', plantID: 'plant-195', fromStart: false, startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '6/24/2020', endDate: '7/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2004.2', year: 2020, bedID: '4', plantID: 'plant-162', fromStart: false, startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '7/10/2020', endDate: '8/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2004.2', year: 2020, bedID: '04', plantID: 'plant-162', fromStart: false, startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '7/10/2020', endDate: '8/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2004.3', year: 2020, bedID: '4', plantID: 'plant-161', fromStart: false, startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '7/10/2020', endDate: '8/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2004.3', year: 2020, bedID: '04', plantID: 'plant-161', fromStart: false, startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '7/10/2020', endDate: '8/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2004.4', year: 2020, bedID: '4', plantID: 'plant-196', fromStart: false, startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '7/24/2020', endDate: '9/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2004.4', year: 2020, bedID: '04', plantID: 'plant-196', fromStart: false, startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '7/24/2020', endDate: '9/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2004.5', year: 2020, bedID: '4', plantID: 'plant-197', fromStart: false, startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '7/24/2020', endDate: '9/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2004.5', year: 2020, bedID: '04', plantID: 'plant-197', fromStart: false, startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '7/24/2020', endDate: '9/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2004.6', year: 2020, bedID: '4', plantID: 'plant-198', fromStart: false, startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '7/24/2020', endDate: '9/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2004.6', year: 2020, bedID: '04', plantID: 'plant-198', fromStart: false, startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '7/24/2020', endDate: '9/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2004.7', year: 2020, bedID: '4', plantID: 'plant-199', fromStart: false, startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '7/24/2020', endDate: '9/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2004.7', year: 2020, bedID: '04', plantID: 'plant-199', fromStart: false, startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '7/24/2020', endDate: '9/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2005', year: 2020, bedID: '5', plantID: 'plant-01', fromStart: false, startDate: '4/1/2020', transplantDate: '', firstHarvestDate: '', endDate: '6/15/2041', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2005', year: 2020, bedID: '05', plantID: 'plant-01', fromStart: false, startDate: '4/1/2020', transplantDate: '', firstHarvestDate: '', endDate: '6/15/2041', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1006', year: 2020, bedID: '6', plantID: 'plant-160', startDate: '5/12/2019', transplantDate: '', firstHarvestDate: '6/1/2020', endDate: '6/15/2041', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1006', year: 2020, bedID: '06', plantID: 'plant-160', startDate: '5/12/2019', transplantDate: '', firstHarvestDate: '6/1/2020', endDate: '6/15/2041', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2006.1', year: 2020, bedID: '6', plantID: 'plant-140', startDate: '1/1/2020', transplantDate: '', firstHarvestDate: '7/15/2020', endDate: '7/20/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2006.1', year: 2020, bedID: '06', plantID: 'plant-140', startDate: '1/1/2020', transplantDate: '', firstHarvestDate: '7/15/2020', endDate: '7/20/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2006.2', year: 2020, bedID: '6', plantID: 'plant-167', startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '7/25/2020', endDate: '8/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2006.2', year: 2020, bedID: '06', plantID: 'plant-167', startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '7/25/2020', endDate: '8/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2007', year: 2020, bedID: '7', plantID: 'plant-180', startDate: '6/1/2020', transplantDate: '', firstHarvestDate: '8/1/2020', endDate: '8/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2007', year: 2020, bedID: '07', plantID: 'plant-180', startDate: '6/1/2020', transplantDate: '', firstHarvestDate: '8/1/2020', endDate: '8/30/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2008', year: 2020, bedID: '8', plantID: 'plant-187', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '7/25/2020', endDate: '8/25/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2008', year: 2020, bedID: '08', plantID: 'plant-187', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '7/25/2020', endDate: '8/25/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2008.1', year: 2020, bedID: '8', plantID: 'plant-188', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '7/25/2020', endDate: '8/25/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2008.1', year: 2020, bedID: '08', plantID: 'plant-188', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '7/25/2020', endDate: '8/25/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2008.2', year: 2020, bedID: '8', plantID: 'plant-189', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '7/25/2020', endDate: '8/25/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2008.2', year: 2020, bedID: '08', plantID: 'plant-189', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '7/25/2020', endDate: '8/25/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-2009', year: 2020, bedID: '9', plantID: 'plant-185', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '7/25/2020', endDate: '8/25/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-2009', year: 2020, bedID: '09', plantID: 'plant-185', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '7/25/2020', endDate: '8/25/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
       { plantingID: 'planting-2010', year: 2020, bedID: '10', plantID: 'plant-190', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '8/25/2020', endDate: '10/1/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
@@ -669,61 +669,61 @@ export const gardenData = [
       { plantingID: 'planting-2017', year: 2020, bedID: '17', plantID: 'plant-186', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '7/15/2020', endDate: '8/25/2020', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
       /* 2019 Data */
-      { plantingID: 'planting-1001', year: 2019, bedID: '1', plantID: 'plant-167', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '7/20/2019', endDate: '9/1/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1001', year: 2019, bedID: '01', plantID: 'plant-167', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '7/20/2019', endDate: '9/1/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1001.1', year: 2019, bedID: '1', plantID: 'plant-145', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '7/20/2019', endDate: '9/1/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1001.1', year: 2019, bedID: '01', plantID: 'plant-145', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '7/20/2019', endDate: '9/1/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1001.2', year: 2019, bedID: '1', plantID: 'plant-168', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '8/15/2019', endDate: '10/1/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1001.2', year: 2019, bedID: '01', plantID: 'plant-168', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '8/15/2019', endDate: '10/1/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1001.3', year: 2019, bedID: '1', plantID: 'plant-169', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '8/15/2019', endDate: '10/1/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1001.3', year: 2019, bedID: '01', plantID: 'plant-169', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '8/15/2019', endDate: '10/1/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1001.4', year: 2019, bedID: '1', plantID: 'plant-118', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '7/15/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1001.4', year: 2019, bedID: '01', plantID: 'plant-118', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '7/15/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1001.5', year: 2019, bedID: '1', plantID: 'plant-170', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '7/15/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1001.5', year: 2019, bedID: '01', plantID: 'plant-170', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '7/15/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1001.6', year: 2019, bedID: '1', plantID: 'plant-171', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '7/1/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1001.6', year: 2019, bedID: '01', plantID: 'plant-171', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '7/1/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1001.7', year: 2019, bedID: '1', plantID: 'plant-172', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '7/15/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1001.7', year: 2019, bedID: '01', plantID: 'plant-172', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '7/15/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1001.8', year: 2019, bedID: '1', plantID: 'plant-173', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '7/15/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1001.8', year: 2019, bedID: '01', plantID: 'plant-173', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '7/15/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1002', year: 2019, bedID: '2', plantID: 'plant-174', fromStart: false, startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '7/25/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1002', year: 2019, bedID: '02', plantID: 'plant-174', fromStart: false, startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '7/25/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1002.1', year: 2019, bedID: '2', plantID: 'plant-175', fromStart: false, startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '7/25/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1002.1', year: 2019, bedID: '02', plantID: 'plant-175', fromStart: false, startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '7/25/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1002.2', year: 2019, bedID: '2', plantID: 'plant-03', fromStart: false, startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '7/05/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1002.2', year: 2019, bedID: '02', plantID: 'plant-03', fromStart: false, startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '7/05/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1002.3', year: 2019, bedID: '2', plantID: 'plant-176', fromStart: false, startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '7/05/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1002.3', year: 2019, bedID: '02', plantID: 'plant-176', fromStart: false, startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '7/05/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1002.4', year: 2019, bedID: '2', plantID: 'plant-177', fromStart: false, startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '7/05/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1002.4', year: 2019, bedID: '02', plantID: 'plant-177', fromStart: false, startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '7/05/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1002.5', year: 2019, bedID: '2', plantID: 'plant-112', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '7/05/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1002.5', year: 2019, bedID: '02', plantID: 'plant-112', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '7/05/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1002.6', year: 2019, bedID: '2', plantID: 'plant-178', fromStart: false, startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '7/05/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1002.6', year: 2019, bedID: '02', plantID: 'plant-178', fromStart: false, startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '7/05/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1002.7', year: 2019, bedID: '2', plantID: 'plant-179', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '7/15/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1002.7', year: 2019, bedID: '02', plantID: 'plant-179', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '7/15/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1003', year: 2019, bedID: '3', plantID: 'plant-02', startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '6/1/2019', endDate: '7/1/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1003', year: 2019, bedID: '03', plantID: 'plant-02', startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '6/1/2019', endDate: '7/1/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1003.1', year: 2019, bedID: '3', plantID: 'plant-161', startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '7/1/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1003.1', year: 2019, bedID: '03', plantID: 'plant-161', startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '7/1/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1003.2', year: 2019, bedID: '3', plantID: 'plant-162', startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '7/1/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1003.2', year: 2019, bedID: '03', plantID: 'plant-162', startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '7/1/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1003.3', year: 2019, bedID: '3', plantID: 'plant-163', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '7/1/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1003.3', year: 2019, bedID: '03', plantID: 'plant-163', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '7/1/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1003.4', year: 2019, bedID: '3', plantID: 'plant-164', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '7/1/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1003.4', year: 2019, bedID: '03', plantID: 'plant-164', fromStart: true, startDate: '5/9/2019', transplantDate: '', firstHarvestDate: '7/1/2019', endDate: '9/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1004', year: 2019, bedID: '4', plantID: 'plant-101', startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '7/1/2019', endDate: '8/1/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1004', year: 2019, bedID: '04', plantID: 'plant-101', startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '7/1/2019', endDate: '8/1/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1004.1', year: 2019, bedID: '4', plantID: 'plant-107', startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '7/10/2019', endDate: '8/10/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1004.1', year: 2019, bedID: '04', plantID: 'plant-107', startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '7/10/2019', endDate: '8/10/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1004.2', year: 2019, bedID: '4', plantID: 'plant-165', startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '7/30/2019', endDate: '8/30/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1004.2', year: 2019, bedID: '04', plantID: 'plant-165', startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '7/30/2019', endDate: '8/30/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1004.3', year: 2019, bedID: '4', plantID: 'plant-166', startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '7/30/2019', endDate: '8/30/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1004.3', year: 2019, bedID: '04', plantID: 'plant-166', startDate: '4/25/2019', transplantDate: '', firstHarvestDate: '7/30/2019', endDate: '8/30/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1005', year: 2019, bedID: '5', plantID: 'plant-159', startDate: '5/12/2019', transplantDate: '', firstHarvestDate: '7/16/2019', endDate: '8/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1005', year: 2019, bedID: '05', plantID: 'plant-159', startDate: '5/12/2019', transplantDate: '', firstHarvestDate: '7/16/2019', endDate: '8/15/2019', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
-      { plantingID: 'planting-1006', year: 2019, bedID: '6', plantID: 'plant-160', startDate: '5/12/2019', transplantDate: '', firstHarvestDate: '6/16/2019', endDate: '6/15/2041', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1006', year: 2019, bedID: '06', plantID: 'plant-160', startDate: '5/12/2019', transplantDate: '', firstHarvestDate: '6/16/2019', endDate: '6/15/2041', outcomes: { appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
     ],
   },

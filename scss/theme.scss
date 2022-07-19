@@ -13,7 +13,6 @@
 $dark: #0f9391;  // Same as $green.
 
 @import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
 
 // 3. Add custom variable definitions.
 
@@ -77,11 +76,13 @@ $plant-family-colors: (
 
 $theme-colors: map-merge($theme-colors, $plant-family-colors);
 $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
-$utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
-$utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
-$utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
+// $utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
+// $utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
+// $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
 // 4. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // 5. Define custom CSS styles

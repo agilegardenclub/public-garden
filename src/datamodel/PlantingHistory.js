@@ -1,5 +1,5 @@
 /* Provide functions to organize planting data for display in various ways */
-import { plantFamilyCommonName, plantFamilyID, plantName, plantNameShort } from './PlantInfo';
+import { plantFamilyCommonName, plantFamilyID, plantName, plantNameShort, getVendorID } from './PlantInfo';
 import { gardenData } from './data/gardenData';
 import { weekOfYear } from './WeekOfYear';
 
@@ -134,9 +134,16 @@ export class PlantingHistory {
     return [...new Set(this.plantings.map(entry => entry.year))].sort().reverse();
   }
 
+  plantIDs() {
+    return [...new Set(this.plantings.map(entry => entry.plantID))];
+  }
+
   plantFamilyIDs() {
-    const plantIDs = [...new Set(this.plantings.map(entry => entry.plantID))];
-    return [...new Set(plantIDs.map(plantID => plantFamilyID(plantID)))];
+    return [...new Set(this.plantIDs().map(plantID => plantFamilyID(plantID)))];
+  }
+
+  vendorIDs() {
+    return [...new Set(this.plantIDs().map(plantID => getVendorID(plantID)))];
   }
 
   /**
@@ -226,7 +233,7 @@ export class PlantingHistory {
    *
    *  Provide either the year, bedID, plantID, or plantFamilyID to filter the results appropriately.
    */
-  historyData({ year, bedID, plantID, familyID }) {
+  historyData({ year, bedID, plantID, familyID, vendorID }) {
     // Begin by filtering the plantingData by one of year, bedID, or plantID.
     // console.log('in historyData', year, bedID, plantID);
     let filteredPlantings;
@@ -238,6 +245,8 @@ export class PlantingHistory {
       filteredPlantings = this.plantings.filter(planting => planting.plantID === plantID);
     } else if (familyID) {
       filteredPlantings = this.plantings.filter(planting => plantFamilyID(planting.plantID) === familyID);
+    } else if (vendorID) {
+      filteredPlantings = this.plantings.filter(planting => getVendorID(planting.plantID) === vendorID);
     }
     // Construct the return value
     const years = [...new Set(filteredPlantings.map(planting => planting.year))].sort();

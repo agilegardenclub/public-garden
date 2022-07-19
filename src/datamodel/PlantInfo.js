@@ -1,4 +1,5 @@
 import { plantData } from './data/plantData';
+import { vendorData } from './data/vendorData';
 import { plantFamilyData } from './data/plantFamilyData';
 
 function getFamilyData(plantID) {
@@ -8,6 +9,16 @@ function getFamilyData(plantID) {
     return plantFamilyData.find(element => element.id === familyID);
   }
   return null;
+}
+
+export function getVendorID(plantID) {
+  const plantInfo = plantData.find(element => element.id === plantID);
+  return (plantInfo) ? plantInfo.vendorID : null;
+}
+
+export function vendorName(vendorID) {
+  const vendorInfo = vendorData.find(element => element.id === vendorID);
+  return (vendorInfo) ? vendorInfo.name : null;
 }
 
 /** Returns the plant family color associated with plantID as a Bootstrap variable name. */

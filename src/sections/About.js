@@ -11,7 +11,7 @@ function About() {
     <div>
       <Documentation>
         <p>Welcome to an example Agile Garden Club public garden view.</p>
-        <p><b>Agile Garden Club</b> is an organization whose mission is to help build local &quot;communities of practice&quot; that result in better planning and management of home gardens. To accomplish this, we are designing technologies to help gardeners help each other through shared experiences and insights. </p>
+        <p>The mission of <b>Agile Garden Club</b> is to improve food resiliency and security by fostering local &quot;communities of practice&quot; for home gardening. To accomplish this, we are designing technologies to help gardeners help each other through shared experiences and insights. </p>
         <p>AGC technologies differ from other garden technologies in several ways:</p>
         <ol>
           <li><b>Social and seasonal.</b> Many garden technologies represent gardening as a solitary, single season activity. In contrast, AGC represents gardening as a collaborative activity spanning multiple seasons by a member&lsquo;s entire local gardening community.</li>

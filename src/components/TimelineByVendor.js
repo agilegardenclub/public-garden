@@ -8,19 +8,22 @@ import { TimelineData } from './TimelineData';
 import { vendorName } from '../datamodel/PlantInfo';
 import { getGardenName } from './GardenName';
 
+function vendorComparator(vendorID1, vendorID2) {
+  const name1 = vendorName(vendorID1);
+  const name2 = vendorName(vendorID2);
+  // Sometimes vendorName is called without a vendorID, resulting in null.
+  return (!name1 || !name2) ? 0 : name1.localeCompare(name2);
+}
+
 export function TimelineByVendor() {
   const gardenName = getGardenName();
   const plantingHistory = new PlantingHistory({ gardenName, plantData, plantFamilyData });
-  const familyIDs = plantingHistory.plantFamilyIDs();
-  const vendorIDs = plantingHistory.vendorIDs();
+  const vendorIDs = plantingHistory.vendorIDs().sort(vendorComparator);
   const menuItems = vendorIDs.map(vendorID => ({ type: 'item', label: vendorName(vendorID), eventKey: vendorID }));
-  // const initialFamilyID = familyIDs[0];
   const initialVendorID = vendorIDs[0];
-  // const initialFamilyName = plantFamilyCommonName(initialFamilyID, true);
   const initialVendorName = vendorName(initialVendorID);
-  // const [selectedFamilyName, setFamilyName] = useState(initialFamilyName);
   const [selectedVendorName, setVendorName] = useState(initialVendorName);
-  const [historyData, setHistoryData] = useState(plantingHistory.historyData({ familyID: familyIDs[0] }));
+  const [historyData, setHistoryData] = useState(plantingHistory.historyData({ vendorID: vendorIDs[0] }));
   const onSelect = (eventKey) => {
     if (eventKey) {
       setVendorName(vendorName(eventKey));

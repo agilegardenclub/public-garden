@@ -5,15 +5,15 @@ import { chapterOverview } from '../datamodel/ChapterOverview';
 import { plantFamilyColorName, plantFamilyName } from '../datamodel/PlantInfo';
 import { vendorName, vendorUrl } from '../datamodel/VendorInfo';
 
-export function ChapterPlantBadge({ plantID }) {
-  const plantInfo = chapterOverview.plantInfo(plantID);
-  const name = `${plantInfo.plant} (${plantInfo.variety})`;
-  const familyName = plantFamilyName(plantID);
-  const vendor = vendorName(plantID);
-  const vendorURL = vendorUrl(plantID);
-  const description = plantInfo.description;
-  const bg = plantFamilyColorName(plantID);
-  const textColor = `text-${plantFamilyColorName(plantID)}`;
+export function ChapterPlantBadge({ varietalID }) {
+  const varietalInfo = chapterOverview.varietalInfo(varietalID);
+  const name = `${varietalInfo.plant} (${varietalInfo.variety})`;
+  const familyName = plantFamilyName(varietalID);
+  const vendor = vendorName(varietalID);
+  const vendorURL = vendorUrl(varietalID);
+  const description = varietalInfo.description;
+  const bg = plantFamilyColorName(varietalID);
+  const textColor = `text-${plantFamilyColorName(varietalID)}`;
 
   return (
     <BadgeWithPopover header={name} label={name} bg={bg}>
@@ -25,5 +25,5 @@ export function ChapterPlantBadge({ plantID }) {
 }
 
 ChapterPlantBadge.propTypes = {
-  plantID: PropTypes.string,
+  varietalID: PropTypes.string,
 };

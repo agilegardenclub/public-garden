@@ -1,14 +1,14 @@
 /* Provide functions to organize planting data for display in various ways */
-import { plantFamilyCommonName, plantFamilyID, plantName, plantNameShort, getVendorID } from './PlantInfo';
+import { plantFamilyCommonName, plantFamilyID, varietalName, varietalNameShort, getVendorID } from './PlantInfo';
 import { gardenData } from './data/gardenData';
 import { weekOfYear } from './WeekOfYear';
 
 export class PlantingHistory {
   // eslint-disable-next-line no-shadow
-  constructor({ gardenName, plantData, plantFamilyData }) {
+  constructor({ gardenName, varietalData, plantFamilyData }) {
     this.gardenName = gardenName;
     this.gardenData = gardenData.find(garden => garden.name === gardenName);
-    this.plantData = plantData;
+    this.varietalData = varietalData;
     this.plantFamilyData = plantFamilyData;
     // this.plantings = this._extractPlantings();
     this.plantings = this.gardenData.plantingData;
@@ -34,7 +34,7 @@ export class PlantingHistory {
     this.plantings.forEach(planting => {
       const matchingObservations = otherObservations.filter(observation => this._matchingPlant(observation.plantingID, planting.plantingID));
       matchingObservations.forEach(observation => { observation.weekOfYear = weekOfYear(observation.observationDate); });
-      matchingObservations.forEach(observation => { observation.plantID = this._getPlantID(observation.plantingID); });
+      matchingObservations.forEach(observation => { observation.varietalID = this._getVarietalID(observation.plantingID); });
       planting.notifications.push(...matchingObservations);
       // if (matchingObservations.length > 0) {
       //   console.log('matching observations', matchingObservations);
@@ -42,19 +42,19 @@ export class PlantingHistory {
     });
   }
 
-  _getPlantID(plantingID) {
+  _getVarietalID(plantingID) {
     const plantingInfo = this.allPlantings.find(planting => planting.plantingID === plantingID);
-    return plantingInfo.plantID;
+    return plantingInfo.varietalID;
   }
 
   /**
-   * Returns true if plantingID_1 and plantingID_2 refer to the same plant (i.e. "Tomato").
+   * Returns true if plantingID_1 and plantingID_2 refer to the same crop (i.e. "Tomato").
    */
-  _matchingPlant(plantingID_1, plantingID_2) {
+  _matchingCrop(plantingID_1, plantingID_2) {
     const planting_1 = this.allPlantings.find(planting => plantingID_1 === planting.plantingID);
-    const plantNameShort_1 = plantNameShort(planting_1.plantID);
+    const plantNameShort_1 = varietalNameShort(planting_1.varietalID);
     const planting_2 = this.allPlantings.find(planting => plantingID_2 === planting.plantingID);
-    const plantNameShort_2 = plantNameShort(planting_2.plantID);
+    const plantNameShort_2 = varietalNameShort(planting_2.varietalID);
     // if (plantNameShort_1 === plantNameShort_2) {
     //   console.log(plantingID_1, plantingID_2);
     // }
@@ -112,7 +112,7 @@ export class PlantingHistory {
   }
 
   _bedYearData(bedID) {
-    // Find all the years associated with the plants in bedID.
+    // Find all the years associated with the varietals in bedID.
     const bedIDPlantings = this.plantings.filter(planting => planting.bedID === bedID);
     const years = [...new Set(bedIDPlantings.map(planting => planting.year))].sort();
     // return years.map(year => ({ bedID, yearData: [year, 'year data'] }));
@@ -134,16 +134,16 @@ export class PlantingHistory {
     return [...new Set(this.plantings.map(entry => entry.year))].sort().reverse();
   }
 
-  plantIDs() {
-    return [...new Set(this.plantings.map(entry => entry.plantID))];
+  varietalIDs() {
+    return [...new Set(this.plantings.map(entry => entry.varietalID))];
   }
 
   plantFamilyIDs() {
-    return [...new Set(this.plantIDs().map(plantID => plantFamilyID(plantID)))];
+    return [...new Set(this.varietalIDs().map(varietalID => plantFamilyID(varietalID)))];
   }
 
   vendorIDs() {
-    return [...new Set(this.plantIDs().map(plantID => getVendorID(plantID)))];
+    return [...new Set(this.varietalIDs().map(varietalID => getVendorID(varietalID)))];
   }
 
   /**
@@ -156,26 +156,26 @@ export class PlantingHistory {
    * ```
    * Of course the items: field will have an array containing multiple items.
    */
-  plantDropdownMenuItems() {
-    // Start by building a map from plantFamily IDs to their plantIDs:
-    // { "plantfamily-01": [ "plant-01", "plant-02" ], "plantfamily-02": [ "plant-03", "plant-o4" ] }
+  varietalDropdownMenuItems() {
+    // Start by building a map from plantFamily IDs to their varietalIDs:
+    // { "plantfamily-01": [ "varietal-01", "varietal-02" ], "plantfamily-02": [ "varietal-03", "varietal-o4" ] }
     const familyMap = {};
     this.plantings.forEach(planting => {
-      const familyID = plantFamilyID(planting.plantID);
+      const familyID = plantFamilyID(planting.varietalID);
       if (!familyMap[familyID]) {
         familyMap[familyID] = [];
       }
-      familyMap[familyID].push(planting.plantID);
+      familyMap[familyID].push(planting.varietalID);
     });
     // Now build the array of dropdown data objects, one per field in the familyMap
     const plantFamilyIDs = Object.keys(familyMap);
     const dropdownItems = [];
     plantFamilyIDs.forEach(familyID => {
-      // Remove duplicate plantIDs if any.
-      const plantIDs = [...new Set(familyMap[familyID])];
+      // Remove duplicate varietalIDs if any.
+      const varietalIDs = [...new Set(familyMap[familyID])];
       const item = { type: 'nested' };
-      item.label = plantFamilyCommonName(plantIDs[0]);
-      item.items = plantIDs.map(plantID => ({ type: 'item', label: plantName(plantID), eventKey: plantID }));
+      item.label = plantFamilyCommonName(varietalIDs[0]);
+      item.items = varietalIDs.map(varietalID => ({ type: 'item', label: varietalName(varietalID), eventKey: varietalID }));
       dropdownItems.push(item);
     });
     return dropdownItems;
@@ -185,35 +185,35 @@ export class PlantingHistory {
    * Returns the data organized as follows:
    * [
    *  {
-   *    plantID: 'plant-01',
+   *    varietalID: 'varietal-01',
    *    yearData: [
    *      { year: '2020',
-   *        plantData: [
-   *         { plant data }
+   *        varietalData: [
+   *         { varietal data }
    *        ],
    *      }
    *    ]
    *  }
    *  ]
    */
-  plantHistoryData() {
-    // Extract the plantIDs
-    const plantIDs = [...new Set(this.plantings.map(entry => entry.plantID))];
-    return plantIDs.map(plantID => this._plantYearData(plantID));
+  varietalHistoryData() {
+    // Extract the varietalIDs
+    const varietalIDs = [...new Set(this.plantings.map(entry => entry.varietalID))];
+    return varietalIDs.map(varietalID => this._varietalYearData(varietalID));
   }
 
-  _plantYearData(plantID) {
-    // Find all the years associated with the plantID
-    const plantIDPlantings = this.plantings.filter(planting => planting.plantID === plantID);
-    const years = [...new Set(plantIDPlantings.map(planting => planting.year))].sort();
+  _varietalYearData(varietalID) {
+    // Find all the years associated with the varietalID
+    const varietalIDPlantings = this.plantings.filter(planting => planting.varietalID === varietalID);
+    const years = [...new Set(varietalIDPlantings.map(planting => planting.year))].sort();
     return {
-      plantID,
-      yearData: years.map(year => ({ year, plantData: this._plantYearPlantings(plantID, year) })),
+      varietalID,
+      yearData: years.map(year => ({ year, varietalData: this._varietalYearPlantings(varietalID, year) })),
     };
   }
 
-  _plantYearPlantings(plantID, year) {
-    return this.plantings.filter((planting => (planting.plantID === plantID) && planting.year === year));
+  _varietalYearPlantings(varietalID, year) {
+    return this.plantings.filter((planting => (planting.varietalID === varietalID) && planting.year === year));
   }
 
   /**
@@ -231,22 +231,22 @@ export class PlantingHistory {
    *  }
    *  ]
    *
-   *  Provide either the year, bedID, plantID, or plantFamilyID to filter the results appropriately.
+   *  Provide either the year, bedID, varietalID, or plantFamilyID to filter the results appropriately.
    */
-  historyData({ year, bedID, plantID, familyID, vendorID }) {
-    // Begin by filtering the plantingData by one of year, bedID, or plantID.
-    // console.log('in historyData', year, bedID, plantID);
+  historyData({ year, bedID, varietalID, familyID, vendorID }) {
+    // Begin by filtering the plantingData by one of year, bedID, or varietalID.
+    // console.log('in historyData', year, bedID, varietalID);
     let filteredPlantings;
     if (year) {
       filteredPlantings = this.plantings.filter(planting => planting.year === year);
     } else if (bedID) {
       filteredPlantings = this.plantings.filter(planting => planting.bedID === bedID);
-    } else if (plantID) {
-      filteredPlantings = this.plantings.filter(planting => planting.plantID === plantID);
+    } else if (varietalID) {
+      filteredPlantings = this.plantings.filter(planting => planting.varietalID === varietalID);
     } else if (familyID) {
-      filteredPlantings = this.plantings.filter(planting => plantFamilyID(planting.plantID) === familyID);
+      filteredPlantings = this.plantings.filter(planting => plantFamilyID(planting.varietalID) === familyID);
     } else if (vendorID) {
-      filteredPlantings = this.plantings.filter(planting => getVendorID(planting.plantID) === vendorID);
+      filteredPlantings = this.plantings.filter(planting => getVendorID(planting.varietalID) === vendorID);
     }
     // Construct the return value
     const years = [...new Set(filteredPlantings.map(planting => planting.year))].sort();

@@ -1,8 +1,8 @@
-/* Raw data regarding plants. */
+/* Raw data regarding varietals. */
 
-export const plantData = [
+export const varietalData = [
   {
-    id: 'plant-01',
+    id: 'varietal-01',
     plant: 'Asparagus',
     variety: 'Jersey Knight',
     familyID: 'plantfamily-10',
@@ -10,7 +10,7 @@ export const plantData = [
     description: 'Sweeter and more tender than green varieties, and a colorful option for raw eating in salads. Color fades when cooked, but excellent flavor is retained.',
   },
   {
-    id: 'plant-02',
+    id: 'varietal-02',
     plant: 'Broccoli',
     variety: 'Solstice',
     familyID: 'plantfamily-02',
@@ -18,7 +18,7 @@ export const plantData = [
     description: 'Big Vigorous plants hold their tight, dark green heads high above the leaves on very long stems with excellent side shoot production.',
   },
   {
-    id: 'plant-03',
+    id: 'varietal-03',
     plant: 'Carrot',
     variety: 'Scarlet Nantes',
     familyID: 'plantfamily-08',
@@ -26,7 +26,7 @@ export const plantData = [
     description: 'Our open-pollinated scarlet nantes have plenty of the sweetness but also a rich real carrot flavor. Widely adapted, it is very versatile for everything from fresh baby carrots to fall storage and juicing. ',
   },
   {
-    id: 'plant-04',
+    id: 'varietal-04',
     plant: 'Lettuce',
     variety: 'Blue Rock',
     familyID: 'plantfamily-09',
@@ -34,7 +34,7 @@ export const plantData = [
     description: 'Attractive, dark green savoy leaves on tall, upright heads that fill out nicely and remain partially open when mature. ',
   },
   {
-    id: 'plant-05',
+    id: 'varietal-05',
     plant: 'Kale',
     variety: 'Dwarf Blue',
     familyID: 'plantfamily-02',
@@ -42,7 +42,7 @@ export const plantData = [
     description: 'Gorgeous finely curled blue-green leaves hold their color even in severe cold.',
   },
   {
-    id: 'plant-06',
+    id: 'varietal-06',
     plant: 'Leek',
     variety: 'PrizeTaker',
     familyID: 'plantfamily-01',
@@ -50,7 +50,7 @@ export const plantData = [
     description: 'Very hardy 36" tall plants with thick, solid, pure-white base. ',
   },
   {
-    id: 'plant-07',
+    id: 'varietal-07',
     plant: 'Radish',
     variety: 'French Breakfast',
     familyID: 'plantfamily-02',
@@ -58,7 +58,7 @@ export const plantData = [
     description: 'Elongated shape with mild peppery flavor.',
   },
   {
-    id: 'plant-08',
+    id: 'varietal-08',
     plant: 'Sugar Pea',
     variety: 'Oregon Giant',
     familyID: 'plantfamily-05',
@@ -66,7 +66,7 @@ export const plantData = [
     description: 'Highly recommended by Carol Deppe in “The Tao of Vegetable Gardening”, this edible-pod pea has huge pods and big crinkled seeds.',
   },
   {
-    id: 'plant-09',
+    id: 'varietal-09',
     plant: 'Tomato',
     variety: 'Orange King',
     familyID: 'plantfamily-07',
@@ -74,7 +74,7 @@ export const plantData = [
     description: 'Early, productive, and worth growing even as a sprawling, low-maintenance outdoor tomato in the cool Pacific Northwest. ',
   },
   {
-    id: 'plant-10',
+    id: 'varietal-10',
     plant: 'Chard',
     variety: 'Rainbow',
     familyID: 'plantfamily-03',
@@ -84,7 +84,7 @@ export const plantData = [
 
   // Jenna's data starts here.
   {
-    id: 'plant-100',
+    id: 'varietal-100',
     plant: 'Lettuce',
     variety: 'Royal Red',
     familyID: 'plantfamily-09',
@@ -93,7 +93,7 @@ export const plantData = [
     daysToHarvest: 55,
   },
   {
-    id: 'plant-101',
+    id: 'varietal-101',
     plant: 'Pea',
     variety: 'Sugar Snap',
     familyID: 'plantfamily-05',
@@ -103,7 +103,7 @@ export const plantData = [
     daysToHarvest: 60,
   },
   {
-    id: 'plant-102',
+    id: 'varietal-102',
     plant: 'Kale',
     variety: 'Dazzling Blue Lacinato',
     familyID: 'plantfamily-02',
@@ -112,7 +112,7 @@ export const plantData = [
     daysToHarvest: 60,
   },
   {
-    id: 'plant-103',
+    id: 'varietal-103',
     plant: 'Tomato',
     variety: 'Pinky',
     familyID: 'plantfamily-07',
@@ -121,7 +121,7 @@ export const plantData = [
     daysToHarvest: 75,
   },
   {
-    id: 'plant-104',
+    id: 'varietal-104',
     plant: 'Basil',
     variety: 'Italian',
     familyID: 'plantfamily-06',
@@ -130,7 +130,7 @@ export const plantData = [
     daysToHarvest: 80,
   },
   {
-    id: 'plant-105',
+    id: 'varietal-105',
     plant: 'Broccoli',
     variety: 'Spring Raab',
     familyID: 'plantfamily-02',
@@ -139,7 +139,7 @@ export const plantData = [
     daysToHarvest: 45,
   },
   {
-    id: 'plant-106',
+    id: 'varietal-106',
     plant: 'Pepper',
     variety: 'Pimiento de Padron',
     familyID: 'plantfamily-07',
@@ -148,7 +148,7 @@ export const plantData = [
     daysToHarvest: 65,
   },
   {
-    id: 'plant-107',
+    id: 'varietal-107',
     plant: 'Bean',
     variety: 'Empress Snap',
     familyID: 'plantfamily-05',
@@ -157,7 +157,7 @@ export const plantData = [
     daysToHarvest: 55,
   },
   {
-    id: 'plant-108',
+    id: 'varietal-108',
     plant: 'Chard',
     variety: 'Rainbow',
     familyID: 'plantfamily-03',
@@ -166,7 +166,7 @@ export const plantData = [
     daysToHarvest: 55,
   },
   {
-    id: 'plant-109',
+    id: 'varietal-109',
     plant: 'Chard',
     variety: 'Garden Rainbow',
     familyID: 'plantfamily-03',
@@ -175,7 +175,7 @@ export const plantData = [
     daysToHarvest: 50,
   },
   {
-    id: 'plant-110',
+    id: 'varietal-110',
     plant: 'Eggplant',
     variety: 'Violetta di Firenze',
     familyID: 'plantfamily-07',
@@ -184,7 +184,7 @@ export const plantData = [
     daysToHarvest: 90,
   },
   {
-    id: 'plant-111',
+    id: 'varietal-111',
     plant: 'Kale',
     variety: 'Red Russian',
     familyID: 'plantfamily-02',
@@ -193,7 +193,7 @@ export const plantData = [
     daysToHarvest: 55,
   },
   {
-    id: 'plant-112',
+    id: 'varietal-112',
     plant: 'Basil',
     variety: 'Italian',
     familyID: 'plantfamily-06',
@@ -202,7 +202,7 @@ export const plantData = [
     daysToHarvest: 70,
   },
   {
-    id: 'plant-113',
+    id: 'varietal-113',
     plant: 'Lettuce',
     variety: 'Red Oak Leaf',
     familyID: 'plantfamily-09',
@@ -211,7 +211,7 @@ export const plantData = [
     daysToHarvest: 60,
   },
   {
-    id: 'plant-114',
+    id: 'varietal-114',
     plant: 'Tomato',
     variety: 'Sun Gold',
     familyID: 'plantfamily-07',
@@ -220,7 +220,7 @@ export const plantData = [
     daysToHarvest: 100,
   },
   {
-    id: 'plant-115',
+    id: 'varietal-115',
     plant: 'Bean',
     variety: 'Scarlet Runner',
     familyID: 'plantfamily-05',
@@ -229,7 +229,7 @@ export const plantData = [
     daysToHarvest: 75,
   },
   {
-    id: 'plant-116',
+    id: 'varietal-116',
     plant: 'Kale',
     variety: 'Red Russian',
     familyID: 'plantfamily-02',
@@ -238,7 +238,7 @@ export const plantData = [
     daysToHarvest: 95,
   },
   {
-    id: 'plant-117',
+    id: 'varietal-117',
     plant: 'Bean',
     variety: 'Soldier',
     familyID: 'plantfamily-05',
@@ -247,7 +247,7 @@ export const plantData = [
     daysToHarvest: 60,
   },
   {
-    id: 'plant-118',
+    id: 'varietal-118',
     plant: 'Zucchini',
     variety: 'Cocozelle',
     familyID: 'plantfamily-04',
@@ -256,7 +256,7 @@ export const plantData = [
     daysToHarvest: 60,
   },
   {
-    id: 'plant-119',
+    id: 'varietal-119',
     plant: 'Zucchini',
     variety: 'Dark Star',
     familyID: 'plantfamily-04',
@@ -265,7 +265,7 @@ export const plantData = [
     daysToHarvest: 50,
   },
   {
-    id: 'plant-120',
+    id: 'varietal-120',
     plant: 'Kale',
     variety: 'Dwarf Blue Scotch',
     familyID: 'plantfamily-02',
@@ -274,7 +274,7 @@ export const plantData = [
     daysToHarvest: 55,
   },
   {
-    id: 'plant-121',
+    id: 'varietal-121',
     plant: 'Tomato',
     variety: 'Sheboygan',
     familyID: 'plantfamily-07',
@@ -283,7 +283,7 @@ export const plantData = [
     daysToHarvest: 80,
   },
   {
-    id: 'plant-122',
+    id: 'varietal-122',
     plant: 'Lettuce',
     variety: "Flashy Trout's Back",
     familyID: 'plantfamily-09',
@@ -292,7 +292,7 @@ export const plantData = [
     daysToHarvest: 55,
   },
   {
-    id: 'plant-123',
+    id: 'varietal-123',
     plant: 'Tomato',
     variety: 'Matina',
     familyID: 'plantfamily-07',
@@ -301,7 +301,7 @@ export const plantData = [
     daysToHarvest: 70,
   },
   {
-    id: 'plant-124',
+    id: 'varietal-124',
     plant: 'Tomato',
     variety: 'Fiaschetto di Manduria',
     familyID: 'plantfamily-07',
@@ -310,7 +310,7 @@ export const plantData = [
     daysToHarvest: 70,
   },
   {
-    id: 'plant-125',
+    id: 'varietal-125',
     plant: 'Pepper',
     variety: 'Bridge to Paris',
     familyID: 'plantfamily-07',
@@ -319,7 +319,7 @@ export const plantData = [
     daysToHarvest: 85,
   },
   {
-    id: 'plant-126',
+    id: 'varietal-126',
     plant: 'Pepper',
     variety: 'Petit Marseillais',
     familyID: 'plantfamily-07',
@@ -328,7 +328,7 @@ export const plantData = [
     daysToHarvest: 85,
   },
   {
-    id: 'plant-127',
+    id: 'varietal-127',
     plant: 'Pepper',
     variety: 'Criolla di Cochina',
     familyID: 'plantfamily-07',
@@ -337,7 +337,7 @@ export const plantData = [
     daysToHarvest: 85,
   },
   {
-    id: 'plant-128',
+    id: 'varietal-128',
     plant: 'Pepper',
     variety: 'Marta Polka',
     familyID: 'plantfamily-07',
@@ -346,7 +346,7 @@ export const plantData = [
     daysToHarvest: 90,
   },
   {
-    id: 'plant-129',
+    id: 'varietal-129',
     plant: 'Beet',
     variety: 'Touchstone Gold',
     familyID: 'plantfamily-03',
@@ -355,7 +355,7 @@ export const plantData = [
     daysToHarvest: 60,
   },
   {
-    id: 'plant-130',
+    id: 'varietal-130',
     plant: 'Squash',
     variety: 'Zeppelin Delicata',
     familyID: 'plantfamily-04',
@@ -364,7 +364,7 @@ export const plantData = [
     daysToHarvest: 95,
   },
   {
-    id: 'plant-131',
+    id: 'varietal-131',
     plant: 'Squash',
     variety: 'Potimarron',
     familyID: 'plantfamily-04',
@@ -373,7 +373,7 @@ export const plantData = [
     daysToHarvest: 85,
   },
   {
-    id: 'plant-132',
+    id: 'varietal-132',
     plant: 'Cucumber',
     variety: 'Vorgebirgstrauben',
     familyID: 'plantfamily-04',
@@ -382,7 +382,7 @@ export const plantData = [
     daysToHarvest: 85,
   },
   {
-    id: 'plant-133',
+    id: 'varietal-133',
     plant: 'Pumpkin',
     variety: 'Winter Luxury',
     familyID: 'plantfamily-04',
@@ -391,7 +391,7 @@ export const plantData = [
     daysToHarvest: 95,
   },
   {
-    id: 'plant-134',
+    id: 'varietal-134',
     plant: 'Carrot',
     variety: 'Rainbow Mix',
     familyID: 'plantfamily-08',
@@ -400,7 +400,7 @@ export const plantData = [
     daysToHarvest: 65,
   },
   {
-    id: 'plant-135',
+    id: 'varietal-135',
     plant: 'Ground Cherry',
     variety: "Aunt Molly's",
     familyID: 'plantfamily-07',
@@ -409,7 +409,7 @@ export const plantData = [
     daysToHarvest: 75,
   },
   {
-    id: 'plant-136',
+    id: 'varietal-136',
     plant: 'Sunflower',
     variety: 'Garden Anarchy Mix',
     familyID: 'plantfamily-09',
@@ -418,7 +418,7 @@ export const plantData = [
     daysToHarvest: 90,
   },
   {
-    id: 'plant-137',
+    id: 'varietal-137',
     plant: 'Dill',
     variety: 'Goldkrone',
     familyID: 'plantfamily-08',
@@ -427,7 +427,7 @@ export const plantData = [
     daysToHarvest: 45,
   },
   {
-    id: 'plant-138',
+    id: 'varietal-138',
     plant: 'Raspberry',
     variety: 'Golden',
     familyID: 'plantfamily-10',
@@ -436,7 +436,7 @@ export const plantData = [
     daysToHarvest: 365,
   },
   {
-    id: 'plant-139',
+    id: 'varietal-139',
     plant: 'Mesclun',
     variety: 'Mild Mix',
     familyID: 'plantfamily-06',
@@ -445,7 +445,7 @@ export const plantData = [
     daysToHarvest: 30,
   },
   {
-    id: 'plant-140',
+    id: 'varietal-140',
     plant: 'Garlic',
     variety: 'Softneck',
     familyID: 'plantfamily-01',
@@ -454,7 +454,7 @@ export const plantData = [
     daysToHarvest: 270,
   },
   {
-    id: 'plant-141',
+    id: 'varietal-141',
     plant: 'Arugula',
     variety: 'Astro',
     familyID: 'plantfamily-02',
@@ -463,7 +463,7 @@ export const plantData = [
     daysToHarvest: 35,
   },
   {
-    id: 'plant-142',
+    id: 'varietal-142',
     plant: 'Fava Bean',
     variety: 'Karmazyn',
     familyID: 'plantfamily-05',
@@ -472,7 +472,7 @@ export const plantData = [
     daysToHarvest: 80,
   },
   {
-    id: 'plant-143',
+    id: 'varietal-143',
     plant: 'Pea',
     variety: 'Austrian',
     familyID: 'plantfamily-05',
@@ -481,7 +481,7 @@ export const plantData = [
     daysToHarvest: 210,
   },
   {
-    id: 'plant-144',
+    id: 'varietal-144',
     plant: 'Squash',
     variety: 'Delicata',
     familyID: 'plantfamily-04',
@@ -490,7 +490,7 @@ export const plantData = [
     daysToHarvest: 95,
   },
   {
-    id: 'plant-145',
+    id: 'varietal-145',
     plant: 'Cucumber',
     variety: 'Pickling',
     familyID: 'plantfamily-04',
@@ -499,7 +499,7 @@ export const plantData = [
     daysToHarvest: 70,
   },
   {
-    id: 'plant-146',
+    id: 'varietal-146',
     plant: 'Amaranth',
     variety: '',
     familyID: 'plantfamily-03',
@@ -508,7 +508,7 @@ export const plantData = [
     daysToHarvest: 50,
   },
   {
-    id: 'plant-147',
+    id: 'varietal-147',
     plant: 'Poppy',
     variety: 'Breadseed Rattle',
     familyID: 'plantfamily-06',
@@ -517,7 +517,7 @@ export const plantData = [
     daysToHarvest: 100,
   },
   {
-    id: 'plant-148',
+    id: 'varietal-148',
     plant: 'Pepper',
     variety: 'Criolla Sella',
     familyID: 'plantfamily-07',
@@ -526,7 +526,7 @@ export const plantData = [
     daysToHarvest: 90,
   },
   {
-    id: 'plant-149',
+    id: 'varietal-149',
     plant: 'Tomato',
     variety: 'Galina',
     familyID: 'plantfamily-07',
@@ -535,7 +535,7 @@ export const plantData = [
     daysToHarvest: 75,
   },
   {
-    id: 'plant-150',
+    id: 'varietal-150',
     plant: 'Zucchini',
     variety: 'Costata Romanesco',
     familyID: 'plantfamily-04',
@@ -544,7 +544,7 @@ export const plantData = [
     daysToHarvest: 55,
   },
   {
-    id: 'plant-151',
+    id: 'varietal-151',
     plant: 'Squash',
     variety: "Burpee's Butterbush",
     familyID: 'plantfamily-04',
@@ -553,7 +553,7 @@ export const plantData = [
     daysToHarvest: 95,
   },
   {
-    id: 'plant-152',
+    id: 'varietal-152',
     plant: 'Cucumber',
     variety: 'Cengelkoy',
     familyID: 'plantfamily-04',
@@ -562,7 +562,7 @@ export const plantData = [
     daysToHarvest: 85,
   },
   {
-    id: 'plant-153',
+    id: 'varietal-153',
     plant: 'Cilantro',
     variety: 'Pokey Joe',
     familyID: 'plantfamily-08',
@@ -571,7 +571,7 @@ export const plantData = [
     daysToHarvest: 50,
   },
   {
-    id: 'plant-154',
+    id: 'varietal-154',
     plant: 'Beet',
     variety: '3 Beet Mix',
     familyID: 'plantfamily-03',
@@ -580,7 +580,7 @@ export const plantData = [
     daysToHarvest: 60,
   },
   {
-    id: 'plant-155',
+    id: 'varietal-155',
     plant: 'Corn',
     variety: 'Tuxana',
     familyID: 'plantfamily-06',
@@ -589,7 +589,7 @@ export const plantData = [
     daysToHarvest: 80,
   },
   {
-    id: 'plant-156',
+    id: 'varietal-156',
     plant: 'Bean',
     variety: 'Dragon Langerie',
     familyID: 'plantfamily-05',
@@ -598,7 +598,7 @@ export const plantData = [
     daysToHarvest: 55,
   },
   {
-    id: 'plant-157',
+    id: 'varietal-157',
     plant: 'Bean',
     variety: "Tanya's Pink Pod",
     familyID: 'plantfamily-05',
@@ -607,7 +607,7 @@ export const plantData = [
     daysToHarvest: 55,
   },
   {
-    id: 'plant-158',
+    id: 'varietal-158',
     plant: 'Potato',
     variety: 'Rozette',
     familyID: 'plantfamily-07',
@@ -616,7 +616,7 @@ export const plantData = [
     daysToHarvest: 75,
   },
   {
-    id: 'plant-159',
+    id: 'varietal-159',
     plant: 'Corn',
     variety: '',
     familyID: 'plantfamily-06',
@@ -625,7 +625,7 @@ export const plantData = [
     daysToHarvest: 80,
   },
   {
-    id: 'plant-160',
+    id: 'varietal-160',
     plant: 'Strawberry',
     variety: 'Alpine',
     familyID: 'plantfamily-10',
@@ -634,7 +634,7 @@ export const plantData = [
     daysToHarvest: 90,
   },
   {
-    id: 'plant-161',
+    id: 'varietal-161',
     plant: 'Kale',
     variety: 'Lacinato',
     familyID: 'plantfamily-02',
@@ -643,7 +643,7 @@ export const plantData = [
     daysToHarvest: 95,
   },
   {
-    id: 'plant-162',
+    id: 'varietal-162',
     plant: 'Kale',
     variety: 'White Russian',
     familyID: 'plantfamily-02',
@@ -652,7 +652,7 @@ export const plantData = [
     daysToHarvest: 95,
   },
   {
-    id: 'plant-163',
+    id: 'varietal-163',
     plant: 'Cabbage',
     variety: 'Green',
     familyID: 'plantfamily-02',
@@ -661,7 +661,7 @@ export const plantData = [
     daysToHarvest: 95,
   },
   {
-    id: 'plant-164',
+    id: 'varietal-164',
     plant: 'Cabbage',
     variety: 'Red',
     familyID: 'plantfamily-02',
@@ -670,7 +670,7 @@ export const plantData = [
     daysToHarvest: 95,
   },
   {
-    id: 'plant-165',
+    id: 'varietal-165',
     plant: 'Potato',
     variety: 'Yukon Nugget',
     familyID: 'plantfamily-07',
@@ -679,7 +679,7 @@ export const plantData = [
     daysToHarvest: 90,
   },
   {
-    id: 'plant-166',
+    id: 'varietal-166',
     plant: 'Potato',
     variety: 'Red Norland',
     familyID: 'plantfamily-07',
@@ -688,7 +688,7 @@ export const plantData = [
     daysToHarvest: 90,
   },
   {
-    id: 'plant-167',
+    id: 'varietal-167',
     plant: 'Cucumber',
     variety: 'Slicer',
     familyID: 'plantfamily-04',
@@ -697,7 +697,7 @@ export const plantData = [
     daysToHarvest: 70,
   },
   {
-    id: 'plant-168',
+    id: 'varietal-168',
     plant: 'Squash',
     variety: 'Spaghetti',
     familyID: 'plantfamily-04',
@@ -706,7 +706,7 @@ export const plantData = [
     daysToHarvest: 100,
   },
   {
-    id: 'plant-169',
+    id: 'varietal-169',
     plant: 'Squash',
     variety: 'Butternut',
     familyID: 'plantfamily-04',
@@ -715,7 +715,7 @@ export const plantData = [
     daysToHarvest: 100,
   },
   {
-    id: 'plant-170',
+    id: 'varietal-170',
     plant: 'Tomato',
     variety: 'Stupice',
     familyID: 'plantfamily-07',
@@ -724,7 +724,7 @@ export const plantData = [
     daysToHarvest: 100,
   },
   {
-    id: 'plant-171',
+    id: 'varietal-171',
     plant: 'Tomato',
     variety: 'Cherry',
     familyID: 'plantfamily-07',
@@ -733,7 +733,7 @@ export const plantData = [
     daysToHarvest: 70,
   },
   {
-    id: 'plant-172',
+    id: 'varietal-172',
     plant: 'Tomato',
     variety: 'Giant Paste',
     familyID: 'plantfamily-07',
@@ -742,7 +742,7 @@ export const plantData = [
     daysToHarvest: 100,
   },
   {
-    id: 'plant-173',
+    id: 'varietal-173',
     plant: 'Tomato',
     variety: 'Principe Borghese',
     familyID: 'plantfamily-07',
@@ -751,7 +751,7 @@ export const plantData = [
     daysToHarvest: 100,
   },
   {
-    id: 'plant-174',
+    id: 'varietal-174',
     plant: 'Onion',
     variety: 'Sweet',
     familyID: 'plantfamily-01',
@@ -760,7 +760,7 @@ export const plantData = [
     daysToHarvest: 100,
   },
   {
-    id: 'plant-175',
+    id: 'varietal-175',
     plant: 'Onion',
     variety: 'Walla Walla',
     familyID: 'plantfamily-01',
@@ -769,7 +769,7 @@ export const plantData = [
     daysToHarvest: 100,
   },
   {
-    id: 'plant-176',
+    id: 'varietal-176',
     plant: 'Beet',
     variety: 'Early Wonder Tall Top',
     familyID: 'plantfamily-03',
@@ -778,7 +778,7 @@ export const plantData = [
     daysToHarvest: 70,
   },
   {
-    id: 'plant-177',
+    id: 'varietal-177',
     plant: 'Beet',
     variety: 'Gourmet Blend',
     familyID: 'plantfamily-03',
@@ -787,7 +787,7 @@ export const plantData = [
     daysToHarvest: 70,
   },
   {
-    id: 'plant-178',
+    id: 'varietal-178',
     plant: 'Collard',
     variety: '',
     familyID: 'plantfamily-02',
@@ -796,7 +796,7 @@ export const plantData = [
     daysToHarvest: 95,
   },
   {
-    id: 'plant-179',
+    id: 'varietal-179',
     plant: 'Squash',
     variety: 'Yellow Crookneck',
     familyID: 'plantfamily-04',
@@ -805,7 +805,7 @@ export const plantData = [
     daysToHarvest: 70,
   },
   {
-    id: 'plant-180',
+    id: 'varietal-180',
     plant: 'Corn',
     variety: 'Early Golden Bantam',
     familyID: 'plantfamily-06',
@@ -814,7 +814,7 @@ export const plantData = [
     daysToHarvest: 75,
   },
   {
-    id: 'plant-181',
+    id: 'varietal-181',
     plant: 'Pea',
     variety: 'Shelling',
     familyID: 'plantfamily-05',
@@ -823,7 +823,7 @@ export const plantData = [
     daysToHarvest: 60,
   },
   {
-    id: 'plant-182',
+    id: 'varietal-182',
     plant: 'Bean',
     variety: 'Saxa',
     familyID: 'plantfamily-05',
@@ -832,7 +832,7 @@ export const plantData = [
     daysToHarvest: 60,
   },
   {
-    id: 'plant-183',
+    id: 'varietal-183',
     plant: 'Bean',
     variety: 'Black Garbanzo',
     familyID: 'plantfamily-05',
@@ -841,7 +841,7 @@ export const plantData = [
     daysToHarvest: 100,
   },
   {
-    id: 'plant-184',
+    id: 'varietal-184',
     plant: 'Shallot',
     variety: '',
     familyID: 'plantfamily-01',
@@ -850,7 +850,7 @@ export const plantData = [
     daysToHarvest: 100,
   },
   {
-    id: 'plant-185',
+    id: 'varietal-185',
     plant: 'Squash',
     variety: 'Butternut',
     familyID: 'plantfamily-04',
@@ -859,7 +859,7 @@ export const plantData = [
     daysToHarvest: 100,
   },
   {
-    id: 'plant-186',
+    id: 'varietal-186',
     plant: 'Squash',
     variety: 'Summer',
     familyID: 'plantfamily-04',
@@ -868,7 +868,7 @@ export const plantData = [
     daysToHarvest: 60,
   },
   {
-    id: 'plant-187',
+    id: 'varietal-187',
     plant: 'Pepper',
     variety: 'Poblano',
     familyID: 'plantfamily-07',
@@ -877,7 +877,7 @@ export const plantData = [
     daysToHarvest: 85,
   },
   {
-    id: 'plant-188',
+    id: 'varietal-188',
     plant: 'Pepper',
     variety: 'Thai Chili',
     familyID: 'plantfamily-07',
@@ -886,7 +886,7 @@ export const plantData = [
     daysToHarvest: 85,
   },
   {
-    id: 'plant-189',
+    id: 'varietal-189',
     plant: 'Pepper',
     variety: 'Sweet',
     familyID: 'plantfamily-07',
@@ -895,7 +895,7 @@ export const plantData = [
     daysToHarvest: 85,
   },
   {
-    id: 'plant-190',
+    id: 'varietal-190',
     plant: 'Pumpkin',
     variety: 'Sugar Pie',
     familyID: 'plantfamily-04',
@@ -904,7 +904,7 @@ export const plantData = [
     daysToHarvest: 95,
   },
   {
-    id: 'plant-191',
+    id: 'varietal-191',
     plant: 'Squash',
     variety: 'Kabocha',
     familyID: 'plantfamily-04',
@@ -913,7 +913,7 @@ export const plantData = [
     daysToHarvest: 100,
   },
   {
-    id: 'plant-192',
+    id: 'varietal-192',
     plant: 'Rhubarb',
     variety: 'Speckled',
     familyID: 'plantfamily-10',
@@ -922,7 +922,7 @@ export const plantData = [
     daysToHarvest: 75,
   },
   {
-    id: 'plant-193',
+    id: 'varietal-193',
     plant: 'Tomatillo',
     variety: 'De Milpa',
     familyID: 'plantfamily-07',
@@ -931,7 +931,7 @@ export const plantData = [
     daysToHarvest: 80,
   },
   {
-    id: 'plant-194',
+    id: 'varietal-194',
     plant: 'Lettuce',
     variety: 'Mix',
     familyID: 'plantfamily-09',
@@ -940,7 +940,7 @@ export const plantData = [
     daysToHarvest: 85,
   },
   {
-    id: 'plant-195',
+    id: 'varietal-195',
     plant: 'Spinach',
     variety: '',
     familyID: 'plantfamily-03',
@@ -949,7 +949,7 @@ export const plantData = [
     daysToHarvest: 90,
   },
   {
-    id: 'plant-196',
+    id: 'varietal-196',
     plant: 'Potato',
     variety: 'Yukon Gold',
     familyID: 'plantfamily-07',
@@ -958,7 +958,7 @@ export const plantData = [
     daysToHarvest: 90,
   },
   {
-    id: 'plant-197',
+    id: 'varietal-197',
     plant: 'Potato',
     variety: 'Russian Blue',
     familyID: 'plantfamily-07',
@@ -967,7 +967,7 @@ export const plantData = [
     daysToHarvest: 90,
   },
   {
-    id: 'plant-198',
+    id: 'varietal-198',
     plant: 'Potato',
     variety: 'Colorado Rose',
     familyID: 'plantfamily-07',
@@ -976,7 +976,7 @@ export const plantData = [
     daysToHarvest: 90,
   },
   {
-    id: 'plant-199',
+    id: 'varietal-199',
     plant: 'Potato',
     variety: 'Russet',
     familyID: 'plantfamily-07',
@@ -985,7 +985,7 @@ export const plantData = [
     daysToHarvest: 90,
   },
   {
-    id: 'plant-200',
+    id: 'varietal-200',
     plant: 'Lemongrass',
     variety: '',
     familyID: 'plantfamily-10',
@@ -994,7 +994,7 @@ export const plantData = [
     daysToHarvest: 100,
   },
   {
-    id: 'plant-201',
+    id: 'varietal-201',
     plant: 'Squash',
     variety: 'Winter',
     familyID: 'plantfamily-04',
@@ -1003,7 +1003,7 @@ export const plantData = [
     daysToHarvest: 95,
   },
   {
-    id: 'plant-202',
+    id: 'varietal-202',
     plant: 'Bean',
     variety: 'Bush Snap',
     familyID: 'plantfamily-05',
@@ -1012,7 +1012,7 @@ export const plantData = [
     daysToHarvest: 55,
   },
   {
-    id: 'plant-203',
+    id: 'varietal-203',
     plant: 'Tomato',
     variety: 'Slicer',
     familyID: 'plantfamily-07',
@@ -1021,7 +1021,7 @@ export const plantData = [
     daysToHarvest: 75,
   },
   {
-    id: 'plant-205',
+    id: 'varietal-205',
     plant: 'Pepper',
     variety: 'Hot',
     familyID: 'plantfamily-07',
@@ -1030,7 +1030,7 @@ export const plantData = [
     daysToHarvest: 90,
   },
   {
-    id: 'plant-206',
+    id: 'varietal-206',
     plant: 'Pepper',
     variety: 'Sweet',
     familyID: 'plantfamily-07',
@@ -1039,7 +1039,7 @@ export const plantData = [
     daysToHarvest: 90,
   },
   {
-    id: 'plant-207',
+    id: 'varietal-207',
     plant: 'Cauliflower',
     variety: '',
     familyID: 'plantfamily-02',
@@ -1048,7 +1048,7 @@ export const plantData = [
     daysToHarvest: 100,
   },
   {
-    id: 'plant-208',
+    id: 'varietal-208',
     plant: 'Melon',
     variety: 'Watermelon',
     familyID: 'plantfamily-04',
@@ -1057,7 +1057,7 @@ export const plantData = [
     daysToHarvest: 100,
   },
   {
-    id: 'plant-209',
+    id: 'varietal-209',
     plant: 'Lettuce',
     variety: 'Bibb',
     familyID: 'plantfamily-09',
@@ -1066,7 +1066,7 @@ export const plantData = [
     daysToHarvest: 60,
   },
   {
-    id: 'plant-210',
+    id: 'varietal-210',
     plant: 'Lettuce',
     variety: 'Parris Island',
     familyID: 'plantfamily-09',
@@ -1075,7 +1075,7 @@ export const plantData = [
     daysToHarvest: 60,
   },
   {
-    id: 'plant-211',
+    id: 'varietal-211',
     plant: 'Onion',
     variety: 'Storage',
     familyID: 'plantfamily-01',
@@ -1084,7 +1084,7 @@ export const plantData = [
     daysToHarvest: 100,
   },
   {
-    id: 'plant-212',
+    id: 'varietal-212',
     plant: 'Parsnip',
     variety: '',
     familyID: 'plantfamily-08',
@@ -1093,7 +1093,7 @@ export const plantData = [
     daysToHarvest: 120,
   },
   {
-    id: 'plant-213',
+    id: 'varietal-213',
     plant: 'Radicchio',
     variety: 'Pasqualino',
     familyID: 'plantfamily-09',

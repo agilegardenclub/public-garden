@@ -7,23 +7,23 @@ import { RatingList } from './RatingList';
 import { plantFamilyColorName, plantFamilyName } from '../datamodel/PlantInfo';
 import { vendorName, vendorUrl } from '../datamodel/VendorInfo';
 
-export function GardenPlantBadge({ plantID }) {
-  const plantInfo = chapterOverview.plantInfo(plantID);
-  const plantNum = plantID.substring(5);
-  const showPlantNum = false;
-  const name = `${showPlantNum ? plantNum : ''} ${plantInfo.plant} (${plantInfo.variety})`;
-  const bg = plantFamilyColorName(plantID);
-  const textColor = `text-${plantFamilyColorName(plantID)}`;
-  const vendor = vendorName(plantID);
-  const vendorURL = vendorUrl(plantID);
-  const description = plantInfo.description;
-  const familyName = plantFamilyName(plantID);
-  const plantOutcomes = null; // Needs to be reimplemented.
+export function GardenPlantBadge({ varietalID }) {
+  const varietalInfo = chapterOverview.varietalInfo(varietalID);
+  const varietalNum = varietalID.substring(5);
+  const showVarietalNum = false;
+  const name = `${showVarietalNum ? varietalNum : ''} ${varietalInfo.plant} (${varietalInfo.variety})`;
+  const bg = plantFamilyColorName(varietalID);
+  const textColor = `text-${plantFamilyColorName(varietalID)}`;
+  const vendor = vendorName(varietalID);
+  const vendorURL = vendorUrl(varietalID);
+  const description = varietalInfo.description;
+  const familyName = plantFamilyName(varietalID);
+  const varietalOutcomes = null; // Needs to be reimplemented.
   const ratingData = [
-    { item: 'Appearance', rating: plantOutcomes ? plantOutcomes.appearance : 0 },
-    { item: 'Flavor', rating: plantOutcomes ? plantOutcomes.flavor : 0 },
-    { item: 'Pest Resistance', rating: plantOutcomes ? plantOutcomes.pestResistance : 0 },
-    { item: 'Yield', rating: plantOutcomes ? plantOutcomes.yield : 0 },
+    { item: 'Appearance', rating: varietalOutcomes ? varietalOutcomes.appearance : 0 },
+    { item: 'Flavor', rating: varietalOutcomes ? varietalOutcomes.flavor : 0 },
+    { item: 'Pest Resistance', rating: varietalOutcomes ? varietalOutcomes.pestResistance : 0 },
+    { item: 'Yield', rating: varietalOutcomes ? varietalOutcomes.yield : 0 },
   ];
 
   return (
@@ -39,5 +39,5 @@ export function GardenPlantBadge({ plantID }) {
 }
 
 GardenPlantBadge.propTypes = {
-  plantID: PropTypes.string,
+  varietalID: PropTypes.string,
 };

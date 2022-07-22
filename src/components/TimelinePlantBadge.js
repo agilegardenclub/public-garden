@@ -8,23 +8,23 @@ import { plantFamilyColorName, plantFamilyName } from '../datamodel/PlantInfo';
 import { vendorName, vendorUrl } from '../datamodel/VendorInfo';
 
 export function TimelinePlantBadge({ plantingData }) {
-  const plantID = plantingData.plantID;
-  const plantInfo = chapterOverview.plantInfo(plantID);
-  const plantNum = plantID.substring(6);
-  const showPlantNum = false;
-  const name = `${showPlantNum ? plantNum : ''} ${plantInfo.plant} (${plantInfo.variety})`;
-  const bg = plantFamilyColorName(plantID);
-  const textColor = `text-${plantFamilyColorName(plantID)}`;
-  const vendor = vendorName(plantID);
-  const vendorURL = vendorUrl(plantID);
-  const description = plantInfo.description;
-  const familyName = plantFamilyName(plantID);
-  const plantOutcomes = plantingData.outcomes;
+  const varietalID = plantingData.varietalID;
+  const varietalInfo = chapterOverview.varietalInfo(varietalID);
+  const varietalNum = varietalID.substring(6);
+  const showVarietalNum = false;
+  const name = `${showVarietalNum ? varietalNum : ''} ${varietalInfo.plant} (${varietalInfo.variety})`;
+  const bg = plantFamilyColorName(varietalID);
+  const textColor = `text-${plantFamilyColorName(varietalID)}`;
+  const vendor = vendorName(varietalID);
+  const vendorURL = vendorUrl(varietalID);
+  const description = varietalInfo.description;
+  const familyName = plantFamilyName(varietalID);
+  const varietalOutcomes = plantingData.outcomes;
   const ratingData = [
-    { item: 'Appearance', rating: plantOutcomes ? plantOutcomes.appearance : 0 },
-    { item: 'Flavor', rating: plantOutcomes ? plantOutcomes.flavor : 0 },
-    { item: 'Pest Resistance', rating: plantOutcomes ? plantOutcomes.pestResistance : 0 },
-    { item: 'Yield', rating: plantOutcomes ? plantOutcomes.yield : 0 },
+    { item: 'Appearance', rating: varietalOutcomes ? varietalOutcomes.appearance : 0 },
+    { item: 'Flavor', rating: varietalOutcomes ? varietalOutcomes.flavor : 0 },
+    { item: 'Pest Resistance', rating: varietalOutcomes ? varietalOutcomes.pestResistance : 0 },
+    { item: 'Yield', rating: varietalOutcomes ? varietalOutcomes.yield : 0 },
   ];
   const startDate = plantingData.startDate;
   const transplantDate = plantingData.transplantDate || 'N/A';

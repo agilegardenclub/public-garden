@@ -17,8 +17,8 @@ export function GardenOverviewCard() {
   const age = gardenOverview.age();
   const size = gardenOverview.currentSize();
   const beds = gardenOverview.currentBeds();
-  const plantBadges = gardenOverview.currentPlantIDs()
-    .map((plantID, index) => <GardenPlantBadge key={index} plantID={plantID} />);
+  const plantBadges = gardenOverview.currentVarietalIDs()
+    .map((varietalID, index) => <GardenPlantBadge key={index} plantID={varietalID} />);
   const gardeners = gardenOverview.currentGardenerIDs()
     .map((gardenerID, index) => <Avatar key={index} gardenerID={gardenerID} role={gardenOverview.gardenerRole(gardenerID)} />);
   const lastUpdate = gardenOverview.lastUpdate();

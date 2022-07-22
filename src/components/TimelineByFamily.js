@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { plantData } from '../datamodel/data/plantData';
+import { varietalData } from '../datamodel/data/varietalData';
 import { plantFamilyData } from '../datamodel/data/plantFamilyData';
 import { PlantingHistory } from '../datamodel/PlantingHistory';
 import { NestedDropdown } from './NestedDropdown';
@@ -10,7 +10,7 @@ import { getGardenName } from './GardenName';
 
 export function TimelineByFamily() {
   const gardenName = getGardenName();
-  const plantingHistory = new PlantingHistory({ gardenName, plantData, plantFamilyData });
+  const plantingHistory = new PlantingHistory({ gardenName, varietalData, plantFamilyData });
   const familyIDs = plantingHistory.plantFamilyIDs();
   const menuItems = familyIDs.map(familyID => ({ type: 'item', label: plantFamilyCommonName(familyID, true), eventKey: familyID }));
   const initialFamilyID = familyIDs[0];

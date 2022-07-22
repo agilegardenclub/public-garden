@@ -3,7 +3,7 @@ import { Container, Tabs, Tab } from 'react-bootstrap';
 import { Documentation } from '../components/Documentation';
 import { TimelineByYear } from '../components/TimelineByYear';
 import { TimelineByBed } from '../components/TimelineByBed';
-import { TimelineByPlant } from '../components/TimelineByPlant';
+import { TimelineByVarietal } from '../components/TimelineByVarietal';
 import { TimelineByFamily } from '../components/TimelineByFamily';
 import { TimelineByVendor } from '../components/TimelineByVendor';
 
@@ -28,8 +28,8 @@ function GardenTimelines() {
           <Tab eventKey="By Bed" title="By Bed">
             <TimelineByBed />
           </Tab>
-          <Tab eventKey="By Plant" title="By Plant">
-            <TimelineByPlant />
+          <Tab eventKey="By Varietal" title="By Varietal">
+            <TimelineByVarietal />
           </Tab>
           <Tab eventKey="By Family" title="By Family">
             <TimelineByFamily />

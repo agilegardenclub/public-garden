@@ -138,7 +138,7 @@ export class PlantingHistory {
     return [...new Set(this.plantings.map(entry => entry.varietalID))];
   }
 
-  plantFamilyIDs() {
+  familyIDs() {
     return [...new Set(this.varietalIDs().map(varietalID => getFamilyID(varietalID)))];
   }
 
@@ -157,8 +157,8 @@ export class PlantingHistory {
    * Of course the items: field will have an array containing multiple items.
    */
   varietalDropdownMenuItems() {
-    // Start by building a map from plantFamily IDs to their varietalIDs:
-    // { "plantfamily-01": [ "varietal-01", "varietal-02" ], "plantfamily-02": [ "varietal-03", "varietal-o4" ] }
+    // Start by building a map from family IDs to their varietalIDs:
+    // { "family-01": [ "varietal-01", "varietal-02" ], "family-02": [ "varietal-03", "varietal-o4" ] }
     const familyMap = {};
     this.plantings.forEach(planting => {
       const familyID = getFamilyID(planting.varietalID);
@@ -168,9 +168,9 @@ export class PlantingHistory {
       familyMap[familyID].push(planting.varietalID);
     });
     // Now build the array of dropdown data objects, one per field in the familyMap
-    const plantFamilyIDs = Object.keys(familyMap);
+    const familyIDs = Object.keys(familyMap);
     const dropdownItems = [];
-    plantFamilyIDs.forEach(familyID => {
+    familyIDs.forEach(familyID => {
       // Remove duplicate varietalIDs if any.
       const varietalIDs = [...new Set(familyMap[familyID])];
       const item = { type: 'nested' };
@@ -231,7 +231,7 @@ export class PlantingHistory {
    *  }
    *  ]
    *
-   *  Provide either the year, bedID, varietalID, or plantFamilyID to filter the results appropriately.
+   *  Provide either the year, bedID, varietalID, or familyID to filter the results appropriately.
    */
   historyData({ year, bedID, varietalID, familyID, vendorID }) {
     // Begin by filtering the plantingData by one of year, bedID, or varietalID.

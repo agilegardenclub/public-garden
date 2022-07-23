@@ -38,7 +38,7 @@ export class GardenOverview {
     return ['varietal-01'];
   }
 
-  plantFamily(varietalID) {
+  getFamily(varietalID) {
     const varietalInfo = this.varietals.find(element => element.id === varietalID);
     return varietalInfo ? varietalInfo.family : 'Family Not Found';
   }

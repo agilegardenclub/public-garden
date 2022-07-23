@@ -65,18 +65,18 @@ export function plantingBackgroundClass(currWeek, plantingData) {
     state = 'Unknown-10';
   }
   // console.log('Plant State', plantingData.varietalID, state, currWeek, plantingData);
-  const plantFamily = getFamilyCommonName(plantingData.varietalID).toLowerCase();
+  const familyName = getFamilyCommonName(plantingData.varietalID).toLowerCase();
   if (state.startsWith('GrowingInGreenhouse')) {
-    return `bg-pf-${plantFamily}-light`;
+    return `bg-pf-${familyName}-light`;
   }
   if (state.startsWith('GrowingInBed')) {
-    return `bg-pf-${plantFamily}-dark`;
+    return `bg-pf-${familyName}-dark`;
   }
   if (state.startsWith('HarvestingInGreenhouse')) {
-    return `bg-pf-${plantFamily}-light-harvest`;
+    return `bg-pf-${familyName}-light-harvest`;
   }
   if (state.startsWith('HarvestingInBed')) {
-    return `bg-pf-${plantFamily}-dark-harvest`;
+    return `bg-pf-${familyName}-dark-harvest`;
   }
   return 'bg-danger';
 }

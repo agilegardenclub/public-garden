@@ -11,7 +11,7 @@ import { getGardenName } from './GardenName';
 export function TimelineByFamily() {
   const gardenName = getGardenName();
   const plantingHistory = new PlantingHistory({ gardenName, varietalData, familyData });
-  const familyIDs = plantingHistory.plantFamilyIDs();
+  const familyIDs = plantingHistory.familyIDs();
   const menuItems = familyIDs.map(familyID => ({ type: 'item', label: getFamilyCommonName(familyID, true), eventKey: familyID }));
   const initialFamilyID = familyIDs[0];
   const initialFamilyName = getFamilyCommonName(initialFamilyID, true);

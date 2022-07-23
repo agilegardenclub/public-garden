@@ -1104,13 +1104,13 @@ export const varietalData = [
 ];
 
 // Plant Families
-// plantfamily-01: onion, garlic, leek, shallot
-// plantfamily-02: broccoli, brussels sprout, cabbage, cauliflower, kale, arugula, turnip, pak choi, radish, mustard, kohlrabi, cress, collard
-// plantfamily-03: chard, spinach, beet, amaranth
-// plantfamily-04: squash, zucchini, cucumber, melon, cantaloupe, pumpkin
-// plantfamily-05: bean, pea, peanuts
-// plantfamily-06: corn, buckwheat, okra, wheat, basil ->CHANGED to other annuals
-// plantfamily-07: tomato, potato, eggplant, pepper, ground cherry, tomatillo
-// plantfamily-08: carrot, celeriac, cilantro, fennel, parsley, dill, parsnip, chervil
-// plantfamily-09: lettuce, radicchio, endive, sunflowers, chamomile, salsify
-// plantfamily-10: mint, rosemary, sage, lemon balm, asparagus, berries, sorrel, artichoke, sweet potato, rhubarb ->CHANGED to other perennials
+// family-01: onion, garlic, leek, shallot
+// family-02: broccoli, brussels sprout, cabbage, cauliflower, kale, arugula, turnip, pak choi, radish, mustard, kohlrabi, cress, collard
+// family-03: chard, spinach, beet, amaranth
+// family-04: squash, zucchini, cucumber, melon, cantaloupe, pumpkin
+// family-05: bean, pea, peanuts
+// family-06: corn, buckwheat, okra, wheat, basil ->CHANGED to other annuals
+// family-07: tomato, potato, eggplant, pepper, ground cherry, tomatillo
+// family-08: carrot, celeriac, cilantro, fennel, parsley, dill, parsnip, chervil
+// family-09: lettuce, radicchio, endive, sunflowers, chamomile, salsify
+// family-10: mint, rosemary, sage, lemon balm, asparagus, berries, sorrel, artichoke, sweet potato, rhubarb ->CHANGED to other perennials

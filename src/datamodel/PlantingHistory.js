@@ -32,7 +32,7 @@ export class PlantingHistory {
     });
     // add a notification to a planting if it matches an observation
     this.plantings.forEach(planting => {
-      const matchingObservations = otherObservations.filter(observation => this._matchingPlant(observation.plantingID, planting.plantingID));
+      const matchingObservations = otherObservations.filter(observation => this._matchingCrop(observation.plantingID, planting.plantingID));
       matchingObservations.forEach(observation => { observation.weekOfYear = weekOfYear(observation.observationDate); });
       matchingObservations.forEach(observation => { observation.varietalID = this._getVarietalID(observation.plantingID); });
       planting.notifications.push(...matchingObservations);

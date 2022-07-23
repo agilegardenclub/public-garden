@@ -64,8 +64,8 @@ export function plantingBackgroundClass(currWeek, plantingData) {
   } else {
     state = 'Unknown-10';
   }
-  // console.log('Plant State', plantingData.plantID, state, currWeek, plantingData);
-  const plantFamily = plantFamilyCommonName(plantingData.plantID).toLowerCase();
+  // console.log('Plant State', plantingData.varietalID, state, currWeek, plantingData);
+  const plantFamily = plantFamilyCommonName(plantingData.varietalID).toLowerCase();
   if (state.startsWith('GrowingInGreenhouse')) {
     return `bg-pf-${plantFamily}-light`;
   }

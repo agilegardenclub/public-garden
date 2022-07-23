@@ -3,24 +3,24 @@ import PropTypes from 'prop-types';
 import { Stack } from 'react-bootstrap';
 import { ChapterPlantBadge } from './ChapterPlantBadge';
 
-function PlantPopularityRow({ plantID, numRatings }) {
+function PlantPopularityRow({ varietalID, numRatings }) {
   return (
     <Stack direction="horizontal">
-      <div><ChapterPlantBadge plantID={plantID} /></div>
+      <div><ChapterPlantBadge varietalID={varietalID} /></div>
       <div className="ms-auto">{numRatings} plantings</div>
     </Stack>
   );
 }
 
 PlantPopularityRow.propTypes = {
-  plantID: PropTypes.string,
+  varietalID: PropTypes.string,
   numRatings: PropTypes.number,
 };
 
 export function PlantPopularityList({ ratingData }) {
   return (
     <Stack>
-      { ratingData.map((data, index) => <PlantPopularityRow key={index} plantID={data.plantID} numRatings={data.numRatings}></PlantPopularityRow>) }
+      { ratingData.map((data, index) => <PlantPopularityRow key={index} varietalID={data.varietalID} numRatings={data.numRatings}></PlantPopularityRow>) }
     </Stack>
   );
 }

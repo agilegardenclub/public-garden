@@ -4,17 +4,17 @@ import { Rating } from 'react-simple-star-rating';
 import { Stack } from 'react-bootstrap';
 import { ChapterPlantBadge } from './ChapterPlantBadge';
 
-function PlantRatingRow({ plantID, rating, numRatings }) {
+function PlantRatingRow({ varietalID, rating, numRatings }) {
   return (
     <Stack direction="horizontal">
-      <div><ChapterPlantBadge plantID={plantID} /></div>
+      <div><ChapterPlantBadge varietalID={varietalID} /></div>
       <div className="ms-auto"><Rating readonly initialValue={rating} size={20}/> <small>({numRatings} ratings)</small></div>
     </Stack>
   );
 }
 
 PlantRatingRow.propTypes = {
-  plantID: PropTypes.string,
+  varietalID: PropTypes.string,
   rating: PropTypes.number,
   numRatings: PropTypes.number,
 };
@@ -22,7 +22,7 @@ PlantRatingRow.propTypes = {
 export function PlantRatingList({ ratingData }) {
   return (
     <Stack>
-      { ratingData.map((data, index) => <PlantRatingRow key={index} plantID={data.plantID} rating={data.rating} numRatings={data.numRatings}></PlantRatingRow>) }
+      { ratingData.map((data, index) => <PlantRatingRow key={index} varietalID={data.varietalID} rating={data.rating} numRatings={data.numRatings}></PlantRatingRow>) }
     </Stack>
   );
 }

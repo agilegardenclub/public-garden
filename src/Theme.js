@@ -29,7 +29,7 @@ export const Colors = {
 };
 
 // Taken (mostly) from: https://getbootstrap.com/docs/5.1/customize/color/#all-colors
-export const PlantFamilyColors = {
+export const FamilyColors = {
   allium: { dark: '#6ea8fe', light: '#cfe2ff' },
   beetroot: { dark: '#a370f7', light: '#e0cffc' },
   mustard: { dark: '#6f42c1', light: '#c5b3e6' },

@@ -1,7 +1,7 @@
 import { gardenerData } from './data/gardenerData';
 import { varietalData } from './data/varietalData';
 import { PlantingHistory } from './PlantingHistory';
-import { plantFamilyData } from './data/plantFamilyData';
+import { familyData } from './data/familyData';
 import { gardenData } from './data/gardenData';
 
 /* Processes raw data for use by GardenOverviewCard. */
@@ -11,7 +11,7 @@ export class GardenOverview {
     this.gardeners = gardenerData;
     this.varietals = varietalData;
     this.garden = gardenData.find(garden => garden.name === gardenName);
-    this.plantingHistory = new PlantingHistory({ gardenName, varietalData, plantFamilyData });
+    this.plantingHistory = new PlantingHistory({ gardenName, varietalData, familyData });
   }
 
   age() {

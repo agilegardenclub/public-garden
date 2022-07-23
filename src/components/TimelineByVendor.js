@@ -1,32 +1,32 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { varietalData } from '../datamodel/data/varietalData';
-import { plantFamilyData } from '../datamodel/data/plantFamilyData';
+import { familyData } from '../datamodel/data/familyData';
 import { PlantingHistory } from '../datamodel/PlantingHistory';
 import { NestedDropdown } from './NestedDropdown';
 import { TimelineData } from './TimelineData';
-import { vendorName } from '../datamodel/PlantInfo';
+import { getVendorName } from '../datamodel/PlantInfo';
 import { getGardenName } from './GardenName';
 
 function vendorComparator(vendorID1, vendorID2) {
-  const name1 = vendorName(vendorID1);
-  const name2 = vendorName(vendorID2);
+  const name1 = getVendorName(vendorID1);
+  const name2 = getVendorName(vendorID2);
   // Sometimes vendorName is called without a vendorID, resulting in null.
   return (!name1 || !name2) ? 0 : name1.localeCompare(name2);
 }
 
 export function TimelineByVendor() {
   const gardenName = getGardenName();
-  const plantingHistory = new PlantingHistory({ gardenName, varietalData, plantFamilyData });
+  const plantingHistory = new PlantingHistory({ gardenName, varietalData, familyData });
   const vendorIDs = plantingHistory.vendorIDs().sort(vendorComparator);
-  const menuItems = vendorIDs.map(vendorID => ({ type: 'item', label: vendorName(vendorID), eventKey: vendorID }));
+  const menuItems = vendorIDs.map(vendorID => ({ type: 'item', label: getVendorName(vendorID), eventKey: vendorID }));
   const initialVendorID = vendorIDs[0];
-  const initialVendorName = vendorName(initialVendorID);
+  const initialVendorName = getVendorName(initialVendorID);
   const [selectedVendorName, setVendorName] = useState(initialVendorName);
   const [historyData, setHistoryData] = useState(plantingHistory.historyData({ vendorID: vendorIDs[0] }));
   const onSelect = (eventKey) => {
     if (eventKey) {
-      setVendorName(vendorName(eventKey));
+      setVendorName(getVendorName(eventKey));
       setHistoryData(plantingHistory.historyData({ vendorID: eventKey }));
     }
   };

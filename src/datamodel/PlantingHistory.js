@@ -1,15 +1,15 @@
 /* Provide functions to organize planting data for display in various ways */
-import { plantFamilyCommonName, plantFamilyID, varietalName, varietalNameShort, getVendorID } from './PlantInfo';
+import { getFamilyCommonName, getFamilyID, getVarietalName, getVarietalNameShort, getVendorID } from './PlantInfo';
 import { gardenData } from './data/gardenData';
 import { weekOfYear } from './WeekOfYear';
 
 export class PlantingHistory {
   // eslint-disable-next-line no-shadow
-  constructor({ gardenName, varietalData, plantFamilyData }) {
+  constructor({ gardenName, varietalData, familyData }) {
     this.gardenName = gardenName;
     this.gardenData = gardenData.find(garden => garden.name === gardenName);
     this.varietalData = varietalData;
-    this.plantFamilyData = plantFamilyData;
+    this.familyData = familyData;
     // this.plantings = this._extractPlantings();
     this.plantings = this.gardenData.plantingData;
     this.allPlantings = gardenData.map(garden => garden.plantingData).flat();
@@ -52,9 +52,9 @@ export class PlantingHistory {
    */
   _matchingCrop(plantingID_1, plantingID_2) {
     const planting_1 = this.allPlantings.find(planting => plantingID_1 === planting.plantingID);
-    const plantNameShort_1 = varietalNameShort(planting_1.varietalID);
+    const plantNameShort_1 = getVarietalNameShort(planting_1.varietalID);
     const planting_2 = this.allPlantings.find(planting => plantingID_2 === planting.plantingID);
-    const plantNameShort_2 = varietalNameShort(planting_2.varietalID);
+    const plantNameShort_2 = getVarietalNameShort(planting_2.varietalID);
     // if (plantNameShort_1 === plantNameShort_2) {
     //   console.log(plantingID_1, plantingID_2);
     // }
@@ -139,7 +139,7 @@ export class PlantingHistory {
   }
 
   plantFamilyIDs() {
-    return [...new Set(this.varietalIDs().map(varietalID => plantFamilyID(varietalID)))];
+    return [...new Set(this.varietalIDs().map(varietalID => getFamilyID(varietalID)))];
   }
 
   vendorIDs() {
@@ -161,7 +161,7 @@ export class PlantingHistory {
     // { "plantfamily-01": [ "varietal-01", "varietal-02" ], "plantfamily-02": [ "varietal-03", "varietal-o4" ] }
     const familyMap = {};
     this.plantings.forEach(planting => {
-      const familyID = plantFamilyID(planting.varietalID);
+      const familyID = getFamilyID(planting.varietalID);
       if (!familyMap[familyID]) {
         familyMap[familyID] = [];
       }
@@ -174,8 +174,8 @@ export class PlantingHistory {
       // Remove duplicate varietalIDs if any.
       const varietalIDs = [...new Set(familyMap[familyID])];
       const item = { type: 'nested' };
-      item.label = plantFamilyCommonName(varietalIDs[0]);
-      item.items = varietalIDs.map(varietalID => ({ type: 'item', label: varietalName(varietalID), eventKey: varietalID }));
+      item.label = getFamilyCommonName(varietalIDs[0]);
+      item.items = varietalIDs.map(varietalID => ({ type: 'item', label: getVarietalName(varietalID), eventKey: varietalID }));
       dropdownItems.push(item);
     });
     return dropdownItems;
@@ -244,7 +244,7 @@ export class PlantingHistory {
     } else if (varietalID) {
       filteredPlantings = this.plantings.filter(planting => planting.varietalID === varietalID);
     } else if (familyID) {
-      filteredPlantings = this.plantings.filter(planting => plantFamilyID(planting.varietalID) === familyID);
+      filteredPlantings = this.plantings.filter(planting => getFamilyID(planting.varietalID) === familyID);
     } else if (vendorID) {
       filteredPlantings = this.plantings.filter(planting => getVendorID(planting.varietalID) === vendorID);
     }

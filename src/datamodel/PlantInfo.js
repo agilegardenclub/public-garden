@@ -1,12 +1,12 @@
 import { varietalData } from './data/varietalData';
 import { vendorData } from './data/vendorData';
-import { plantFamilyData } from './data/plantFamilyData';
+import { familyData } from './data/familyData';
 
 function getFamilyData(varietalID) {
   const varietalInfo = varietalData.find(element => element.id === varietalID);
   if (varietalInfo) {
     const familyID = varietalInfo.familyID;
-    return plantFamilyData.find(element => element.id === familyID);
+    return familyData.find(element => element.id === familyID);
   }
   return null;
 }
@@ -16,55 +16,55 @@ export function getVendorID(varietalID) {
   return (varietalInfo) ? varietalInfo.vendorID : null;
 }
 
-export function vendorName(vendorID) {
+export function getVendorName(vendorID) {
   const vendorInfo = vendorData.find(element => element.id === vendorID);
   return (vendorInfo) ? vendorInfo.name : null;
 }
 
 /** Returns the plant family color associated with varietalID as a Bootstrap variable name. */
-export function plantFamilyColorName(varietalID, isLight) {
-  const familyData = getFamilyData(varietalID);
-  if (familyData) {
-    return isLight ? familyData.bgs.light : familyData.bgs.dark;
+export function getFamilyColorName(varietalID, isLight) {
+  const data = getFamilyData(varietalID);
+  if (data) {
+    return isLight ? data.bgs.light : data.bgs.dark;
   }
   return 'black';
 }
 
 /** Returns the plant family color associated with varietalID as a hex color value. */
-export function plantFamilyColorHex(varietalID, isLight) {
-  const familyData = getFamilyData(varietalID);
-  if (familyData) {
-    return isLight ? familyData.colors.light : familyData.colors.dark;
+export function getFamilyColorHex(varietalID, isLight) {
+  const data = getFamilyData(varietalID);
+  if (data) {
+    return isLight ? data.colors.light : data.colors.dark;
   }
   return '#FFF';
 }
 
-export function plantFamilyName(varietalID) {
-  const familyData = getFamilyData(varietalID);
-  if (familyData) {
-    return `${familyData.common} (${familyData.formal})`;
+export function getFamilyName(varietalID) {
+  const data = getFamilyData(varietalID);
+  if (data) {
+    return `${data.common} (${data.formal})`;
   }
   return 'Unknown family';
 }
 
-/** id is a varietalID unless fromFamilyID is true, then id is a plantFamilyID */
-export function plantFamilyCommonName(id, fromFamilyID) {
-  const familyData = fromFamilyID ? plantFamilyData.find(element => element.id === id) : getFamilyData(id);
-  if (familyData) {
-    return familyData.common;
+/** id is a varietalID unless fromFamilyID is true, then id is a familyID */
+export function getFamilyCommonName(id, fromFamilyID) {
+  const data = fromFamilyID ? familyData.find(element => element.id === id) : getFamilyData(id);
+  if (data) {
+    return data.common;
   }
   return 'Unknown family';
 }
 
-export function plantFamilyID(varietalID) {
-  const familyData = getFamilyData(varietalID);
-  if (familyData) {
-    return familyData.id;
+export function getFamilyID(varietalID) {
+  const data = getFamilyData(varietalID);
+  if (data) {
+    return data.id;
   }
-  return 'Unknown plantfamilyID';
+  return 'Unknown familyID';
 }
 
-export function varietalName(varietalID) {
+export function getVarietalName(varietalID) {
   const varietalInfo = varietalData.find(element => element.id === varietalID);
   if (varietalInfo) {
     return `${varietalInfo.plant} (${varietalInfo.variety})`;
@@ -72,7 +72,7 @@ export function varietalName(varietalID) {
   return 'Unknown varietalID';
 }
 
-export function varietalNameShort(varietalID) {
+export function getVarietalNameShort(varietalID) {
   const varietalInfo = varietalData.find(element => element.id === varietalID);
   if (varietalInfo) {
     return `${varietalInfo.plant}`;

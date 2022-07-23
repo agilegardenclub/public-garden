@@ -1,4 +1,4 @@
-import { plantFamilyCommonName } from '../datamodel/PlantInfo';
+import { getFamilyCommonName } from '../datamodel/PlantInfo';
 
 /**
  * Takes the current week (1-48) and returns the appropriate background class for the planting timeline:
@@ -18,7 +18,7 @@ import { plantFamilyCommonName } from '../datamodel/PlantInfo';
  *
  *   Second, compute the background class:
  *   If currWeek falls outside of start and end week, return '';
- *   Find the plantFamilyName (i.e. "allium"). Then map the state to the background class:
+ *   Find the familyName (i.e. "allium"). Then map the state to the background class:
  *     * GrowinginGreenhouse => .bg-pf-allium-light
  *     * GrowinginBed => .bg-pf-allium-dark
  *     * HarvestinginGreenhouse => .bg-pf-allium-light-harvest
@@ -65,7 +65,7 @@ export function plantingBackgroundClass(currWeek, plantingData) {
     state = 'Unknown-10';
   }
   // console.log('Plant State', plantingData.varietalID, state, currWeek, plantingData);
-  const plantFamily = plantFamilyCommonName(plantingData.varietalID).toLowerCase();
+  const plantFamily = getFamilyCommonName(plantingData.varietalID).toLowerCase();
   if (state.startsWith('GrowingInGreenhouse')) {
     return `bg-pf-${plantFamily}-light`;
   }

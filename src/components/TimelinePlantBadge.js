@@ -4,7 +4,7 @@ import { BadgeWithPopover } from './BadgeWithPopover';
 import { chapterOverview } from '../datamodel/ChapterOverview';
 import { Field } from './Field';
 import { RatingList } from './RatingList';
-import { plantFamilyColorName, plantFamilyName } from '../datamodel/PlantInfo';
+import { getFamilyColorName, getFamilyName } from '../datamodel/PlantInfo';
 import { vendorName, vendorUrl } from '../datamodel/VendorInfo';
 
 export function TimelinePlantBadge({ plantingData }) {
@@ -13,12 +13,12 @@ export function TimelinePlantBadge({ plantingData }) {
   const varietalNum = varietalID.substring(6);
   const showVarietalNum = false;
   const name = `${showVarietalNum ? varietalNum : ''} ${varietalInfo.plant} (${varietalInfo.variety})`;
-  const bg = plantFamilyColorName(varietalID);
-  const textColor = `text-${plantFamilyColorName(varietalID)}`;
+  const bg = getFamilyColorName(varietalID);
+  const textColor = `text-${getFamilyColorName(varietalID)}`;
   const vendor = vendorName(varietalID);
   const vendorURL = vendorUrl(varietalID);
   const description = varietalInfo.description;
-  const familyName = plantFamilyName(varietalID);
+  const familyName = getFamilyName(varietalID);
   const varietalOutcomes = plantingData.outcomes;
   const ratingData = [
     { item: 'Appearance', rating: varietalOutcomes ? varietalOutcomes.appearance : 0 },

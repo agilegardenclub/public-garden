@@ -7,7 +7,7 @@ import { vendorName, vendorUrl } from '../datamodel/VendorInfo';
 
 export function ChapterPlantBadge({ varietalID }) {
   const varietalInfo = chapterOverview.varietalInfo(varietalID);
-  const name = `${getCropName(varietalInfo.plant)} (${varietalInfo.variety})`;
+  const name = `${getCropName(varietalInfo.crop)} (${varietalInfo.variety})`;
   const familyName = getFamilyName(varietalID);
   const vendor = vendorName(varietalID);
   const vendorURL = vendorUrl(varietalID);

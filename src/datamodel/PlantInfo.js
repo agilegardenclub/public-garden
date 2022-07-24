@@ -76,7 +76,7 @@ export function getCropName(cropID) {
 export function getVarietalName(varietalID) {
   const varietalInfo = varietalData.find(element => element.id === varietalID);
   if (varietalInfo) {
-    return `${getCropName(varietalInfo.plant)} (${varietalInfo.variety})`;
+    return `${getCropName(varietalInfo.crop)} (${varietalInfo.variety})`;
   }
   return 'Unknown varietalID';
 }
@@ -84,7 +84,7 @@ export function getVarietalName(varietalID) {
 export function getVarietalNameShort(varietalID) {
   const varietalInfo = varietalData.find(element => element.id === varietalID);
   if (varietalInfo) {
-    return `${getCropName(varietalInfo.plant)}`;
+    return `${getCropName(varietalInfo.crop)}`;
   }
   return 'Unknown varietalID';
 }

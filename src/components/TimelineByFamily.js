@@ -12,7 +12,8 @@ export function TimelineByFamily() {
   const gardenName = getGardenName();
   const plantingHistory = new PlantingHistory({ gardenName, varietalData, familyData });
   const familyIDs = plantingHistory.familyIDs();
-  const menuItems = familyIDs.map(familyID => ({ type: 'item', label: getFamilyCommonName(familyID, true), eventKey: familyID }));
+  let menuItems = familyIDs.map(familyID => ({ type: 'item', label: getFamilyCommonName(familyID, true), eventKey: familyID }));
+  menuItems = menuItems.sort((a, b) => a.label.localeCompare(b.label));
   const initialFamilyID = familyIDs[0];
   const initialFamilyName = getFamilyCommonName(initialFamilyID, true);
   const [selectedFamilyName, setFamilyName] = useState(initialFamilyName);

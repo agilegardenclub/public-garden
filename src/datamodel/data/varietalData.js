@@ -3,7 +3,7 @@
 export const varietalData = [
   {
     id: 'varietal-01',
-    crop: 'crop-03',
+    cropID: 'crop-03',
     variety: 'Jersey Knight',
     familyID: 'family-10',
     vendorID: 'vendor-10',
@@ -11,7 +11,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-02',
-    crop: 'crop-07',
+    cropID: 'crop-07',
     variety: 'Solstice',
     familyID: 'family-02',
     vendorID: 'vendor-02',
@@ -19,7 +19,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-03',
-    crop: 'crop-09',
+    cropID: 'crop-09',
     variety: 'Scarlet Nantes',
     familyID: 'family-08',
     vendorID: 'vendor-02',
@@ -27,7 +27,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-04',
-    crop: 'crop-24',
+    cropID: 'crop-24',
     variety: 'Blue Rock',
     familyID: 'family-09',
     vendorID: 'vendor-01',
@@ -35,7 +35,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-05',
-    crop: 'crop-21',
+    cropID: 'crop-21',
     variety: 'Dwarf Blue',
     familyID: 'family-02',
     vendorID: 'vendor-03',
@@ -43,7 +43,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-06',
-    crop: 'crop-22',
+    cropID: 'crop-22',
     variety: 'PrizeTaker',
     familyID: 'family-01',
     vendorID: 'vendor-03',
@@ -51,7 +51,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-07',
-    crop: 'crop-35',
+    cropID: 'crop-35',
     variety: 'French Breakfast',
     familyID: 'family-02',
     vendorID: 'vendor-02',
@@ -59,7 +59,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-08',
-    crop: 'crop-42',
+    cropID: 'crop-42',
     variety: 'Oregon Giant',
     familyID: 'family-05',
     vendorID: 'vendor-05',
@@ -67,7 +67,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-09',
-    crop: 'crop-45',
+    cropID: 'crop-45',
     variety: 'Orange King',
     familyID: 'family-07',
     vendorID: 'vendor-05',
@@ -75,7 +75,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-10',
-    crop: 'crop-11',
+    cropID: 'crop-11',
     variety: 'Rainbow',
     familyID: 'family-03',
     vendorID: 'vendor-05',
@@ -85,7 +85,7 @@ export const varietalData = [
   // Jenna's data starts here.
   {
     id: 'varietal-100',
-    crop: 'crop-24',
+    cropID: 'crop-24',
     variety: 'Royal Red',
     familyID: 'family-09',
     vendorID: 'vendor-02',
@@ -94,7 +94,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-101',
-    crop: 'crop-29',
+    cropID: 'crop-29',
     variety: 'Sugar Snap',
     familyID: 'family-05',
     gardenerIDs: ['gardener-01'], // for seeds of unknown provenance.
@@ -104,7 +104,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-102',
-    crop: 'crop-21',
+    cropID: 'crop-21',
     variety: 'Dazzling Blue Lacinato',
     familyID: 'family-02',
     vendorID: 'vendor-02',
@@ -113,7 +113,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-103',
-    crop: 'crop-45',
+    cropID: 'crop-45',
     variety: 'Pinky',
     familyID: 'family-07',
     vendorID: 'vendor-02',
@@ -122,7 +122,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-104',
-    crop: 'crop-04',
+    cropID: 'crop-04',
     variety: 'Italian',
     familyID: 'family-06',
     vendorID: 'vendor-02',
@@ -131,7 +131,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-105',
-    crop: 'crop-07',
+    cropID: 'crop-07',
     variety: 'Spring Raab',
     familyID: 'family-02',
     vendorID: 'vendor-02',
@@ -140,7 +140,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-106',
-    crop: 'crop-30',
+    cropID: 'crop-30',
     variety: 'Pimiento de Padron',
     familyID: 'family-07',
     vendorID: 'vendor-02',
@@ -149,7 +149,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-107',
-    crop: 'crop-05',
+    cropID: 'crop-05',
     variety: 'Empress Snap',
     familyID: 'family-05',
     vendorID: 'vendor-02',
@@ -158,7 +158,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-108',
-    crop: 'crop-11',
+    cropID: 'crop-11',
     variety: 'Rainbow',
     familyID: 'family-03',
     vendorID: 'vendor-02',
@@ -167,7 +167,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-109',
-    crop: 'crop-11',
+    cropID: 'crop-11',
     variety: 'Garden Rainbow',
     familyID: 'family-03',
     vendorID: 'vendor-07',
@@ -176,7 +176,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-110',
-    crop: 'crop-17',
+    cropID: 'crop-17',
     variety: 'Violetta di Firenze',
     familyID: 'family-07',
     vendorID: 'vendor-02',
@@ -185,7 +185,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-111',
-    crop: 'crop-21',
+    cropID: 'crop-21',
     variety: 'Red Russian',
     familyID: 'family-02',
     vendorID: 'vendor-02',
@@ -194,7 +194,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-112',
-    crop: 'crop-04',
+    cropID: 'crop-04',
     variety: 'Italian',
     familyID: 'family-06',
     vendorID: 'vendor-08',
@@ -203,7 +203,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-113',
-    crop: 'crop-24',
+    cropID: 'crop-24',
     variety: 'Red Oak Leaf',
     familyID: 'family-09',
     vendorID: 'vendor-06',
@@ -212,7 +212,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-114',
-    crop: 'crop-45',
+    cropID: 'crop-45',
     variety: 'Sun Gold',
     familyID: 'family-07',
     vendorID: 'vendor-08',
@@ -221,7 +221,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-115',
-    crop: 'crop-05',
+    cropID: 'crop-05',
     variety: 'Scarlet Runner',
     familyID: 'family-05',
     vendorID: 'vendor-09',
@@ -230,7 +230,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-116',
-    crop: 'crop-21',
+    cropID: 'crop-21',
     variety: 'Red Russian',
     familyID: 'family-02',
     vendorID: 'vendor-08',
@@ -239,7 +239,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-117',
-    crop: 'crop-05',
+    cropID: 'crop-05',
     variety: 'Soldier',
     familyID: 'family-05',
     vendorID: 'vendor-02',
@@ -248,7 +248,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-118',
-    crop: 'crop-46',
+    cropID: 'crop-46',
     variety: 'Cocozelle',
     familyID: 'family-04',
     vendorID: 'vendor-02',
@@ -257,7 +257,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-119',
-    crop: 'crop-46',
+    cropID: 'crop-46',
     variety: 'Dark Star',
     familyID: 'family-04',
     vendorID: 'vendor-08',
@@ -266,7 +266,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-120',
-    crop: 'crop-21',
+    cropID: 'crop-21',
     variety: 'Dwarf Blue Scotch',
     familyID: 'family-02',
     vendorID: 'vendor-02',
@@ -275,7 +275,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-121',
-    crop: 'crop-45',
+    cropID: 'crop-45',
     variety: 'Sheboygan',
     familyID: 'family-07',
     vendorID: 'vendor-02',
@@ -284,7 +284,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-122',
-    crop: 'crop-24',
+    cropID: 'crop-24',
     variety: "Flashy Trout's Back",
     familyID: 'family-09',
     vendorID: 'vendor-02',
@@ -293,7 +293,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-123',
-    crop: 'crop-45',
+    cropID: 'crop-45',
     variety: 'Matina',
     familyID: 'family-07',
     vendorID: 'vendor-02',
@@ -302,7 +302,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-124',
-    crop: 'crop-45',
+    cropID: 'crop-45',
     variety: 'Fiaschetto di Manduria',
     familyID: 'family-07',
     vendorID: 'vendor-02',
@@ -311,7 +311,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-125',
-    crop: 'crop-30',
+    cropID: 'crop-30',
     variety: 'Bridge to Paris',
     familyID: 'family-07',
     vendorID: 'vendor-02',
@@ -320,7 +320,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-126',
-    crop: 'crop-30',
+    cropID: 'crop-30',
     variety: 'Petit Marseillais',
     familyID: 'family-07',
     vendorID: 'vendor-02',
@@ -329,7 +329,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-127',
-    crop: 'crop-30',
+    cropID: 'crop-30',
     variety: 'Criolla di Cochina',
     familyID: 'family-07',
     vendorID: 'vendor-02',
@@ -338,7 +338,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-128',
-    crop: 'crop-30',
+    cropID: 'crop-30',
     variety: 'Marta Polka',
     familyID: 'family-07',
     vendorID: 'vendor-02',
@@ -347,7 +347,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-129',
-    crop: 'crop-06',
+    cropID: 'crop-06',
     variety: 'Touchstone Gold',
     familyID: 'family-03',
     vendorID: 'vendor-02',
@@ -356,7 +356,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-130',
-    crop: 'crop-40',
+    cropID: 'crop-40',
     variety: 'Zeppelin Delicata',
     familyID: 'family-04',
     vendorID: 'vendor-02',
@@ -365,7 +365,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-131',
-    crop: 'crop-40',
+    cropID: 'crop-40',
     variety: 'Potimarron',
     familyID: 'family-04',
     vendorID: 'vendor-02',
@@ -374,7 +374,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-132',
-    crop: 'crop-15',
+    cropID: 'crop-15',
     variety: 'Vorgebirgstrauben',
     familyID: 'family-04',
     vendorID: 'vendor-02',
@@ -383,7 +383,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-133',
-    crop: 'crop-33',
+    cropID: 'crop-33',
     variety: 'Winter Luxury',
     familyID: 'family-04',
     vendorID: 'vendor-02',
@@ -392,7 +392,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-134',
-    crop: 'crop-09',
+    cropID: 'crop-09',
     variety: 'Rainbow Mix',
     familyID: 'family-08',
     vendorID: 'vendor-02',
@@ -401,7 +401,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-135',
-    crop: 'crop-20',
+    cropID: 'crop-20',
     variety: "Aunt Molly's",
     familyID: 'family-07',
     vendorID: 'vendor-02',
@@ -410,7 +410,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-136',
-    crop: 'crop-43',
+    cropID: 'crop-43',
     variety: 'Garden Anarchy Mix',
     familyID: 'family-09',
     vendorID: 'vendor-02',
@@ -419,7 +419,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-137',
-    crop: 'crop-16',
+    cropID: 'crop-16',
     variety: 'Goldkrone',
     familyID: 'family-08',
     vendorID: 'vendor-02',
@@ -428,7 +428,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-138',
-    crop: 'crop-36',
+    cropID: 'crop-36',
     variety: 'Golden',
     familyID: 'family-10',
     vendorID: '',
@@ -437,7 +437,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-139',
-    crop: 'crop-26',
+    cropID: 'crop-26',
     variety: 'Mild Mix',
     familyID: 'family-06',
     vendorID: 'vendor-02',
@@ -446,7 +446,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-140',
-    crop: 'crop-19',
+    cropID: 'crop-19',
     variety: 'Softneck',
     familyID: 'family-01',
     vendorID: 'vendor-00',
@@ -455,7 +455,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-141',
-    crop: 'crop-02',
+    cropID: 'crop-02',
     variety: 'Astro',
     familyID: 'family-02',
     vendorID: 'vendor-02',
@@ -464,7 +464,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-142',
-    crop: 'crop-18',
+    cropID: 'crop-18',
     variety: 'Karmazyn',
     familyID: 'family-05',
     vendorID: 'vendor-02',
@@ -473,7 +473,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-143',
-    crop: 'crop-29',
+    cropID: 'crop-29',
     variety: 'Austrian',
     familyID: 'family-05',
     vendorID: '',
@@ -482,7 +482,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-144',
-    crop: 'crop-40',
+    cropID: 'crop-40',
     variety: 'Delicata',
     familyID: 'family-04',
     vendorID: 'vendor-08',
@@ -491,7 +491,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-145',
-    crop: 'crop-15',
+    cropID: 'crop-15',
     variety: 'Pickling',
     familyID: 'family-04',
     vendorID: 'vendor-08',
@@ -500,7 +500,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-146',
-    crop: 'crop-01',
+    cropID: 'crop-01',
     variety: '',
     familyID: 'family-03',
     vendorID: 'vendor-00',
@@ -509,7 +509,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-147',
-    crop: 'crop-31',
+    cropID: 'crop-31',
     variety: 'Breadseed Rattle',
     familyID: 'family-06',
     vendorID: 'vendor-11',
@@ -518,7 +518,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-148',
-    crop: 'crop-30',
+    cropID: 'crop-30',
     variety: 'Criolla Sella',
     familyID: 'family-07',
     vendorID: 'vendor-02',
@@ -527,7 +527,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-149',
-    crop: 'crop-45',
+    cropID: 'crop-45',
     variety: 'Galina',
     familyID: 'family-07',
     vendorID: 'vendor-02',
@@ -536,7 +536,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-150',
-    crop: 'crop-46',
+    cropID: 'crop-46',
     variety: 'Costata Romanesco',
     familyID: 'family-04',
     vendorID: 'vendor-02',
@@ -545,7 +545,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-151',
-    crop: 'crop-40',
+    cropID: 'crop-40',
     variety: "Burpee's Butterbush",
     familyID: 'family-04',
     vendorID: 'vendor-02',
@@ -554,7 +554,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-152',
-    crop: 'crop-15',
+    cropID: 'crop-15',
     variety: 'Cengelkoy',
     familyID: 'family-04',
     vendorID: 'vendor-02',
@@ -563,7 +563,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-153',
-    crop: 'crop-12',
+    cropID: 'crop-12',
     variety: 'Pokey Joe',
     familyID: 'family-08',
     vendorID: 'vendor-02',
@@ -572,7 +572,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-154',
-    crop: 'crop-06',
+    cropID: 'crop-06',
     variety: '3 Beet Mix',
     familyID: 'family-03',
     vendorID: 'vendor-02',
@@ -581,7 +581,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-155',
-    crop: 'crop-14',
+    cropID: 'crop-14',
     variety: 'Tuxana',
     familyID: 'family-06',
     vendorID: 'vendor-02',
@@ -590,7 +590,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-156',
-    crop: 'crop-05',
+    cropID: 'crop-05',
     variety: 'Dragon Langerie',
     familyID: 'family-05',
     vendorID: 'vendor-02',
@@ -599,7 +599,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-157',
-    crop: 'crop-05',
+    cropID: 'crop-05',
     variety: "Tanya's Pink Pod",
     familyID: 'family-05',
     vendorID: 'vendor-02',
@@ -608,7 +608,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-158',
-    crop: 'crop-32',
+    cropID: 'crop-32',
     variety: 'Rozette',
     familyID: 'family-07',
     vendorID: 'vendor-00',
@@ -617,7 +617,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-159',
-    crop: 'crop-14',
+    cropID: 'crop-14',
     variety: '',
     familyID: 'family-06',
     vendorID: 'vendor-12',
@@ -626,7 +626,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-160',
-    crop: 'crop-41',
+    cropID: 'crop-41',
     variety: 'Alpine',
     familyID: 'family-10',
     vendorID: 'vendor-12',
@@ -635,7 +635,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-161',
-    crop: 'crop-21',
+    cropID: 'crop-21',
     variety: 'Lacinato',
     familyID: 'family-02',
     vendorID: 'vendor-12',
@@ -644,7 +644,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-162',
-    crop: 'crop-21',
+    cropID: 'crop-21',
     variety: 'White Russian',
     familyID: 'family-02',
     vendorID: 'vendor-12',
@@ -653,7 +653,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-163',
-    crop: 'crop-08',
+    cropID: 'crop-08',
     variety: 'Green',
     familyID: 'family-02',
     vendorID: 'vendor-12',
@@ -662,7 +662,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-164',
-    crop: 'crop-08',
+    cropID: 'crop-08',
     variety: 'Red',
     familyID: 'family-02',
     vendorID: 'vendor-12',
@@ -671,7 +671,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-165',
-    crop: 'crop-32',
+    cropID: 'crop-32',
     variety: 'Yukon Nugget',
     familyID: 'family-07',
     vendorID: 'vendor-12',
@@ -680,7 +680,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-166',
-    crop: 'crop-32',
+    cropID: 'crop-32',
     variety: 'Red Norland',
     familyID: 'family-07',
     vendorID: 'vendor-12',
@@ -689,7 +689,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-167',
-    crop: 'crop-15',
+    cropID: 'crop-15',
     variety: 'Slicer',
     familyID: 'family-04',
     vendorID: 'vendor-12',
@@ -698,7 +698,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-168',
-    crop: 'crop-40',
+    cropID: 'crop-40',
     variety: 'Spaghetti',
     familyID: 'family-04',
     vendorID: 'vendor-12',
@@ -707,7 +707,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-169',
-    crop: 'crop-40',
+    cropID: 'crop-40',
     variety: 'Butternut',
     familyID: 'family-04',
     vendorID: 'vendor-12',
@@ -716,7 +716,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-170',
-    crop: 'crop-45',
+    cropID: 'crop-45',
     variety: 'Stupice',
     familyID: 'family-07',
     vendorID: 'vendor-12',
@@ -725,7 +725,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-171',
-    crop: 'crop-45',
+    cropID: 'crop-45',
     variety: 'Cherry',
     familyID: 'family-07',
     vendorID: 'vendor-12',
@@ -734,7 +734,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-172',
-    crop: 'crop-45',
+    cropID: 'crop-45',
     variety: 'Giant Paste',
     familyID: 'family-07',
     vendorID: 'vendor-12',
@@ -743,7 +743,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-173',
-    crop: 'crop-45',
+    cropID: 'crop-45',
     variety: 'Principe Borghese',
     familyID: 'family-07',
     vendorID: 'vendor-12',
@@ -752,7 +752,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-174',
-    crop: 'crop-27',
+    cropID: 'crop-27',
     variety: 'Sweet',
     familyID: 'family-01',
     vendorID: 'vendor-12',
@@ -761,7 +761,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-175',
-    crop: 'crop-27',
+    cropID: 'crop-27',
     variety: 'Walla Walla',
     familyID: 'family-01',
     vendorID: 'vendor-12',
@@ -770,7 +770,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-176',
-    crop: 'crop-06',
+    cropID: 'crop-06',
     variety: 'Early Wonder Tall Top',
     familyID: 'family-03',
     vendorID: 'vendor-12',
@@ -779,7 +779,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-177',
-    crop: 'crop-06',
+    cropID: 'crop-06',
     variety: 'Gourmet Blend',
     familyID: 'family-03',
     vendorID: 'vendor-12',
@@ -788,7 +788,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-178',
-    crop: 'crop-13',
+    cropID: 'crop-13',
     variety: '',
     familyID: 'family-02',
     vendorID: 'vendor-12',
@@ -797,7 +797,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-179',
-    crop: 'crop-40',
+    cropID: 'crop-40',
     variety: 'Yellow Crookneck',
     familyID: 'family-04',
     vendorID: 'vendor-12',
@@ -806,7 +806,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-180',
-    crop: 'crop-14',
+    cropID: 'crop-14',
     variety: 'Early Golden Bantam',
     familyID: 'family-06',
     vendorID: 'vendor-12',
@@ -815,7 +815,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-181',
-    crop: 'crop-29',
+    cropID: 'crop-29',
     variety: 'Shelling',
     familyID: 'family-05',
     vendorID: 'vendor-12',
@@ -824,7 +824,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-182',
-    crop: 'crop-05',
+    cropID: 'crop-05',
     variety: 'Saxa',
     familyID: 'family-05',
     vendorID: 'vendor-12',
@@ -833,7 +833,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-183',
-    crop: 'crop-05',
+    cropID: 'crop-05',
     variety: 'Black Garbanzo',
     familyID: 'family-05',
     vendorID: 'vendor-02',
@@ -842,7 +842,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-184',
-    crop: 'crop-38',
+    cropID: 'crop-38',
     variety: '',
     familyID: 'family-01',
     vendorID: 'vendor-12',
@@ -851,7 +851,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-185',
-    crop: 'crop-40',
+    cropID: 'crop-40',
     variety: 'Butternut',
     familyID: 'family-04',
     vendorID: 'vendor-12',
@@ -860,7 +860,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-186',
-    crop: 'crop-40',
+    cropID: 'crop-40',
     variety: 'Summer',
     familyID: 'family-04',
     vendorID: 'vendor-12',
@@ -869,7 +869,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-187',
-    crop: 'crop-30',
+    cropID: 'crop-30',
     variety: 'Poblano',
     familyID: 'family-07',
     vendorID: 'vendor-12',
@@ -878,7 +878,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-188',
-    crop: 'crop-30',
+    cropID: 'crop-30',
     variety: 'Thai Chili',
     familyID: 'family-07',
     vendorID: 'vendor-12',
@@ -887,7 +887,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-189',
-    crop: 'crop-30',
+    cropID: 'crop-30',
     variety: 'Sweet',
     familyID: 'family-07',
     vendorID: 'vendor-12',
@@ -896,7 +896,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-190',
-    crop: 'crop-33',
+    cropID: 'crop-33',
     variety: 'Sugar Pie',
     familyID: 'family-04',
     vendorID: 'vendor-12',
@@ -905,7 +905,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-191',
-    crop: 'crop-40',
+    cropID: 'crop-40',
     variety: 'Kabocha',
     familyID: 'family-04',
     vendorID: 'vendor-12',
@@ -914,7 +914,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-192',
-    crop: 'crop-37',
+    cropID: 'crop-37',
     variety: 'Speckled',
     familyID: 'family-10',
     vendorID: 'vendor-00',
@@ -923,7 +923,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-193',
-    crop: 'crop-44',
+    cropID: 'crop-44',
     variety: 'De Milpa',
     familyID: 'family-07',
     vendorID: 'vendor-02',
@@ -932,7 +932,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-194',
-    crop: 'crop-24',
+    cropID: 'crop-24',
     variety: 'Mix',
     familyID: 'family-09',
     vendorID: 'vendor-12',
@@ -941,7 +941,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-195',
-    crop: 'crop-39',
+    cropID: 'crop-39',
     variety: '',
     familyID: 'family-03',
     vendorID: 'vendor-12',
@@ -950,7 +950,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-196',
-    crop: 'crop-32',
+    cropID: 'crop-32',
     variety: 'Yukon Gold',
     familyID: 'family-07',
     vendorID: 'vendor-12',
@@ -959,7 +959,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-197',
-    crop: 'crop-32',
+    cropID: 'crop-32',
     variety: 'Russian Blue',
     familyID: 'family-07',
     vendorID: 'vendor-12',
@@ -968,7 +968,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-198',
-    crop: 'crop-32',
+    cropID: 'crop-32',
     variety: 'Colorado Rose',
     familyID: 'family-07',
     vendorID: 'vendor-12',
@@ -977,7 +977,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-199',
-    crop: 'crop-32',
+    cropID: 'crop-32',
     variety: 'Russet',
     familyID: 'family-07',
     vendorID: 'vendor-12',
@@ -986,7 +986,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-200',
-    crop: 'crop-23',
+    cropID: 'crop-23',
     variety: '',
     familyID: 'family-10',
     vendorID: 'vendor-00',
@@ -995,7 +995,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-201',
-    crop: 'crop-40',
+    cropID: 'crop-40',
     variety: 'Winter',
     familyID: 'family-04',
     vendorID: '',
@@ -1004,7 +1004,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-202',
-    crop: 'crop-05',
+    cropID: 'crop-05',
     variety: 'Bush Snap',
     familyID: 'family-05',
     vendorID: '',
@@ -1013,7 +1013,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-203',
-    crop: 'crop-45',
+    cropID: 'crop-45',
     variety: 'Slicer',
     familyID: 'family-07',
     vendorID: '',
@@ -1022,7 +1022,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-205',
-    crop: 'crop-30',
+    cropID: 'crop-30',
     variety: 'Hot',
     familyID: 'family-07',
     vendorID: '',
@@ -1031,7 +1031,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-206',
-    crop: 'crop-30',
+    cropID: 'crop-30',
     variety: 'Sweet',
     familyID: 'family-07',
     vendorID: '',
@@ -1040,7 +1040,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-207',
-    crop: 'crop-10',
+    cropID: 'crop-10',
     variety: '',
     familyID: 'family-02',
     vendorID: 'vendor-00',
@@ -1049,7 +1049,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-208',
-    crop: 'crop-25',
+    cropID: 'crop-25',
     variety: 'Watermelon',
     familyID: 'family-04',
     vendorID: 'vendor-00',
@@ -1058,7 +1058,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-209',
-    crop: 'crop-24',
+    cropID: 'crop-24',
     variety: 'Bibb',
     familyID: 'family-09',
     vendorID: 'vendor-00',
@@ -1067,7 +1067,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-210',
-    crop: 'crop-24',
+    cropID: 'crop-24',
     variety: 'Parris Island',
     familyID: 'family-09',
     vendorID: 'vendor-00',
@@ -1076,7 +1076,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-211',
-    crop: 'crop-27',
+    cropID: 'crop-27',
     variety: 'Storage',
     familyID: 'family-01',
     vendorID: 'vendor-00',
@@ -1085,7 +1085,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-212',
-    crop: 'crop-28',
+    cropID: 'crop-28',
     variety: '',
     familyID: 'family-08',
     vendorID: 'vendor-00',
@@ -1094,7 +1094,7 @@ export const varietalData = [
   },
   {
     id: 'varietal-213',
-    crop: 'crop-34',
+    cropID: 'crop-34',
     variety: 'Pasqualino',
     familyID: 'family-09',
     vendorID: 'vendor-02',

@@ -19,7 +19,7 @@ export function getVendorID(varietalID) {
 
 export function getCropID(varietalID) {
   const varietalInfo = varietalData.find(element => element.id === varietalID);
-  return (varietalInfo) ? varietalInfo.crop : null;
+  return (varietalInfo) ? varietalInfo.cropID : null;
 }
 
 export function getVendorName(vendorID) {
@@ -81,7 +81,7 @@ export function getCropName(cropID) {
 export function getVarietalName(varietalID) {
   const varietalInfo = varietalData.find(element => element.id === varietalID);
   if (varietalInfo) {
-    return `${getCropName(varietalInfo.crop)} (${varietalInfo.variety})`;
+    return `${getCropName(varietalInfo.cropID)} (${varietalInfo.variety})`;
   }
   return 'Unknown varietalID';
 }
@@ -89,7 +89,7 @@ export function getVarietalName(varietalID) {
 export function getVarietalNameShort(varietalID) {
   const varietalInfo = varietalData.find(element => element.id === varietalID);
   if (varietalInfo) {
-    return `${getCropName(varietalInfo.crop)}`;
+    return `${getCropName(varietalInfo.cropID)}`;
   }
   return 'Unknown varietalID';
 }

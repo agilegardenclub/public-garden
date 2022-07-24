@@ -11,7 +11,7 @@ export function GardenPlantBadge({ varietalID }) {
   const varietalInfo = chapterOverview.varietalInfo(varietalID);
   const varietalNum = varietalID.substring(5);
   const showVarietalNum = false;
-  const name = `${showVarietalNum ? varietalNum : ''} ${getCropName(varietalInfo.crop)} (${varietalInfo.variety})`;
+  const name = `${showVarietalNum ? varietalNum : ''} ${getCropName(varietalInfo.cropID)} (${varietalInfo.variety})`;
   const bg = getFamilyColorName(varietalID);
   const textColor = `text-${getFamilyColorName(varietalID)}`;
   const vendor = vendorName(varietalID);

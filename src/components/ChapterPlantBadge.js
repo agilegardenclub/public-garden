@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { BadgeWithPopover } from './BadgeWithPopover';
 import { chapterOverview } from '../datamodel/ChapterOverview';
-import { getFamilyColorName, familyName } from '../datamodel/PlantInfo';
+import { getFamilyColorName, getFamilyName, getCropName } from '../datamodel/PlantInfo';
 import { vendorName, vendorUrl } from '../datamodel/VendorInfo';
 
 export function ChapterPlantBadge({ varietalID }) {
   const varietalInfo = chapterOverview.varietalInfo(varietalID);
-  const name = `${varietalInfo.plant} (${varietalInfo.variety})`;
-  const familyName = familyName(varietalID);
+  const name = `${getCropName(varietalInfo.plant)} (${varietalInfo.variety})`;
+  const familyName = getFamilyName(varietalID);
   const vendor = vendorName(varietalID);
   const vendorURL = vendorUrl(varietalID);
   const description = varietalInfo.description;

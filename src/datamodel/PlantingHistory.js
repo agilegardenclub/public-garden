@@ -1,5 +1,5 @@
 /* Provide functions to organize planting data for display in various ways */
-import { getFamilyCommonName, getFamilyID, getVarietalName, getVarietalNameShort, getVendorID } from './PlantInfo';
+import { getCropID, getFamilyCommonName, getFamilyID, getVarietalName, getVarietalNameShort, getVendorID } from './PlantInfo';
 import { gardenData } from './data/gardenData';
 import { weekOfYear } from './WeekOfYear';
 
@@ -146,6 +146,10 @@ export class PlantingHistory {
     return [...new Set(this.varietalIDs().map(varietalID => getVendorID(varietalID)))];
   }
 
+  cropIDs() {
+    return [...new Set(this.varietalIDs().map(varietalID => getCropID(varietalID)))];
+  }
+
   /**
    * Returns an array formatted to support the Plant nested dropdown:
    * ```
@@ -232,9 +236,9 @@ export class PlantingHistory {
    *  }
    *  ]
    *
-   *  Provide either the year, bedID, varietalID, or familyID to filter the results appropriately.
+   *  Provide either the year, bedID, varietalID, cropID, or familyID to filter the results appropriately.
    */
-  historyData({ year, bedID, varietalID, familyID, vendorID }) {
+  historyData({ year, bedID, varietalID, familyID, vendorID, cropID }) {
     // Begin by filtering the plantingData by one of year, bedID, or varietalID.
     // console.log('in historyData', year, bedID, varietalID);
     let filteredPlantings;
@@ -248,6 +252,8 @@ export class PlantingHistory {
       filteredPlantings = this.plantings.filter(planting => getFamilyID(planting.varietalID) === familyID);
     } else if (vendorID) {
       filteredPlantings = this.plantings.filter(planting => getVendorID(planting.varietalID) === vendorID);
+    } else if (cropID) {
+      filteredPlantings = this.plantings.filter(planting => getCropID(planting.varietalID) === cropID);
     }
     // Construct the return value
     const years = [...new Set(filteredPlantings.map(planting => planting.year))].sort();

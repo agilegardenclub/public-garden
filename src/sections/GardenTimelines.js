@@ -6,6 +6,7 @@ import { TimelineByBed } from '../components/TimelineByBed';
 import { TimelineByVarietal } from '../components/TimelineByVarietal';
 import { TimelineByFamily } from '../components/TimelineByFamily';
 import { TimelineByVendor } from '../components/TimelineByVendor';
+import { TimelineByCrop } from '../components/TimelineByCrop';
 
 /**
  * Planting section
@@ -30,6 +31,9 @@ function GardenTimelines() {
           </Tab>
           <Tab eventKey="By Varietal" title="By Varietal">
             <TimelineByVarietal />
+          </Tab>
+          <Tab eventKey="By Crop" title="By Crop">
+            <TimelineByCrop />
           </Tab>
           <Tab eventKey="By Family" title="By Family">
             <TimelineByFamily />

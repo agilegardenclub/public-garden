@@ -17,6 +17,11 @@ export function getVendorID(varietalID) {
   return (varietalInfo) ? varietalInfo.vendorID : null;
 }
 
+export function getCropID(varietalID) {
+  const varietalInfo = varietalData.find(element => element.id === varietalID);
+  return (varietalInfo) ? varietalInfo.crop : null;
+}
+
 export function getVendorName(vendorID) {
   const vendorInfo = vendorData.find(element => element.id === vendorID);
   return (vendorInfo) ? vendorInfo.name : null;

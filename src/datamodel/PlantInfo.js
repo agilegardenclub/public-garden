@@ -1,6 +1,7 @@
 import { varietalData } from './data/varietalData';
 import { vendorData } from './data/vendorData';
 import { familyData } from './data/familyData';
+import { cropData } from './data/cropData';
 
 function getFamilyData(varietalID) {
   const varietalInfo = varietalData.find(element => element.id === varietalID);
@@ -64,18 +65,26 @@ export function getFamilyID(varietalID) {
   return 'Unknown familyID';
 }
 
-export function getVarietalName(varietalID) {
-  const varietalInfo = varietalData.find(element => element.id === varietalID);
-  if (varietalInfo) {
-    return `${varietalInfo.plant} (${varietalInfo.variety})`;
-  }
-  return 'Unknown varietalID';
-}
-
 export function getVarietalNameShort(varietalID) {
   const varietalInfo = varietalData.find(element => element.id === varietalID);
   if (varietalInfo) {
     return `${varietalInfo.plant}`;
+  }
+  return 'Unknown varietalID';
+}
+
+export function getCropName(cropID) {
+  const cropInfo = cropData.find(element => element.id === cropID);
+  if (cropInfo) {
+    return `${cropInfo.name}`;
+  }
+  return 'Unknown cropID';
+}
+
+export function getVarietalName(varietalID) {
+  const varietalInfo = varietalData.find(element => element.id === varietalID);
+  if (varietalInfo) {
+    return `${getCropName(varietalInfo.plant)} (${varietalInfo.variety})`;
   }
   return 'Unknown varietalID';
 }

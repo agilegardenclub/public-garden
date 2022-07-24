@@ -176,6 +176,7 @@ export class PlantingHistory {
       const item = { type: 'nested' };
       item.label = getFamilyCommonName(varietalIDs[0]);
       item.items = varietalIDs.map(varietalID => ({ type: 'item', label: getVarietalName(varietalID), eventKey: varietalID }));
+      item.items = item.items.sort((a, b) => a.label.localeCompare(b.label));
       dropdownItems.push(item);
     });
     return dropdownItems;

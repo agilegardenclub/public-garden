@@ -15,6 +15,41 @@ export const chapterData = [
         caption: 'Climate Overview',
         date: 'March, 2022',
       },
+      {
+        url: `${process.env.PUBLIC_URL}/img/chapters/bellingham/chapter-001.jpg`,
+        caption: 'Chapter Garden',
+        date: 'August, 2021',
+      },
+      {
+        url: `${process.env.PUBLIC_URL}/img/chapters/bellingham/chapter-002.jpg`,
+        caption: 'Chapter Garden',
+        date: 'July, 2022',
+      },
+      {
+        url: `${process.env.PUBLIC_URL}/img/chapters/bellingham/chapter-003.jpg`,
+        caption: 'Chapter Garden',
+        date: 'July, 2022',
+      },
+      {
+        url: `${process.env.PUBLIC_URL}/img/chapters/bellingham/chapter-004.jpg`,
+        caption: 'Chapter Garden',
+        date: 'July, 2022',
+      },
+      {
+        url: `${process.env.PUBLIC_URL}/img/chapters/bellingham/chapter-005.jpg`,
+        caption: 'Chapter Garden',
+        date: 'July, 2022',
+      },
+      {
+        url: `${process.env.PUBLIC_URL}/img/chapters/bellingham/chapter-006.jpg`,
+        caption: 'Chapter Garden',
+        date: 'July, 2022',
+      },
+      {
+        url: `${process.env.PUBLIC_URL}/img/chapters/bellingham/chapter-007.jpg`,
+        caption: 'Chapter Garden',
+        date: 'July, 2022',
+      },
     ],
     age: 6,
     zipCodes: ['98225', '98226', '98227', '98228', '98229'],

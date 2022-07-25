@@ -23,6 +23,10 @@ export const gardenData = [
       { url: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden-005.jpg`, caption: 'Bed 6 with zuchinni, herb boxes, and newly planted raspberries', date: 'May, 2020' },
 
       { url: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden-006.jpg`, caption: 'Nice view of beds 1-8 before the plants take over', date: 'March, 2020' },
+
+      { url: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden-008.jpg`, caption: 'First successful cucumber in two years!', date: 'July, 2022' },
+
+      { url: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden-009.jpg`, caption: 'Happy garden in late July.', date: 'July, 2022' },
     ],
     plantingData: [
 

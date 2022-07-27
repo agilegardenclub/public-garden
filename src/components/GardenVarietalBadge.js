@@ -8,7 +8,7 @@ import { getFamilyColorName, getFamilyName } from '../datamodel/VarietalInfo';
 import { vendorName, vendorUrl } from '../datamodel/VendorInfo';
 import { getCropName } from '../datamodel/CropInfo';
 
-export function GardenPlantBadge({ varietalID }) {
+export function GardenVarietalBadge({ varietalID }) {
   const varietalInfo = chapterOverview.varietalInfo(varietalID);
   const varietalNum = varietalID.substring(5);
   const showVarietalNum = false;
@@ -39,6 +39,6 @@ export function GardenPlantBadge({ varietalID }) {
   );
 }
 
-GardenPlantBadge.propTypes = {
+GardenVarietalBadge.propTypes = {
   varietalID: PropTypes.string,
 };

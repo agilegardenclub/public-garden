@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Stack } from 'react-bootstrap';
-import { ChapterPlantBadge } from './ChapterPlantBadge';
+import { ChapterVarietalBadge } from './ChapterPlantBadge';
 
 function PlantPopularityRow({ varietalID, numRatings }) {
   return (
     <Stack direction="horizontal">
-      <div><ChapterPlantBadge varietalID={varietalID} /></div>
+      <div><ChapterVarietalBadge varietalID={varietalID} /></div>
       <div className="ms-auto">{numRatings} plantings</div>
     </Stack>
   );

@@ -1,5 +1,5 @@
 /* Provide functions to organize planting data for display in various ways */
-import { getCropID, getFamilyCommonName, getFamilyID, getVarietalName, getVarietalNameShort, getVendorID } from './VarietalInfo';
+import { getCropID, getFamilyCommonName, getFamilyData, getVarietalName, getVarietalNameShort, getVendorID } from './VarietalInfo';
 import { gardenData } from './data/gardenData';
 import { weekOfYear } from './WeekOfYear';
 
@@ -139,7 +139,7 @@ export class PlantingHistory {
   }
 
   familyIDs() {
-    return [...new Set(this.varietalIDs().map(varietalID => getFamilyID(varietalID)))];
+    return [...new Set(this.varietalIDs().map(varietalID => getFamilyData(varietalID).id))];
   }
 
   vendorIDs() {
@@ -165,7 +165,7 @@ export class PlantingHistory {
     // { "family-01": [ "varietal-01", "varietal-02" ], "family-02": [ "varietal-03", "varietal-o4" ] }
     const familyMap = {};
     this.plantings.forEach(planting => {
-      const familyID = getFamilyID(planting.varietalID);
+      const familyID = getFamilyData(planting.varietalID).familyID;
       if (!familyMap[familyID]) {
         familyMap[familyID] = [];
       }
@@ -249,7 +249,7 @@ export class PlantingHistory {
     } else if (varietalID) {
       filteredPlantings = this.plantings.filter(planting => planting.varietalID === varietalID);
     } else if (familyID) {
-      filteredPlantings = this.plantings.filter(planting => getFamilyID(planting.varietalID) === familyID);
+      filteredPlantings = this.plantings.filter(planting => getFamilyData(planting.varietalID).id === familyID);
     } else if (vendorID) {
       filteredPlantings = this.plantings.filter(planting => getVendorID(planting.varietalID) === vendorID);
     } else if (cropID) {

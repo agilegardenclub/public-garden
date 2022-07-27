@@ -6,7 +6,7 @@ import { getFamilyColorName, getFamilyName } from '../datamodel/VarietalInfo';
 import { vendorName, vendorUrl } from '../datamodel/VendorInfo';
 import { getCropName } from '../datamodel/CropInfo';
 
-export function ChapterPlantBadge({ varietalID }) {
+export function ChapterVarietalBadge({ varietalID }) {
   const varietalInfo = chapterOverview.varietalInfo(varietalID);
   const name = `${getCropName(varietalInfo.cropID)} (${varietalInfo.variety})`;
   const familyName = getFamilyName(varietalID);
@@ -25,6 +25,6 @@ export function ChapterPlantBadge({ varietalID }) {
   );
 }
 
-ChapterPlantBadge.propTypes = {
+ChapterVarietalBadge.propTypes = {
   varietalID: PropTypes.string,
 };

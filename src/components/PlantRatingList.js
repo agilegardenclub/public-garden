@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Rating } from 'react-simple-star-rating';
 import { Stack } from 'react-bootstrap';
-import { ChapterPlantBadge } from './ChapterPlantBadge';
+import { ChapterVarietalBadge } from './ChapterPlantBadge';
 
 function PlantRatingRow({ varietalID, rating, numRatings }) {
   return (
     <Stack direction="horizontal">
-      <div><ChapterPlantBadge varietalID={varietalID} /></div>
+      <div><ChapterVarietalBadge varietalID={varietalID} /></div>
       <div className="ms-auto"><Rating readonly initialValue={rating} size={20}/> <small>({numRatings} ratings)</small></div>
     </Stack>
   );

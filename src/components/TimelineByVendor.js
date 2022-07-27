@@ -5,7 +5,7 @@ import { familyData } from '../datamodel/data/familyData';
 import { PlantingHistory } from '../datamodel/PlantingHistory';
 import { NestedDropdown } from './NestedDropdown';
 import { TimelineData } from './TimelineData';
-import { getVendorName } from '../datamodel/PlantInfo';
+import { getVendorName } from '../datamodel/VarietalInfo';
 import { getGardenName } from './GardenName';
 
 function vendorComparator(vendorID1, vendorID2) {

@@ -5,7 +5,7 @@ import { familyData } from '../datamodel/data/familyData';
 import { PlantingHistory } from '../datamodel/PlantingHistory';
 import { NestedDropdown } from './NestedDropdown';
 import { TimelineData } from './TimelineData';
-import { getCropName } from '../datamodel/PlantInfo';
+import { getCropName } from '../datamodel/CropInfo';
 import { getGardenName } from './GardenName';
 
 function cropComparator(cropID1, cropID2) {

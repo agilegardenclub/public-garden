@@ -5,7 +5,7 @@ import { familyData } from '../datamodel/data/familyData';
 import { PlantingHistory } from '../datamodel/PlantingHistory';
 import { NestedDropdown } from './NestedDropdown';
 import { TimelineData } from './TimelineData';
-import { getFamilyCommonName } from '../datamodel/PlantInfo';
+import { getFamilyCommonName } from '../datamodel/VarietalInfo';
 import { getGardenName } from './GardenName';
 
 export function TimelineByFamily() {

@@ -51,11 +51,8 @@ export const chapterData = [
         date: 'July, 2022',
       },
     ],
-    age: 6,
     zipCodes: ['98225', '98226', '98227', '98228', '98229'],
     zoneIDs: ['zone-8a', 'zone-8b'],
-    members: 123,
-    gardens: 87,
     varietalRatings: [
       {
         type: 'popular',

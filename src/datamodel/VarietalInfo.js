@@ -1,24 +1,29 @@
 import { varietalData } from './data/varietalData';
 import { vendorData } from './data/vendorData';
 import { familyData } from './data/familyData';
-import { cropData } from './data/cropData';
+import { getCropName, getFamilyID } from './CropInfo';
+import { getFamilyInfo } from './FamilyInfo';
 
-function getFamilyData(varietalID) {
+export function getVarietalInfo(varietalID) {
   const varietalInfo = varietalData.find(element => element.id === varietalID);
-  if (varietalInfo) {
-    const familyID = varietalInfo.familyID;
-    return familyData.find(element => element.id === familyID);
+  if (!varietalInfo) {
+    throw new Error(`Undefined varietal: ${varietalID}`);
   }
-  return null;
+  return varietalInfo;
+}
+
+export function getFamilyData(varietalID) {
+  const varietalInfo = getVarietalInfo(varietalID);
+  return getFamilyInfo(getFamilyID(varietalInfo.cropID));
 }
 
 export function getVendorID(varietalID) {
-  const varietalInfo = varietalData.find(element => element.id === varietalID);
+  const varietalInfo = getVarietalInfo(varietalID);
   return (varietalInfo) ? varietalInfo.vendorID : null;
 }
 
 export function getCropID(varietalID) {
-  const varietalInfo = varietalData.find(element => element.id === varietalID);
+  const varietalInfo = getVarietalInfo(varietalID);
   return (varietalInfo) ? varietalInfo.cropID : null;
 }
 
@@ -62,26 +67,10 @@ export function getFamilyCommonName(id, fromFamilyID) {
   return 'Unknown family';
 }
 
-export function getFamilyID(varietalID) {
-  const data = getFamilyData(varietalID);
-  if (data) {
-    return data.id;
-  }
-  return 'Unknown familyID';
-}
-
-export function getCropName(cropID) {
-  const cropInfo = cropData.find(element => element.id === cropID);
-  if (cropInfo) {
-    return `${cropInfo.name}`;
-  }
-  return 'Unknown cropID';
-}
-
-export function getVarietalName(varietalID) {
+export function getVarietalName(varietalID, varietyOnly) {
   const varietalInfo = varietalData.find(element => element.id === varietalID);
   if (varietalInfo) {
-    return `${getCropName(varietalInfo.cropID)} (${varietalInfo.variety})`;
+    return varietyOnly ? varietalInfo.variety : `${getCropName(varietalInfo.cropID)} (${varietalInfo.variety})`;
   }
   return 'Unknown varietalID';
 }

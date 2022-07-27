@@ -1,5 +1,6 @@
 import { chapterData } from './data/chapterData';
 import { varietalData } from './data/varietalData';
+import { getChapterGardenYears, getNumChapterGardens, getNumChapterMembers } from './ChapterInfo';
 
 /* Processes raw data for use by ChapterOverviewCard. */
 class ChapterOverview {
@@ -7,6 +8,7 @@ class ChapterOverview {
   constructor(chapter, varietals) {
     this.chapter = chapter;
     this.varietals = varietals;
+    this.chapterID = chapter.id;
   }
 
   name() {
@@ -30,11 +32,15 @@ class ChapterOverview {
   }
 
   members() {
-    return this.chapter.members;
+    return getNumChapterMembers(this.chapterID);
   }
 
   gardens() {
-    return this.chapter.gardens;
+    return getNumChapterGardens(this.chapterID);
+  }
+
+  gardenYears() {
+    return getChapterGardenYears(this.chapterID);
   }
 
   _getVarietalName(varietalID) {

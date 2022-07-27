@@ -6,7 +6,7 @@ import { getGardenName } from '../components/GardenName';
  * Display the "NavBar" at the top of the page.
  */
 function Top() {
-  const gardenID = getGardenName();
+  const gardenName = getGardenName();
   return (
     <Navbar sticky="top" bg="dark" variant="dark">
       <Container>
@@ -18,7 +18,7 @@ function Top() {
             height="30"
             className="d-inline-block align-top"
           />{' '}
-          Agile Garden Club: Public Garden View ({gardenID})
+          Agile Garden Club: Public Garden View ({gardenName})
         </Navbar.Brand>
         <Nav>
           <Nav.Item><Nav.Link href="#overview">Overview</Nav.Link></Nav.Item>

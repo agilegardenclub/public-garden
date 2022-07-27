@@ -5,7 +5,7 @@ import { familyData } from '../datamodel/data/familyData';
 import { PlantingHistory } from '../datamodel/PlantingHistory';
 import { NestedDropdown } from './NestedDropdown';
 import { TimelineData } from './TimelineData';
-import { getVarietalNameShort } from '../datamodel/PlantInfo';
+import { getVarietalNameShort } from '../datamodel/VarietalInfo';
 import { getGardenName } from './GardenName';
 
 // Note that, technically, "plant" refers to "Tomato", while "varietal" refers to "Tomato (Big Boy)".

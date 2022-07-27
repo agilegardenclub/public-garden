@@ -1,5 +1,5 @@
 /* Provide functions to organize planting data for display in various ways */
-import { getCropID, getFamilyCommonName, getFamilyID, getVarietalName, getVarietalNameShort, getVendorID } from './PlantInfo';
+import { getCropID, getFamilyCommonName, getFamilyID, getVarietalName, getVarietalNameShort, getVendorID } from './VarietalInfo';
 import { gardenData } from './data/gardenData';
 import { weekOfYear } from './WeekOfYear';
 

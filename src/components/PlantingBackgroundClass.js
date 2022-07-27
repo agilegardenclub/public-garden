@@ -1,4 +1,4 @@
-import { getFamilyCommonName } from '../datamodel/PlantInfo';
+import { getFamilyCommonName } from '../datamodel/VarietalInfo';
 
 /**
  * Takes the current week (1-48) and returns the appropriate background class for the planting timeline:

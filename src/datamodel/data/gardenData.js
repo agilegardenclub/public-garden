@@ -6,8 +6,9 @@ export const gardenData = [
     id: 'garden-01',
     name: '45ght3cf',
     size: '900 sq ft',
+    zipCode: '98225',
     climateVictoryGarden: true,
-    lastUpdate: 'March 12, 2022',
+    lastUpdate: 'July 1, 2022',
     gardeners: [{ gardenerID: 'gardener-01', role: 'owner' }, { gardenerID: 'gardener-02', role: 'editor' }, { gardenerID: 'gardener-04', role: 'viewer' }],
     pictures: [
       { url: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden-007-birds-eye-view.jpg`, caption: 'Layout. Blue: 2018. Green: 2019. Purple: 2021. Orange: 2021.', date: 'March, 2022' },
@@ -419,9 +420,10 @@ export const gardenData = [
   {
     id: 'garden-02',
     name: '67abh39db',
+    zipCode: '98225',
     size: '1200 sq ft',
     climateVictoryGarden: false,
-    lastUpdate: 'May 22, 2022',
+    lastUpdate: 'June 10, 2022',
     gardeners: [{ gardenerID: 'gardener-02', role: 'owner' }],
     pictures: [
       { url: `${process.env.PUBLIC_URL}/img/gardens/67abh39db/jessie-garden-map.jpg`, caption: "Bird's eye view.", date: 'May, 2022' },

@@ -3,6 +3,7 @@ import { varietalData } from './data/varietalData';
 import { PlantingHistory } from './PlantingHistory';
 import { familyData } from './data/familyData';
 import { gardenData } from './data/gardenData';
+import { getGardenYears } from './GardenInfo';
 
 /* Processes raw data for use by GardenOverviewCard. */
 export class GardenOverview {
@@ -10,7 +11,8 @@ export class GardenOverview {
   constructor(gardenName) {
     this.gardeners = gardenerData;
     this.varietals = varietalData;
-    this.garden = gardenData.find(garden => garden.name === gardenName);
+    this.gardenInfo = gardenData.find(garden => garden.name === gardenName);
+    this.gardenID = this.gardenInfo.id;
     this.plantingHistory = new PlantingHistory({ gardenName, varietalData, familyData });
   }
 
@@ -19,7 +21,7 @@ export class GardenOverview {
   }
 
   climateVictoryGarden() {
-    return !!this.garden.climateVictoryGarden;
+    return !!this.gardenInfo.climateVictoryGarden;
   }
 
   currentYear() {
@@ -27,11 +29,15 @@ export class GardenOverview {
   }
 
   currentSize() {
-    return this.garden.size;
+    return this.gardenInfo.size;
   }
 
   currentBeds() {
     return this.plantingHistory.bedIDs().length;
+  }
+
+  gardenYears() {
+    return getGardenYears(this.gardenID);
   }
 
   currentVarietalIDs() {
@@ -48,16 +54,16 @@ export class GardenOverview {
       const varietalInfo = this.varietals.find(element => element.id === id);
       return varietalInfo ? varietalInfo.name : 'Varietal Not Found';
     };
-    const varietalIDs = this.garden.history[0].varietalIDs;
+    const varietalIDs = this.gardenInfo.history[0].varietalIDs;
     return varietalIDs.map(id => getVarietalName(id));
   }
 
   currentGardenerIDs() {
-    return this.garden.gardeners.map(gardener => gardener.gardenerID);
+    return this.gardenInfo.gardeners.map(gardener => gardener.gardenerID);
   }
 
   gardenerRole(gardenerID) {
-    const gardenerInfo = this.garden.gardeners.find(info => info.gardenerID === gardenerID);
+    const gardenerInfo = this.gardenInfo.gardeners.find(info => info.gardenerID === gardenerID);
     return gardenerInfo.role;
   }
 
@@ -68,7 +74,7 @@ export class GardenOverview {
   }
 
   varietalOutcomes(varietalID) {
-    return this.garden.varietalOutcomes.find(element => element.varietalID === varietalID);
+    return this.gardenInfo.varietalOutcomes.find(element => element.varietalID === varietalID);
   }
 
   isMasterGardener(gardenerID) {
@@ -77,14 +83,14 @@ export class GardenOverview {
   }
 
   name() {
-    return this.garden.name;
+    return this.gardenInfo.name;
   }
 
   pictures() {
-    return this.garden.pictures;
+    return this.gardenInfo.pictures;
   }
 
   lastUpdate() {
-    return this.garden.lastUpdate;
+    return this.gardenInfo.lastUpdate;
   }
 }

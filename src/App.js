@@ -8,9 +8,9 @@ import ChapterPlantHistory from './sections/ChapterPlantHistory';
 import { getGardenName } from './components/GardenName';
 
 const App = () => {
-  const gardenID = getGardenName();
+  const gardenName = getGardenName();
   useEffect(() => {
-    document.title = `AGC Public Garden (${gardenID})`;
+    document.title = `AGC Public Garden (${gardenName})`;
   }, []);
 
   return (

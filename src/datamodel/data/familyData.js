@@ -10,6 +10,14 @@ export const familyData = [
     examples: 'onion, garlic, leek, shallot',
   },
   {
+    id: 'family-03a',
+    formal: 'Amaranthaceae',
+    common: 'Amaranth',
+    colors: FamilyColors.beetroot,
+    bgs: { dark: 'pf-beetroot-dark', light: 'pf-beetroot-light' },
+    examples: 'amaranth, quinoa',
+  },
+  {
     id: 'family-02',
     formal: 'Brassicaceae',
     common: 'Mustard',
@@ -23,7 +31,7 @@ export const familyData = [
     common: 'Beetroot',
     colors: FamilyColors.beetroot,
     bgs: { dark: 'pf-beetroot-dark', light: 'pf-beetroot-light' },
-    examples: 'chard, spinach, beet, amaranth',
+    examples: 'chard, spinach, beet',
   },
   {
     id: 'family-04',
@@ -47,7 +55,7 @@ export const familyData = [
     common: 'Misc_Annuals',
     colors: FamilyColors.misc_annuals,
     bgs: { dark: 'pf-misc_annuals-dark', light: 'pf-misc_annuals-light' },
-    examples: 'corn, buckwheat, okra, wheat, basil',
+    examples: 'corn, buckwheat, okra, wheat, basil, lemongrass',
   },
   {
     id: 'family-07',
@@ -71,7 +79,7 @@ export const familyData = [
     common: 'Daisy',
     colors: FamilyColors.daisy,
     bgs: { dark: 'pf-daisy-dark', light: 'pf-daisy-light' },
-    examples: 'lettuce, radicchio, endive, sunflowers, chamomile, salsify',
+    examples: 'lettuce, mesclun, radicchio, endive, sunflowers, chamomile, salsify',
   },
   {
     id: 'family-10',
@@ -79,6 +87,22 @@ export const familyData = [
     common: 'Misc_Perennials',
     colors: FamilyColors.misc_perennials,
     bgs: { dark: 'pf-misc_perennials-dark', light: 'pf-misc_perennials-light' },
-    examples: 'mint, rosemary, sage, lemon balm, asparagus, berries, sorrel, artichoke, sweet potato',
+    examples: 'mint, rosemary, sage, lemon balm, asparagus, sorrel, artichoke, sweet potato, rhubarb',
+  },
+  {
+    id: 'family-11',
+    formal: 'Poppaveraceae',
+    common: 'Poppy',
+    colors: FamilyColors.misc_perennials,
+    bgs: { dark: 'pf-misc_perennials-dark', light: 'pf-misc_perennials-light' },
+    examples: 'poppy',
+  },
+  {
+    id: 'family-12',
+    formal: 'Rosaceae',
+    common: 'Rose',
+    colors: FamilyColors.misc_perennials,
+    bgs: { dark: 'pf-misc_perennials-dark', light: 'pf-misc_perennials-light' },
+    examples: 'raspberry, strawberry',
   },
 ];

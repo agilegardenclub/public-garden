@@ -4,15 +4,20 @@ import { Field } from './Field';
 import { chapterOverview } from '../datamodel/ChapterOverview';
 import { ZoneBadge } from './ZoneBadge';
 import { PictureCarousel } from './PictureCarousel';
+import { ChapterCropBadge } from './ChapterCropBadge';
+import { getChapterCropIDs } from '../datamodel/ChapterInfo';
 
 export function ChapterOverviewCard() {
   const name = chapterOverview.name();
   const pictureData = chapterOverview.pictures();
-  const zipCodes = chapterOverview.zipCodes()
-    .join(', ');
+  const zipCodes = chapterOverview.zipCodes().join(', ');
   const members = chapterOverview.members();
   const gardens = chapterOverview.gardens();
   const gardenYears = chapterOverview.gardenYears();
+  const totalPlantings = chapterOverview.totalPlantings();
+  const chapterID = chapterOverview.chapterID;
+  const cropIDs = getChapterCropIDs(chapterID);
+  const cropBadges = cropIDs.map((cropID, index) => <ChapterCropBadge key={index} chapterID={chapterID} cropID={cropID}/>);
   const zoneBadges = chapterOverview.zoneIDs()
     .map((zoneID, index) => ZoneBadge({ zoneID, index }));
   return (
@@ -26,6 +31,8 @@ export function ChapterOverviewCard() {
           <Field title="Hardiness Zone(s):">{zoneBadges}</Field>
           <Field title="Number of members:">{members}</Field>
           <Field title="Number of gardens:">{gardens}</Field>
+          <Field title="Total Plantings:">{totalPlantings}</Field>
+          <Field title="Crops:">{cropBadges}</Field>
           {/*
           <Field title='Top 5 Plants (popularity):' direction='vertical'>
             <PlantPopularityList ratingData={popularPlantRatings}/>

@@ -1,5 +1,6 @@
 import { gardenData } from './data/gardenData';
-import { getCropName } from './CropInfo';
+import { chapterData } from './data/chapterData';
+import { cropComparator } from './CropInfo';
 import { getCropID } from './VarietalInfo';
 
 export function getGardenInfo(gardenID) {
@@ -8,6 +9,15 @@ export function getGardenInfo(gardenID) {
     throw new Error(`Undefined gardenID: ${gardenID}`);
   }
   return gardenInfo;
+}
+
+export function getGardenChapterInfo(gardenID) {
+  const zipCode = getGardenInfo(gardenID).zipCode;
+  const chapterInfo = chapterData.find(data => data.zipCodes.includes(zipCode));
+  if (!chapterInfo) {
+    throw new Error(`Could not find chapter associated with gardenID ${gardenID}`);
+  }
+  return chapterInfo;
 }
 
 export function getGardenID(gardenName) {
@@ -35,15 +45,13 @@ export function getPlantings(gardenID, cropID) {
   return gardenInfo.plantingData.filter(planting => getCropID(planting.varietalID) === cropID);
 }
 
-function cropComparator(cropID1, cropID2) {
-  const name1 = cropID1 && getCropName(cropID1);
-  const name2 = cropID2 && getCropName(cropID2);
-  // Sometimes vendorName is called without a vendorID, resulting in null.
-  return (!name1 || !name2) ? 0 : name1.localeCompare(name2);
-}
-
 export function getCropIDs(gardenID) {
   const gardenInfo = gardenData.find(element => element.id === gardenID);
   const cropIDs = [...new Set(gardenInfo.plantingData.map(planting => getCropID(planting.varietalID)))];
   return cropIDs.sort(cropComparator);
+}
+
+export function getTotalPlantings(gardenID) {
+  const gardenInfo = getGardenInfo(gardenID);
+  return gardenInfo.plantingData.length;
 }

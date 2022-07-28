@@ -2,8 +2,7 @@ import { gardenerData } from './data/gardenerData';
 import { varietalData } from './data/varietalData';
 import { PlantingHistory } from './PlantingHistory';
 import { familyData } from './data/familyData';
-import { gardenData } from './data/gardenData';
-import { getGardenYears } from './GardenInfo';
+import { getGardenChapterInfo, getGardenID, getGardenInfo, getGardenYears, getTotalPlantings } from './GardenInfo';
 
 /* Processes raw data for use by GardenOverviewCard. */
 export class GardenOverview {
@@ -11,8 +10,8 @@ export class GardenOverview {
   constructor(gardenName) {
     this.gardeners = gardenerData;
     this.varietals = varietalData;
-    this.gardenInfo = gardenData.find(garden => garden.name === gardenName);
-    this.gardenID = this.gardenInfo.id;
+    this.gardenID = getGardenID(gardenName);
+    this.gardenInfo = getGardenInfo(this.gardenID);
     this.plantingHistory = new PlantingHistory({ gardenName, varietalData, familyData });
   }
 
@@ -92,5 +91,13 @@ export class GardenOverview {
 
   lastUpdate() {
     return this.gardenInfo.lastUpdate;
+  }
+
+  totalPlantings() {
+    return getTotalPlantings(this.gardenID);
+  }
+
+  chapterName() {
+    return getGardenChapterInfo(this.gardenID).name;
   }
 }

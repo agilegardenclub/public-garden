@@ -2,7 +2,7 @@ import { gardenerData } from './data/gardenerData';
 import { varietalData } from './data/varietalData';
 import { PlantingHistory } from './PlantingHistory';
 import { familyData } from './data/familyData';
-import { getGardenID, getGardenInfo, getGardenYears, getTotalPlantings } from './GardenInfo';
+import { getGardenChapterInfo, getGardenID, getGardenInfo, getGardenYears, getTotalPlantings } from './GardenInfo';
 
 /* Processes raw data for use by GardenOverviewCard. */
 export class GardenOverview {
@@ -95,5 +95,9 @@ export class GardenOverview {
 
   totalPlantings() {
     return getTotalPlantings(this.gardenID);
+  }
+
+  chapterName() {
+    return getGardenChapterInfo(this.gardenID).name;
   }
 }

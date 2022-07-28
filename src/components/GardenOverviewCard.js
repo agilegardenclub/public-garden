@@ -13,6 +13,7 @@ export function GardenOverviewCard() {
   const gardenName = getGardenName();
   const gardenID = getGardenID(gardenName);
   const gardenOverview = new GardenOverview(gardenName);
+  const chapterName = gardenOverview.chapterName();
   const year = `(${gardenOverview.currentYear()})`;
   const pictureData = gardenOverview.pictures();
   const gardenYears = getGardenYears(gardenID);
@@ -31,6 +32,7 @@ export function GardenOverviewCard() {
       <PictureCarousel pictureData={pictureData} />
       <Card.Body>
         <Stack gap={1}>
+          <Field title="Chapter:">{chapterName}</Field>
           <Field title="Years:">{gardenYears.join(', ')}</Field>
           <Field title="Current Size:">{size} sq ft. {year}</Field>
           <Field title="Number of beds:">{beds} {year}</Field>

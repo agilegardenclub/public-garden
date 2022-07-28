@@ -1,4 +1,5 @@
 import { gardenData } from './data/gardenData';
+import { chapterData } from './data/chapterData';
 import { cropComparator } from './CropInfo';
 import { getCropID } from './VarietalInfo';
 
@@ -8,6 +9,15 @@ export function getGardenInfo(gardenID) {
     throw new Error(`Undefined gardenID: ${gardenID}`);
   }
   return gardenInfo;
+}
+
+export function getGardenChapterInfo(gardenID) {
+  const zipCode = getGardenInfo(gardenID).zipCode;
+  const chapterInfo = chapterData.find(data => data.zipCodes.includes(zipCode));
+  if (!chapterInfo) {
+    throw new Error(`Could not find chapter associated with gardenID ${gardenID}`);
+  }
+  return chapterInfo;
 }
 
 export function getGardenID(gardenName) {

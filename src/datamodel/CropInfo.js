@@ -15,3 +15,10 @@ export function getCropName(cropID) {
 export function getFamilyID(cropID) {
   return getCropInfo(cropID).familyID;
 }
+
+export function cropComparator(cropID1, cropID2) {
+  const name1 = cropID1 && getCropName(cropID1);
+  const name2 = cropID2 && getCropName(cropID2);
+  // Sometimes vendorName is called without a vendorID, resulting in null.
+  return (!name1 || !name2) ? 0 : name1.localeCompare(name2);
+}

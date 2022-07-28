@@ -1,6 +1,7 @@
 import { chapterData } from './data/chapterData';
 import { varietalData } from './data/varietalData';
-import { getChapterGardenYears, getNumChapterGardens, getNumChapterMembers } from './ChapterInfo';
+import { getChapterGardenYears, getGardenIDs, getNumChapterGardens, getNumChapterMembers } from './ChapterInfo';
+import { getTotalPlantings } from './GardenInfo';
 
 /* Processes raw data for use by ChapterOverviewCard. */
 class ChapterOverview {
@@ -41,6 +42,10 @@ class ChapterOverview {
 
   gardenYears() {
     return getChapterGardenYears(this.chapterID);
+  }
+
+  totalPlantings() {
+    return getGardenIDs(this.chapterID).reduce((memo, gardenID) => memo + getTotalPlantings(gardenID), 0);
   }
 
   _getVarietalName(varietalID) {

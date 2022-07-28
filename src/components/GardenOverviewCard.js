@@ -18,6 +18,7 @@ export function GardenOverviewCard() {
   const gardenYears = getGardenYears(gardenID);
   const size = gardenOverview.currentSize();
   const beds = gardenOverview.currentBeds();
+  const totalPlantings = gardenOverview.totalPlantings();
   const cropIDs = getCropIDs(gardenID);
   const cropBadges = cropIDs.map((cropID, index) => <GardenCropBadge key={index} gardenID={gardenID} cropID={cropID}/>);
   const gardeners = gardenOverview.currentGardenerIDs()
@@ -31,8 +32,9 @@ export function GardenOverviewCard() {
       <Card.Body>
         <Stack gap={1}>
           <Field title="Years:">{gardenYears.join(', ')}</Field>
-          <Field title="Size:">{size} sq ft. {year}</Field>
+          <Field title="Current Size:">{size} sq ft. {year}</Field>
           <Field title="Number of beds:">{beds} {year}</Field>
+          <Field title="Total Plantings:">{totalPlantings}</Field>
           <Field title="Crops:">{cropBadges} </Field>
           <Field title="Gardener(s):">
             <Row>

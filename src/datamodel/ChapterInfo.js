@@ -1,6 +1,7 @@
 import { chapterData } from './data/chapterData';
 import { gardenData } from './data/gardenData';
-import { getGardenYears } from './GardenInfo';
+import { getCropIDs, getGardenYears } from './GardenInfo';
+import { cropComparator } from './CropInfo';
 
 function getChapterInfo(chapterID) {
   const chapterInfo = chapterData.find(element => element.id === chapterID);
@@ -17,6 +18,11 @@ function getGardenInfoList(chapterID) {
     throw new Error(`chapterID (${chapterID}) has no associated gardens.`);
   }
   return gardenInfos;
+}
+
+export function getGardenIDs(chapterID) {
+  const gardenInfoList = getGardenInfoList(chapterID);
+  return gardenInfoList.map(gardenInfo => gardenInfo.id);
 }
 
 export function getNumChapterMembers(chapterID) {
@@ -49,4 +55,10 @@ export function getChapterGardenYears(chapterID) {
     chapterYears.push(...gardenYears);
   }
   return [...new Set(chapterYears)].sort();
+}
+
+export function getChapterCropIDs(chapterID) {
+  const gardenIDs = getGardenIDs(chapterID);
+  const cropIDs = [...new Set(gardenIDs.map(gardenID => getCropIDs(gardenID)).flat())];
+  return cropIDs.sort(cropComparator);
 }

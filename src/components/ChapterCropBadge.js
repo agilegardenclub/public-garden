@@ -5,13 +5,15 @@ import { getCropInfo, getFamilyID } from '../datamodel/CropInfo';
 import { getFamilyInfo, getFamilyColorName } from '../datamodel/FamilyInfo';
 import { getPlantings, getVarietalIDs } from '../datamodel/GardenInfo';
 import { GardenVarietalBadge } from './GardenVarietalBadge';
+import { getGardenIDs } from '../datamodel/ChapterInfo';
 
-export function GardenCropBadge({ gardenID, cropID }) {
+export function ChapterCropBadge({ chapterID, cropID }) {
   const cropInfo = getCropInfo(cropID);
   const name = cropInfo.name;
-  const plantings = getPlantings(gardenID, cropID);
+  const gardenIDs = getGardenIDs(chapterID);
+  const plantings = gardenIDs.map(gardenID => getPlantings(gardenID, cropID)).flat();
   const numPlantings = plantings.length;
-  const varietalIDs = getVarietalIDs(gardenID, cropID);
+  const varietalIDs = gardenIDs.map(gardenID => getVarietalIDs(gardenID, cropID)).flat();
   const varietalBadges = varietalIDs.map((varietalID, index) => <GardenVarietalBadge key={index} varietalID={varietalID}/>);
   const familyID = getFamilyID(cropID);
   const familyName = getFamilyInfo(familyID).common;
@@ -27,7 +29,7 @@ export function GardenCropBadge({ gardenID, cropID }) {
   );
 }
 
-GardenCropBadge.propTypes = {
-  gardenID: PropTypes.string,
+ChapterCropBadge.propTypes = {
+  chapterID: PropTypes.string,
   cropID: PropTypes.string,
 };

@@ -31,12 +31,12 @@ export const chapterData = [
         date: 'July, 2022',
       },
       {
-        url: `${process.env.PUBLIC_URL}/img/chapters/bellingham/chapter-004.jpg`,
+        url: `${process.env.PUBLIC_URL}/img/chapters/bellingham/chapter-004.JPG`,
         caption: 'Chapter Garden',
         date: 'July, 2022',
       },
       {
-        url: `${process.env.PUBLIC_URL}/img/chapters/bellingham/chapter-005.jpg`,
+        url: `${process.env.PUBLIC_URL}/img/chapters/bellingham/chapter-005.JPG`,
         caption: 'Chapter Garden',
         date: 'July, 2022',
       },

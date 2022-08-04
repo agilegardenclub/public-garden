@@ -6,6 +6,7 @@ import { plantingBackgroundClass } from './PlantingBackgroundClass';
 import { getObservations, getNotifications } from '../datamodel/ObservationInfo';
 import { TimelineObservationPin } from './TimelineObservationPin';
 import { TimelineNotificationPin } from './TimelineNotificationPin';
+import { weekOfYear } from '../datamodel/WeekOfYear';
 
 export function PlantRowNameHeaderCol() {
   return (
@@ -46,8 +47,15 @@ MonthCol.propTypes = {
   plantingData: PropTypes.any,
 };
 
+function isThisWeek(currWeek, year) {
+  const today = new Date();
+  const thisYear = today.getFullYear();
+  const thisWeek = weekOfYear(today);
+  return ((currWeek === thisWeek) && (thisYear === year));
+}
+
 function WeekCol({ currWeek, plantingData }) {
-  const bg = plantingBackgroundClass(currWeek, plantingData);
+  const bg = isThisWeek(currWeek, plantingData.year) ? 'bg-light' : plantingBackgroundClass(currWeek, plantingData);
   // eslint-disable-next-line no-unused-vars
   const observations = getObservations(currWeek, plantingData);
   const notifications = getNotifications(currWeek, plantingData);

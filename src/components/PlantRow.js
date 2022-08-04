@@ -55,11 +55,14 @@ function isThisWeek(currWeek, year) {
 }
 
 function WeekCol({ currWeek, plantingData }) {
-  const bg = isThisWeek(currWeek, plantingData.year) ? 'bg-light' : plantingBackgroundClass(currWeek, plantingData);
+  const bg = plantingBackgroundClass(currWeek, plantingData);
   // eslint-disable-next-line no-unused-vars
   const observations = getObservations(currWeek, plantingData);
   const notifications = getNotifications(currWeek, plantingData);
-  const border = (((currWeek % 4) === 0) && currWeek < 48) ? 'border-end' : '';
+  let border = (((currWeek % 4) === 0) && currWeek < 48) ? 'border-end' : '';
+  if (isThisWeek(currWeek, plantingData.year)) {
+    border = 'border-end border-3 border-success';
+  }
   const classNameString = `p-0 ${bg} ${border}`;
   const style = { height: '24px', minWidth: '1px' };
   return (

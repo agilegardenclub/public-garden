@@ -1,71 +1,71 @@
-/* Raw data regarding varietals. */
+/* Raw data regarding varietys. */
 
-export const varietalData = [
+export const varietyData = [
   {
-    id: 'varietal-01',
+    id: 'variety-01',
     cropID: 'crop-03',
     variety: 'Jersey Knight',
     vendorID: 'vendor-10',
     description: 'Sweeter and more tender than green varieties, and a colorful option for raw eating in salads. Color fades when cooked, but excellent flavor is retained.',
   },
   {
-    id: 'varietal-02',
+    id: 'variety-02',
     cropID: 'crop-07',
     variety: 'Solstice',
     vendorID: 'vendor-02',
     description: 'Big Vigorous plants hold their tight, dark green heads high above the leaves on very long stems with excellent side shoot production.',
   },
   {
-    id: 'varietal-03',
+    id: 'variety-03',
     cropID: 'crop-09',
     variety: 'Scarlet Nantes',
     vendorID: 'vendor-02',
     description: 'Our open-pollinated scarlet nantes have plenty of the sweetness but also a rich real carrot flavor. Widely adapted, it is very versatile for everything from fresh baby carrots to fall storage and juicing. ',
   },
   {
-    id: 'varietal-04',
+    id: 'variety-04',
     cropID: 'crop-24',
     variety: 'Blue Rock',
     vendorID: 'vendor-01',
     description: 'Attractive, dark green savoy leaves on tall, upright heads that fill out nicely and remain partially open when mature. ',
   },
   {
-    id: 'varietal-05',
+    id: 'variety-05',
     cropID: 'crop-21',
     variety: 'Dwarf Blue',
     vendorID: 'vendor-03',
     description: 'Gorgeous finely curled blue-green leaves hold their color even in severe cold.',
   },
   {
-    id: 'varietal-06',
+    id: 'variety-06',
     cropID: 'crop-22',
     variety: 'PrizeTaker',
     vendorID: 'vendor-03',
     description: 'Very hardy 36" tall plants with thick, solid, pure-white base. ',
   },
   {
-    id: 'varietal-07',
+    id: 'variety-07',
     cropID: 'crop-35',
     variety: 'French Breakfast',
     vendorID: 'vendor-02',
     description: 'Elongated shape with mild peppery flavor.',
   },
   {
-    id: 'varietal-08',
+    id: 'variety-08',
     cropID: 'crop-42',
     variety: 'Oregon Giant',
     vendorID: 'vendor-05',
     description: 'Highly recommended by Carol Deppe in “The Tao of Vegetable Gardening”, this edible-pod pea has huge pods and big crinkled seeds.',
   },
   {
-    id: 'varietal-09',
+    id: 'variety-09',
     cropID: 'crop-45',
     variety: 'Orange King',
     vendorID: 'vendor-05',
     description: 'Early, productive, and worth growing even as a sprawling, low-maintenance outdoor tomato in the cool Pacific Northwest. ',
   },
   {
-    id: 'varietal-10',
+    id: 'variety-10',
     cropID: 'crop-11',
     variety: 'Rainbow',
     vendorID: 'vendor-05',
@@ -74,7 +74,7 @@ export const varietalData = [
 
   // Jenna's data starts here.
   {
-    id: 'varietal-100',
+    id: 'variety-100',
     cropID: 'crop-24',
     variety: 'Royal Red',
     vendorID: 'vendor-02',
@@ -82,7 +82,7 @@ export const varietalData = [
     daysToHarvest: 55,
   },
   {
-    id: 'varietal-101',
+    id: 'variety-101',
     cropID: 'crop-29',
     variety: 'Sugar Snap',
     gardenerIDs: ['gardener-01'], // for seeds of unknown provenance.
@@ -91,7 +91,7 @@ export const varietalData = [
     daysToHarvest: 60,
   },
   {
-    id: 'varietal-102',
+    id: 'variety-102',
     cropID: 'crop-21',
     variety: 'Dazzling Blue Lacinato',
     vendorID: 'vendor-02',
@@ -99,7 +99,7 @@ export const varietalData = [
     daysToHarvest: 60,
   },
   {
-    id: 'varietal-103',
+    id: 'variety-103',
     cropID: 'crop-45',
     variety: 'Pinky',
     vendorID: 'vendor-02',
@@ -107,7 +107,7 @@ export const varietalData = [
     daysToHarvest: 75,
   },
   {
-    id: 'varietal-104',
+    id: 'variety-104',
     cropID: 'crop-04',
     variety: 'Italian',
     vendorID: 'vendor-02',
@@ -115,7 +115,7 @@ export const varietalData = [
     daysToHarvest: 80,
   },
   {
-    id: 'varietal-105',
+    id: 'variety-105',
     cropID: 'crop-07',
     variety: 'Spring Raab',
     vendorID: 'vendor-02',
@@ -123,7 +123,7 @@ export const varietalData = [
     daysToHarvest: 45,
   },
   {
-    id: 'varietal-106',
+    id: 'variety-106',
     cropID: 'crop-30',
     variety: 'Pimiento de Padron',
     vendorID: 'vendor-02',
@@ -131,7 +131,7 @@ export const varietalData = [
     daysToHarvest: 65,
   },
   {
-    id: 'varietal-107',
+    id: 'variety-107',
     cropID: 'crop-05',
     variety: 'Empress Snap',
     vendorID: 'vendor-02',
@@ -139,7 +139,7 @@ export const varietalData = [
     daysToHarvest: 55,
   },
   {
-    id: 'varietal-108',
+    id: 'variety-108',
     cropID: 'crop-11',
     variety: 'Rainbow',
     vendorID: 'vendor-02',
@@ -147,7 +147,7 @@ export const varietalData = [
     daysToHarvest: 55,
   },
   {
-    id: 'varietal-109',
+    id: 'variety-109',
     cropID: 'crop-11',
     variety: 'Garden Rainbow',
     vendorID: 'vendor-07',
@@ -155,7 +155,7 @@ export const varietalData = [
     daysToHarvest: 50,
   },
   {
-    id: 'varietal-110',
+    id: 'variety-110',
     cropID: 'crop-17',
     variety: 'Violetta di Firenze',
     vendorID: 'vendor-02',
@@ -163,7 +163,7 @@ export const varietalData = [
     daysToHarvest: 90,
   },
   {
-    id: 'varietal-111',
+    id: 'variety-111',
     cropID: 'crop-21',
     variety: 'Red Russian',
     vendorID: 'vendor-02',
@@ -171,7 +171,7 @@ export const varietalData = [
     daysToHarvest: 55,
   },
   {
-    id: 'varietal-112',
+    id: 'variety-112',
     cropID: 'crop-04',
     variety: 'Italian',
     vendorID: 'vendor-08',
@@ -179,7 +179,7 @@ export const varietalData = [
     daysToHarvest: 70,
   },
   {
-    id: 'varietal-113',
+    id: 'variety-113',
     cropID: 'crop-24',
     variety: 'Red Oak Leaf',
     vendorID: 'vendor-06',
@@ -187,7 +187,7 @@ export const varietalData = [
     daysToHarvest: 60,
   },
   {
-    id: 'varietal-114',
+    id: 'variety-114',
     cropID: 'crop-45',
     variety: 'Sun Gold',
     vendorID: 'vendor-08',
@@ -195,7 +195,7 @@ export const varietalData = [
     daysToHarvest: 100,
   },
   {
-    id: 'varietal-115',
+    id: 'variety-115',
     cropID: 'crop-05',
     variety: 'Scarlet Runner',
     vendorID: 'vendor-09',
@@ -203,7 +203,7 @@ export const varietalData = [
     daysToHarvest: 75,
   },
   {
-    id: 'varietal-116',
+    id: 'variety-116',
     cropID: 'crop-21',
     variety: 'Red Russian',
     vendorID: 'vendor-08',
@@ -211,7 +211,7 @@ export const varietalData = [
     daysToHarvest: 95,
   },
   {
-    id: 'varietal-117',
+    id: 'variety-117',
     cropID: 'crop-05',
     variety: 'Soldier',
     vendorID: 'vendor-02',
@@ -219,7 +219,7 @@ export const varietalData = [
     daysToHarvest: 60,
   },
   {
-    id: 'varietal-118',
+    id: 'variety-118',
     cropID: 'crop-46',
     variety: 'Cocozelle',
     familyID: 'family-04',
@@ -228,7 +228,7 @@ export const varietalData = [
     daysToHarvest: 60,
   },
   {
-    id: 'varietal-119',
+    id: 'variety-119',
     cropID: 'crop-46',
     variety: 'Dark Star',
     vendorID: 'vendor-08',
@@ -236,7 +236,7 @@ export const varietalData = [
     daysToHarvest: 50,
   },
   {
-    id: 'varietal-120',
+    id: 'variety-120',
     cropID: 'crop-21',
     variety: 'Dwarf Blue Scotch',
     vendorID: 'vendor-02',
@@ -244,7 +244,7 @@ export const varietalData = [
     daysToHarvest: 55,
   },
   {
-    id: 'varietal-121',
+    id: 'variety-121',
     cropID: 'crop-45',
     variety: 'Sheboygan',
     vendorID: 'vendor-02',
@@ -252,7 +252,7 @@ export const varietalData = [
     daysToHarvest: 80,
   },
   {
-    id: 'varietal-122',
+    id: 'variety-122',
     cropID: 'crop-24',
     variety: "Flashy Trout's Back",
     vendorID: 'vendor-02',
@@ -260,7 +260,7 @@ export const varietalData = [
     daysToHarvest: 55,
   },
   {
-    id: 'varietal-123',
+    id: 'variety-123',
     cropID: 'crop-45',
     variety: 'Matina',
     vendorID: 'vendor-02',
@@ -268,7 +268,7 @@ export const varietalData = [
     daysToHarvest: 70,
   },
   {
-    id: 'varietal-124',
+    id: 'variety-124',
     cropID: 'crop-45',
     variety: 'Fiaschetto di Manduria',
     vendorID: 'vendor-02',
@@ -276,7 +276,7 @@ export const varietalData = [
     daysToHarvest: 70,
   },
   {
-    id: 'varietal-125',
+    id: 'variety-125',
     cropID: 'crop-30',
     variety: 'Bridge to Paris',
     vendorID: 'vendor-02',
@@ -284,7 +284,7 @@ export const varietalData = [
     daysToHarvest: 85,
   },
   {
-    id: 'varietal-126',
+    id: 'variety-126',
     cropID: 'crop-30',
     variety: 'Petit Marseillais',
     vendorID: 'vendor-02',
@@ -292,7 +292,7 @@ export const varietalData = [
     daysToHarvest: 85,
   },
   {
-    id: 'varietal-127',
+    id: 'variety-127',
     cropID: 'crop-30',
     variety: 'Criolla di Cochina',
     vendorID: 'vendor-02',
@@ -300,7 +300,7 @@ export const varietalData = [
     daysToHarvest: 85,
   },
   {
-    id: 'varietal-128',
+    id: 'variety-128',
     cropID: 'crop-30',
     variety: 'Marta Polka',
     vendorID: 'vendor-02',
@@ -308,7 +308,7 @@ export const varietalData = [
     daysToHarvest: 90,
   },
   {
-    id: 'varietal-129',
+    id: 'variety-129',
     cropID: 'crop-06',
     variety: 'Touchstone Gold',
     vendorID: 'vendor-02',
@@ -316,7 +316,7 @@ export const varietalData = [
     daysToHarvest: 60,
   },
   {
-    id: 'varietal-130',
+    id: 'variety-130',
     cropID: 'crop-40',
     variety: 'Zeppelin Delicata',
     vendorID: 'vendor-02',
@@ -324,7 +324,7 @@ export const varietalData = [
     daysToHarvest: 95,
   },
   {
-    id: 'varietal-131',
+    id: 'variety-131',
     cropID: 'crop-40',
     variety: 'Potimarron',
     vendorID: 'vendor-02',
@@ -332,7 +332,7 @@ export const varietalData = [
     daysToHarvest: 85,
   },
   {
-    id: 'varietal-132',
+    id: 'variety-132',
     cropID: 'crop-15',
     variety: 'Vorgebirgstrauben',
     vendorID: 'vendor-02',
@@ -340,7 +340,7 @@ export const varietalData = [
     daysToHarvest: 85,
   },
   {
-    id: 'varietal-133',
+    id: 'variety-133',
     cropID: 'crop-33',
     variety: 'Winter Luxury',
     vendorID: 'vendor-02',
@@ -348,7 +348,7 @@ export const varietalData = [
     daysToHarvest: 95,
   },
   {
-    id: 'varietal-134',
+    id: 'variety-134',
     cropID: 'crop-09',
     variety: 'Rainbow Mix',
     vendorID: 'vendor-02',
@@ -356,7 +356,7 @@ export const varietalData = [
     daysToHarvest: 65,
   },
   {
-    id: 'varietal-135',
+    id: 'variety-135',
     cropID: 'crop-20',
     variety: "Aunt Molly's",
     vendorID: 'vendor-02',
@@ -364,7 +364,7 @@ export const varietalData = [
     daysToHarvest: 75,
   },
   {
-    id: 'varietal-136',
+    id: 'variety-136',
     cropID: 'crop-43',
     variety: 'Garden Anarchy Mix',
     vendorID: 'vendor-02',
@@ -372,7 +372,7 @@ export const varietalData = [
     daysToHarvest: 90,
   },
   {
-    id: 'varietal-137',
+    id: 'variety-137',
     cropID: 'crop-16',
     variety: 'Goldkrone',
     vendorID: 'vendor-02',
@@ -380,7 +380,7 @@ export const varietalData = [
     daysToHarvest: 45,
   },
   {
-    id: 'varietal-138',
+    id: 'variety-138',
     cropID: 'crop-36',
     variety: 'Golden',
     vendorID: '',
@@ -388,7 +388,7 @@ export const varietalData = [
     daysToHarvest: 365,
   },
   {
-    id: 'varietal-139',
+    id: 'variety-139',
     cropID: 'crop-26',
     variety: 'Mild Mix',
     vendorID: 'vendor-02',
@@ -396,7 +396,7 @@ export const varietalData = [
     daysToHarvest: 30,
   },
   {
-    id: 'varietal-140',
+    id: 'variety-140',
     cropID: 'crop-19',
     variety: 'Softneck',
     vendorID: 'vendor-00',
@@ -404,7 +404,7 @@ export const varietalData = [
     daysToHarvest: 270,
   },
   {
-    id: 'varietal-141',
+    id: 'variety-141',
     cropID: 'crop-02',
     variety: 'Astro',
     vendorID: 'vendor-02',
@@ -412,7 +412,7 @@ export const varietalData = [
     daysToHarvest: 35,
   },
   {
-    id: 'varietal-142',
+    id: 'variety-142',
     cropID: 'crop-18',
     variety: 'Karmazyn',
     vendorID: 'vendor-02',
@@ -420,7 +420,7 @@ export const varietalData = [
     daysToHarvest: 80,
   },
   {
-    id: 'varietal-143',
+    id: 'variety-143',
     cropID: 'crop-29',
     variety: 'Austrian',
     vendorID: '',
@@ -428,7 +428,7 @@ export const varietalData = [
     daysToHarvest: 210,
   },
   {
-    id: 'varietal-144',
+    id: 'variety-144',
     cropID: 'crop-40',
     variety: 'Delicata',
     vendorID: 'vendor-08',
@@ -436,7 +436,7 @@ export const varietalData = [
     daysToHarvest: 95,
   },
   {
-    id: 'varietal-145',
+    id: 'variety-145',
     cropID: 'crop-15',
     variety: 'Pickling',
     vendorID: 'vendor-08',
@@ -444,7 +444,7 @@ export const varietalData = [
     daysToHarvest: 70,
   },
   {
-    id: 'varietal-146',
+    id: 'variety-146',
     cropID: 'crop-01',
     variety: '',
     vendorID: 'vendor-00',
@@ -452,7 +452,7 @@ export const varietalData = [
     daysToHarvest: 50,
   },
   {
-    id: 'varietal-147',
+    id: 'variety-147',
     cropID: 'crop-31',
     variety: 'Breadseed Rattle',
     vendorID: 'vendor-11',
@@ -460,7 +460,7 @@ export const varietalData = [
     daysToHarvest: 100,
   },
   {
-    id: 'varietal-148',
+    id: 'variety-148',
     cropID: 'crop-30',
     variety: 'Criolla Sella',
     vendorID: 'vendor-02',
@@ -468,7 +468,7 @@ export const varietalData = [
     daysToHarvest: 90,
   },
   {
-    id: 'varietal-149',
+    id: 'variety-149',
     cropID: 'crop-45',
     variety: 'Galina',
     vendorID: 'vendor-02',
@@ -476,7 +476,7 @@ export const varietalData = [
     daysToHarvest: 75,
   },
   {
-    id: 'varietal-150',
+    id: 'variety-150',
     cropID: 'crop-46',
     variety: 'Costata Romanesco',
     vendorID: 'vendor-02',
@@ -484,7 +484,7 @@ export const varietalData = [
     daysToHarvest: 55,
   },
   {
-    id: 'varietal-151',
+    id: 'variety-151',
     cropID: 'crop-40',
     variety: "Burpee's Butterbush",
     vendorID: 'vendor-02',
@@ -492,7 +492,7 @@ export const varietalData = [
     daysToHarvest: 95,
   },
   {
-    id: 'varietal-152',
+    id: 'variety-152',
     cropID: 'crop-15',
     variety: 'Cengelkoy',
     vendorID: 'vendor-02',
@@ -500,7 +500,7 @@ export const varietalData = [
     daysToHarvest: 85,
   },
   {
-    id: 'varietal-153',
+    id: 'variety-153',
     cropID: 'crop-12',
     variety: 'Pokey Joe',
     vendorID: 'vendor-02',
@@ -508,7 +508,7 @@ export const varietalData = [
     daysToHarvest: 50,
   },
   {
-    id: 'varietal-154',
+    id: 'variety-154',
     cropID: 'crop-06',
     variety: '3 Beet Mix',
     vendorID: 'vendor-02',
@@ -516,7 +516,7 @@ export const varietalData = [
     daysToHarvest: 60,
   },
   {
-    id: 'varietal-155',
+    id: 'variety-155',
     cropID: 'crop-14',
     variety: 'Tuxana',
     vendorID: 'vendor-02',
@@ -524,7 +524,7 @@ export const varietalData = [
     daysToHarvest: 80,
   },
   {
-    id: 'varietal-156',
+    id: 'variety-156',
     cropID: 'crop-05',
     variety: 'Dragon Langerie',
     vendorID: 'vendor-02',
@@ -532,7 +532,7 @@ export const varietalData = [
     daysToHarvest: 55,
   },
   {
-    id: 'varietal-157',
+    id: 'variety-157',
     cropID: 'crop-05',
     variety: "Tanya's Pink Pod",
     vendorID: 'vendor-02',
@@ -540,7 +540,7 @@ export const varietalData = [
     daysToHarvest: 55,
   },
   {
-    id: 'varietal-158',
+    id: 'variety-158',
     cropID: 'crop-32',
     variety: 'Rozette',
     vendorID: 'vendor-00',
@@ -548,7 +548,7 @@ export const varietalData = [
     daysToHarvest: 75,
   },
   {
-    id: 'varietal-159',
+    id: 'variety-159',
     cropID: 'crop-14',
     variety: '',
     vendorID: 'vendor-12',
@@ -556,7 +556,7 @@ export const varietalData = [
     daysToHarvest: 80,
   },
   {
-    id: 'varietal-160',
+    id: 'variety-160',
     cropID: 'crop-41',
     variety: 'Alpine',
     vendorID: 'vendor-12',
@@ -564,7 +564,7 @@ export const varietalData = [
     daysToHarvest: 90,
   },
   {
-    id: 'varietal-161',
+    id: 'variety-161',
     cropID: 'crop-21',
     variety: 'Lacinato',
     vendorID: 'vendor-12',
@@ -572,7 +572,7 @@ export const varietalData = [
     daysToHarvest: 95,
   },
   {
-    id: 'varietal-162',
+    id: 'variety-162',
     cropID: 'crop-21',
     variety: 'White Russian',
     vendorID: 'vendor-12',
@@ -580,7 +580,7 @@ export const varietalData = [
     daysToHarvest: 95,
   },
   {
-    id: 'varietal-163',
+    id: 'variety-163',
     cropID: 'crop-08',
     variety: 'Green',
     vendorID: 'vendor-12',
@@ -588,7 +588,7 @@ export const varietalData = [
     daysToHarvest: 95,
   },
   {
-    id: 'varietal-164',
+    id: 'variety-164',
     cropID: 'crop-08',
     variety: 'Red',
     vendorID: 'vendor-12',
@@ -596,7 +596,7 @@ export const varietalData = [
     daysToHarvest: 95,
   },
   {
-    id: 'varietal-165',
+    id: 'variety-165',
     cropID: 'crop-32',
     variety: 'Yukon Nugget',
     vendorID: 'vendor-12',
@@ -604,7 +604,7 @@ export const varietalData = [
     daysToHarvest: 90,
   },
   {
-    id: 'varietal-166',
+    id: 'variety-166',
     cropID: 'crop-32',
     variety: 'Red Norland',
     vendorID: 'vendor-12',
@@ -612,7 +612,7 @@ export const varietalData = [
     daysToHarvest: 90,
   },
   {
-    id: 'varietal-167',
+    id: 'variety-167',
     cropID: 'crop-15',
     variety: 'Slicer',
     vendorID: 'vendor-12',
@@ -620,7 +620,7 @@ export const varietalData = [
     daysToHarvest: 70,
   },
   {
-    id: 'varietal-168',
+    id: 'variety-168',
     cropID: 'crop-40',
     variety: 'Spaghetti',
     vendorID: 'vendor-12',
@@ -628,7 +628,7 @@ export const varietalData = [
     daysToHarvest: 100,
   },
   {
-    id: 'varietal-169',
+    id: 'variety-169',
     cropID: 'crop-40',
     variety: 'Butternut',
     vendorID: 'vendor-12',
@@ -636,7 +636,7 @@ export const varietalData = [
     daysToHarvest: 100,
   },
   {
-    id: 'varietal-170',
+    id: 'variety-170',
     cropID: 'crop-45',
     variety: 'Stupice',
     vendorID: 'vendor-12',
@@ -644,7 +644,7 @@ export const varietalData = [
     daysToHarvest: 100,
   },
   {
-    id: 'varietal-171',
+    id: 'variety-171',
     cropID: 'crop-45',
     variety: 'Cherry',
     vendorID: 'vendor-12',
@@ -652,7 +652,7 @@ export const varietalData = [
     daysToHarvest: 70,
   },
   {
-    id: 'varietal-172',
+    id: 'variety-172',
     cropID: 'crop-45',
     variety: 'Giant Paste',
     vendorID: 'vendor-12',
@@ -660,7 +660,7 @@ export const varietalData = [
     daysToHarvest: 100,
   },
   {
-    id: 'varietal-173',
+    id: 'variety-173',
     cropID: 'crop-45',
     variety: 'Principe Borghese',
     vendorID: 'vendor-12',
@@ -668,7 +668,7 @@ export const varietalData = [
     daysToHarvest: 100,
   },
   {
-    id: 'varietal-174',
+    id: 'variety-174',
     cropID: 'crop-27',
     variety: 'Sweet',
     vendorID: 'vendor-12',
@@ -676,7 +676,7 @@ export const varietalData = [
     daysToHarvest: 100,
   },
   {
-    id: 'varietal-175',
+    id: 'variety-175',
     cropID: 'crop-27',
     variety: 'Walla Walla',
     vendorID: 'vendor-12',
@@ -684,7 +684,7 @@ export const varietalData = [
     daysToHarvest: 100,
   },
   {
-    id: 'varietal-176',
+    id: 'variety-176',
     cropID: 'crop-06',
     variety: 'Early Wonder Tall Top',
     vendorID: 'vendor-12',
@@ -692,7 +692,7 @@ export const varietalData = [
     daysToHarvest: 70,
   },
   {
-    id: 'varietal-177',
+    id: 'variety-177',
     cropID: 'crop-06',
     variety: 'Gourmet Blend',
     vendorID: 'vendor-12',
@@ -700,7 +700,7 @@ export const varietalData = [
     daysToHarvest: 70,
   },
   {
-    id: 'varietal-178',
+    id: 'variety-178',
     cropID: 'crop-13',
     variety: '',
     vendorID: 'vendor-12',
@@ -708,7 +708,7 @@ export const varietalData = [
     daysToHarvest: 95,
   },
   {
-    id: 'varietal-179',
+    id: 'variety-179',
     cropID: 'crop-40',
     variety: 'Yellow Crookneck',
     vendorID: 'vendor-12',
@@ -716,7 +716,7 @@ export const varietalData = [
     daysToHarvest: 70,
   },
   {
-    id: 'varietal-180',
+    id: 'variety-180',
     cropID: 'crop-14',
     variety: 'Early Golden Bantam',
     vendorID: 'vendor-12',
@@ -724,7 +724,7 @@ export const varietalData = [
     daysToHarvest: 75,
   },
   {
-    id: 'varietal-181',
+    id: 'variety-181',
     cropID: 'crop-29',
     variety: 'Shelling',
     vendorID: 'vendor-12',
@@ -732,7 +732,7 @@ export const varietalData = [
     daysToHarvest: 60,
   },
   {
-    id: 'varietal-182',
+    id: 'variety-182',
     cropID: 'crop-05',
     variety: 'Saxa',
     vendorID: 'vendor-12',
@@ -740,7 +740,7 @@ export const varietalData = [
     daysToHarvest: 60,
   },
   {
-    id: 'varietal-183',
+    id: 'variety-183',
     cropID: 'crop-05',
     variety: 'Black Garbanzo',
     vendorID: 'vendor-02',
@@ -748,7 +748,7 @@ export const varietalData = [
     daysToHarvest: 100,
   },
   {
-    id: 'varietal-184',
+    id: 'variety-184',
     cropID: 'crop-38',
     variety: '',
     vendorID: 'vendor-12',
@@ -756,7 +756,7 @@ export const varietalData = [
     daysToHarvest: 100,
   },
   {
-    id: 'varietal-185',
+    id: 'variety-185',
     cropID: 'crop-40',
     variety: 'Butternut',
     vendorID: 'vendor-12',
@@ -764,7 +764,7 @@ export const varietalData = [
     daysToHarvest: 100,
   },
   {
-    id: 'varietal-186',
+    id: 'variety-186',
     cropID: 'crop-40',
     variety: 'Summer',
     vendorID: 'vendor-12',
@@ -772,7 +772,7 @@ export const varietalData = [
     daysToHarvest: 60,
   },
   {
-    id: 'varietal-187',
+    id: 'variety-187',
     cropID: 'crop-30',
     variety: 'Poblano',
     vendorID: 'vendor-12',
@@ -780,7 +780,7 @@ export const varietalData = [
     daysToHarvest: 85,
   },
   {
-    id: 'varietal-188',
+    id: 'variety-188',
     cropID: 'crop-30',
     variety: 'Thai Chili',
     vendorID: 'vendor-12',
@@ -788,7 +788,7 @@ export const varietalData = [
     daysToHarvest: 85,
   },
   {
-    id: 'varietal-189',
+    id: 'variety-189',
     cropID: 'crop-30',
     variety: 'Sweet',
     vendorID: 'vendor-12',
@@ -796,7 +796,7 @@ export const varietalData = [
     daysToHarvest: 85,
   },
   {
-    id: 'varietal-190',
+    id: 'variety-190',
     cropID: 'crop-33',
     variety: 'Sugar Pie',
     vendorID: 'vendor-12',
@@ -804,7 +804,7 @@ export const varietalData = [
     daysToHarvest: 95,
   },
   {
-    id: 'varietal-191',
+    id: 'variety-191',
     cropID: 'crop-40',
     variety: 'Kabocha',
     vendorID: 'vendor-12',
@@ -812,7 +812,7 @@ export const varietalData = [
     daysToHarvest: 100,
   },
   {
-    id: 'varietal-192',
+    id: 'variety-192',
     cropID: 'crop-37',
     variety: 'Speckled',
     vendorID: 'vendor-00',
@@ -820,7 +820,7 @@ export const varietalData = [
     daysToHarvest: 75,
   },
   {
-    id: 'varietal-193',
+    id: 'variety-193',
     cropID: 'crop-44',
     variety: 'De Milpa',
     vendorID: 'vendor-02',
@@ -828,7 +828,7 @@ export const varietalData = [
     daysToHarvest: 80,
   },
   {
-    id: 'varietal-194',
+    id: 'variety-194',
     cropID: 'crop-24',
     variety: 'Mix',
     vendorID: 'vendor-12',
@@ -836,7 +836,7 @@ export const varietalData = [
     daysToHarvest: 85,
   },
   {
-    id: 'varietal-195',
+    id: 'variety-195',
     cropID: 'crop-39',
     variety: '',
     vendorID: 'vendor-12',
@@ -844,7 +844,7 @@ export const varietalData = [
     daysToHarvest: 90,
   },
   {
-    id: 'varietal-196',
+    id: 'variety-196',
     cropID: 'crop-32',
     variety: 'Yukon Gold',
     vendorID: 'vendor-12',
@@ -852,7 +852,7 @@ export const varietalData = [
     daysToHarvest: 90,
   },
   {
-    id: 'varietal-197',
+    id: 'variety-197',
     cropID: 'crop-32',
     variety: 'Russian Blue',
     vendorID: 'vendor-12',
@@ -860,7 +860,7 @@ export const varietalData = [
     daysToHarvest: 90,
   },
   {
-    id: 'varietal-198',
+    id: 'variety-198',
     cropID: 'crop-32',
     variety: 'Colorado Rose',
     vendorID: 'vendor-12',
@@ -868,7 +868,7 @@ export const varietalData = [
     daysToHarvest: 90,
   },
   {
-    id: 'varietal-199',
+    id: 'variety-199',
     cropID: 'crop-32',
     variety: 'Russet',
     vendorID: 'vendor-12',
@@ -876,7 +876,7 @@ export const varietalData = [
     daysToHarvest: 90,
   },
   {
-    id: 'varietal-200',
+    id: 'variety-200',
     cropID: 'crop-23',
     variety: '',
     vendorID: 'vendor-00',
@@ -884,7 +884,7 @@ export const varietalData = [
     daysToHarvest: 100,
   },
   {
-    id: 'varietal-201',
+    id: 'variety-201',
     cropID: 'crop-40',
     variety: 'Winter',
     vendorID: '',
@@ -892,7 +892,7 @@ export const varietalData = [
     daysToHarvest: 95,
   },
   {
-    id: 'varietal-202',
+    id: 'variety-202',
     cropID: 'crop-05',
     variety: 'Bush Snap',
     vendorID: '',
@@ -900,7 +900,7 @@ export const varietalData = [
     daysToHarvest: 55,
   },
   {
-    id: 'varietal-203',
+    id: 'variety-203',
     cropID: 'crop-45',
     variety: 'Slicer',
     vendorID: '',
@@ -908,7 +908,7 @@ export const varietalData = [
     daysToHarvest: 75,
   },
   {
-    id: 'varietal-205',
+    id: 'variety-205',
     cropID: 'crop-30',
     variety: 'Hot',
     vendorID: '',
@@ -916,7 +916,7 @@ export const varietalData = [
     daysToHarvest: 90,
   },
   {
-    id: 'varietal-206',
+    id: 'variety-206',
     cropID: 'crop-30',
     variety: 'Sweet',
     vendorID: '',
@@ -924,7 +924,7 @@ export const varietalData = [
     daysToHarvest: 90,
   },
   {
-    id: 'varietal-207',
+    id: 'variety-207',
     cropID: 'crop-10',
     variety: '',
     vendorID: 'vendor-00',
@@ -932,7 +932,7 @@ export const varietalData = [
     daysToHarvest: 100,
   },
   {
-    id: 'varietal-208',
+    id: 'variety-208',
     cropID: 'crop-25',
     variety: 'Watermelon',
     vendorID: 'vendor-00',
@@ -940,7 +940,7 @@ export const varietalData = [
     daysToHarvest: 100,
   },
   {
-    id: 'varietal-209',
+    id: 'variety-209',
     cropID: 'crop-24',
     variety: 'Bibb',
     vendorID: 'vendor-00',
@@ -948,7 +948,7 @@ export const varietalData = [
     daysToHarvest: 60,
   },
   {
-    id: 'varietal-210',
+    id: 'variety-210',
     cropID: 'crop-24',
     variety: 'Parris Island',
     vendorID: 'vendor-00',
@@ -956,7 +956,7 @@ export const varietalData = [
     daysToHarvest: 60,
   },
   {
-    id: 'varietal-211',
+    id: 'variety-211',
     cropID: 'crop-27',
     variety: 'Storage',
     vendorID: 'vendor-00',
@@ -964,7 +964,7 @@ export const varietalData = [
     daysToHarvest: 100,
   },
   {
-    id: 'varietal-212',
+    id: 'variety-212',
     cropID: 'crop-28',
     variety: '',
     vendorID: 'vendor-00',
@@ -972,7 +972,7 @@ export const varietalData = [
     daysToHarvest: 120,
   },
   {
-    id: 'varietal-213',
+    id: 'variety-213',
     cropID: 'crop-34',
     variety: 'Pasqualino',
     vendorID: 'vendor-02',

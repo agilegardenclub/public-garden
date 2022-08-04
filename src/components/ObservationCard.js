@@ -4,7 +4,7 @@ import { Card, Image, Stack } from 'react-bootstrap';
 import { Field } from './Field';
 import { Avatar } from './Avatar';
 import { ObservationCardTagBadge } from './ObservationCardTagBadge';
-import { GardenVarietalBadge } from './GardenVarietalBadge';
+import { GardenVarietyBadge } from './GardenVarietyBadge';
 
 export function ObservationCard({ observation, isNotification = false }) {
   return (
@@ -20,7 +20,7 @@ export function ObservationCard({ observation, isNotification = false }) {
           <Field title="Observed by:">
             <Avatar gardenerID={observation.gardenerID} />
           </Field>
-          {isNotification ? <Field title="Observed on:"><GardenVarietalBadge varietalID={observation.varietalID}/></Field> : <div></div>}
+          {isNotification ? <Field title="Observed on:"><GardenVarietyBadge varietyID={observation.varietyID}/></Field> : <div></div>}
           <Field>
             {observation.description}
           </Field>

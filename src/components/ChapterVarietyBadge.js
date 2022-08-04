@@ -2,19 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { BadgeWithPopover } from './BadgeWithPopover';
 import { chapterOverview } from '../datamodel/ChapterOverview';
-import { getFamilyColorName, getFamilyName } from '../datamodel/VarietalInfo';
+import { getFamilyColorName, getFamilyName } from '../datamodel/VarietyInfo';
 import { vendorName, vendorUrl } from '../datamodel/VendorInfo';
 import { getCropName } from '../datamodel/CropInfo';
 
-export function ChapterVarietalBadge({ varietalID }) {
-  const varietalInfo = chapterOverview.varietalInfo(varietalID);
-  const name = `${getCropName(varietalInfo.cropID)} (${varietalInfo.variety})`;
-  const familyName = getFamilyName(varietalID);
-  const vendor = vendorName(varietalID);
-  const vendorURL = vendorUrl(varietalID);
-  const description = varietalInfo.description;
-  const bg = getFamilyColorName(varietalID);
-  const textColor = `text-${getFamilyColorName(varietalID)}`;
+export function ChapterVarietyBadge({ varietyID }) {
+  const varietyInfo = chapterOverview.varietyInfo(varietyID);
+  const name = `${getCropName(varietyInfo.cropID)} (${varietyInfo.variety})`;
+  const familyName = getFamilyName(varietyID);
+  const vendor = vendorName(varietyID);
+  const vendorURL = vendorUrl(varietyID);
+  const description = varietyInfo.description;
+  const bg = getFamilyColorName(varietyID);
+  const textColor = `text-${getFamilyColorName(varietyID)}`;
 
   return (
     <BadgeWithPopover header={name} label={name} bg={bg}>
@@ -25,6 +25,6 @@ export function ChapterVarietalBadge({ varietalID }) {
   );
 }
 
-ChapterVarietalBadge.propTypes = {
-  varietalID: PropTypes.string,
+ChapterVarietyBadge.propTypes = {
+  varietyID: PropTypes.string,
 };

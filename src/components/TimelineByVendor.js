@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { varietalData } from '../datamodel/data/varietalData';
+import { varietyData } from '../datamodel/data/varietyData';
 import { familyData } from '../datamodel/data/familyData';
 import { PlantingHistory } from '../datamodel/PlantingHistory';
 import { NestedDropdown } from './NestedDropdown';
 import { TimelineData } from './TimelineData';
-import { getVendorName } from '../datamodel/VarietalInfo';
+import { getVendorName } from '../datamodel/VarietyInfo';
 import { getGardenName } from './GardenName';
 
 function vendorComparator(vendorID1, vendorID2) {
@@ -17,7 +17,7 @@ function vendorComparator(vendorID1, vendorID2) {
 
 export function TimelineByVendor() {
   const gardenName = getGardenName();
-  const plantingHistory = new PlantingHistory({ gardenName, varietalData, familyData });
+  const plantingHistory = new PlantingHistory({ gardenName, varietyData, familyData });
   const vendorIDs = plantingHistory.vendorIDs().sort(vendorComparator);
   const menuItems = vendorIDs.map(vendorID => ({ type: 'item', label: getVendorName(vendorID), eventKey: vendorID }));
   const initialVendorID = vendorIDs[0];

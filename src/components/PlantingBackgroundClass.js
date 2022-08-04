@@ -1,4 +1,4 @@
-import { getFamilyCommonName } from '../datamodel/VarietalInfo';
+import { getFamilyCommonName } from '../datamodel/VarietyInfo';
 
 /**
  * Takes the current week (1-48) and returns the appropriate background class for the planting timeline:
@@ -64,8 +64,8 @@ export function plantingBackgroundClass(currWeek, plantingData) {
   } else {
     state = 'Unknown-10';
   }
-  // console.log('Plant State', plantingData.varietalID, state, currWeek, plantingData);
-  const familyName = getFamilyCommonName(plantingData.varietalID).toLowerCase();
+  // console.log('Plant State', plantingData.varietyID, state, currWeek, plantingData);
+  const familyName = getFamilyCommonName(plantingData.varietyID).toLowerCase();
   if (state.startsWith('GrowingInGreenhouse')) {
     return `bg-pf-${familyName}-light`;
   }

@@ -1,14 +1,14 @@
 import { chapterData } from './data/chapterData';
-import { varietalData } from './data/varietalData';
+import { varietyData } from './data/varietyData';
 import { getChapterGardenYears, getGardenIDs, getNumChapterGardens, getNumChapterMembers } from './ChapterInfo';
 import { getTotalPlantings } from './GardenInfo';
 
 /* Processes raw data for use by ChapterOverviewCard. */
 class ChapterOverview {
   // eslint-disable-next-line no-shadow
-  constructor(chapter, varietals) {
+  constructor(chapter, varietys) {
     this.chapter = chapter;
-    this.varietals = varietals;
+    this.varietys = varietys;
     this.chapterID = chapter.id;
   }
 
@@ -48,24 +48,24 @@ class ChapterOverview {
     return getGardenIDs(this.chapterID).reduce((memo, gardenID) => memo + getTotalPlantings(gardenID), 0);
   }
 
-  _getVarietalName(varietalID) {
-    const varietalInfo = this.varietals.find(element => element.id === varietalID);
-    return varietalInfo ? varietalInfo.name : 'Varietal Not Found';
+  _getVarietyName(varietyID) {
+    const varietyInfo = this.varietys.find(element => element.id === varietyID);
+    return varietyInfo ? varietyInfo.name : 'Variety Not Found';
   }
 
-  varietalInfo(varietalID) {
-    return this.varietals.find(element => element.id === varietalID);
+  varietyInfo(varietyID) {
+    return this.varietys.find(element => element.id === varietyID);
   }
 
   ratings(type) {
-    const varietalRatingObj = this.chapter.varietalRatings.find(element => element.type === type);
-    const ratings = varietalRatingObj.ratings;
-    return ratings.map(rating => ({ item: this._getVarietalName(rating.varietalID), rating: rating.rating }));
+    const varietyRatingObj = this.chapter.varietyRatings.find(element => element.type === type);
+    const ratings = varietyRatingObj.ratings;
+    return ratings.map(rating => ({ item: this._getVarietyName(rating.varietyID), rating: rating.rating }));
   }
 
-  varietalRatings(type) {
-    return this.chapter.varietalRatings.find(element => element.type === type).ratings;
+  varietyRatings(type) {
+    return this.chapter.varietyRatings.find(element => element.type === type).ratings;
   }
 }
 
-export const chapterOverview = new ChapterOverview(chapterData[0], varietalData);
+export const chapterOverview = new ChapterOverview(chapterData[0], varietyData);

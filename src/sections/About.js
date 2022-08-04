@@ -25,9 +25,9 @@ function About() {
 
       <Documentation>
         <p>We adopt the following terminology:</p>
-        <p><b>Varietal</b> is a specific plant type. For example, when you buy seeds, you choose a varietal such as &quot;Tomato (Sun Gold)&quot;.</p>
+        <p><b>Variety</b> is a specific plant type. For example, when you buy seeds, you choose a variety such as &quot;Tomato (Sun Gold)&quot;.</p>
         <p><b>Crop</b> specifies the plant independent of its variety. For example, &quot;Tomato&quot; is a crop.</p>
-        <p><b>Family</b> specifies the botanical family associated with one or more crops (and by extension, their varietals). For example, the &quot;Nightshade&quot; family groups together Tomatoes, Potatoes, and Peppers.</p>
+        <p><b>Family</b> specifies the botanical family associated with one or more crops (and by extension, their varietys). For example, the &quot;Nightshade&quot; family groups together Tomatoes, Potatoes, and Peppers.</p>
         <p><b>Planting</b> specifies one (or more) actual plants in a garden. A planting typically has a start date (i.e. the day that the seeds were sown or a starter was put in a bed), an end date (i.e. the date the planting was pulled), the date of first harvest, the bed it was planted in, and so forth.</p>
       </Documentation>
 

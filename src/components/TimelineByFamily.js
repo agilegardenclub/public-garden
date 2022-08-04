@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { varietalData } from '../datamodel/data/varietalData';
+import { varietyData } from '../datamodel/data/varietyData';
 import { familyData } from '../datamodel/data/familyData';
 import { PlantingHistory } from '../datamodel/PlantingHistory';
 import { NestedDropdown } from './NestedDropdown';
 import { TimelineData } from './TimelineData';
-import { getFamilyCommonName } from '../datamodel/VarietalInfo';
+import { getFamilyCommonName } from '../datamodel/VarietyInfo';
 import { getGardenName } from './GardenName';
 
 export function TimelineByFamily() {
   const gardenName = getGardenName();
-  const plantingHistory = new PlantingHistory({ gardenName, varietalData, familyData });
+  const plantingHistory = new PlantingHistory({ gardenName, varietyData, familyData });
   const familyIDs = plantingHistory.familyIDs();
   let menuItems = familyIDs.map(familyID => ({ type: 'item', label: getFamilyCommonName(familyID, true), eventKey: familyID }));
   menuItems = menuItems.sort((a, b) => a.label.localeCompare(b.label));

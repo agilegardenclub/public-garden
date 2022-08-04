@@ -1,31 +1,31 @@
 import { vendorData } from './data/vendorData';
-import { varietalData } from './data/varietalData';
+import { varietyData } from './data/varietyData';
 
-function getVendorInfo(varietalID) {
-  const varietalInfo = varietalData.find(element => element.id === varietalID);
-  if (varietalInfo) {
-    const vendorID = varietalInfo.vendorID;
+function getVendorInfo(varietyID) {
+  const varietyInfo = varietyData.find(element => element.id === varietyID);
+  if (varietyInfo) {
+    const vendorID = varietyInfo.vendorID;
     return vendorData.find(element => element.id === vendorID);
   }
   return null;
 }
 
-function getVendorField(varietalID, fieldName) {
-  const vendorInfo = getVendorInfo(varietalID);
+function getVendorField(varietyID, fieldName) {
+  const vendorInfo = getVendorInfo(varietyID);
   if (vendorInfo) {
     return vendorInfo[fieldName];
   }
   return '';
 }
 
-export function vendorName(varietalID) {
-  return getVendorField(varietalID, 'name');
+export function vendorName(varietyID) {
+  return getVendorField(varietyID, 'name');
 }
 
-export function vendorShortName(varietalID) {
-  return getVendorField(varietalID, 'shortName');
+export function vendorShortName(varietyID) {
+  return getVendorField(varietyID, 'shortName');
 }
 
-export function vendorUrl(varietalID) {
-  return getVendorField(varietalID, 'url');
+export function vendorUrl(varietyID) {
+  return getVendorField(varietyID, 'url');
 }

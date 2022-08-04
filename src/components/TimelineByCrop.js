@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { varietalData } from '../datamodel/data/varietalData';
+import { varietyData } from '../datamodel/data/varietyData';
 import { familyData } from '../datamodel/data/familyData';
 import { PlantingHistory } from '../datamodel/PlantingHistory';
 import { NestedDropdown } from './NestedDropdown';
@@ -17,7 +17,7 @@ function cropComparator(cropID1, cropID2) {
 
 export function TimelineByCrop() {
   const gardenName = getGardenName();
-  const plantingHistory = new PlantingHistory({ gardenName, varietalData, familyData });
+  const plantingHistory = new PlantingHistory({ gardenName, varietyData, familyData });
   const cropIDs = plantingHistory.cropIDs().sort(cropComparator);
   const menuItems = cropIDs.map(cropID => ({ type: 'item', label: getCropName(cropID), eventKey: cropID }));
   const initialCropID = cropIDs[0];

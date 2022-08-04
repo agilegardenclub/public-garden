@@ -3,16 +3,16 @@ import PropTypes from 'prop-types';
 import { BadgeWithPopover } from './BadgeWithPopover';
 import { getCropInfo, getFamilyID } from '../datamodel/CropInfo';
 import { getFamilyInfo, getFamilyColorName } from '../datamodel/FamilyInfo';
-import { getPlantings, getVarietalIDs } from '../datamodel/GardenInfo';
-import { GardenVarietalBadge } from './GardenVarietalBadge';
+import { getPlantings, getVarietyIDs } from '../datamodel/GardenInfo';
+import { GardenVarietyBadge } from './GardenVarietyBadge';
 
 export function GardenCropBadge({ gardenID, cropID }) {
   const cropInfo = getCropInfo(cropID);
   const name = cropInfo.name;
   const plantings = getPlantings(gardenID, cropID);
   const numPlantings = plantings.length;
-  const varietalIDs = getVarietalIDs(gardenID, cropID);
-  const varietalBadges = varietalIDs.map((varietalID, index) => <GardenVarietalBadge key={index} varietalID={varietalID}/>);
+  const varietyIDs = getVarietyIDs(gardenID, cropID);
+  const varietyBadges = varietyIDs.map((varietyID, index) => <GardenVarietyBadge key={index} varietyID={varietyID}/>);
   const familyID = getFamilyID(cropID);
   const familyName = getFamilyInfo(familyID).common;
   const bg = getFamilyColorName(familyID);
@@ -22,7 +22,7 @@ export function GardenCropBadge({ gardenID, cropID }) {
     <BadgeWithPopover header={name} label={name} bg={bg}>
       <p><b>Family:</b> <span className={textColor}>{familyName}</span> </p>
       <p><b>Num plantings:</b> {numPlantings}</p>
-      <p><b>Varietals:</b> {varietalBadges}</p>
+      <p><b>Varietys:</b> {varietyBadges}</p>
     </BadgeWithPopover>
   );
 }

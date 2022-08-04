@@ -1,7 +1,7 @@
 import { gardenData } from './data/gardenData';
 import { chapterData } from './data/chapterData';
 import { cropComparator } from './CropInfo';
-import { getCropID } from './VarietalInfo';
+import { getCropID } from './VarietyInfo';
 
 export function getGardenInfo(gardenID) {
   const gardenInfo = gardenData.find(element => element.id === gardenID);
@@ -34,20 +34,20 @@ export function getGardenYears(gardenID) {
   return [...new Set(gardenYears)].sort();
 }
 
-export function getVarietalIDs(gardenID, cropID) {
+export function getVarietyIDs(gardenID, cropID) {
   const gardenInfo = gardenData.find(element => element.id === gardenID);
-  const plantings = gardenInfo.plantingData.filter(planting => getCropID(planting.varietalID) === cropID);
-  return [...new Set(plantings.map(planting => planting.varietalID))];
+  const plantings = gardenInfo.plantingData.filter(planting => getCropID(planting.varietyID) === cropID);
+  return [...new Set(plantings.map(planting => planting.varietyID))];
 }
 
 export function getPlantings(gardenID, cropID) {
   const gardenInfo = getGardenInfo(gardenID);
-  return gardenInfo.plantingData.filter(planting => getCropID(planting.varietalID) === cropID);
+  return gardenInfo.plantingData.filter(planting => getCropID(planting.varietyID) === cropID);
 }
 
 export function getCropIDs(gardenID) {
   const gardenInfo = gardenData.find(element => element.id === gardenID);
-  const cropIDs = [...new Set(gardenInfo.plantingData.map(planting => getCropID(planting.varietalID)))];
+  const cropIDs = [...new Set(gardenInfo.plantingData.map(planting => getCropID(planting.varietyID)))];
   return cropIDs.sort(cropComparator);
 }
 

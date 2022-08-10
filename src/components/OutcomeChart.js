@@ -14,10 +14,10 @@ export const options = {
 
 const sampleOutcomeData = [
   { type: 'Germination', values: [3, 3, 3, 3, 3] },
-  { type: 'Appearance', values: [6, 0, 1, 8, 4] },
-  { type: 'Flavor', values: [0, 0, 3, 5, 7] },
-  { type: 'Resistance', values: [5, 3, 0, 7, 0] },
-  { type: 'Yield', values: [0, 7, 8, 10, 0] },
+  { type: 'Appearance', values: [6, 0, 1, 1, 7] },
+  { type: 'Flavor', values: [0, 0, 0, 6, 9] },
+  { type: 'Resistance', values: [5, 7, 3, 0, 0] },
+  { type: 'Yield', values: [0, 7, 8, 0, 0] },
 ];
 
 export const outcomeColorPalette = ['rgb(255, 0, 0)', 'rgb(255, 167, 0)', 'rgb(255, 244, 0)', 'rgb(163, 255, 0)', 'rgb(44, 186, 0)'];

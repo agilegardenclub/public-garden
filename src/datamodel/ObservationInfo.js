@@ -1,6 +1,7 @@
 function getObservationYear(observation) {
   const date = new Date(observation.observationDate);
   if (!date) {
+    // eslint-disable-next-line no-console
     console.log(`Observation ${observation.observationID} has invalid date: ${observation.observationDate}`);
   }
   return (date) ? date.getFullYear() : 1900;
@@ -10,6 +11,7 @@ function getObservationYear(observation) {
 function getNotificationYear(notification) {
   const date = new Date(notification.observationDate);
   if (!date) {
+    // eslint-disable-next-line no-console
     console.log(`Notification ${notification.observationID} has invalid date: ${notification.observationDate}`);
   }
   return (date) ? date.getFullYear() : 1900;

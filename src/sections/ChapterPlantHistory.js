@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Documentation } from '../components/Documentation';
+import { OutcomeChart } from '../components/OutcomeChart';
 
 /**
  * Seed section
@@ -14,6 +15,7 @@ function ChapterPlantHistory() {
         <Documentation>
           <p>(This section provides aggregate information about plants that combine chapter and gardener data.) </p>
         </Documentation>
+        <OutcomeChart/>
       </Container>
     </div>
   );

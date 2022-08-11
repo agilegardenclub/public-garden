@@ -1,21 +1,19 @@
 import React from 'react';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
+import PropTypes from 'prop-types';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-function getToolTipLabel(tooltipItem, data) {
-  console.log(tooltipItem, data);
-  return 'in Tooltip';
-}
-
-export const options = {
+const options = {
+  layout: { padding: { top: -10 } },
   indexAxis: 'y',
+  maxBarThickness: 20,
+  borderWidth: 0,
   elements: { bar: { borderWidth: 2 } },
   responsive: true,
-  plugins: { legend: { display: false }, title: { display: true, text: 'Outcomes' } },
-  scales: { x: { stacked: true }, y: { stacked: true } },
-  tooltips: { callbacks: { label: getToolTipLabel } },
+  plugins: { legend: { display: false }, title: { display: false, text: 'Outcomes' } },
+  scales: { x: { stacked: true, display: false }, y: { stacked: true } },
 };
 
 export const outcomeDescriptions = [
@@ -56,7 +54,7 @@ export const outcomeDescriptions = [
   },
 ];
 
-export const outcomeTypes = outcomeDescriptions.map(description => description.type);
+const outcomeTypes = outcomeDescriptions.map(description => description.type);
 
 const sampleOutcomeData = [
   { type: 'Germination', values: [3, 3, 3, 3, 3] },
@@ -68,37 +66,39 @@ const sampleOutcomeData = [
 
 export const outcomeColorPalette = ['rgb(255, 0, 0)', 'rgb(255, 115, 119)', 'rgb(211,211,211)', 'rgb(163, 255, 0)', 'rgb(44, 186, 0)'];
 
-function makeData(outcomeData) {
+function makeData(type) {
+  const outcomeDescription = outcomeDescriptions.find(description => description.type === type);
+  const outcomeData = sampleOutcomeData.find(outcome => outcome.type === type).values;
   return {
-    labels: outcomeData.map(outcome => outcome.type),
+    labels: [type],
     datasets: [
       {
-        label: 'Very poor',
-        data: outcomeData.map(outcome => outcome.values[0]),
+        label: outcomeDescription[1],
+        data: [outcomeData[0]],
         borderColor: outcomeColorPalette[0],
         backgroundColor: outcomeColorPalette[0],
       },
       {
-        label: 'Poor',
-        data: outcomeData.map(outcome => outcome.values[1]),
+        label: outcomeDescription[2],
+        data: [outcomeData[1]],
         borderColor: outcomeColorPalette[1],
         backgroundColor: outcomeColorPalette[1],
       },
       {
-        label: 'Middle',
-        data: outcomeData.map(outcome => outcome.values[2]),
+        label: outcomeDescription[3],
+        data: [outcomeData[2]],
         borderColor: outcomeColorPalette[2],
         backgroundColor: outcomeColorPalette[2],
       },
       {
-        label: 'Good',
-        data: outcomeData.map(outcome => outcome.values[3]),
+        label: outcomeDescription[4],
+        data: [outcomeData[3]],
         borderColor: outcomeColorPalette[3],
         backgroundColor: outcomeColorPalette[3],
       },
       {
-        label: 'Very good',
-        data: outcomeData.map(outcome => outcome.values[4]),
+        label: outcomeDescription[5],
+        data: [outcomeData[4]],
         borderColor: outcomeColorPalette[4],
         backgroundColor: outcomeColorPalette[4],
       },
@@ -106,6 +106,14 @@ function makeData(outcomeData) {
   };
 }
 
-export function OutcomeChart() {
-  return <Bar options={options} data={makeData(sampleOutcomeData)} />;
+export function OutcomeChart({ type }) {
+  return <div style={{ height: '100px' }}><Bar options={options} data={makeData(type)} /></div>;
+}
+
+OutcomeChart.propTypes = {
+  type: PropTypes.string,
+};
+
+export function OutcomesChart() {
+  return outcomeTypes.map(type => <OutcomeChart key={type} type={type} />);
 }

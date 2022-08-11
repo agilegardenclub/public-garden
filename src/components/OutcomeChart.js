@@ -4,20 +4,6 @@ import { Bar } from 'react-chartjs-2';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-function getToolTipLabel(tooltipItem, data) {
-  console.log(tooltipItem, data);
-  return 'in Tooltip';
-}
-
-export const options = {
-  indexAxis: 'y',
-  elements: { bar: { borderWidth: 2 } },
-  responsive: true,
-  plugins: { legend: { display: false }, title: { display: true, text: 'Outcomes' } },
-  scales: { x: { stacked: true }, y: { stacked: true } },
-  tooltips: { callbacks: { label: getToolTipLabel } },
-};
-
 export const outcomeDescriptions = [
   { type: 'Germination',
     1: 'Failure. No seeds germinated.',
@@ -56,6 +42,22 @@ export const outcomeDescriptions = [
   },
 ];
 
+function getToolTipLabel(tooltipItem) {
+  const type = tooltipItem.label;
+  const level = tooltipItem.dataset.label;
+  const value = tooltipItem.formattedValue;
+  const levelText = outcomeDescriptions.find(description => description.type === type)[level];
+  return `Plantings: ${value} (${levelText})`;
+}
+
+export const options = {
+  indexAxis: 'y',
+  elements: { bar: { borderWidth: 2 } },
+  responsive: true,
+  plugins: { tooltip: { callbacks: { label: getToolTipLabel } }, legend: { display: false }, title: { display: false } },
+  scales: { x: { stacked: true, display: false }, y: { stacked: true } },
+};
+
 export const outcomeTypes = outcomeDescriptions.map(description => description.type);
 
 const sampleOutcomeData = [
@@ -72,32 +74,31 @@ function makeData(outcomeData) {
   return {
     labels: outcomeData.map(outcome => outcome.type),
     datasets: [
-      {
-        label: 'Very poor',
+      { label: '1',
         data: outcomeData.map(outcome => outcome.values[0]),
         borderColor: outcomeColorPalette[0],
         backgroundColor: outcomeColorPalette[0],
       },
       {
-        label: 'Poor',
+        label: '2',
         data: outcomeData.map(outcome => outcome.values[1]),
         borderColor: outcomeColorPalette[1],
         backgroundColor: outcomeColorPalette[1],
       },
       {
-        label: 'Middle',
+        label: '3',
         data: outcomeData.map(outcome => outcome.values[2]),
         borderColor: outcomeColorPalette[2],
         backgroundColor: outcomeColorPalette[2],
       },
       {
-        label: 'Good',
+        label: '4',
         data: outcomeData.map(outcome => outcome.values[3]),
         borderColor: outcomeColorPalette[3],
         backgroundColor: outcomeColorPalette[3],
       },
       {
-        label: 'Very good',
+        label: '5',
         data: outcomeData.map(outcome => outcome.values[4]),
         borderColor: outcomeColorPalette[4],
         backgroundColor: outcomeColorPalette[4],

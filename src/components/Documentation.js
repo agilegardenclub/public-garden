@@ -10,7 +10,7 @@ export function Documentation({ heading, variant = 'success', children }) {
       <div style={{ paddingTop: '1em' }}>
         <Container>
           <Alert variant={variant} onClose={() => setShow(false)} dismissible>
-            {heading && <Alert.Heading>{heading}</Alert.Heading>}
+            {heading && <div><Alert.Heading>{heading}</Alert.Heading> <hr/></div>}
             {children}
           </Alert>
         </Container>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
+import { getOutcomeData } from '../datamodel/OutcomeDataInfo';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
@@ -10,7 +11,7 @@ export const outcomeDescriptions = [
     2: 'Poor. Approximately a quarter of the seeds germinated.',
     3: 'OK. Approximately half of the seeds germinated.',
     4: 'Good. Approximately 3/4 of the seeds germinated',
-    5: 'Exceptional. 90% of more of the seeds germinated.',
+    5: 'Outstanding. 90% of more of the seeds germinated.',
   },
   { type: 'Flavor',
     1: 'Tastes bad. Not worth eating.',
@@ -31,14 +32,14 @@ export const outcomeDescriptions = [
     2: 'Very poor. More than half of the plantings suffers damage.',
     3: 'OK.  No more than a quarter of plantings have damage.',
     4: 'Good. Only a few plantings have damage.',
-    5: 'Exceptional. No observable damage. ',
+    5: 'Outstanding. No observable damage. ',
   },
   { type: 'Yield',
     1: 'None. The planting died and/or did not yield any food.',
     2: 'Minimal.  The planting yielded significantly less food than expected. ',
     3: 'OK. The planting yielded an expected amount of food. ',
     4: 'Good. The planting yielded somewhat more food than expected. ',
-    5: 'Exceptional.  The planting yielded significantly more food than expected.',
+    5: 'Outstanding.  The planting yielded significantly more food than expected.',
   },
 ];
 
@@ -108,5 +109,6 @@ function makeData(outcomeData) {
 }
 
 export function OutcomeChart() {
+  getOutcomeData({ chapterID: 'chapter-01' });
   return <Bar options={options} data={makeData(sampleOutcomeData)} />;
 }

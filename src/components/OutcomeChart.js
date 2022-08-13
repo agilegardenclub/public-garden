@@ -1,7 +1,7 @@
 import React from 'react';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
-import { buildOutcomeData } from '../datamodel/OutcomeDataInfo';
+import { getGardenOutcomeData } from '../datamodel/OutcomeDataInfo';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
@@ -61,46 +61,46 @@ export const options = {
 
 export const outcomeTypes = outcomeDescriptions.map(description => description.type);
 
-const sampleOutcomeData = [
-  { type: 'Germination', values: [3, 3, 3, 3, 3] },
-  { type: 'Appearance', values: [6, 0, 1, 1, 7] },
-  { type: 'Flavor', values: [0, 0, 0, 6, 9] },
-  { type: 'Resistance', values: [5, 7, 3, 0, 0] },
-  { type: 'Yield', values: [0, 7, 8, 0, 0] },
-];
+// const sampleOutcomeData = {
+//   appearance: { 1: 5, 2: 0, 3: 0, 4: 0, 5: 0 },
+//   flavor: { 1: 0, 2: 0, 3: 5, 4: 0, 5: 0 },
+//   germination: { 1: 0, 2: 0, 3: 5, 4: 0, 5: 0 },
+//   resistance: { 1: 0, 2: 0, 3: 0, 4: 5, 5: 0 },
+//   yield: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 5 },
+// };
 
 export const outcomeColorPalette = ['rgb(255, 0, 0)', 'rgb(255, 115, 119)', 'rgb(211,211,211)', 'rgb(163, 255, 0)', 'rgb(44, 186, 0)'];
 
 function makeData(outcomeData) {
   return {
-    labels: outcomeData.map(outcome => outcome.type),
+    labels: ['Appearance', 'Flavor', 'Germination', 'Resistance', 'Yield'],
     datasets: [
       { label: '1',
-        data: outcomeData.map(outcome => outcome.values[0]),
+        data: [outcomeData.appearance[1], outcomeData.flavor[1], outcomeData.germination[1], outcomeData.resistance[1], outcomeData.yield[1]],
         borderColor: outcomeColorPalette[0],
         backgroundColor: outcomeColorPalette[0],
       },
       {
         label: '2',
-        data: outcomeData.map(outcome => outcome.values[1]),
+        data: [outcomeData.appearance[2], outcomeData.flavor[2], outcomeData.germination[2], outcomeData.resistance[2], outcomeData.yield[2]],
         borderColor: outcomeColorPalette[1],
         backgroundColor: outcomeColorPalette[1],
       },
       {
         label: '3',
-        data: outcomeData.map(outcome => outcome.values[2]),
+        data: [outcomeData.appearance[3], outcomeData.flavor[3], outcomeData.germination[3], outcomeData.resistance[3], outcomeData.yield[3]],
         borderColor: outcomeColorPalette[2],
         backgroundColor: outcomeColorPalette[2],
       },
       {
         label: '4',
-        data: outcomeData.map(outcome => outcome.values[3]),
+        data: [outcomeData.appearance[4], outcomeData.flavor[4], outcomeData.germination[4], outcomeData.resistance[4], outcomeData.yield[4]],
         borderColor: outcomeColorPalette[3],
         backgroundColor: outcomeColorPalette[3],
       },
       {
         label: '5',
-        data: outcomeData.map(outcome => outcome.values[4]),
+        data: [outcomeData.appearance[5], outcomeData.flavor[5], outcomeData.germination[5], outcomeData.resistance[5], outcomeData.yield[5]],
         borderColor: outcomeColorPalette[4],
         backgroundColor: outcomeColorPalette[4],
       },
@@ -109,6 +109,6 @@ function makeData(outcomeData) {
 }
 
 export function OutcomeChart() {
-  buildOutcomeData({ chapterID: 'chapter-01', years: [2020, 2021] });
-  return <Bar options={options} data={makeData(sampleOutcomeData)} />;
+  const outcomes = getGardenOutcomeData('garden-01');
+  return <Bar options={options} data={makeData(outcomes)} />;
 }

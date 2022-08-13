@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import { BadgeWithPopover } from './BadgeWithPopover';
 import { getCropInfo, getFamilyID } from '../datamodel/CropInfo';
 import { getFamilyInfo, getFamilyColorName } from '../datamodel/FamilyInfo';
-import { getPlantings, getVarietyIDs } from '../datamodel/GardenInfo';
+import { getPlantingsByCrop, getVarietyIDs } from '../datamodel/GardenInfo';
 import { GardenVarietyBadge } from './GardenVarietyBadge';
 
 export function GardenCropBadge({ gardenID, cropID }) {
   const cropInfo = getCropInfo(cropID);
   const name = cropInfo.name;
-  const plantings = getPlantings(gardenID, cropID);
+  const plantings = getPlantingsByCrop(gardenID, cropID);
   const numPlantings = plantings.length;
   const varietyIDs = getVarietyIDs(gardenID, cropID);
   const varietyBadges = varietyIDs.map((varietyID, index) => <GardenVarietyBadge key={index} varietyID={varietyID}/>);

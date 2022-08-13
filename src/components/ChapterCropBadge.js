@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { BadgeWithPopover } from './BadgeWithPopover';
 import { getCropInfo, getFamilyID } from '../datamodel/CropInfo';
 import { getFamilyInfo, getFamilyColorName } from '../datamodel/FamilyInfo';
-import { getPlantings, getVarietyIDs } from '../datamodel/GardenInfo';
+import { getPlantingsByCrop, getVarietyIDs } from '../datamodel/GardenInfo';
 import { GardenVarietyBadge } from './GardenVarietyBadge';
 import { getGardenIDs } from '../datamodel/ChapterInfo';
 
@@ -11,7 +11,7 @@ export function ChapterCropBadge({ chapterID, cropID }) {
   const cropInfo = getCropInfo(cropID);
   const name = cropInfo.name;
   const gardenIDs = getGardenIDs(chapterID);
-  const plantings = gardenIDs.map(gardenID => getPlantings(gardenID, cropID)).flat();
+  const plantings = gardenIDs.map(gardenID => getPlantingsByCrop(gardenID, cropID)).flat();
   const numPlantings = plantings.length;
   const varietyIDs = gardenIDs.map(gardenID => getVarietyIDs(gardenID, cropID)).flat();
   const varietyBadges = varietyIDs.map((varietyID, index) => <GardenVarietyBadge key={index} varietyID={varietyID}/>);

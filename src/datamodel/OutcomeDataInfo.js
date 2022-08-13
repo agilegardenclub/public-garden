@@ -1,5 +1,5 @@
 import { getGardenIDs } from './ChapterInfo';
-import { getCropIDs, getVarietyIDs } from './GardenInfo';
+import { getCropIDs, getPlantingsByVarietyAndYear, getVarietyIDs } from './GardenInfo';
 
 /*
  Build the following outcome data structure:
@@ -45,12 +45,46 @@ import { getCropIDs, getVarietyIDs } from './GardenInfo';
  ]
 */
 
-function buildVarietyOutcomeData(gardenID, years, varietyID) {
-  return { varietyID, years, gardenID };
+function buildOutcomeCounts(outcomes) {
+  const counts = {
+    appearance: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 },
+    flavor: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 },
+    germination: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 },
+    resistance: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 },
+    yield: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 },
+  };
+  for (const outcome of outcomes) {
+    if (outcome.appearance) {
+      counts.appearance[outcome.appearance] += 1;
+    }
+    if (outcome.flavor) {
+      counts.flavor[outcome.flavor] += 1;
+    }
+    if (outcome.germination) {
+      counts.germination[outcome.germination] += 1;
+    }
+    if (outcome.resistance) {
+      counts.resistance[outcome.resistance] += 1;
+    }
+    if (outcome.yield) {
+      counts.yield[outcome.yield] += 1;
+    }
+  }
+  return counts;
+}
+
+function buildOutcomeYear(varietyID, gardenID, year) {
+  const plantings = getPlantingsByVarietyAndYear(gardenID, varietyID, year);
+  const outcomes = plantings.map(planting => planting.outcomes);
+  return { year, outcomeCount: buildOutcomeCounts(outcomes) };
+}
+
+function buildVarietyOutcomeYearsData(gardenID, years, varietyID) {
+  return { varietyID, outcomeYears: years.map(year => buildOutcomeYear(varietyID, gardenID, year)) };
 }
 
 function buildCropOutcomeData(gardenID, years, cropID) {
-  return { cropID, varietyIDs: getVarietyIDs(gardenID, cropID).map(varietyID => buildVarietyOutcomeData(gardenID, years, varietyID)) };
+  return { cropID, varietyIDs: getVarietyIDs(gardenID, cropID).map(varietyID => buildVarietyOutcomeYearsData(gardenID, years, varietyID)) };
 }
 
 function buildGardenOutcomeData(gardenID, years) {

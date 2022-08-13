@@ -40,9 +40,19 @@ export function getVarietyIDs(gardenID, cropID) {
   return [...new Set(plantings.map(planting => planting.varietyID))];
 }
 
-export function getPlantings(gardenID, cropID) {
+export function getPlantingsByCrop(gardenID, cropID) {
   const gardenInfo = getGardenInfo(gardenID);
   return gardenInfo.plantingData.filter(planting => getCropID(planting.varietyID) === cropID);
+}
+
+export function getPlantingsByVariety(gardenID, varietyID) {
+  const gardenInfo = getGardenInfo(gardenID);
+  return gardenInfo.plantingData.filter(planting => planting.varietyID === varietyID);
+}
+
+export function getPlantingsByVarietyAndYear(gardenID, varietyID, year) {
+  const gardenInfo = getGardenInfo(gardenID);
+  return gardenInfo.plantingData.filter(planting => ((planting.varietyID === varietyID) && (planting.year === year)));
 }
 
 export function getCropIDs(gardenID) {

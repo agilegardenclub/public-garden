@@ -109,6 +109,6 @@ function makeData(outcomeData) {
 }
 
 export function OutcomeChart() {
-  getOutcomeData({ chapterID: 'chapter-01' });
+  getOutcomeData({ chapterID: 'chapter-01', years: [2021] });
   return <Bar options={options} data={makeData(sampleOutcomeData)} />;
 }

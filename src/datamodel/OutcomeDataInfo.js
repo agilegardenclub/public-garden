@@ -166,3 +166,18 @@ export function getGardenOutcomeData(gardenID) {
   }
   return combineOutcomeData(outcomeData);
 }
+
+export function getChapterOutcomeData(chapterID) {
+  const chapterOutcomeInfo = currentOutcomeData.find(info => info.chapterID === chapterID);
+  const outcomeData = [];
+  for (const gardenIDinfo of chapterOutcomeInfo.gardenIDs) {
+    for (const cropIDinfo of gardenIDinfo.cropIDs) {
+      for (const varietyIDinfo of cropIDinfo.varietyIDs) {
+        for (const outcomeYearInfo of varietyIDinfo.outcomeYears) {
+          outcomeData.push(outcomeYearInfo.outcomeCount);
+        }
+      }
+    }
+  }
+  return combineOutcomeData(outcomeData);
+}

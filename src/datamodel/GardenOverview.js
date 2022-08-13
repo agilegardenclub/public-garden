@@ -3,6 +3,7 @@ import { varietyData } from './data/varietyData';
 import { PlantingHistory } from './PlantingHistory';
 import { familyData } from './data/familyData';
 import { getGardenChapterInfo, getGardenID, getGardenInfo, getGardenYears, getTotalPlantings } from './GardenInfo';
+import { getGardenOutcomeData } from './OutcomeDataInfo';
 
 /* Processes raw data for use by GardenOverviewCard. */
 export class GardenOverview {
@@ -69,7 +70,10 @@ export class GardenOverview {
   gardenerName(gardenerID) {
     const gardenerInfo = this.gardeners.find(element => element.id === gardenerID);
     return gardenerInfo ? gardenerInfo.name : 'Gardener Not Found';
+  }
 
+  outcomeData() {
+    return getGardenOutcomeData(this.gardenID);
   }
 
   varietyOutcomes(varietyID) {

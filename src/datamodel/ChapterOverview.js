@@ -2,6 +2,7 @@ import { chapterData } from './data/chapterData';
 import { varietyData } from './data/varietyData';
 import { getChapterGardenYears, getGardenIDs, getNumChapterGardens, getNumChapterMembers } from './ChapterInfo';
 import { getTotalPlantings } from './GardenInfo';
+import { getChapterOutcomeData } from './OutcomeDataInfo';
 
 /* Processes raw data for use by ChapterOverviewCard. */
 class ChapterOverview {
@@ -26,6 +27,10 @@ class ChapterOverview {
 
   zipCodes() {
     return this.chapter.zipCodes;
+  }
+
+  outcomeData() {
+    return getChapterOutcomeData(this.chapterID);
   }
 
   zoneIDs() {

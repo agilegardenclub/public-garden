@@ -1,7 +1,7 @@
 import React from 'react';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
-import { getGardenOutcomeData } from '../datamodel/OutcomeDataInfo';
+import PropTypes from 'prop-types';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
@@ -108,7 +108,10 @@ function makeData(outcomeData) {
   };
 }
 
-export function OutcomeChart() {
-  const outcomes = getGardenOutcomeData('garden-01');
-  return <Bar options={options} data={makeData(outcomes)} />;
+export function OutcomeChart({ outcomeData }) {
+  return <Bar options={options} data={makeData(outcomeData)} />;
 }
+
+OutcomeChart.propTypes = {
+  outcomeData: PropTypes.object,
+};

@@ -45,22 +45,22 @@ import { getCropIDs, getVarietyIDs } from './GardenInfo';
  ]
 */
 
-function makeVarietyOutcomeData(gardenID, years, varietyID) {
+function buildVarietyOutcomeData(gardenID, years, varietyID) {
   return { varietyID, years, gardenID };
 }
 
-function makeCropOutcomeData(gardenID, years, cropID) {
-  return { cropID, varietyIDs: getVarietyIDs(gardenID, cropID).map(varietyID => makeVarietyOutcomeData(gardenID, years, varietyID)) };
+function buildCropOutcomeData(gardenID, years, cropID) {
+  return { cropID, varietyIDs: getVarietyIDs(gardenID, cropID).map(varietyID => buildVarietyOutcomeData(gardenID, years, varietyID)) };
 }
 
-function makeGardenOutcomeData(gardenID, years) {
-  return { gardenID: gardenID, cropIDs: getCropIDs(gardenID).map(cropID => makeCropOutcomeData(gardenID, years, cropID)) };
+function buildGardenOutcomeData(gardenID, years) {
+  return { gardenID: gardenID, cropIDs: getCropIDs(gardenID).map(cropID => buildCropOutcomeData(gardenID, years, cropID)) };
 }
 
-export function getOutcomeData({ chapterID, years }) {
+export function buildOutcomeData({ chapterID, years }) {
   console.log(chapterID, years);
   const outcomeData = { chapterID };
-  outcomeData.gardenIDs = getGardenIDs(chapterID).map(gardenID => makeGardenOutcomeData(gardenID, years));
+  outcomeData.gardenIDs = getGardenIDs(chapterID).map(gardenID => buildGardenOutcomeData(gardenID, years));
   console.log(outcomeData);
   return outcomeData;
 }

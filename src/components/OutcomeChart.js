@@ -1,7 +1,7 @@
 import React from 'react';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
-import { getOutcomeData } from '../datamodel/OutcomeDataInfo';
+import { buildOutcomeData } from '../datamodel/OutcomeDataInfo';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
@@ -109,6 +109,6 @@ function makeData(outcomeData) {
 }
 
 export function OutcomeChart() {
-  getOutcomeData({ chapterID: 'chapter-01', years: [2021] });
+  buildOutcomeData({ chapterID: 'chapter-01', years: [2021] });
   return <Bar options={options} data={makeData(sampleOutcomeData)} />;
 }

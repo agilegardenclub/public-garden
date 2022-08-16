@@ -4,8 +4,9 @@ import Bottom from './sections/Bottom.js';
 import Overview from './sections/Overview';
 import About from './sections/About';
 import GardenTimelines from './sections/GardenTimelines';
-import ChapterPlantHistory from './sections/ChapterPlantHistory';
 import { getGardenName } from './components/GardenName';
+import ChapterTimelines from './sections/ChapterTimelines';
+import Outcomes from './sections/Outcomes';
 
 const App = () => {
   const gardenName = getGardenName();
@@ -19,7 +20,8 @@ const App = () => {
       <About/>
       <Overview/>
       <GardenTimelines/>
-      <ChapterPlantHistory/>
+      <ChapterTimelines/>
+      <Outcomes/>
       <Bottom/>
     </div>
   );

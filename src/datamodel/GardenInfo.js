@@ -20,6 +20,10 @@ export function getGardenChapterInfo(gardenID) {
   return chapterInfo;
 }
 
+export function getChapterID(gardenID) {
+  return getGardenChapterInfo(gardenID).id;
+}
+
 export function getGardenID(gardenName) {
   const gardenInfo = gardenData.find(element => element.name === gardenName);
   if (!gardenInfo) {

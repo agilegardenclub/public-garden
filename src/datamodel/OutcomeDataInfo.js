@@ -79,21 +79,21 @@ function buildOutcomeYear(varietyID, gardenID, year) {
   return { year, outcomeCount: buildOutcomeCounts(outcomes) };
 }
 
-function buildVarietyOutcomeYearsData(gardenID, years, varietyID) {
+function buildVarietyOutcomeYearsDataSet(gardenID, years, varietyID) {
   return { varietyID, outcomeYears: years.map(year => buildOutcomeYear(varietyID, gardenID, year)) };
 }
 
-function buildCropOutcomeData(gardenID, years, cropID) {
-  return { cropID, varietyIDs: getVarietyIDs(gardenID, cropID).map(varietyID => buildVarietyOutcomeYearsData(gardenID, years, varietyID)) };
+function buildCropOutcomeDataSet(gardenID, years, cropID) {
+  return { cropID, varietyIDs: getVarietyIDs(gardenID, cropID).map(varietyID => buildVarietyOutcomeYearsDataSet(gardenID, years, varietyID)) };
 }
 
-function buildGardenOutcomeData(gardenID, years) {
-  return { gardenID: gardenID, cropIDs: getCropIDs(gardenID).map(cropID => buildCropOutcomeData(gardenID, years, cropID)) };
+function buildGardenOutcomeDataSet(gardenID, years) {
+  return { gardenID: gardenID, cropIDs: getCropIDs(gardenID).map(cropID => buildCropOutcomeDataSet(gardenID, years, cropID)) };
 }
 
-function buildOutcomeData({ chapterID, years }) {
+function buildOutcomeDataSet({ chapterID, years }) {
   const outcomeData = { chapterID };
-  outcomeData.gardenIDs = getGardenIDs(chapterID).map(gardenID => buildGardenOutcomeData(gardenID, years));
+  outcomeData.gardenIDs = getGardenIDs(chapterID).map(gardenID => buildGardenOutcomeDataSet(gardenID, years));
   return [outcomeData];
 }
 
@@ -150,7 +150,11 @@ function combineOutcomeData(outcomeData) {
   );
 }
 
-const currentOutcomeData = buildOutcomeData({ chapterID: 'chapter-01', years: [2020, 2021] });
+const currentOutcomeData = buildOutcomeDataSet({ chapterID: 'chapter-01', years: [2020, 2021] });
+
+export function getOutcomeDataSet(chapterID, years) {
+  return buildOutcomeDataSet({ chapterID, years });
+}
 
 export function getGardenOutcomeData(gardenID) {
   const chapterID = getGardenChapterInfo(gardenID).id;
@@ -175,6 +179,41 @@ export function getChapterOutcomeData(chapterID) {
       for (const varietyIDinfo of cropIDinfo.varietyIDs) {
         for (const outcomeYearInfo of varietyIDinfo.outcomeYears) {
           outcomeData.push(outcomeYearInfo.outcomeCount);
+        }
+      }
+    }
+  }
+  return combineOutcomeData(outcomeData);
+}
+
+export function varietyHasOutcomeData(varietyID, outcomeDataSet) {
+  for (const chapterOutcomeInfo of outcomeDataSet) {
+    for (const gardenOutcomeInfo of chapterOutcomeInfo.gardenIDs) {
+      for (const cropIDInfo of gardenOutcomeInfo.cropIDs) {
+        for (const varietyIDInfo of cropIDInfo.varietyIDs) {
+          if (varietyIDInfo.varietyID === varietyID) {
+            return true;
+          }
+        }
+      }
+    }
+  }
+  return false;
+}
+
+export function getVarietyOutcomeData(varietyID, years, outcomeDataSet) {
+  const outcomeData = [];
+  for (const chapterOutcomeInfo of outcomeDataSet) {
+    for (const gardenOutcomeInfo of chapterOutcomeInfo.gardenIDs) {
+      for (const cropIDInfo of gardenOutcomeInfo.cropIDs) {
+        for (const varietyIDInfo of cropIDInfo.varietyIDs) {
+          if (varietyIDInfo.varietyID === varietyID) {
+            for (const outcomeYearInfo of varietyIDInfo.outcomeYears) {
+              if (years.includes(outcomeYearInfo.year)) {
+                outcomeData.push(outcomeYearInfo.outcomeCount);
+              }
+            }
+          }
         }
       }
     }

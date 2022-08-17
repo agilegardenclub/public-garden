@@ -19,7 +19,6 @@ export function GardenOverviewCard() {
   const pictureData = gardenOverview.pictures();
   const gardenYears = getGardenYears(gardenID);
   const outcomeData = gardenOverview.outcomeData();
-  console.log('outcomeData', outcomeData);
   const size = gardenOverview.currentSize();
   const beds = gardenOverview.currentBeds();
   const totalPlantings = gardenOverview.totalPlantings();

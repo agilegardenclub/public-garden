@@ -2,6 +2,7 @@
 import { getCropID, getFamilyCommonName, getFamilyData, getVarietyName, getVarietyNameShort, getVendorID } from './VarietyInfo';
 import { gardenData } from './data/gardenData';
 import { weekOfYear } from './WeekOfYear';
+import { varietyHasOutcomeData } from './OutcomeDataInfo';
 
 export class PlantingHistory {
   // eslint-disable-next-line no-shadow
@@ -15,6 +16,11 @@ export class PlantingHistory {
     this.allPlantings = gardenData.map(garden => garden.plantingData).flat();
     this._addObservationData();
     this._addNotificationData();
+  }
+
+  getPlantingYears() {
+    const allYears = this.allPlantings.map(planting => planting.year);
+    return [...new Set(allYears)];
   }
 
   _addNotificationData() {
@@ -151,7 +157,7 @@ export class PlantingHistory {
   }
 
   /**
-   * Returns an array formatted to support the Plant nested dropdown:
+   * Returns an array formatted to support the Variety nested dropdown:
    * ```
    *   [
    *     { type: 'nested', label: 'Legume' items: [ { type: 'item', label: 'Bean (Soldier)', eventKey: 'plant-117' }]} ],
@@ -160,17 +166,31 @@ export class PlantingHistory {
    * ```
    * Of course the items: field will have an array containing multiple items.
    */
-  varietyDropdownMenuItems() {
+  varietyDropdownMenuItems(outcomeDataSet) {
     // Start by building a map from family IDs to their varietyIDs:
     // { "family-01": [ "variety-01", "variety-02" ], "family-02": [ "variety-03", "variety-o4" ] }
     const familyMap = {};
-    this.plantings.forEach(planting => {
-      const familyID = getFamilyData(planting.varietyID).id;
-      if (!familyMap[familyID]) {
-        familyMap[familyID] = [];
-      }
-      familyMap[familyID].push(planting.varietyID);
-    });
+    // Ugh this is ugly. if outcomeData supplied, only generate menu items with outcome data.
+    if (outcomeDataSet) {
+      this.plantings.forEach(planting => {
+        if (varietyHasOutcomeData(planting.varietyID, outcomeDataSet)) {
+          const familyID = getFamilyData(planting.varietyID).id;
+          if (!familyMap[familyID]) {
+            familyMap[familyID] = [];
+          }
+          familyMap[familyID].push(planting.varietyID);
+        }
+      });
+    } else { // otherwise generate the menu items for all varieties.
+      this.plantings.forEach(planting => {
+        const familyID = getFamilyData(planting.varietyID).id;
+        if (!familyMap[familyID]) {
+          familyMap[familyID] = [];
+        }
+        familyMap[familyID].push(planting.varietyID);
+      });
+    }
+
     // Now build the array of dropdown data objects, one per field in the familyMap
     const familyIDs = Object.keys(familyMap);
     const dropdownItems = [];

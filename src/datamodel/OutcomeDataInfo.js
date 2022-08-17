@@ -201,16 +201,18 @@ export function varietyHasOutcomeData(varietyID, outcomeDataSet) {
   return false;
 }
 
-export function getVarietyOutcomeData(varietyID, years, outcomeDataSet) {
+export function getVarietyOutcomeData(varietyID, years, outcomeDataSet, gardenIDs) {
   const outcomeData = [];
   for (const chapterOutcomeInfo of outcomeDataSet) {
     for (const gardenOutcomeInfo of chapterOutcomeInfo.gardenIDs) {
-      for (const cropIDInfo of gardenOutcomeInfo.cropIDs) {
-        for (const varietyIDInfo of cropIDInfo.varietyIDs) {
-          if (varietyIDInfo.varietyID === varietyID) {
-            for (const outcomeYearInfo of varietyIDInfo.outcomeYears) {
-              if (years.includes(outcomeYearInfo.year)) {
-                outcomeData.push(outcomeYearInfo.outcomeCount);
+      if (gardenIDs.includes(gardenOutcomeInfo.gardenID)) {
+        for (const cropIDInfo of gardenOutcomeInfo.cropIDs) {
+          for (const varietyIDInfo of cropIDInfo.varietyIDs) {
+            if (varietyIDInfo.varietyID === varietyID) {
+              for (const outcomeYearInfo of varietyIDInfo.outcomeYears) {
+                if (years.includes(outcomeYearInfo.year)) {
+                  outcomeData.push(outcomeYearInfo.outcomeCount);
+                }
               }
             }
           }

@@ -3,7 +3,7 @@ import { varietyData } from './data/varietyData';
 import { PlantingHistory } from './PlantingHistory';
 import { familyData } from './data/familyData';
 import { getGardenChapterInfo, getGardenID, getGardenInfo, getGardenYears, getTotalPlantings } from './GardenInfo';
-import { getGardenOutcomeData } from './OutcomeDataInfo';
+import { getGardenOutcomeCounts } from './OutcomeDataInfo';
 
 /* Processes raw data for use by GardenOverviewCard. */
 export class GardenOverview {
@@ -73,7 +73,7 @@ export class GardenOverview {
   }
 
   outcomeData() {
-    return getGardenOutcomeData(this.gardenID);
+    return getGardenOutcomeCounts(this.gardenID);
   }
 
   varietyOutcomes(varietyID) {

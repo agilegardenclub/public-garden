@@ -6,7 +6,7 @@ import { PlantingHistory } from '../datamodel/PlantingHistory';
 import { getGardenName } from './GardenName';
 import { getVarietyName } from '../datamodel/VarietyInfo';
 import { NestedDropdown } from './NestedDropdown';
-import { getOutcomeDataSet, getVarietyOutcomeData } from '../datamodel/OutcomeDataInfo';
+import { getOutcomeDataSet, getVarietyOutcomeCounts } from '../datamodel/OutcomeDataInfo';
 import { getChapterID, getGardenID } from '../datamodel/GardenInfo';
 import { OutcomeChart } from './OutcomeChart';
 import { getGardenIDs } from '../datamodel/ChapterInfo';
@@ -38,8 +38,8 @@ export function OutcomeByVariety() {
   const varietyMenuItems = plantingHistory.varietyDropdownMenuItems(outcomeDataSet);
   const initialVarietyID = varietyMenuItems[0].items[0].eventKey;
   const initialVarietyName = varietyMenuItems[0].items[0].label;
-  const initialChapterOutcomeData = getVarietyOutcomeData(initialVarietyID, initialYears, outcomeDataSet, chapterGardenIDs);
-  const initialGardenOutcomeData = getVarietyOutcomeData(initialVarietyID, initialYears, outcomeDataSet, [gardenID]);
+  const initialChapterOutcomeData = getVarietyOutcomeCounts(initialVarietyID, initialYears, outcomeDataSet, chapterGardenIDs);
+  const initialGardenOutcomeData = getVarietyOutcomeCounts(initialVarietyID, initialYears, outcomeDataSet, [gardenID]);
   const [selectedVarietyName, setVarietyName] = useState(initialVarietyName);
   const [chapterOutcomeData, setChapterOutcomeData] = useState(initialChapterOutcomeData);
   const [gardenOutcomeData, setGardenOutcomeData] = useState(initialGardenOutcomeData);
@@ -48,8 +48,8 @@ export function OutcomeByVariety() {
     if (eventKey) {
       setVarietyName(getVarietyName(eventKey));
       setYears(years);
-      setChapterOutcomeData(getVarietyOutcomeData(eventKey, years, outcomeDataSet, chapterGardenIDs));
-      setGardenOutcomeData(getVarietyOutcomeData(eventKey, years, outcomeDataSet, [gardenID]));
+      setChapterOutcomeData(getVarietyOutcomeCounts(eventKey, years, outcomeDataSet, chapterGardenIDs));
+      setGardenOutcomeData(getVarietyOutcomeCounts(eventKey, years, outcomeDataSet, [gardenID]));
     }
   };
   return (

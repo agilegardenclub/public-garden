@@ -23,7 +23,7 @@ function Top() {
         <Nav>
           <Nav.Item><Nav.Link href="#overview">Overview</Nav.Link></Nav.Item>
           <Nav.Item><Nav.Link href="#garden-timelines">Timelines</Nav.Link></Nav.Item>
-          <Nav.Item><Nav.Link href="#chapter-plant-history">Plants</Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="#outcomes">Outcomes</Nav.Link></Nav.Item>
         </Nav>
       </Container>
     </Navbar>

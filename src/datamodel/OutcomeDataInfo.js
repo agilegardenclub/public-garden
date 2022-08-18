@@ -2,7 +2,7 @@ import { getGardenIDs } from './ChapterInfo';
 import { getCropIDs, getGardenChapterInfo, getPlantingsByVarietyAndYear, getVarietyIDs } from './GardenInfo';
 
 /*
- Build the following outcome data structure:
+ Build the following "outcomeDataSet":
    * List of chapterID objects.
    * Each chapterID object has a list of gardenID objects.
    * Each gardenID object has a list of cropID objects.
@@ -186,7 +186,7 @@ export function getChapterOutcomeCounts(chapterID) {
   return combineOutcomeCounts(outcomeCounts);
 }
 
-export function varietyHasOutcomeCount(varietyID, outcomeDataSet) {
+export function varietyHasOutcomeCounts(varietyID, outcomeDataSet) {
   for (const chapterOutcomeInfo of outcomeDataSet) {
     for (const gardenOutcomeInfo of chapterOutcomeInfo.gardenIDs) {
       for (const cropIDInfo of gardenOutcomeInfo.cropIDs) {
@@ -223,12 +223,12 @@ export function getVarietyOutcomeCounts(varietyID, years, outcomeDataSet, garden
   return combineOutcomeCounts(outcomeCounts);
 }
 
-export function hasOutcome(outcome) {
+export function hasOutcomes(outcomeData) {
   return (
-    (outcome.appearance && outcome.appearance > 0) ||
-    (outcome.flavor && outcome.flavor > 0) ||
-    (outcome.germination && outcome.germination > 0) ||
-    (outcome.resistance && outcome.resistance > 0) ||
-    (outcome.yield && outcome.yield > 0)
+    (outcomeData.appearance && outcomeData.appearance > 0) ||
+    (outcomeData.flavor && outcomeData.flavor > 0) ||
+    (outcomeData.germination && outcomeData.germination > 0) ||
+    (outcomeData.resistance && outcomeData.resistance > 0) ||
+    (outcomeData.yield && outcomeData.yield > 0)
   );
 }

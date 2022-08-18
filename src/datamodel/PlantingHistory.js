@@ -2,7 +2,7 @@
 import { getCropID, getFamilyCommonName, getFamilyData, getVarietyName, getVarietyNameShort, getVendorID } from './VarietyInfo';
 import { gardenData } from './data/gardenData';
 import { weekOfYear } from './WeekOfYear';
-import { varietyHasOutcomeCount } from './OutcomeDataInfo';
+import { varietyHasOutcomeCounts } from './OutcomeDataInfo';
 
 export class PlantingHistory {
   // eslint-disable-next-line no-shadow
@@ -173,7 +173,7 @@ export class PlantingHistory {
     // Ugh this is ugly. if outcomeData supplied, only generate menu items with outcome data.
     if (outcomeDataSet) {
       this.plantings.forEach(planting => {
-        if (varietyHasOutcomeCount(planting.varietyID, outcomeDataSet)) {
+        if (varietyHasOutcomeCounts(planting.varietyID, outcomeDataSet)) {
           const familyID = getFamilyData(planting.varietyID).id;
           if (!familyMap[familyID]) {
             familyMap[familyID] = [];

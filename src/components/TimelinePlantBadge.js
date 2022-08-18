@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import { BadgeWithPopover } from './BadgeWithPopover';
 import { chapterOverview } from '../datamodel/ChapterOverview';
 import { Field } from './Field';
-import { RatingList } from './RatingList';
 import { getFamilyColorName, getFamilyName } from '../datamodel/VarietyInfo';
 import { vendorName, vendorUrl } from '../datamodel/VendorInfo';
 import { getCropName } from '../datamodel/CropInfo';
+import { OutcomeStars } from './OutcomeStars';
 
 export function TimelinePlantBadge({ plantingData }) {
   const varietyID = plantingData.varietyID;
@@ -20,13 +20,6 @@ export function TimelinePlantBadge({ plantingData }) {
   const vendorURL = vendorUrl(varietyID);
   const description = varietyInfo.description;
   const familyName = getFamilyName(varietyID);
-  const varietyOutcomes = plantingData.outcomes;
-  const ratingData = [
-    { item: 'Appearance', rating: varietyOutcomes ? varietyOutcomes.appearance : 0 },
-    { item: 'Flavor', rating: varietyOutcomes ? varietyOutcomes.flavor : 0 },
-    { item: 'Pest Resistance', rating: varietyOutcomes ? varietyOutcomes.pestResistance : 0 },
-    { item: 'Yield', rating: varietyOutcomes ? varietyOutcomes.yield : 0 },
-  ];
   const startDate = plantingData.startDate;
   const transplantDate = plantingData.transplantDate || 'N/A';
   const firstHarvestDate = plantingData.firstHarvestDate || 'N/A';
@@ -35,17 +28,18 @@ export function TimelinePlantBadge({ plantingData }) {
 
   return (
     <BadgeWithPopover header={name} label={name} bg={bg}>
-      <p><b>Family:</b> <span className={textColor}>{familyName}</span> </p>
-      <p><b>Description:</b> {description}</p>
-      { vendor ? <p><b>Vendor:</b>  <a target="_blank" rel="noreferrer noopener" href={vendorURL}>{vendor}</a></p> : ''}
-      <p><b>Used Greenhouse:</b> {usedGreenhouse}</p>
-      <p><b>Start Date:</b> {startDate}</p>
-      <p><b>Transplant Date:</b> {transplantDate}</p>
-      <p><b>First Harvest Date:</b> {firstHarvestDate}</p>
-      <p><b>End Date:</b> {endDate}</p>
+      <p style={{ margin: 0 }}><b>Family:</b> <span className={textColor}>{familyName}</span> </p>
+      <p style={{ margin: 0 }}><b>Description:</b> {description}</p>
+      { vendor ? <p style={{ margin: 0 }}><b>Vendor:</b>  <a target="_blank" rel="noreferrer noopener" href={vendorURL}>{vendor}</a></p> : ''}
+      <p style={{ margin: 0 }}><b>Used Greenhouse:</b> {usedGreenhouse}</p>
+      <p style={{ margin: 0 }}><b>Start Date:</b> {startDate}</p>
+      <p style={{ margin: 0 }}><b>Transplant Date:</b> {transplantDate}</p>
+      <p style={{ margin: 0 }}><b>First Harvest Date:</b> {firstHarvestDate}</p>
+      <p style={{ margin: 0 }}><b>End Date:</b> {endDate}</p>
       <Field title="Outcomes:" direction="vertical">
-        <RatingList ratingData={ratingData}/>
+        <OutcomeStars outcomeData={plantingData.outcomes}/>
       </Field>
+      <p style={{ margin: 0 }}><b>VarietyID:</b> {varietyID}</p>
     </BadgeWithPopover>
   );
 }

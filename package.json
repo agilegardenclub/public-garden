@@ -6,6 +6,7 @@
   "dependencies": {
     "bootstrap": "^5.2.0-beta1",
     "chart.js": "^3.9.1",
+    "lodash": "^4.17.21",
     "react": "^18.0.0",
     "react-bootstrap": "^2.5.0-beta.1",
     "react-bootstrap-icons": "^1.8.1",

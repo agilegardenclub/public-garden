@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import { getGardenIDs } from './ChapterInfo';
 import { getCropIDs, getGardenChapterInfo, getPlantingsByVarietyAndYear, getVarietyIDs } from './GardenInfo';
 
@@ -231,4 +232,15 @@ export function hasOutcomes(outcomeData) {
     (outcomeData.resistance && outcomeData.resistance > 0) ||
     (outcomeData.yield && outcomeData.yield > 0)
   );
+}
+
+export function hasOutcomeCounts(outcomeCounts) {
+  return !_.isEqual(outcomeCounts,
+    {
+      appearance: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 },
+      flavor: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 },
+      germination: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 },
+      resistance: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 },
+      yield: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 },
+    });
 }

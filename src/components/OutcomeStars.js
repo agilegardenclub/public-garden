@@ -8,7 +8,7 @@ function RatingRow({ item, rating }) {
   return (
     <Stack direction="horizontal">
       <div>{item}</div>
-      <div className="ms-auto"><Rating readonly initialValue={rating} size={20}/></div>
+      <div className="ms-auto"><Rating readonly initialValue={rating} size={20} /></div>
     </Stack>
   );
 }

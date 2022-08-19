@@ -6,7 +6,7 @@ import { PlantingHistory } from '../datamodel/PlantingHistory';
 import { getGardenName } from './GardenName';
 import { getVarietyName } from '../datamodel/VarietyInfo';
 import { NestedDropdown } from './NestedDropdown';
-import { getOutcomeDataSet, getVarietyOutcomeCounts } from '../datamodel/OutcomeDataInfo';
+import { getOutcomeDataSet, getVarietyOutcomeCounts, hasOutcomeCounts } from '../datamodel/OutcomeDataInfo';
 import { getChapterID, getGardenID } from '../datamodel/GardenInfo';
 import { OutcomeChart } from './OutcomeChart';
 import { getGardenIDs } from '../datamodel/ChapterInfo';
@@ -58,11 +58,15 @@ export function OutcomeByVariety() {
       <Row>
         <Col>
           <h6 className="text-center">Garden Outcomes</h6>
-          {gardenOutcomeData && <OutcomeChart outcomeData={gardenOutcomeData}/>}
+          {hasOutcomeCounts(gardenOutcomeData) ?
+            <OutcomeChart outcomeData={gardenOutcomeData}/> :
+            <div>No outcome data available.</div>}
         </Col>
         <Col>
           <h6 className="text-center">Chapter Outcomes</h6>
-          {chapterOutcomeData && <OutcomeChart outcomeData={chapterOutcomeData}/>}
+          {hasOutcomeCounts(chapterOutcomeData) ?
+            <OutcomeChart outcomeData={chapterOutcomeData}/> :
+            <div>No outcome data available.</div>}
         </Col>
       </Row>
     </Container>

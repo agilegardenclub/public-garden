@@ -10,6 +10,7 @@ import { OutcomeStars } from './OutcomeStars';
 
 export function TimelinePlantBadge({ plantingData }) {
   const varietyID = plantingData.varietyID;
+  const plantingID = plantingData.plantingID;
   const varietyInfo = chapterOverview.varietyInfo(varietyID);
   const varietyNum = varietyID.substring(6);
   const showVarietyNum = false;
@@ -39,7 +40,7 @@ export function TimelinePlantBadge({ plantingData }) {
       <Field title="Outcomes:" direction="vertical">
         <OutcomeStars outcomeData={plantingData.outcomes}/>
       </Field>
-      <p style={{ margin: 0 }}><b>VarietyID:</b> {varietyID}</p>
+      <p style={{ margin: 0 }}><b>PlantingID:</b> {plantingID}</p>
     </BadgeWithPopover>
   );
 }

@@ -10,6 +10,7 @@ import { getOutcomeDataSet, getVarietyOutcomeCounts, hasOutcomeCounts } from '..
 import { getChapterID, getGardenID } from '../datamodel/GardenInfo';
 import { OutcomeChart } from './OutcomeChart';
 import { getGardenIDs } from '../datamodel/ChapterInfo';
+import { YearsSelector } from './YearsSelector';
 
 /*
   We have a set of context-sensitive menus:
@@ -52,9 +53,15 @@ export function OutcomeByVariety() {
       setGardenOutcomeData(getVarietyOutcomeCounts(eventKey, years, outcomeDataSet, [gardenID]));
     }
   };
+  const onSetYears = (selectedYears) => {
+    console.log('Called onSetYears with', selectedYears);
+    setYears(selectedYears);
+  };
   return (
     <Container>
       <Row className="mb-3"><Col xs={2}>Select Variety:</Col> <Col><NestedDropdown title={selectedVarietyName} items={varietyMenuItems} onSelect={onSelectVariety}/></Col></Row>
+      <Row className="mb-3"><Col xs={2}>Select Year(s):</Col> <Col><YearsSelector years={[2019, 2020, 2021, 2022]} onSetYears={onSetYears}/></Col></Row>
+
       <Row>
         <Col>
           <h6 className="text-center">Garden Outcomes</h6>

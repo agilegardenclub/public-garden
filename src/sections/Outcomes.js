@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Tab, Tabs } from 'react-bootstrap';
 import { Documentation } from '../components/Documentation';
 import { OutcomeByVariety } from '../components/OutcomeByVariety';
+import { OutcomeByCrop } from '../components/OutcomeByCrop';
 
 /**
  * Seed section
@@ -79,6 +80,9 @@ function Outcomes() {
         <Tabs defaultActiveKey="By Variety" className="mb-3">
           <Tab eventKey="By Variety" title="By Variety">
             <OutcomeByVariety />
+          </Tab>
+          <Tab eventKey="By Crop" title="By Crop">
+            <OutcomeByCrop />
           </Tab>
         </Tabs>
       </Container>

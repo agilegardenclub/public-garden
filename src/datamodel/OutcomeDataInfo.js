@@ -224,6 +224,28 @@ export function getVarietyOutcomeCounts(varietyID, years, outcomeDataSet, garden
   return combineOutcomeCounts(outcomeCounts);
 }
 
+export function getCropOutcomeCounts(cropID, years, outcomeDataSet, gardenIDs) {
+  const outcomeCounts = [];
+  for (const chapterOutcomeInfo of outcomeDataSet) {
+    for (const gardenOutcomeInfo of chapterOutcomeInfo.gardenIDs) {
+      if (gardenIDs.includes(gardenOutcomeInfo.gardenID)) {
+        for (const cropIDInfo of gardenOutcomeInfo.cropIDs) {
+          if (cropIDInfo.cropID === cropID) {
+            for (const varietyIDInfo of cropIDInfo.varietyIDs) {
+              for (const outcomeYearInfo of varietyIDInfo.outcomeYears) {
+                if (years.includes(outcomeYearInfo.year)) {
+                  outcomeCounts.push(outcomeYearInfo.outcomeCount);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  return combineOutcomeCounts(outcomeCounts);
+}
+
 export function hasOutcomes(outcomeData) {
   return (
     (outcomeData.appearance && outcomeData.appearance > 0) ||

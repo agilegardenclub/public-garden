@@ -5,15 +5,8 @@ import { familyData } from '../datamodel/data/familyData';
 import { PlantingHistory } from '../datamodel/PlantingHistory';
 import { NestedDropdown } from './NestedDropdown';
 import { TimelineData } from './TimelineData';
-import { getCropName } from '../datamodel/CropInfo';
+import { cropComparator, getCropName } from '../datamodel/CropInfo';
 import { getGardenName } from './GardenName';
-
-function cropComparator(cropID1, cropID2) {
-  const name1 = getCropName(cropID1);
-  const name2 = getCropName(cropID2);
-  // Sometimes getCropName is called without a cropID, resulting in null.
-  return (!name1 || !name2) ? 0 : name1.localeCompare(name2);
-}
 
 export function TimelineByCrop() {
   const gardenName = getGardenName();

@@ -17,7 +17,7 @@ export function YearsSelector({ years, onSetYears }) {
       const selectedYears = [];
       for (const yearField in yearState) {
         if (yearState[yearField]) {
-          selectedYears.push(yearField);
+          selectedYears.push(parseInt(yearField, 10));
         }
       }
       onSetYears(selectedYears);

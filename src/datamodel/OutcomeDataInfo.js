@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import { getGardenIDs } from './ChapterInfo';
 import { getCropIDs, getGardenChapterInfo, getPlantingsByVarietyAndYear, getVarietyIDs } from './GardenInfo';
+import { weekOfYear } from './WeekOfYear';
 
 /*
  Build the following "outcomeDataSet":
@@ -34,6 +35,12 @@ import { getCropIDs, getGardenChapterInfo, getPlantingsByVarietyAndYear, getVari
                                            resistance: { 1: 12, 2: 34, 3: 45, 4: 0, 5: 2 },
                                            yield: { 1: 12, 2: 34, 3: 45, 4: 0, 5: 2 },
                                          },
+                           timelineCount: {
+                                            startDate: { 1: 0, 2: 0, ... 52: 0 },
+                                            transplantDate: { 1: 0, 2: 0, ... 52: 0 },
+                                            firstHarvestDate: { 1: 0, 2: 0, ... 52: 0 },
+                                            endDate: { 1: 0, 2: 0, ... 52: 0 },
+                                          },
                          },
                        ],
                      },
@@ -74,10 +81,47 @@ function buildOutcomeCounts(outcomes) {
   return counts;
 }
 
+function buildTimelineCounts(timelines) {
+  const timelineCounts = { startDate: {}, transplantDate: {}, firstHarvestDate: {}, endDate: {} };
+  const updateTimelineCounts = (timeline) => {
+    const startDateWeek = timeline.startDate && weekOfYear(timeline.startDate);
+    if (startDateWeek) {
+      if (!timelineCounts.startDate[startDateWeek]) {
+        timelineCounts.startDate[startDateWeek] = 0;
+      }
+      timelineCounts.startDate[startDateWeek] += 1;
+    }
+    const transplantDateWeek = timeline.transplantDate && weekOfYear(timeline.transplantDate);
+    if (transplantDateWeek) {
+      if (!timelineCounts.transplantDate[transplantDateWeek]) {
+        timelineCounts.transplantDate[transplantDateWeek] = 0;
+      }
+      timelineCounts.transplantDate[transplantDateWeek] += 1;
+    }
+    const firstHarvestDateWeek = timeline.firstHarvestDate && weekOfYear(timeline.firstHarvestDate);
+    if (firstHarvestDateWeek) {
+      if (!timelineCounts.firstHarvestDate[firstHarvestDateWeek]) {
+        timelineCounts.firstHarvestDate[firstHarvestDateWeek] = 0;
+      }
+      timelineCounts.firstHarvestDate[firstHarvestDateWeek] += 1;
+    }
+    const endDateWeek = timeline.endDate && weekOfYear(timeline.endDate);
+    if (endDateWeek) {
+      if (!timelineCounts.endDate[endDateWeek]) {
+        timelineCounts.endDate[endDateWeek] = 0;
+      }
+      timelineCounts.endDate[endDateWeek] += 1;
+    }
+  };
+  timelines.map(timeline => updateTimelineCounts(timeline));
+  return timelineCounts;
+}
+
 function buildOutcomeYear(varietyID, gardenID, year) {
   const plantings = getPlantingsByVarietyAndYear(gardenID, varietyID, year);
   const outcomes = plantings.map(planting => planting.outcomes);
-  return { year, outcomeCount: buildOutcomeCounts(outcomes) };
+  const timelines = plantings.map(planting => ({ startDate: planting.startDate, transplantDate: planting.transplantDate, firstHarvestDate: planting.firstHarvestDate, endDate: planting.endDate, plantingID: planting.plantingID }));
+  return { year, outcomeCount: buildOutcomeCounts(outcomes), timelineCount: buildTimelineCounts(timelines) };
 }
 
 function buildVarietyOutcomeYearsDataSet(gardenID, years, varietyID) {
@@ -151,7 +195,7 @@ function combineOutcomeCounts(outcomeCounts) {
   );
 }
 
-const currentOutcomeData = buildOutcomeDataSet({ chapterID: 'chapter-01', years: [2020, 2021] });
+const currentOutcomeData = buildOutcomeDataSet({ chapterID: 'chapter-01', years: [2019, 2020, 2021, 2022] });
 
 export function getOutcomeDataSet(chapterID, years) {
   return buildOutcomeDataSet({ chapterID, years });

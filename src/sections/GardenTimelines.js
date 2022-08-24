@@ -16,7 +16,7 @@ function GardenTimelines() {
     <div id="garden-timelines">
       <Container className="py-3">
         <h2>Garden Timelines</h2>
-        <Documentation>
+        <Documentation heading="About garden timelines">
           <p>This section provides a &quot;timeline&quot; perspective on the growing season for each planting in this garden. </p>
           <p>Click on the plant badge for details regarding each planting.</p>
           <p>Each timeline consists of a colored bar indicating the various states of a planting over the course of one year. A light color indicates the planting is in the greenhouse. A dark color indicates that the planting is in the garden. If the color is striped, it means the planting is being harvested.</p>

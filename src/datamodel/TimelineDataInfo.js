@@ -1,3 +1,5 @@
+import _ from 'lodash';
+
 function updateField(weekCount1, weekCount2) {
   const merged = { ...weekCount1 };
   for (const field in weekCount2) {
@@ -9,6 +11,7 @@ function updateField(weekCount1, weekCount2) {
   }
   return merged;
 }
+
 function timelineCountReducer(memo, timelineCount) {
   return {
     startDate: updateField(memo.startDate, timelineCount.startDate),
@@ -50,4 +53,8 @@ export function getVarietyTimelineCounts(varietyID, years, outcomeDataSet, garde
     }
   }
   return combineTimelineCounts(timelineCounts);
+}
+
+export function hasTimelineCounts(timelineCounts) {
+  return !_.isEqual(timelineCounts, { startDate: {}, transplantDate: {}, firstHarvestDate: {}, endDate: {} });
 }

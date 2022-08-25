@@ -29,6 +29,7 @@ const sampleTimelineData = {
 // https://stackoverflow.com/a/33352604
 const labels = Array.from({ length: 52 }, (_, i) => i + 1);
 
+// TODO: OFF BY ONE ERROR!
 function makeDataSet(timelineData) {
   const dataSet = new Array(52).fill(0);
   // eslint-disable-next-line guard-for-in

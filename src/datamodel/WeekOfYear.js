@@ -39,3 +39,51 @@ export function weekOfYear(dateString, year) {
 // console.log('12/31/2021', weekOfYear('12/31/2021', 2021));
 // console.log('12/31/2021 (2020)', weekOfYear('12/31/2021', 2020));
 // console.log('12/31/2021 (2022)', weekOfYear('12/31/2021', 2022));
+
+function getMonthString(monthNum) {
+  const monthMap = {
+    1: 'Jan', 2: 'Feb', 3: 'Mar', 4: 'Apr', 5: 'May', 6: 'Jun', 7: 'Jul', 8: 'Aug', 9: 'Sep',
+    10: 'Oct', 11: 'Nov', 12: 'Dec',
+  };
+  return monthMap[monthNum];
+}
+
+function getFirstDay(weekOfMonthNum) {
+  const startDay = { 1: 1, 2: 8, 3: 15, 4: 22 };
+  return startDay[weekOfMonthNum];
+}
+
+function getLastDay(weekOfMonthNum, monthNum) {
+  const lastDayMap = {
+    1: 31, 2: 28, 3: 30, 4: 31, 5: 30, 6: 31, 7: 30, 8: 31, 9: 30, 10: 31, 11: 30, 12: 31,
+  };
+  if (weekOfMonthNum === 1) {
+    return 7;
+  }
+  if (weekOfMonthNum === 2) {
+    return 14;
+  }
+  if (weekOfMonthNum === 3) {
+    return 21;
+  }
+  return lastDayMap[monthNum];
+}
+
+export function weekToString(weekNum) {
+  // WeekOfMonth is 1...4.
+  const weekOfMonthNum = ((weekNum % 4) === 0) ? 4 : (weekNum % 4);
+  // Month is 1...12.
+  let monthNum = Math.round(weekNum / 4);
+  if (weekOfMonthNum === 1) {
+    monthNum += 1;
+  }
+  const month = getMonthString(monthNum);
+  const firstDay = getFirstDay(weekOfMonthNum);
+  const lastDay = getLastDay(weekOfMonthNum, monthNum);
+  return `${month} ${firstDay}-${lastDay}`;
+}
+
+// Informal tests.
+for (let i = 1; i <= 48; i++) {
+  console.log(i, weekToString(i));
+}

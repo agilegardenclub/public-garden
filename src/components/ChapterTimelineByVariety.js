@@ -11,6 +11,7 @@ import { getChapterID, getGardenID } from '../datamodel/GardenInfo';
 import { getGardenIDs } from '../datamodel/ChapterInfo';
 import { YearsSelector } from './YearsSelector';
 import { getVarietyTimelineCounts, hasTimelineCounts } from '../datamodel/TimelineDataInfo';
+import { TimelineChart } from './TimelineChart';
 
 export function ChapterTimelineByVariety() {
   const gardenName = getGardenName();
@@ -31,6 +32,7 @@ export function ChapterTimelineByVariety() {
   const [selectedVarietyName, setVarietyName] = useState(initialVarietyName);
   const [chapterTimelineData, setChapterTimelineData] = useState(initialChapterTimelineData);
   const [gardenTimelineData, setGardenTimelineData] = useState(initialGardenTimelineData);
+  console.log(gardenTimelineData);
   const [years, setYears] = useState(initialYears);
   const onSelectVariety = (eventKey) => {
     if (eventKey) {
@@ -53,9 +55,7 @@ export function ChapterTimelineByVariety() {
       <Row>
         <Col>
           <h6 className="text-center">Garden Outcomes</h6>
-          {hasTimelineCounts(gardenTimelineData) ?
-            JSON.stringify(gardenTimelineData) :
-            <div>No outcome data available.</div>}
+          <TimelineChart/>
         </Col>
         <Col>
           <h6 className="text-center">Chapter Outcomes</h6>

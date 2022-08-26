@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Tab, Tabs } from 'react-bootstrap';
 import { Documentation } from '../components/Documentation';
 import { ChapterTimelineByVariety } from '../components/ChapterTimelineByVariety';
+import { ChapterTimelineByCrop } from '../components/ChapterTimelineByCrop';
 
 function ChapterTimelines() {
   return (
@@ -16,6 +17,9 @@ function ChapterTimelines() {
           <Tabs defaultActiveKey="By Variety" className="mb-3">
             <Tab eventKey="By Variety" title="By Variety">
               <ChapterTimelineByVariety/>
+            </Tab>
+            <Tab eventKey="By Crop" title="By Crop">
+              <ChapterTimelineByCrop/>
             </Tab>
           </Tabs>
         </div>

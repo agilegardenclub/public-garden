@@ -14,12 +14,12 @@ function ChapterTimelines() {
             new plant variety, or to compare your own timing with others in your chapter to look for potential improvements. </p>
         </Documentation>
         <div className="light-gray-background">
-          <Tabs defaultActiveKey="By Variety" className="mb-3">
-            <Tab eventKey="By Variety" title="By Variety">
-              <ChapterTimelineByVariety/>
-            </Tab>
+          <Tabs defaultActiveKey="By Crop" className="mb-3">
             <Tab eventKey="By Crop" title="By Crop">
               <ChapterTimelineByCrop/>
+            </Tab>
+            <Tab eventKey="By Variety" title="By Variety">
+              <ChapterTimelineByVariety/>
             </Tab>
           </Tabs>
         </div>

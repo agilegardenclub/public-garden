@@ -55,6 +55,28 @@ export function getVarietyTimelineCounts(varietyID, years, outcomeDataSet, garde
   return combineTimelineCounts(timelineCounts);
 }
 
+export function getCropTimelineCounts(cropID, years, outcomeDataSet, gardenIDs) {
+  const timelineCounts = [];
+  for (const chapterOutcomeInfo of outcomeDataSet) {
+    for (const gardenOutcomeInfo of chapterOutcomeInfo.gardenIDs) {
+      if (gardenIDs.includes(gardenOutcomeInfo.gardenID)) {
+        for (const cropIDInfo of gardenOutcomeInfo.cropIDs) {
+          if (cropIDInfo.cropID === cropID) {
+            for (const varietyIDInfo of cropIDInfo.varietyIDs) {
+              for (const outcomeYearInfo of varietyIDInfo.outcomeYears) {
+                if (years.includes(outcomeYearInfo.year)) {
+                  timelineCounts.push(outcomeYearInfo.timelineCount);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  return combineTimelineCounts(timelineCounts);
+}
+
 export function hasTimelineCounts(timelineCounts) {
   return !_.isEqual(timelineCounts, { startDate: {}, transplantDate: {}, firstHarvestDate: {}, endDate: {} });
 }

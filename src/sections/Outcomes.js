@@ -77,12 +77,12 @@ function Outcomes() {
 
           <p>Providing outcome data is optional. A gardener can provide only a subset of the outcome measures. For example, if they don&apos;t care about Appearance, they don&apos;t have to provide that data. Outcome data can be useful to gardeners and chapters even when partially available, as long as the ratings are applied consistently, which is why we provide definitions for the five rating levels for each outcome type.</p>
         </Documentation>
-        <Tabs defaultActiveKey="By Variety" className="mb-3">
-          <Tab eventKey="By Variety" title="By Variety">
-            <OutcomeByVariety />
-          </Tab>
+        <Tabs defaultActiveKey="By Crop" className="mb-3">
           <Tab eventKey="By Crop" title="By Crop">
             <OutcomeByCrop />
+          </Tab>
+          <Tab eventKey="By Variety" title="By Variety">
+            <OutcomeByVariety />
           </Tab>
         </Tabs>
       </Container>

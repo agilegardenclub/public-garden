@@ -2,6 +2,7 @@ import React from 'react';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import PropTypes from 'prop-types';
+import { weekToString } from '../datamodel/WeekOfYear';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
@@ -12,9 +13,17 @@ const barColor = {
   endDate: 'rgb(252, 3, 232)',
 };
 
+function getToolTipLabel(tooltipItem) {
+  const type = tooltipItem.label;
+  const weekString = weekToString(parseInt(type, 10));
+  const level = tooltipItem.dataset.label;
+  const value = tooltipItem.formattedValue;
+  return [`${value} ${type} ${level} `, weekString];
+}
+
 export const options = {
   responsive: true,
-  plugins: { legend: { display: true }, title: { display: true, text: 'Chart' } },
+  plugins: { tooltip: { callbacks: { label: getToolTipLabel } }, legend: { display: true }, title: { display: true, text: 'Chart' } },
   scales: { x: { display: true }, y: { display: false } },
 };
 

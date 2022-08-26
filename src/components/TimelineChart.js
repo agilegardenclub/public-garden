@@ -30,18 +30,17 @@ export const options = {
   scales: { x: { display: true }, y: { display: false } },
 };
 
-const sampleTimelineData = {
-  startDate: { 12: 4, 13: 5, 14: 1 },
-  transplantDate: { 16: 2, 17: 4, 18: 5 },
-  firstHarvestDate: { 36: 2, 38: 4, 39: 5 },
-  endDate: { 38: 2, 39: 4, 42: 5, 43: 5 },
-};
+// const sampleTimelineData = {
+//   startDate: { 12: 4, 13: 5, 14: 1 },
+//   transplantDate: { 16: 2, 17: 4, 18: 5 },
+//   firstHarvestDate: { 36: 2, 38: 4, 39: 5 },
+//   endDate: { 38: 2, 39: 4, 42: 5, 43: 5 },
+// };
 
 // Cute trick for initializing array with [1, 2, 3, ... 48]:
 // https://stackoverflow.com/a/33352604
 const labels = Array.from({ length: 48 }, (_, i) => i + 1);
 
-// TODO: OFF BY ONE ERROR!
 function makeDataSet(timelineData) {
   const dataSet = new Array(48).fill(0);
   // eslint-disable-next-line guard-for-in
@@ -87,8 +86,8 @@ function makeData(timelineData) {
   };
 }
 
-export function TimelineChart() {
-  return <Bar options={options} data={makeData(sampleTimelineData)} />;
+export function TimelineChart({ timelineData }) {
+  return <Bar options={options} data={makeData(timelineData)} />;
 }
 
 TimelineChart.propTypes = {

@@ -55,12 +55,14 @@ export function ChapterTimelineByVariety() {
       <Row>
         <Col>
           <h6 className="text-center">Garden Outcomes</h6>
-          <TimelineChart/>
+          {hasTimelineCounts(gardenTimelineData) ?
+            <TimelineChart timelineData={gardenTimelineData}/> :
+            <div>No outcome data available.</div>}
         </Col>
         <Col>
           <h6 className="text-center">Chapter Outcomes</h6>
           {hasTimelineCounts(chapterTimelineData) ?
-            JSON.stringify(chapterTimelineData) :
+            <TimelineChart timelineData={chapterTimelineData}/> :
             <div>No outcome data available.</div>}
         </Col>
       </Row>

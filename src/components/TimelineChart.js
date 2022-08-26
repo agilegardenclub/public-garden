@@ -16,14 +16,16 @@ const barColor = {
 function getToolTipLabel(tooltipItem) {
   const type = tooltipItem.label;
   const weekString = weekToString(parseInt(type, 10));
-  const level = tooltipItem.dataset.label;
-  const value = tooltipItem.formattedValue;
-  return [`${value} ${type} ${level} `, weekString];
+  return weekString;
+}
+
+function getTooltipTitle(data) {
+  return `Week ${data[0].label}`;
 }
 
 export const options = {
   responsive: true,
-  plugins: { tooltip: { callbacks: { label: getToolTipLabel } }, legend: { display: true }, title: { display: true, text: 'Chart' } },
+  plugins: { tooltip: { callbacks: { label: getToolTipLabel, title: getTooltipTitle } }, legend: { display: true }, title: { display: true, text: 'Chart' } },
   scales: { x: { display: true }, y: { display: false } },
 };
 

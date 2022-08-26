@@ -15,8 +15,9 @@ const barColor = {
 
 function getToolTipLabel(tooltipItem) {
   const type = tooltipItem.label;
-  const weekString = weekToString(parseInt(type, 10));
-  return weekString;
+  const value = tooltipItem.formattedValue;
+  const weekString = weekToString(parseInt(type, 10) - 1);
+  return `${weekString}: ${value}`;
 }
 
 function getTooltipTitle(data) {
@@ -25,7 +26,7 @@ function getTooltipTitle(data) {
 
 export const options = {
   responsive: true,
-  plugins: { tooltip: { callbacks: { label: getToolTipLabel, title: getTooltipTitle } }, legend: { display: true }, title: { display: true, text: 'Chart' } },
+  plugins: { tooltip: { callbacks: { label: getToolTipLabel, title: getTooltipTitle } }, legend: { display: true }, title: { display: false, text: 'Chart' } },
   scales: { x: { display: true }, y: { display: false } },
 };
 
@@ -36,16 +37,16 @@ const sampleTimelineData = {
   endDate: { 38: 2, 39: 4, 42: 5, 43: 5 },
 };
 
-// Cute trick for initializing array with [1, 2, 3, ... 52]:
+// Cute trick for initializing array with [1, 2, 3, ... 48]:
 // https://stackoverflow.com/a/33352604
-const labels = Array.from({ length: 52 }, (_, i) => i + 1);
+const labels = Array.from({ length: 48 }, (_, i) => i + 1);
 
 // TODO: OFF BY ONE ERROR!
 function makeDataSet(timelineData) {
-  const dataSet = new Array(52).fill(0);
+  const dataSet = new Array(48).fill(0);
   // eslint-disable-next-line guard-for-in
   for (const field in timelineData) {
-    dataSet[field] = timelineData[field];
+    dataSet[field - 1] = timelineData[field];
   }
   return dataSet;
 }

@@ -9,13 +9,16 @@ function ChapterTimelines() {
       <Container className="py-3">
         <h2>Chapter Timelines</h2>
         <Documentation heading="About chapter timelines">
-          <p>These timelines provide historical data on the start dates, transplant dates, first harvest dates, and end dates associated with plant varieties and crops. Data on chapter timing data can be useful when planning a garden with a new plant variety, or to compare your own timing with others in your chapter to look for potential improvements.  </p>
+          <p>These timelines provide historical data on the start dates, transplant dates, first harvest dates, and end dates associated with plant varieties and crops. Data on chapter timing data can be useful when planning a garden with a
+            new plant variety, or to compare your own timing with others in your chapter to look for potential improvements. </p>
         </Documentation>
-        <Tabs defaultActiveKey="By Variety" className="mb-3">
-          <Tab eventKey="By Variety" title="By Variety">
-            <ChapterTimelineByVariety />
-          </Tab>
-        </Tabs>
+        <div className="light-gray-background">
+          <Tabs defaultActiveKey="By Variety" className="mb-3">
+            <Tab eventKey="By Variety" title="By Variety">
+              <ChapterTimelineByVariety/>
+            </Tab>
+          </Tabs>
+        </div>
       </Container>
     </div>
   );

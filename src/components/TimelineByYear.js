@@ -12,9 +12,9 @@ export function TimelineByYear() {
   const plantingHistory = new PlantingHistory({ gardenName, varietyData, familyData });
   const years = plantingHistory.years();
   const menuItems = years.map(year => ({ type: 'item', label: year, eventKey: year }));
-  const initialYear = `${years[0]}`;
+  const initialYear = '2022';
   const [selectedYear, setYear] = useState(initialYear);
-  const [historyData, setHistoryData] = useState(plantingHistory.historyData({ year: years[0] }));
+  const [historyData, setHistoryData] = useState(plantingHistory.historyData({ year: 2022 }));
   const onSelect = (eventKey) => {
     if (eventKey) {
       setYear(eventKey);

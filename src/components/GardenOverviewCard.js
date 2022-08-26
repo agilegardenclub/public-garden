@@ -30,11 +30,12 @@ export function GardenOverviewCard() {
   const climateVictoryGarden = gardenOverview.climateVictoryGarden();
   return (
     <Card>
-      <Card.Header><h5>Garden: {gardenName} {climateVictoryGarden && <ClimateVictoryGardenBadge />}</h5></Card.Header>
+      <Card.Header><h5>Garden Overview </h5></Card.Header>
       <PictureCarousel pictureData={pictureData} />
       <Card.Body>
         <Stack gap={1}>
-          <Field title="Chapter:">{chapterName}</Field>
+          <Field title="Garden name:">{gardenName}</Field>
+          <Field title="Chapter membership:">{chapterName}</Field>
           <Field title="Years:">{gardenYears.join(', ')}</Field>
           <Field title="Current Size:">{size} sq ft. {year}</Field>
           <Field title="Number of beds:">{beds} {year}</Field>
@@ -47,6 +48,7 @@ export function GardenOverviewCard() {
               {gardeners.map((gardener, index) => <Col key={index}>{gardener}</Col>)}
             </Row>
           </Field>
+          {climateVictoryGarden && <Field title="Flair:"><ClimateVictoryGardenBadge /></Field>}
           <Field title="Last Update:">{lastUpdate}</Field>
         </Stack>
       </Card.Body>

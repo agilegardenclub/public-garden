@@ -84,6 +84,6 @@ export function weekToString(weekNum) {
 }
 
 // Informal tests.
-for (let i = 1; i <= 48; i++) {
-  console.log(i, weekToString(i));
-}
+// for (let i = 1; i <= 48; i++) {
+//   console.log(i, weekToString(i));
+// }

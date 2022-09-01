@@ -1,4 +1,5 @@
 import React from 'react';
+import _ from 'lodash';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import PropTypes from 'prop-types';
@@ -44,7 +45,7 @@ export const outcomeDescriptions = [
 ];
 
 function getToolTipLabel(tooltipItem) {
-  const type = tooltipItem.label;
+  const type = tooltipItem.label.split(' ')[0];
   const level = tooltipItem.dataset.label;
   const value = tooltipItem.formattedValue;
   const levelText = outcomeDescriptions.find(description => description.type === type)[level];
@@ -69,11 +70,29 @@ export const outcomeTypes = outcomeDescriptions.map(description => description.t
 //   yield: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 5 },
 // };
 
+function totalOutcomes(outcomeData, field) {
+  let total = 0;
+  for (let i = 1; i <= 5; i++) {
+    total += outcomeData[field][i];
+  }
+  return total;
+}
+
+function makeLabel(outcomeData, field) {
+  return `${_.capitalize(field)} (${totalOutcomes(outcomeData, field)})`;
+}
+
 export const outcomeColorPalette = ['rgb(255, 0, 0)', 'rgb(255, 115, 119)', 'rgb(211,211,211)', 'rgb(163, 255, 0)', 'rgb(44, 186, 0)'];
 
 function makeData(outcomeData) {
   return {
-    labels: ['Appearance', 'Flavor', 'Germination', 'Resistance', 'Yield'],
+    labels: [
+      makeLabel(outcomeData, 'appearance'),
+      makeLabel(outcomeData, 'flavor'),
+      makeLabel(outcomeData, 'germination'),
+      makeLabel(outcomeData, 'resistance'),
+      makeLabel(outcomeData, 'yield'),
+    ],
     datasets: [
       { label: '1',
         data: [outcomeData.appearance[1], outcomeData.flavor[1], outcomeData.germination[1], outcomeData.resistance[1], outcomeData.yield[1]],

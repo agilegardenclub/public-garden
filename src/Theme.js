@@ -41,3 +41,9 @@ export const FamilyColors = {
   daisy: { dark: '#20c997', light: '#a6e9d5' },
   misc_perennials: { dark: '#3dd5f3', light: '#9eeaf9' },
 };
+
+export const TimelineColors = {
+  yellow: '#ecae3b',
+  blue: '#4989bd',
+  green: '#65bfa1',
+};

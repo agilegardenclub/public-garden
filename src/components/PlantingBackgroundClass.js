@@ -1,4 +1,4 @@
-import { getFamilyCommonName } from '../datamodel/VarietyInfo';
+// import { getFamilyCommonName } from '../datamodel/VarietyInfo';
 
 /**
  * Takes the current week (1-48) and returns the appropriate background class for the planting timeline:
@@ -65,18 +65,22 @@ export function plantingBackgroundClass(currWeek, plantingData) {
     state = 'Unknown-10';
   }
   // console.log('Plant State', plantingData.varietyID, state, currWeek, plantingData);
-  const familyName = getFamilyCommonName(plantingData.varietyID).toLowerCase();
+  // const familyName = getFamilyCommonName(plantingData.varietyID).toLowerCase();
   if (state.startsWith('GrowingInGreenhouse')) {
-    return `bg-pf-${familyName}-light`;
+    // return `bg-pf-${familyName}-light`;
+    return 'bg-tl-yellow';
   }
   if (state.startsWith('GrowingInBed')) {
-    return `bg-pf-${familyName}-dark`;
+    // return `bg-pf-${familyName}-dark`;
+    return 'bg-tl-green';
   }
   if (state.startsWith('HarvestingInGreenhouse')) {
-    return `bg-pf-${familyName}-light-harvest`;
+    // return `bg-pf-${familyName}-light-harvest`;
+    return 'bg-tl-blue';
   }
   if (state.startsWith('HarvestingInBed')) {
-    return `bg-pf-${familyName}-dark-harvest`;
+    // return `bg-pf-${familyName}-dark-harvest`;
+    return 'bg-tl-blue';
   }
   return 'bg-danger';
 }

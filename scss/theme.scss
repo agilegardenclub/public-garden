@@ -39,6 +39,16 @@ $pf-daisy-light: $teal-200;
 $pf-misc_perennials-dark: $cyan-400;
 $pf-misc_perennials-light: $cyan-200;
 
+$tl-yellow: #ecae3b;
+$tl-blue: #4989bd;
+$tl-green: #65bfa1;
+
+$timeline-colors: (
+  "tl-yellow": $tl-yellow,
+  "tl-blue": $tl-blue,
+  "tl-green": $tl-green,
+);
+
 $plant-family-colors: (
   "pf-allium-dark": $pf-allium-dark,
   "pf-allium-light": $pf-allium-light,
@@ -60,9 +70,13 @@ $plant-family-colors: (
   "pf-daisy-light": $pf-daisy-light,
   "pf-misc_perennials-dark": $pf-misc_perennials-dark,
   "pf-misc_perennials-light": $pf-misc_perennials-light,
+  "tl-yellow": $tl-yellow,
+  "tl-blue": $tl-blue,
+   "tl-green": $tl-green,
 );
 
 $theme-colors: map-merge($theme-colors, $plant-family-colors);
+
 
 // 4. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/maps";
@@ -92,6 +106,23 @@ html {
   left: 0;
   top: 0;
   padding-bottom: 2.5rem;
+}
+
+// Timeline background classes
+
+.bg-tl-yellow {
+  background-color: $tl-yellow;
+  background-size: 10px;
+}
+
+.bg-tl-blue {
+  background-color: $tl-blue;
+  background-size: 10px;
+}
+
+.bg-tl-green {
+  background-color: $tl-green;
+  background-size: 10px;
 }
 
 ////  HARVEST PATTERNED BACKGROUNDS FOR EACH PLANT FAMILY

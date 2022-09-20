@@ -766,7 +766,7 @@ export const varietyData = [
   {
     id: 'variety-186',
     cropID: 'crop-40',
-    variety: 'Summer',
+    variety: 'Crookneck',
     vendorID: 'vendor-12',
     description: '',
     daysToHarvest: 60,
@@ -978,5 +978,22 @@ export const varietyData = [
     vendorID: 'vendor-02',
     description: '',
     daysToHarvest: 65,
+  },
+  {
+    id: 'variety-214',
+    cropID: 'crop-19',
+    variety: 'Hardneck',
+    vendorID: 'vendor-00',
+    description: 'Organic variety from farmers market.',
+    daysToHarvest: 270,
+  },
+
+  {
+    id: 'variety-215',
+    cropID: 'crop-05',
+    variety: 'Borlotto Gaston',
+    vendorID: 'vendor-02',
+    description: 'Delicious, shelling cranberry pole bean.',
+    daysToHarvest: 270,
   },
 ];

@@ -700,7 +700,7 @@ export const varietyData = [
     daysToHarvest: 70,
   },
   {
-    id: 'variety-178',
+    id: 'variety-178', // collards
     cropID: 'crop-13',
     variety: '',
     vendorID: 'vendor-12',

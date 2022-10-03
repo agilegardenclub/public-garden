@@ -82,7 +82,7 @@ function makeLabel(outcomeData, field) {
   return `${_.capitalize(field)} (${totalOutcomes(outcomeData, field)})`;
 }
 
-export const outcomeColorPalette = ['rgb(255, 0, 0)', 'rgb(255, 115, 119)', 'rgb(211,211,211)', 'rgb(163, 255, 0)', 'rgb(44, 186, 0)'];
+export const outcomeColorPalette = ['rgb(255, 0, 0)', 'rgb(255, 115, 119)', 'rgb(255,242,125)', 'rgb(163, 255, 0)', 'rgb(44, 186, 0)'];
 
 function makeData(outcomeData) {
   return {

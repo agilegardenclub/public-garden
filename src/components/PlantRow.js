@@ -1,6 +1,8 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import PropTypes from 'prop-types';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 import { TimelinePlantBadge } from './TimelinePlantBadge';
 import { plantingBackgroundClass } from './PlantingBackgroundClass';
 import { getObservations, getNotifications } from '../datamodel/ObservationInfo';
@@ -36,7 +38,7 @@ function MonthCol({ currMonth, plantingData }) {
     <Col xs={1} className="p-0">
       <Row className="mx-auto">
         {[1, 2, 3, 4]
-          .map((weekOfMonth, index) => <WeekCol key={index} currWeek={(currMonth * 4) + weekOfMonth} plantingData={plantingData}/>)}
+          .map((weekOfMonth, index) => <WeekColTooltip key={index} currWeek={(currMonth * 4) + weekOfMonth} plantingData={plantingData}/>)}
       </Row>
     </Col>
   );
@@ -72,9 +74,30 @@ function WeekCol({ currWeek, plantingData }) {
   );
 }
 
+function WeekColTooltip({ currWeek, plantingData }) {
+  // eslint-disable-next-line react/display-name
+  const renderTooltip = React.forwardRef((props, ref) => (
+    <Tooltip id="button-tooltip" ref={ref} {...props}>
+      Simple tooltip
+    </Tooltip>
+  ));
+
+  return (
+    <OverlayTrigger placement="top" delay={{ show: 250, hide: 400 }} overlay={renderTooltip}>
+      <WeekCol currWeek={currWeek} plantingData={plantingData}/>
+    </OverlayTrigger>
+  );
+}
+
 WeekCol.propTypes = {
   currWeek: PropTypes.number,
   plantingData: PropTypes.any,
+};
+
+WeekColTooltip.propTypes = {
+  currWeek: PropTypes.number,
+  plantingData: PropTypes.any,
+  forwardRef: PropTypes.any,
 };
 
 export function PlantRow({ plantingData }) {

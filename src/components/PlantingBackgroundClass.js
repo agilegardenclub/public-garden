@@ -70,25 +70,19 @@ export function plantingBackgroundClass(currWeek, plantingData) {
   } else {
     state = 'Unknown-10';
   }
-  if (plantingData.plantingID === 'planting-101') {
-    console.log('Plant State', endHarvestWeek, state, currWeek);
-  }
-  // console.log('Plant State', plantingData.varietyID, state, currWeek, plantingData);
-  // const familyName = getFamilyCommonName(plantingData.varietyID).toLowerCase();
+  // if (plantingData.plantingID === 'planting-101') {
+  //   console.log('Plant State', endHarvestWeek, state, currWeek);
+  // }
   if (state.startsWith('GrowingInGreenhouse')) {
-    // return `bg-pf-${familyName}-light`;
     return 'bg-tl-yellow';
   }
   if (state.startsWith('GrowingInBed')) {
-    // return `bg-pf-${familyName}-dark`;
     return 'bg-tl-green';
   }
   if (state.startsWith('HarvestingInGreenhouse')) {
-    // return `bg-pf-${familyName}-light-harvest`;
     return 'bg-tl-blue';
   }
   if (state.startsWith('HarvestingInBed')) {
-    // return `bg-pf-${familyName}-dark-harvest`;
     return 'bg-tl-blue';
   }
   return 'bg-danger';

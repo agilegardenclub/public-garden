@@ -23,7 +23,7 @@ function About() {
           <li><b>Mobile first</b> Many garden technologies tether you to your computer. In contrast, AGC believes the best time to gather data about your garden is when you&lsquo;re actually in your garden. We will provide native mobile
             apps so that all features of AGC are available on your Apple or Android phone. (We also support the desktop for those long winter nights.)
           </li>
-          <li><b>Local, not global</b> If you live in Alaska, garden data from Florida is of limited use. AGC groups our members into local Chapters covering a small geographic region. This increases the relevance of community-supplied data
+          <li><b>Local, not global</b> If you live in Alaska, garden data from Florida is of limited use. AGC groups our member&apos;s gardens into local Chapters covering a small geographic region. This increases the relevance of community-supplied data
             on plant and seed outcomes, and makes it easier to actually meet with your fellow chapter members if you want.
           </li>
         </ol>

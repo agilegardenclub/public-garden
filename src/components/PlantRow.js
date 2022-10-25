@@ -56,7 +56,6 @@ function isThisWeek(currWeek, year) {
 
 function WeekCol({ currWeek, plantingData }) {
   const bg = plantingBackgroundClass(currWeek, plantingData);
-  // eslint-disable-next-line no-unused-vars
   const observations = getObservations(currWeek, plantingData);
   const notifications = getNotifications(currWeek, plantingData);
   let border = (((currWeek % 4) === 0) && currWeek < 48) ? 'border-end' : '';

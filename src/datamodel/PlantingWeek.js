@@ -24,4 +24,7 @@ export function addPlantingWeeks(plantingData, year) {
   if (plantingData.firstHarvestDate) {
     plantingData.firstHarvestWeek = weekOfYear(plantingData.firstHarvestDate);
   }
+  if (plantingData.endHarvestDate) {
+    plantingData.endHarvestWeek = weekOfYear(plantingData.endHarvestDate);
+  }
 }

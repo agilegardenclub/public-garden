@@ -7,9 +7,11 @@
  *     IF usedGreenhouse AND transplantWeek AND (currWeek >= startWeek) AND (currWeek < transplantWeek)
  *     IF usedGreenhouse AND no transplantWeek AND (currWeek >= startWeek) AND (currWeek < firstHarvestWeek)
  *     IF usedGreenhouse AND no transplantWeek AND no firstHarvestWeek AND (currWeek >= startWeek) AND (currWeek < firstHarvestWeek)
+ *     IF usedGreenhouse AND endHarvestWeek AND (currWeek >= endHarvestWeek) AND (currWeek <= endWeek)  // SEEDS
  *   GrowingInBed:
  *     IF not usedGreenhouse AND (currWeek >= startWeek) AND (currWeek < firstHarvestWeek)
  *     IF usedGreenhouse AND (currWeek >= transplantWeek) AND (currWeek < firstHarvestWeek)
+ *     IF no usedGreenhouse AND endHarvestWeek AND (currWeek >= endHarvestWeek) AND (currWeek <= endWeek)  // SEEDS
  *   HarvestingInGreenHouse:
  *     IF usedGreenhouse AND no transplantWeek AND (currWeek >= firstHarvestWeek) AND (currWeek <= endWeek)
  *   HarvestingInBed:
@@ -27,7 +29,7 @@
  */
 export function plantingBackgroundClass(currWeek, plantingData) {
   let state = '';
-  const { usedGreenhouse, startWeek, transplantWeek, firstHarvestWeek, endWeek } = plantingData;
+  const { usedGreenhouse, startWeek, transplantWeek, firstHarvestWeek, endWeek, endHarvestWeek } = plantingData;
   // return empty string for classname if currWeek falls outside of start and end week.
   if ((currWeek < startWeek) || (currWeek > endWeek)) {
     return '';
@@ -42,6 +44,8 @@ export function plantingBackgroundClass(currWeek, plantingData) {
   } else if (usedGreenhouse && !transplantWeek && !firstHarvestWeek) {
     // In the greenhouse, no transplant, no firstHarvest
     state = 'GrowingInGreenhouse-03';
+  } else if (usedGreenhouse && endHarvestWeek && (currWeek >= endHarvestWeek)) {
+    state = 'GrowingInGreenhouse-04';
     // Move on to growing in the bed
   } else if (!usedGreenhouse && firstHarvestWeek && (currWeek < firstHarvestWeek)) {
     state = 'GrowingInBed-01';
@@ -51,6 +55,8 @@ export function plantingBackgroundClass(currWeek, plantingData) {
     state = 'GrowingInBed-03';
   } else if (!usedGreenhouse && !firstHarvestWeek) {
     state = 'GrowingInBed-04';
+  } else if (!usedGreenhouse && endHarvestWeek && (currWeek >= endHarvestWeek)) {
+    state = 'GrowingInBed-05';
     // Move on to harvesting in greenhouse
   } else if (usedGreenhouse && !transplantWeek && firstHarvestWeek && (currWeek >= firstHarvestWeek)) {
     state = 'HarvestingInGreenhouse-01';
@@ -63,6 +69,9 @@ export function plantingBackgroundClass(currWeek, plantingData) {
     state = 'HarvestingInBed-13';
   } else {
     state = 'Unknown-10';
+  }
+  if (plantingData.plantingID === 'planting-101') {
+    console.log('Plant State', endHarvestWeek, state, currWeek);
   }
   // console.log('Plant State', plantingData.varietyID, state, currWeek, plantingData);
   // const familyName = getFamilyCommonName(plantingData.varietyID).toLowerCase();

@@ -1,12 +1,14 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import PropTypes from 'prop-types';
+import Tooltip from 'react-bootstrap/Tooltip';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import { TimelinePlantBadge } from './TimelinePlantBadge';
-import { plantingBackgroundClass } from './PlantingBackgroundClass';
+import { backgroundClassToState, plantingBackgroundClass } from './PlantingBackgroundClass';
 import { getObservations, getNotifications } from '../datamodel/ObservationInfo';
 import { TimelineObservationPin } from './TimelineObservationPin';
 import { TimelineNotificationPin } from './TimelineNotificationPin';
-import { weekOfYear } from '../datamodel/WeekOfYear';
+import { weekOfYear, weekToString } from '../datamodel/WeekOfYear';
 
 export function PlantRowNameHeaderCol() {
   return (
@@ -56,6 +58,13 @@ function isThisWeek(currWeek, year) {
 
 function WeekCol({ currWeek, plantingData }) {
   const bg = plantingBackgroundClass(currWeek, plantingData);
+  const state = backgroundClassToState(bg);
+  const renderTooltip = (props) => (
+    <Tooltip id="button-tooltip" {...props}>
+      {weekToString(currWeek)}<br/>
+      {state}
+    </Tooltip>
+  );
   const observations = getObservations(currWeek, plantingData);
   const notifications = getNotifications(currWeek, plantingData);
   let border = (((currWeek % 4) === 0) && currWeek < 48) ? 'border-end' : '';
@@ -66,8 +75,8 @@ function WeekCol({ currWeek, plantingData }) {
   const style = { height: '24px', minWidth: '1px' };
   return (
     <Col xs={3} className={classNameString} style={style}>
-      {observations.length > 0 ? <TimelineObservationPin observations={observations}/> : <div></div>}
-      {notifications.length > 0 ? <TimelineNotificationPin notifications={notifications}/> : <div></div>}
+      {observations.length > 0 ? <TimelineObservationPin observations={observations}/> : <OverlayTrigger placement="top" delay={{ show: 250, hide: 400 }} overlay={renderTooltip}><div>&nbsp;</div></OverlayTrigger>}
+      {notifications.length > 0 ? <TimelineNotificationPin notifications={notifications}/> : <OverlayTrigger placement="top" delay={{ show: 250, hide: 400 }} overlay={renderTooltip}><div>&nbsp;</div></OverlayTrigger>}
     </Col>
   );
 }

@@ -87,3 +87,16 @@ export function plantingBackgroundClass(currWeek, plantingData) {
   }
   return 'bg-danger';
 }
+
+export function backgroundClassToState(backgroundClass) {
+  if (backgroundClass === 'bg-tl-yellow') {
+    return 'Growing in greenhouse';
+  }
+  if (backgroundClass === 'bg-tl-green') {
+    return 'Growing in bed';
+  }
+  if (backgroundClass === 'bg-tl-blue') {
+    return 'Harvesting';
+  }
+  return '';
+}

@@ -1,6 +1,6 @@
 import { chapterData } from './data/chapterData';
 import { gardenData } from './data/gardenData';
-import { getCropIDs, getGardenYears } from './GardenInfo';
+import { getCropIDs, getGardenYears, getSeedsSavedPlantingData, getSeedsToSharePlantingData } from './GardenInfo';
 import { cropComparator } from './CropInfo';
 
 function getChapterInfo(chapterID) {
@@ -61,4 +61,14 @@ export function getChapterCropIDs(chapterID) {
   const gardenIDs = getGardenIDs(chapterID);
   const cropIDs = [...new Set(gardenIDs.map(gardenID => getCropIDs(gardenID)).flat())];
   return cropIDs.sort(cropComparator);
+}
+
+export function getChapterSeedsSavedPlantings(chapterID) {
+  const gardenIDs = getGardenIDs(chapterID);
+  return [...new Set(gardenIDs.map(gardenID => getSeedsSavedPlantingData(gardenID)).flat())];
+}
+
+export function getChapterSeedsToSharePlantings(chapterID) {
+  const gardenIDs = getGardenIDs(chapterID);
+  return [...new Set(gardenIDs.map(gardenID => getSeedsToSharePlantingData(gardenID)).flat())];
 }

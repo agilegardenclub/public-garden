@@ -26,6 +26,8 @@ export function TimelinePlantBadge({ plantingData }) {
   const firstHarvestDate = plantingData.firstHarvestDate || 'N/A';
   const endDate = plantingData.endDate;
   const usedGreenhouse = plantingData.usedGreenhouse ? 'Yes' : 'No';
+  const seedsSaved = plantingData.seedsSaved ? 'Yes' : 'No';
+  const seedsToShare = plantingData.seedsToShare ? 'Yes' : 'No';
 
   return (
     <BadgeWithPopover header={name} label={name} bg={bg}>
@@ -37,6 +39,8 @@ export function TimelinePlantBadge({ plantingData }) {
       <p style={{ margin: 0 }}><b>Transplant Date:</b> {transplantDate}</p>
       <p style={{ margin: 0 }}><b>First Harvest Date:</b> {firstHarvestDate}</p>
       <p style={{ margin: 0 }}><b>End Date:</b> {endDate}</p>
+      <p style={{ margin: 0 }}><b>Seeds saved?:</b> {seedsSaved}</p>
+      <p style={{ margin: 0 }}><b>Seeds to share?:</b> {seedsToShare}</p>
       <Field title="Outcomes:" direction="vertical">
         <OutcomeStars outcomeData={plantingData.outcomes}/>
       </Field>

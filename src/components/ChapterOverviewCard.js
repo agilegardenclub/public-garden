@@ -5,8 +5,9 @@ import { chapterOverview } from '../datamodel/ChapterOverview';
 import { ZoneBadge } from './ZoneBadge';
 import { PictureCarousel } from './PictureCarousel';
 import { ChapterCropBadge } from './ChapterCropBadge';
-import { getChapterCropIDs } from '../datamodel/ChapterInfo';
+import { getChapterCropIDs, getChapterSeedsSavedPlantings, getChapterSeedsToSharePlantings } from '../datamodel/ChapterInfo';
 import { OutcomeChart } from './OutcomeChart';
+import { TimelinePlantBadge } from './TimelinePlantBadge';
 
 export function ChapterOverviewCard() {
   const name = chapterOverview.name();
@@ -19,6 +20,8 @@ export function ChapterOverviewCard() {
   const totalPlantings = chapterOverview.totalPlantings();
   const chapterID = chapterOverview.chapterID;
   const cropIDs = getChapterCropIDs(chapterID);
+  const seedsSavedPlantingBadges = getChapterSeedsSavedPlantings(chapterID).map((plantingData, index) => <TimelinePlantBadge key={index} plantingData={plantingData}/>);
+  const seedsToSharePlantingBadges = getChapterSeedsToSharePlantings(chapterID).map((plantingData, index) => <TimelinePlantBadge key={index} plantingData={plantingData}/>);
   const cropBadges = cropIDs.map((cropID, index) => <ChapterCropBadge key={index} chapterID={chapterID} cropID={cropID}/>);
   const zoneBadges = chapterOverview.zoneIDs()
     .map((zoneID, index) => ZoneBadge({ zoneID, index }));
@@ -36,6 +39,8 @@ export function ChapterOverviewCard() {
           <Field title="Number of gardens:">{gardens}</Field>
           <Field title="Total Plantings:">{totalPlantings}</Field>
           <Field title="Crops:">{cropBadges}</Field>
+          <Field title="Saved Seeds:">{seedsSavedPlantingBadges} </Field>
+          <Field title="Seeds to Share:">{seedsToSharePlantingBadges} </Field>
           <Field title="Outcomes:"></Field>
           <OutcomeChart outcomeData={outcomeData}/>
           {/*

@@ -69,3 +69,13 @@ export function getTotalPlantings(gardenID) {
   const gardenInfo = getGardenInfo(gardenID);
   return gardenInfo.plantingData.length;
 }
+
+export function getSeedsSavedPlantingData(gardenID) {
+  const gardenInfo = getGardenInfo(gardenID);
+  return gardenInfo.plantingData.filter(planting => planting.seedsSaved);
+}
+
+export function getSeedsToSharePlantingData(gardenID) {
+  const gardenInfo = getGardenInfo(gardenID);
+  return gardenInfo.plantingData.filter(planting => planting.seedsToShare);
+}

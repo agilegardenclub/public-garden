@@ -6,9 +6,10 @@ import { PictureCarousel } from './PictureCarousel';
 import { ClimateVictoryGardenBadge } from './ClimateVictoryGardenBadge';
 import { getGardenName } from './GardenName';
 import { Avatar } from './Avatar';
-import { getCropIDs, getGardenID, getGardenYears } from '../datamodel/GardenInfo';
+import { getCropIDs, getGardenID, getGardenYears, getSeedsSavedPlantingData, getSeedsToSharePlantingData } from '../datamodel/GardenInfo';
 import { GardenCropBadge } from './GardenCropBadge';
 import { OutcomeChart } from './OutcomeChart';
+import { TimelinePlantBadge } from './TimelinePlantBadge';
 
 export function GardenOverviewCard() {
   const gardenName = getGardenName();
@@ -23,6 +24,8 @@ export function GardenOverviewCard() {
   const beds = gardenOverview.currentBeds();
   const totalPlantings = gardenOverview.totalPlantings();
   const cropIDs = getCropIDs(gardenID);
+  const seedsSavedPlantingBadges = getSeedsSavedPlantingData(gardenID).map((plantingData, index) => <TimelinePlantBadge key={index} plantingData={plantingData}/>);
+  const seedsToSharePlantingBadges = getSeedsToSharePlantingData(gardenID).map((plantingData, index) => <TimelinePlantBadge key={index} plantingData={plantingData}/>);
   const cropBadges = cropIDs.map((cropID, index) => <GardenCropBadge key={index} gardenID={gardenID} cropID={cropID}/>);
   const gardeners = gardenOverview.currentGardenerIDs()
     .map((gardenerID, index) => <Avatar key={index} gardenerID={gardenerID} role={gardenOverview.gardenerRole(gardenerID)} />);
@@ -41,6 +44,8 @@ export function GardenOverviewCard() {
           <Field title="Number of beds:">{beds} {year}</Field>
           <Field title="Total Plantings:">{totalPlantings}</Field>
           <Field title="Crops:">{cropBadges} </Field>
+          <Field title="Saved Seeds:">{seedsSavedPlantingBadges} </Field>
+          <Field title="Seeds to Share:">{seedsToSharePlantingBadges} </Field>
           <Field title="Outcomes:"> </Field>
           <OutcomeChart outcomeData={outcomeData}/>
           <Field title="Gardener(s):">

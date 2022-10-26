@@ -8,7 +8,6 @@ import { getGardenName } from './GardenName';
 import { Avatar } from './Avatar';
 import { getCropIDs, getGardenID, getGardenYears, getSeedsSavedPlantingData, getSeedsToSharePlantingData } from '../datamodel/GardenInfo';
 import { GardenCropBadge } from './GardenCropBadge';
-import { OutcomeChart } from './OutcomeChart';
 import { TimelinePlantBadge } from './TimelinePlantBadge';
 
 export function GardenOverviewCard() {
@@ -19,7 +18,6 @@ export function GardenOverviewCard() {
   const year = `(${gardenOverview.currentYear()})`;
   const pictureData = gardenOverview.pictures();
   const gardenYears = getGardenYears(gardenID);
-  const outcomeData = gardenOverview.outcomeData();
   const size = gardenOverview.currentSize();
   const beds = gardenOverview.currentBeds();
   const totalPlantings = gardenOverview.totalPlantings();
@@ -46,8 +44,6 @@ export function GardenOverviewCard() {
           <Field title="Crops:">{cropBadges} </Field>
           <Field title="Saved Seeds:">{seedsSavedPlantingBadges} </Field>
           <Field title="Seeds to Share:">{seedsToSharePlantingBadges} </Field>
-          <Field title="Outcomes:"> </Field>
-          <OutcomeChart outcomeData={outcomeData}/>
           <Field title="Gardener(s):">
             <Row>
               {gardeners.map((gardener, index) => <Col key={index}>{gardener}</Col>)}

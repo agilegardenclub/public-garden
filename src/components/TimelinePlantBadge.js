@@ -24,6 +24,7 @@ export function TimelinePlantBadge({ plantingData }) {
   const startDate = plantingData.startDate;
   const transplantDate = plantingData.transplantDate || 'N/A';
   const firstHarvestDate = plantingData.firstHarvestDate || 'N/A';
+  const endHarvestDate = plantingData.endHarvestDate || '';
   const endDate = plantingData.endDate;
   const usedGreenhouse = plantingData.usedGreenhouse ? 'Yes' : 'No';
   const seedsSaved = plantingData.seedsSaved ? 'Yes' : 'No';
@@ -38,6 +39,7 @@ export function TimelinePlantBadge({ plantingData }) {
       <p style={{ margin: 0 }}><b>Start Date:</b> {startDate}</p>
       <p style={{ margin: 0 }}><b>Transplant Date:</b> {transplantDate}</p>
       <p style={{ margin: 0 }}><b>First Harvest Date:</b> {firstHarvestDate}</p>
+      { endHarvestDate ? <p style={{ margin: 0 }}><b>End Harvest Date:</b> {endHarvestDate}</p> : '' }
       <p style={{ margin: 0 }}><b>End Date:</b> {endDate}</p>
       <p style={{ margin: 0 }}><b>Seeds saved?:</b> {seedsSaved}</p>
       <p style={{ margin: 0 }}><b>Seeds to share?:</b> {seedsToShare}</p>

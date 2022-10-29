@@ -169,7 +169,7 @@ export const gardenData = [
 
       { plantingID: 'planting-108.1', year: 2022, bedID: '08', varietyID: 'variety-156', startDate: '5/21/2022', transplantDate: '', firstHarvestDate: '8/19/2022', endHarvestDate: '10/20/2022', endDate: '11/10/2022', outcomes: { germination: 3, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-108.2', year: 2022, bedID: '08', varietyID: 'variety-157', startDate: '5/21/2022', transplantDate: '', firstHarvestDate: '8/19/2022', endHarvestDate: '10/20/2022', endDate: '11/10/2022', outcomes: { germination: 3, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: false },
+      { plantingID: 'planting-108.2', year: 2022, bedID: '08', varietyID: 'variety-157', startDate: '5/21/2022', transplantDate: '', firstHarvestDate: '8/19/2022', endHarvestDate: '10/20/2022', endDate: '11/10/2022', outcomes: { germination: 3, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: false, seedsSaved: true, seedsToShare: true },
 
       // { plantingID: 'planting-108.3', year: 2022, bedID: '08', varietyID: 'variety-156', startDate: '6/11/2022', transplantDate: '', firstHarvestDate: '8/19/2022', endDate: '10/30/2022', outcomes: { germination: 5, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
@@ -291,7 +291,7 @@ export const gardenData = [
 
       { plantingID: 'planting-005.2', year: 2021, bedID: '05', varietyID: 'variety-135', startDate: '4/1/2021', transplantDate: '5/15/2021', firstHarvestDate: '7/25/2021', endDate: '10/1/2021', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-005.3', year: 2021, bedID: '05', varietyID: 'variety-137', startDate: '5/7/2021', transplantDate: '5/26/2021', firstHarvestDate: '6/25/2021', endDate: '10/1/2021', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 4, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-005.3', year: 2021, bedID: '05', varietyID: 'variety-137', startDate: '5/7/2021', transplantDate: '5/26/2021', firstHarvestDate: '6/25/2021', endDate: '10/1/2021', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 4, flavor: 5 }, usedGreenhouse: true, seedsToShare: true, seedsSaved: true },
 
       { plantingID: 'planting-006', year: 2021, bedID: '06', varietyID: 'variety-102', startDate: '2/21/2021', transplantDate: '3/27/2021', firstHarvestDate: '6/3/2021', endDate: '9/15/2021', outcomes: { germination: 4, appearance: 5, resistance: 3, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
@@ -315,7 +315,7 @@ export const gardenData = [
 
       { plantingID: 'planting-011.04', year: 2021, bedID: '08', varietyID: 'variety-124', startDate: '3/14/2021', transplantDate: '5/6/2021', firstHarvestDate: '7/20/2021', endDate: '9/23/2021', outcomes: { germination: 4, appearance: 3, resistance: 3, yield: 4, flavor: 5 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-011.05', year: 2021, bedID: '09', varietyID: 'variety-138', startDate: '4/1/2021', transplantDate: '', firstHarvestDate: '6/10/2021', endDate: '6/15/2041', outcomes: { germination: 0, appearance: 4, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: false },
+      { plantingID: 'planting-011.05', year: 2021, bedID: '09', varietyID: 'variety-138', startDate: '4/1/2021', transplantDate: '', firstHarvestDate: '6/10/2021', endHarvestDate: '9/15/2021', endDate: '6/15/2041', outcomes: { germination: 0, appearance: 4, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
       { plantingID: 'planting-011.1', year: 2021, bedID: '10', varietyID: 'variety-118', startDate: '4/4/2021', transplantDate: '5/6/2021', firstHarvestDate: '7/16/2021', endDate: '9/15/2021', outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
@@ -325,7 +325,7 @@ export const gardenData = [
 
       { plantingID: 'planting-022.2', year: 2021, bedID: '11', varietyID: 'variety-136', startDate: '4/18/2021', transplantDate: '5/6/2021', firstHarvestDate: '6/29/2021', endDate: '9/15/2021', outcomes: { germination: 5, appearance: 5, resistance: 4, yield: 5, flavor: 0 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-022.3', year: 2021, bedID: '11', varietyID: 'variety-115', startDate: '5/17/2021', transplantDate: '', firstHarvestDate: '10/1/2021', endDate: '10/1/2021', outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false, seedsSaved: true, seedsToShare: false },
+      { plantingID: 'planting-022.3', year: 2021, bedID: '11', varietyID: 'variety-115', startDate: '5/17/2021', transplantDate: '', firstHarvestDate: '10/1/2021', endDate: '10/1/2021', outcomes: { germination: 4, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false, seedsSaved: true, seedsToShare: true },
 
       { plantingID: 'planting-022.4', year: 2021, bedID: '12', varietyID: 'variety-01', startDate: '3/25/2021', transplantDate: '', firstHarvestDate: '', endDate: '6/15/2041', outcomes: { germination: 0, appearance: 5, resistance: 4, yield: 3, flavor: 0 }, usedGreenhouse: false },
 
@@ -353,7 +353,7 @@ export const gardenData = [
 
       { plantingID: 'planting-012', year: 2020, bedID: '01', varietyID: 'variety-116', fromStart: true, startDate: '3/30/2020', transplantDate: '', firstHarvestDate: '6/10/2020', endDate: '12/15/2020', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 5, flavor: 4 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-013', year: 2020, bedID: '02', varietyID: 'variety-101', startDate: '3/24/2020', transplantDate: '', firstHarvestDate: '6/12/2020', endDate: '7/25/2020', outcomes: { germination: 5, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: false },
+      { plantingID: 'planting-013', year: 2020, bedID: '02', varietyID: 'variety-101', startDate: '3/24/2020', transplantDate: '', firstHarvestDate: '6/12/2020', endDate: '7/25/2020', outcomes: { germination: 5, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: false, seedsSaved: true, seedsToShare: true },
 
       { plantingID: 'planting-013.1', year: 2020, bedID: '02', varietyID: 'variety-122', startDate: '8/19/2020', transplantDate: '', firstHarvestDate: '10/5/2020', endDate: '12/31/2020', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
@@ -387,7 +387,7 @@ export const gardenData = [
 
       { plantingID: 'planting-022', year: 2020, bedID: '08', varietyID: 'variety-145', fromStart: true, startDate: '4/26/2020', transplantDate: '', firstHarvestDate: '7/1/2020', endDate: '8/25/2020', outcomes: { germination: 0, appearance: 5, resistance: 5, yield: 3, flavor: 4 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-022.1', year: 2020, bedID: '08', varietyID: 'variety-146', startDate: '4/26/2020', transplantDate: '', firstHarvestDate: '6/5/2020', endDate: '8/25/2020', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 4, flavor: 5 }, usedGreenhouse: false },
+      { plantingID: 'planting-022.1', year: 2020, bedID: '08', varietyID: 'variety-146', startDate: '4/26/2020', transplantDate: '', firstHarvestDate: '6/5/2020', endDate: '8/25/2020', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 4, flavor: 5 }, usedGreenhouse: false, seedsToShare: true, seedsSaved: true },
 
       { plantingID: 'planting-022.3', year: 2020, bedID: '08', varietyID: 'variety-07', startDate: '5/5/2020', transplantDate: '', firstHarvestDate: '6/5/2020', endDate: '6/15/2020', outcomes: { germination: 3, appearance: 5, resistance: 3, yield: 3, flavor: 5 }, usedGreenhouse: false },
 

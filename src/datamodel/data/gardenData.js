@@ -353,7 +353,7 @@ export const gardenData = [
 
       { plantingID: 'planting-012', year: 2020, bedID: '01', varietyID: 'variety-116', fromStart: true, startDate: '3/30/2020', transplantDate: '', firstHarvestDate: '6/10/2020', endDate: '12/15/2020', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 5, flavor: 4 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-013', year: 2020, bedID: '02', varietyID: 'variety-101', startDate: '3/24/2020', transplantDate: '', firstHarvestDate: '6/12/2020', endDate: '7/25/2020', outcomes: { germination: 5, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: false },
+      { plantingID: 'planting-013', year: 2020, bedID: '02', varietyID: 'variety-101', startDate: '3/24/2020', transplantDate: '', firstHarvestDate: '6/12/2020', endDate: '7/25/2020', outcomes: { germination: 5, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: false, seedsSaved: true, seedsToShare: true },
 
       { plantingID: 'planting-013.1', year: 2020, bedID: '02', varietyID: 'variety-122', startDate: '8/19/2020', transplantDate: '', firstHarvestDate: '10/5/2020', endDate: '12/31/2020', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
@@ -387,7 +387,7 @@ export const gardenData = [
 
       { plantingID: 'planting-022', year: 2020, bedID: '08', varietyID: 'variety-145', fromStart: true, startDate: '4/26/2020', transplantDate: '', firstHarvestDate: '7/1/2020', endDate: '8/25/2020', outcomes: { germination: 0, appearance: 5, resistance: 5, yield: 3, flavor: 4 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-022.1', year: 2020, bedID: '08', varietyID: 'variety-146', startDate: '4/26/2020', transplantDate: '', firstHarvestDate: '6/5/2020', endDate: '8/25/2020', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 4, flavor: 5 }, usedGreenhouse: false },
+      { plantingID: 'planting-022.1', year: 2020, bedID: '08', varietyID: 'variety-146', startDate: '4/26/2020', transplantDate: '', firstHarvestDate: '6/5/2020', endDate: '8/25/2020', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 4, flavor: 5 }, usedGreenhouse: false, seedsToShare: true, seedsSaved: true },
 
       { plantingID: 'planting-022.3', year: 2020, bedID: '08', varietyID: 'variety-07', startDate: '5/5/2020', transplantDate: '', firstHarvestDate: '6/5/2020', endDate: '6/15/2020', outcomes: { germination: 3, appearance: 5, resistance: 3, yield: 3, flavor: 5 }, usedGreenhouse: false },
 

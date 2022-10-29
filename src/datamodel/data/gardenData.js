@@ -183,7 +183,7 @@ export const gardenData = [
 
       { plantingID: 'planting-011.05', year: 2022, bedID: '09', varietyID: 'variety-138', startDate: '4/1/2021', transplantDate: '', firstHarvestDate: '6/29/2022', endHarvestDate: '10/1/2022', endDate: '6/15/2041', outcomes: { germination: 0, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-110', year: 2022, bedID: '10', varietyID: 'variety-135', startDate: '3/26/2022', transplantDate: '5/21/2022', firstHarvestDate: '8/19/2022', endDate: '10/20/2022', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-110', year: 2022, bedID: '10', varietyID: 'variety-135', startDate: '3/26/2022', transplantDate: '5/21/2022', firstHarvestDate: '8/19/2022', endHarvestDate: '10/1/2022', endDate: '11/10/2022', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
       { plantingID: 'planting-111', year: 2022, bedID: '11', varietyID: 'variety-103', startDate: '3/12/2022', transplantDate: '5/21/2022', firstHarvestDate: '7/27/2022', endDate: '10/15/2022', outcomes: { germination: 3, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
@@ -419,6 +419,9 @@ export const gardenData = [
       { observationID: 'observation-020', plantingID: 'planting-113.1', observationDate: '7/21/2022', tags: ['fail'], description: 'Chickens got loose and destroyed bed.', picture: '', gardenerID: 'gardener-01', replies: [] },
       { observationID: 'observation-021', plantingID: 'planting-114.1', observationDate: '7/21/2022', tags: ['fail'], description: 'Chickens got loose and destroyed bed.', picture: '', gardenerID: 'gardener-01', replies: [] },
       { observationID: 'observation-022', plantingID: 'planting-116.1', observationDate: '8/26/2022', tags: ['pest/disease resistance'], description: 'First signs of powdery mildew.', picture: '', gardenerID: 'gardener-01', replies: [] },
+      { observationID: 'observation-023', plantingID: 'planting-103.4', observationDate: '10/29/2022', tags: ['success'], description: 'Radicchio looking good!', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden-010.jpg`, gardenerID: 'gardener-01', replies: [] },
+      { observationID: 'observation-024', plantingID: 'planting-115.1', observationDate: '10/29/2022', tags: ['success'], description: 'Late planted mesclun mix working out well.', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden-011.jpg`, gardenerID: 'gardener-01', replies: [] },
+      { observationID: 'observation-025', plantingID: 'planting-110', observationDate: '10/29/2022', tags: ['Appearance'], description: 'Ground cherries pretty bushy.  This is 2 plants.', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden-012.jpg`, gardenerID: 'gardener-01', replies: [] },
     ],
   },
   /*                       JESSIE GARDEN               */

@@ -24,7 +24,7 @@ export function OutcomeByCrop() {
   const outcomeDataSet = getOutcomeDataSet(chapterID, initialYears);
   const cropIDs = plantingHistory.cropIDs().sort(cropComparator);
   const menuItems = cropIDs.map(cropID => ({ type: 'item', label: getCropName(cropID), eventKey: cropID }));
-  const initialCropID = cropIDs[0];
+  const initialCropID = 'crop-07'; // broccoli is good for the demo.
   const initialCropName = getCropName(initialCropID);
   const initialChapterOutcomeData = getCropOutcomeCounts(initialCropID, initialYears, outcomeDataSet, chapterGardenIDs);
   const initialGardenOutcomeData = getCropOutcomeCounts(initialCropID, initialYears, outcomeDataSet, [gardenID]);

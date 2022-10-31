@@ -45,7 +45,7 @@ export function plantingBackgroundClass(currWeek, plantingData) {
     // In the greenhouse, no transplant, no firstHarvest
     state = 'GrowingInGreenhouse-03';
   } else if (usedGreenhouse && endHarvestWeek && (currWeek >= endHarvestWeek)) {
-    state = 'GrowingInGreenhouse-04';
+    state = 'GrowingInBedAfterGreenhouse-01';
     // Move on to growing in the bed
   } else if (!usedGreenhouse && firstHarvestWeek && (currWeek < firstHarvestWeek)) {
     state = 'GrowingInBed-01';
@@ -70,7 +70,7 @@ export function plantingBackgroundClass(currWeek, plantingData) {
   } else {
     state = 'Unknown-10';
   }
-  // if (plantingData.plantingID === 'planting-101') {
+  // if (plantingData.plantingID === 'planting-110') {
   //   console.log('Plant State', endHarvestWeek, state, currWeek);
   // }
   if (state.startsWith('GrowingInGreenhouse')) {

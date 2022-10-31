@@ -67,6 +67,9 @@ function WeekCol({ currWeek, plantingData }) {
   );
   const observations = getObservations(currWeek, plantingData);
   const notifications = getNotifications(currWeek, plantingData);
+  if ((notifications.length > 0) && plantingData.plantingID === 'planting-117') {
+    console.log(currWeek, notifications, plantingData);
+  }
   let border = (((currWeek % 4) === 0) && currWeek < 48) ? 'border-end' : '';
   if (isThisWeek(currWeek, plantingData.year)) {
     border = 'border-end border-3 border-success';
@@ -75,7 +78,7 @@ function WeekCol({ currWeek, plantingData }) {
   const style = { height: '24px', minWidth: '1px' };
   return (
     <Col xs={3} className={classNameString} style={style}>
-      {observations.length > 0 ? <TimelineObservationPin observations={observations}/> : <OverlayTrigger placement="top" delay={{ show: 250, hide: 400 }} overlay={renderTooltip}><div>&nbsp;</div></OverlayTrigger>}
+      {observations.length > 0 ? <TimelineObservationPin observations={observations}/> : <OverlayTrigger placement="top" delay={{ show: 250, hide: 400 }} overlay={renderTooltip}><div></div></OverlayTrigger>}
       {notifications.length > 0 ? <TimelineNotificationPin notifications={notifications}/> : <OverlayTrigger placement="top" delay={{ show: 250, hide: 400 }} overlay={renderTooltip}><div>&nbsp;</div></OverlayTrigger>}
     </Col>
   );

@@ -119,8 +119,6 @@ export const gardenData = [
 
       { plantingID: 'planting-102', year: 2022, bedID: '02', varietyID: 'variety-104', startDate: '3/26/2022', transplantDate: '5/21/2022', firstHarvestDate: '7/11/2022', endDate: '10/2/2022', outcomes: { germination: 4, appearance: 4, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-302', year: 2022, bedID: '02', varietyID: 'variety-140', startDate: '11/15/2022', transplantDate: '', firstHarvestDate: '', endDate: '7/10/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false },
-
       { plantingID: 'planting-103', year: 2022, bedID: '03', varietyID: 'variety-101', startDate: '2/20/2022', transplantDate: '3/13/2022', firstHarvestDate: '6/19/2022', endDate: '7/25/2022', outcomes: { germination: 5, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
       { plantingID: 'planting-103.4', year: 2022, bedID: '03', varietyID: 'variety-213', startDate: '6/29/2022', transplantDate: '7/26/2022', firstHarvestDate: '', endDate: '11/1/2022', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 5, flavor: 0 }, usedGreenhouse: true },
@@ -228,6 +226,10 @@ export const gardenData = [
       { plantingID: 'planting-118', year: 2022, bedID: '18', varietyID: 'variety-142', startDate: '3/6/2022', transplantDate: '', firstHarvestDate: '', endDate: '6/1/2022', outcomes: { germination: 5, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
       { plantingID: 'planting-118.1', year: 2022, bedID: '18', varietyID: 'variety-131', startDate: '4/8/2022', transplantDate: '5/21/2022', firstHarvestDate: '10/16/2022', endDate: '10/30/2022', outcomes: { germination: 2, appearance: 3, resistance: 4, yield: 2, flavor: 5 }, usedGreenhouse: true }, // potimarron
+
+      { plantingID: 'planting-302', year: 2022, bedID: '18', varietyID: 'variety-140', startDate: '11/12/2022', transplantDate: '', firstHarvestDate: '', endDate: '7/10/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false },
+
+      { plantingID: 'planting-302', year: 2022, bedID: '18', varietyID: 'variety-140', startDate: '11/19/2022', transplantDate: '', firstHarvestDate: '', endDate: '7/10/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false },
 
       { plantingID: 'planting-120', year: 2022, bedID: 'GH', varietyID: 'variety-110', startDate: '3/12/2022', transplantDate: '', firstHarvestDate: '8/26/2022', endDate: '10/1/2022', outcomes: { germination: 4, appearance: 4, resistance: 5, yield: 2, flavor: 5 }, usedGreenhouse: true },
 

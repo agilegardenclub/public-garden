@@ -211,11 +211,11 @@ export const gardenData = [
 
       { plantingID: 'planting-115', year: 2022, bedID: '15', varietyID: 'variety-140', startDate: '10/15/2021', transplantDate: '', firstHarvestDate: '7/29/2022', endDate: '7/29/2022', outcomes: { germination: 5, appearance: 3, resistance: 4, yield: 3, flavor: 5 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-115.1', year: 2022, bedID: '15', varietyID: 'variety-139', startDate: '8/28/2022', transplantDate: '', firstHarvestDate: '10/10/2022', endDate: '12/1/2022', outcomes: { germination: 5, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: false },
+      { plantingID: 'planting-115.1', year: 2022, bedID: '15', varietyID: 'variety-139', startDate: '8/28/2022', transplantDate: '', firstHarvestDate: '10/10/2022', endDate: '3/1/2023', outcomes: { germination: 5, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
       { plantingID: 'planting-115.2', year: 2022, bedID: '15', varietyID: 'variety-137', startDate: '8/28/2022', transplantDate: '', firstHarvestDate: '10/20/2022', endDate: '12/1/2022', outcomes: { germination: 2, appearance: 5, resistance: 5, yield: 3, flavor: 5 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-115.3', year: 2022, bedID: '15', varietyID: 'variety-113', startDate: '8/28/2022', transplantDate: '', firstHarvestDate: '', endDate: '9/28/2022', outcomes: { germination: 1, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false },
+      { plantingID: 'planting-115.3', year: 2022, bedID: '15', varietyID: 'variety-141', startDate: '8/28/2022', transplantDate: '', firstHarvestDate: '10/20/2022', endDate: '3/1/2023', outcomes: { germination: 5, appearance: 5, resistance: 5, yield: 4, flavor: 5 }, usedGreenhouse: false },
 
       { plantingID: 'planting-116', year: 2022, bedID: '16', varietyID: 'variety-142', startDate: '3/6/2022', transplantDate: '', firstHarvestDate: '', endDate: '6/1/2022', outcomes: { germination: 5, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 

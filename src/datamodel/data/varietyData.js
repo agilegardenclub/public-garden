@@ -392,7 +392,7 @@ export const varietyData = [
     cropID: 'crop-26',
     variety: 'Mild Mix',
     vendorID: 'vendor-02',
-    description: 'Diverse mix of red, green, and speckled lettuces, mild Asian mustards, arugula, red spinach, amaranth, and other speciality greens.',
+    description: 'Diverse mix of red, green, and speckled lettuces, mild Asian mustards, , red spinach, amaranth, and other speciality greens.',
     daysToHarvest: 30,
   },
   {

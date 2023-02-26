@@ -11,7 +11,7 @@ export const gardenData = [
     lastUpdate: 'July 1, 2022',
     gardeners: [{ gardenerID: 'gardener-01', role: 'owner' }, { gardenerID: 'gardener-02', role: 'editor' }, { gardenerID: 'gardener-04', role: 'viewer' }],
     pictures: [
-      { url: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden-007-birds-eye-view.jpg`, caption: 'Layout. Blue: 2018. Green: 2019. Purple: 2021. Orange: 2021.', date: 'March, 2022' },
+      { url: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden_2023.jpg`, caption: 'Layout. Blue: 2018. Green: 2019. Purple: 2021. Yellow: 2023. Orange: Perennials.', date: 'February, 2023' },
 
       { url: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden-001.jpg`, caption: 'Flowers at the heads of beds 4 and 5.', date: 'May, 2020' },
 

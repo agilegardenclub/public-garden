@@ -996,4 +996,13 @@ export const varietyData = [
     description: 'Delicious, shelling cranberry pole bean.',
     daysToHarvest: 270,
   },
+
+  {
+    id: 'variety-216',
+    cropID: 'crop-45',
+    variety: 'Sweet Orange',
+    vendorID: 'vendor-02',
+    description: 'Vigorous vines with tons of bright orange medium-sized round fruits.',
+    daysToHarvest: 75,
+  },
 ];

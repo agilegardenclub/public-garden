@@ -1005,4 +1005,22 @@ export const varietyData = [
     description: 'Vigorous vines with tons of bright orange medium-sized round fruits.',
     daysToHarvest: 75,
   },
+
+  {
+    id: 'variety-217',
+    cropID: 'crop-39',
+    variety: 'Winter Bloomsdale',
+    vendorID: 'vendor-02',
+    description: 'Dark green, savoyed leaves.  Excellent both spring and fall planted.',
+    daysToHarvest: 45,
+  },
+
+  {
+    id: 'variety-218',
+    cropID: 'crop-39',
+    variety: 'Beaujolais',
+    vendorID: 'vendor-02',
+    description: 'Striking magenta-red veined spinach.',
+    daysToHarvest: 45,
+  },
 ];

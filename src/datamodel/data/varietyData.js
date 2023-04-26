@@ -1023,4 +1023,12 @@ export const varietyData = [
     description: 'Striking magenta-red veined spinach.',
     daysToHarvest: 45,
   },
+  {
+    id: 'variety-219',
+    cropID: 'crop-47',
+    variety: 'Mersin',
+    vendorID: 'vendor-02',
+    description: 'Fine stems and delicate fern-like leaves.',
+    daysToHarvest: 45,
+  },
 ];

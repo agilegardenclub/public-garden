@@ -45,4 +45,5 @@ export const cropData = [
   { id: 'crop-44', name: 'Tomatillo', familyID: 'family-07' },
   { id: 'crop-45', name: 'Tomato', familyID: 'family-07' },
   { id: 'crop-46', name: 'Zucchini', familyID: 'family-04' },
+  { id: 'crop-47', name: 'Parsley', familyID: 'family-08' },
 ];

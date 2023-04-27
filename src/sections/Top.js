@@ -18,7 +18,7 @@ function Top() {
             height="30"
             className="d-inline-block align-top"
           />{' '}
-          Geo Garden Club: Public Garden View ({gardenName})
+          Agile Garden Club: Public Garden View ({gardenName})
         </Navbar.Brand>
         <Nav>
           <Nav.Item><Nav.Link href="#overview">Overview</Nav.Link></Nav.Item>

@@ -32,7 +32,7 @@ function Bottom() {
   return (
     <Navbar bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand>&copy; 2022 Geo Garden Club</Navbar.Brand>
+        <Navbar.Brand>&copy; 2022 Agile Garden Club</Navbar.Brand>
         <Nav>
           <Nav.Item><AppStoreLink/></Nav.Item>
           <Nav.Item><PlayStoreLink/></Nav.Item>

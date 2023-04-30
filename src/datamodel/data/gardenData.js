@@ -648,7 +648,7 @@ export const gardenData = [
 
       { plantingID: 'planting-2004.6', year: 2020, bedID: '04', varietyID: 'variety-198', fromStart: false, startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '7/24/2020', endDate: '9/30/2020', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 } },
 
-      { plantingID: 'planting-2004.7', year: 2020, bedID: '04', varietyID: 'variety-199', fromStart: false, startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '7/24/2020', endDate: '9/30/2020', outcomes: { agermination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 } },
+      { plantingID: 'planting-2004.7', year: 2020, bedID: '04', varietyID: 'variety-199', fromStart: false, startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '7/24/2020', endDate: '9/30/2020', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 } },
 
       { plantingID: 'planting-2005a', year: 2020, bedID: '05', varietyID: 'variety-01', fromStart: false, startDate: '4/1/2020', transplantDate: '', firstHarvestDate: '', endDate: '6/15/2041', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 } },
 
@@ -756,8 +756,8 @@ export const gardenData = [
     observationData: [
       { observationID: 'observation-008', plantingID: 'planting-2014.4', observationDate: '11/30/2020', tags: ['help'], description: 'Lemongrass not growing well.  Will pull and try again in another location.  Any advice for how to successfully grow it outside?', gardenerID: 'gardener-02', replies: [] },
       { observationID: 'observation-015', plantingID: 'planting-4007.2', observationDate: '6/18/2022', tags: ['success'], description: 'New strategy for growing potatoes working well!', picture: `${process.env.PUBLIC_URL}/img/gardens/67abh39db/observation-015.jpg`, gardenerID: 'gardener-02', replies: [{ gardenerID: 'gardener-01', date: '6/19/2022', comment: 'I want to try that next year!  Please keep posting updates!' }] },
-      { observationID: 'observation-019', plantingID: 'planting-4014.7', observationDate: '6/2/2022', tags: ['germination'], description: 'Complete fail.  Will resow with sweet onions', gardenerID: 'gardener-02', replies: [] },
-      { observationID: 'observation-020', plantingID: 'planting-4013', observationDate: '6/2/2022', tags: ['pest/disease resistance'], description: 'Slugs ate first set of greenhouse transplants, so trying again.', gardenerID: 'gardener-02', replies: [] },
+      { observationID: 'observation-019a', plantingID: 'planting-4014.7', observationDate: '6/2/2022', tags: ['germination'], description: 'Complete fail.  Will resow with sweet onions', gardenerID: 'gardener-02', replies: [] },
+      { observationID: 'observation-020a', plantingID: 'planting-4013', observationDate: '6/2/2022', tags: ['pest/disease resistance'], description: 'Slugs ate first set of greenhouse transplants, so trying again.', gardenerID: 'gardener-02', replies: [] },
     ],
   },
 ];

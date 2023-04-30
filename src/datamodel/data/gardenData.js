@@ -567,7 +567,7 @@ export const gardenData = [
 
       { plantingID: 'planting-2005', year: 2021, bedID: '05', varietyID: 'variety-01', fromStart: false, startDate: '4/1/2020', transplantDate: '', firstHarvestDate: '', endDate: '6/15/2041', outcomes: { germination: 0, appearance: 4, resistance: 5, yield: 3, flavor: 0 } },
 
-      { plantingID: 'planting-1006', year: 2021, bedID: '06', varietyID: 'variety-160', fromStart: true, startDate: '5/12/2019', transplantDate: '', firstHarvestDate: '5/15/2021', endDate: '6/15/2041', outcomes: { germination: 0, appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
+      { plantingID: 'planting-1006a', year: 2021, bedID: '06', varietyID: 'variety-160', fromStart: true, startDate: '5/12/2019', transplantDate: '', firstHarvestDate: '5/15/2021', endDate: '6/15/2041', outcomes: { germination: 0, appearance: 5, resistance: 4, yield: 5, flavor: 5 } },
 
       { plantingID: 'planting-3006.1', year: 2021, bedID: '06', varietyID: 'variety-165', fromStart: false, startDate: '5/1/2021', transplantDate: '', firstHarvestDate: '8/15/2021', endDate: '10/1/2021', outcomes: { germination: 5, appearance: 5, resistance: 5, yield: 5, flavor: 5 } },
 
@@ -628,7 +628,7 @@ export const gardenData = [
 
       { plantingID: 'planting-2003.5', year: 2020, bedID: '03', varietyID: 'variety-171', fromStart: true, startDate: '5/8/2020', transplantDate: '5/8/2020', firstHarvestDate: '7/5/2020', endDate: '8/15/2020', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 } },
 
-      { plantingID: 'planting-2004', year: 2020, bedID: '04', varietyID: 'variety-194', fromStart: false, startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '6/24', endDate: '7/39/2020', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 } },
+      { plantingID: 'planting-2004', year: 2020, bedID: '04', varietyID: 'variety-194', fromStart: false, startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '6/24/2020', endDate: '7/39/2020', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 } },
 
       { plantingID: 'planting-2004.1', year: 2020, bedID: '04', varietyID: 'variety-195', fromStart: false, startDate: '4/24/2020', transplantDate: '', firstHarvestDate: '6/24/2020', endDate: '7/30/2020', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 } },
 
@@ -646,7 +646,7 @@ export const gardenData = [
 
       { plantingID: 'planting-2005', year: 2020, bedID: '05', varietyID: 'variety-01', fromStart: false, startDate: '4/1/2020', transplantDate: '', firstHarvestDate: '', endDate: '6/15/2041', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 } },
 
-      { plantingID: 'planting-1006', year: 2020, bedID: '06', varietyID: 'variety-160', startDate: '5/12/2019', transplantDate: '', firstHarvestDate: '6/1/2020', endDate: '6/15/2041', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 } },
+      { plantingID: 'planting-1006b', year: 2020, bedID: '06', varietyID: 'variety-160', startDate: '5/12/2019', transplantDate: '', firstHarvestDate: '6/1/2020', endDate: '6/15/2041', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 } },
 
       { plantingID: 'planting-2006.1', year: 2020, bedID: '06', varietyID: 'variety-140', startDate: '11/1/2019', transplantDate: '', firstHarvestDate: '7/15/2020', endDate: '7/20/2020', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 } },
 
@@ -743,7 +743,7 @@ export const gardenData = [
 
       { plantingID: 'planting-1005', year: 2019, bedID: '05', varietyID: 'variety-159', startDate: '5/12/2019', transplantDate: '', firstHarvestDate: '7/16/2019', endDate: '8/15/2019', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 } },
 
-      { plantingID: 'planting-1006', year: 2019, bedID: '06', varietyID: 'variety-160', startDate: '5/12/2019', transplantDate: '', firstHarvestDate: '6/16/2019', endDate: '6/15/2041', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 } },
+      { plantingID: 'planting-1006c', year: 2019, bedID: '06', varietyID: 'variety-160', startDate: '5/12/2019', transplantDate: '', firstHarvestDate: '6/16/2019', endDate: '6/15/2041', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 } },
 
       { plantingID: 'planting-2006.11', year: 2019, bedID: '06', varietyID: 'variety-140', startDate: '11/1/2019', transplantDate: '', firstHarvestDate: '7/15/2020', endHarvestDate: '7/15/2020', endDate: '7/20/2020', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 } },
     ],

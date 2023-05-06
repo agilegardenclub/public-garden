@@ -987,7 +987,6 @@ export const varietyData = [
     description: 'Organic variety from farmers market.',
     daysToHarvest: 270,
   },
-
   {
     id: 'variety-215',
     cropID: 'crop-05',
@@ -996,7 +995,6 @@ export const varietyData = [
     description: 'Delicious, shelling cranberry pole bean.',
     daysToHarvest: 270,
   },
-
   {
     id: 'variety-216',
     cropID: 'crop-45',
@@ -1005,7 +1003,6 @@ export const varietyData = [
     description: 'Vigorous vines with tons of bright orange medium-sized round fruits.',
     daysToHarvest: 75,
   },
-
   {
     id: 'variety-217',
     cropID: 'crop-39',
@@ -1014,7 +1011,6 @@ export const varietyData = [
     description: 'Dark green, savoyed leaves.  Excellent both spring and fall planted.',
     daysToHarvest: 45,
   },
-
   {
     id: 'variety-218',
     cropID: 'crop-39',
@@ -1029,6 +1025,46 @@ export const varietyData = [
     variety: 'Mersin',
     vendorID: 'vendor-02',
     description: 'Fine stems and delicate fern-like leaves.',
+    daysToHarvest: 45,
+  },
+  {
+    id: 'variety-220',
+    cropID: 'crop-21',
+    variety: 'Redbor',
+    vendorID: 'vendor-08',
+    description: 'A red curly kale.',
+    daysToHarvest: 45,
+  },
+  {
+    id: 'variety-221',
+    cropID: 'crop-21',
+    variety: 'Lacinato',
+    vendorID: 'vendor-08',
+    description: 'A black kale.',
+    daysToHarvest: 45,
+  },
+  {
+    id: 'variety-222',
+    cropID: 'crop-21',
+    variety: "Nash's Green",
+    vendorID: 'vendor-08',
+    description: 'A green, curly kale.',
+    daysToHarvest: 45,
+  },
+  {
+    id: 'variety-223',
+    cropID: 'crop-30',
+    variety: 'Poblano',
+    vendorID: 'vendor-08',
+    description: 'A mild green chili pepper.  Often used for chiles rellenos.',
+    daysToHarvest: 45,
+  },
+  {
+    id: 'variety-224',
+    cropID: 'crop-30',
+    variety: 'Serrano',
+    vendorID: 'vendor-08',
+    description: 'A spicy chili pepper, 1-3 inches long.',
     daysToHarvest: 45,
   },
 ];

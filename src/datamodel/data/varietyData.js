@@ -1115,4 +1115,28 @@ export const varietyData = [
     description: 'Vigorous, plump snap peas.  Some resistance to powdery mildew.',
     daysToHarvest: 45,
   },
+  {
+    id: 'variety-231',
+    cropID: 'crop-32',
+    variety: 'Red',
+    vendorID: 'vendor-00',
+    description: '',
+    daysToHarvest: 90,
+  },
+  {
+    id: 'variety-232',
+    cropID: 'crop-26',
+    variety: 'Spicy Mix',
+    vendorID: 'vendor-02',
+    description: 'Diverse mix of red, green, and speckled lettuces, spicy Asian mustards, , red spinach, amaranth, and other speciality greens.',
+    daysToHarvest: 30,
+  },
+  {
+    id: 'variety-233',
+    cropID: 'crop-36',
+    variety: 'Meeker',
+    vendorID: '',
+    description: 'Very productive summer crop.  Fruit is large, deep rich red and firm. ',
+    daysToHarvest: 365,
+  },
 ];

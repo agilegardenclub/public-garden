@@ -40,4 +40,13 @@ export const gardenerData = [
     numPlantings: 34,
     collaboratorIDs: ['gardener-03'],
   },
+  {
+    id: 'gardener-05',
+    initials: 'KK',
+    bgColor: Colors.yellow,
+    numGardens: 1,
+    numYears: 1,
+    numPlantings: 34,
+    collaboratorIDs: ['gardener-01', 'gardener-02'],
+  },
 ];

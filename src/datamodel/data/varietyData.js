@@ -1089,7 +1089,7 @@ export const varietyData = [
     variety: 'Padron',
     vendorID: 'vendor-08',
     description: 'A small, spicy green pepper.',
-    daysToHarvest: 45,
+    daysToHarvest: 65,
   },
   {
     id: 'variety-228',
@@ -1097,7 +1097,7 @@ export const varietyData = [
     variety: 'Galina',
     vendorID: 'vendor-08',
     description: 'A classic pear-shaped eggplant.',
-    daysToHarvest: 45,
+    daysToHarvest: 70,
   },
   {
     id: 'variety-229',
@@ -1105,6 +1105,14 @@ export const varietyData = [
     variety: 'Orient Express',
     vendorID: 'vendor-08',
     description: 'A slender, glossy Asian eggplant.',
+    daysToHarvest: 70,
+  },
+  {
+    id: 'variety-230',
+    cropID: 'crop-29',
+    variety: 'Cascadia',
+    vendorID: 'vendor-02',
+    description: 'Vigorous, plump snap peas.  Some resistance to powdery mildew.',
     daysToHarvest: 45,
   },
 ];

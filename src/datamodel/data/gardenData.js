@@ -800,4 +800,22 @@ export const gardenData = [
       { observationID: 'observation-020j', plantingID: 'planting-4013', observationDate: '6/2/2022', tags: ['pest/disease resistance'], description: 'Slugs ate first set of greenhouse transplants, so trying again.', gardenerID: 'gardener-02', replies: [] },
     ],
   },
+  /*                       KARA GARDEN               */
+  {
+    id: 'garden-03',
+    name: '32pcu61yt',
+    zipCode: '98225',
+    size: '1200 sq ft',
+    climateVictoryGarden: false,
+    lastUpdate: 'June 1, 2023',
+    gardeners: [{ gardenerID: 'gardener-05', role: 'owner' }],
+    pictures: [
+      { url: `${process.env.PUBLIC_URL}/img/chapters/bellingham/chapter-006.jpg`, caption: 'Garden in 2022', date: 'July, 2022' },
+    ],
+    plantingData: [
+      /* 2023 Data */
+      { plantingID: 'planting-k101', year: 2023, bedID: 'W1', varietyID: 'variety-230', startDate: '5/1/2023', transplantDate: '', firstHarvestDate: '', endDate: '7/15/2023', outcomes: { germination: 5, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false, seedsSaved: false, seedsToShare: false },
+    ],
+    observationData: [],
+  },
 ];

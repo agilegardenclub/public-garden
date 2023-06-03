@@ -810,7 +810,7 @@ export const gardenData = [
     lastUpdate: 'June 1, 2023',
     gardeners: [{ gardenerID: 'gardener-05', role: 'owner' }],
     pictures: [
-      { url: `${process.env.PUBLIC_URL}/img/chapters/bellingham/chapter-006.jpg`, caption: 'Garden in 2022', date: 'July, 2022' },
+      { url: `${process.env.PUBLIC_URL}/img/gardens/32pcu61yt/karagardenmap.png`, caption: 'Garden Map', date: 'June, 2023' },
     ],
     plantingData: [
       /* 2023 Data */

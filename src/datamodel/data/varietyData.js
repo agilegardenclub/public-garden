@@ -1139,4 +1139,12 @@ export const varietyData = [
     description: 'Very productive summer crop.  Fruit is large, deep rich red and firm. ',
     daysToHarvest: 365,
   },
+  {
+    id: 'variety-234',
+    cropID: 'crop-45',
+    variety: 'Early Girl',
+    vendorID: 'vendor-00',
+    description: 'Compact, early-maturing plants that produce medium-sized, vibrant red fruits.',
+    daysToHarvest: 60,
+  },
 ];

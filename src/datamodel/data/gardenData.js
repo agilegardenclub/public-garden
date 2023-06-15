@@ -45,17 +45,17 @@ export const gardenData = [
 
       { plantingID: 'planting-302.7', year: 2023, bedID: '02', varietyID: 'variety-122', startDate: '5/2/2023', transplantDate: '', firstHarvestDate: '', endDate: '9/30/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 4, flavor: 5 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-302.5', year: 2023, bedID: '02', varietyID: 'variety-217', startDate: '5/2/2023', transplantDate: '', firstHarvestDate: '', endDate: '8/30/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false },
+      { plantingID: 'planting-302.5', year: 2023, bedID: '02', varietyID: 'variety-217', startDate: '5/2/2023', transplantDate: '', firstHarvestDate: '', endDate: '6/1/2023', outcomes: { germination: 5, appearance: 2, resistance: 2, yield: 1, flavor: 0 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-302.6', year: 2023, bedID: '02', varietyID: 'variety-218', startDate: '5/2/2023', transplantDate: '', firstHarvestDate: '', endDate: '8/30/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false },
+      { plantingID: 'planting-302.6', year: 2023, bedID: '02', varietyID: 'variety-218', startDate: '5/2/2023', transplantDate: '', firstHarvestDate: '', endDate: '6/1/2023', outcomes: { germination: 5, appearance: 2, resistance: 2, yield: 1, flavor: 0 }, usedGreenhouse: false },
 
       { plantingID: 'planting-303.4', year: 2023, bedID: '03', varietyID: 'variety-213', startDate: '1/1/2023', transplantDate: '', firstHarvestDate: '1/1/2023', endDate: '2/1/2023', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 5, flavor: 0 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-303', year: 2023, bedID: '03', varietyID: 'variety-150', startDate: '3/12/2023', transplantDate: '5/6/2023', firstHarvestDate: '', endDate: '8/15/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: true },
+      { plantingID: 'planting-303', year: 2023, bedID: '03', varietyID: 'variety-150', startDate: '3/12/2023', transplantDate: '5/6/2023', firstHarvestDate: '6/10/2023', endDate: '8/15/2023', outcomes: { germination: 5, appearance: 5, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: true },
 
       { plantingID: 'planting-305', year: 2023, bedID: '04', varietyID: 'variety-220', startDate: '5/3/2023', transplantDate: '5/3/2023', firstHarvestDate: '6/1/2023', endDate: '8/15/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-305.1', year: 2023, bedID: '04', varietyID: 'variety-221', startDate: '5/3/2023', transplantDate: '5/3/2023', firstHarvestDate: '6/1/2023', endDate: '8/15/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false },
+      { plantingID: 'planting-305.1', year: 2023, bedID: '04', varietyID: 'variety-221', startDate: '5/3/2023', transplantDate: '5/3/2023', firstHarvestDate: '6/1/2023', endDate: '8/15/2023', outcomes: { germination: 0, appearance: 5, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false },
 
       { plantingID: 'planting-305.2', year: 2023, bedID: '04', varietyID: 'variety-222', startDate: '5/3/2023', transplantDate: '5/3/2023', firstHarvestDate: '6/1/2023', endDate: '8/15/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false },
 
@@ -63,7 +63,7 @@ export const gardenData = [
 
       { plantingID: 'planting-305.8', year: 2023, bedID: '05', varietyID: 'variety-152', startDate: '5/17/2023', transplantDate: '', firstHarvestDate: '', endDate: '10/15/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-304', year: 2023, bedID: '06', varietyID: 'variety-104', startDate: '3/12/2023', transplantDate: '5/14/2023', firstHarvestDate: '', endDate: '8/15/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: true },
+      { plantingID: 'planting-304', year: 2023, bedID: '06', varietyID: 'variety-104', startDate: '3/12/2023', transplantDate: '5/14/2023', firstHarvestDate: '6/10/2023', endDate: '8/15/2023', outcomes: { germination: 3, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: true },
 
       { plantingID: 'planting-307', year: 2023, bedID: '07', varietyID: 'variety-134', startDate: '4/23/2023', transplantDate: '', firstHarvestDate: '', endDate: '8/15/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false },
 
@@ -85,7 +85,7 @@ export const gardenData = [
 
       { plantingID: 'planting-308', year: 2023, bedID: '08', varietyID: 'variety-154', startDate: '5/6/2023', transplantDate: '', firstHarvestDate: '', endDate: '8/15/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false },
 
-      { plantingID: 'planting-308.1', year: 2023, bedID: '08', varietyID: 'variety-10', startDate: '5/6/2023', transplantDate: '', firstHarvestDate: '', endDate: '9/15/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false },
+      { plantingID: 'planting-308.1', year: 2023, bedID: '08', varietyID: 'variety-10', startDate: '5/6/2023', transplantDate: '', firstHarvestDate: '6/4/2023', endDate: '9/15/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false },
 
       { plantingID: 'planting-309', year: 2023, bedID: '09', varietyID: 'variety-190', startDate: '4/1/2023', transplantDate: '5/10/2023', firstHarvestDate: '', endDate: '8/31/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: true },
 
@@ -151,7 +151,7 @@ export const gardenData = [
 
       { plantingID: 'planting-310f.1', year: 2023, bedID: 'FLOW', varietyID: 'variety-136', startDate: '4/2/2023', transplantDate: '5/1/2023', firstHarvestDate: '', endDate: '8/31/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-310f.2', year: 2023, bedID: 'FLOW', varietyID: 'variety-136', startDate: '5/2/2023', transplantDate: '', firstHarvestDate: '', endDate: '8/31/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: true },
+      { plantingID: 'planting-310f.2', year: 2023, bedID: 'FLOW', varietyID: 'variety-136', startDate: '5/2/2023', transplantDate: '5/2/2023', firstHarvestDate: '', endDate: '8/31/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: true },
 
       /* 2022 Data */
 
@@ -469,7 +469,12 @@ export const gardenData = [
       { observationID: 'observation-022', plantingID: 'planting-116.1', observationDate: '8/26/2022', tags: ['pest/disease resistance'], description: 'First signs of powdery mildew.', picture: '', gardenerID: 'gardener-01', replies: [] },
       { observationID: 'observation-023', plantingID: 'planting-103.4', observationDate: '10/29/2022', tags: ['success'], description: 'Radicchio looking good!', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden-010.jpg`, gardenerID: 'gardener-01', replies: [] },
       { observationID: 'observation-024', plantingID: 'planting-115.1', observationDate: '10/29/2022', tags: ['success'], description: 'Late planted mesclun mix working out well.', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden-011.jpg`, gardenerID: 'gardener-01', replies: [] },
-      { observationID: 'observation-025', plantingID: 'planting-110', observationDate: '10/29/2022', tags: ['Appearance'], description: 'Ground cherries pretty bushy.  This is 2 plants.', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden-012.jpg`, gardenerID: 'gardener-01', replies: [] },
+      { observationID: 'observation-025', plantingID: 'planting-110', observationDate: '10/29/2022', tags: ['appearance'], description: 'Ground cherries pretty bushy.  This is 2 plants.', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/garden-012.jpg`, gardenerID: 'gardener-01', replies: [] },
+      { observationID: 'observation-026', plantingID: 'planting-303', observationDate: '6/12/2023', tags: ['appearance'], description: 'Zucchini looking great mid-June!  Starting to harvest!', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-026.jpeg`, gardenerID: 'gardener-01', replies: [] },
+      { observationID: 'observation-027', plantingID: 'planting-307.8', observationDate: '6/12/2023', tags: ['compost'], description: 'Evidence of using my home compost full of eggshells.', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-027.jpeg`, gardenerID: 'gardener-01', replies: [] },
+      { observationID: 'observation-028', plantingID: 'planting-308.1', observationDate: '6/4/2023', tags: ['harvest'], description: 'First harvest from thinnings.', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-028.jpeg`, gardenerID: 'gardener-01', replies: [] },
+      { observationID: 'observation-029', plantingID: 'planting-302.5', observationDate: '6/1/2023', tags: ['fail'], description: 'Second round bolted immediately.', picture: '', gardenerID: 'gardener-01', replies: [] },
+      { observationID: 'observation-030', plantingID: 'planting-302.6', observationDate: '6/1/2023', tags: ['fail'], description: 'Second round bolted immediately.', picture: '', gardenerID: 'gardener-01', replies: [] },
     ],
   },
   /*                       JESSIE GARDEN               */
@@ -921,6 +926,9 @@ export const gardenData = [
 
       { plantingID: 'planting-k107', year: 2023, bedID: 'RAS', varietyID: 'variety-233', startDate: '4/1/2021', transplantDate: '', firstHarvestDate: '', endDate: '8/30/2075', outcomes: { germination: 4, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false, seedsSaved: false, seedsToShare: false },
     ],
-    observationData: [],
+    observationData: [
+      { observationID: 'observation-k01', plantingID: 'planting-k104.1', observationDate: '5/27/2023', tags: ['Appearance'], description: 'Self-seeded lettuce very happy.', picture: `${process.env.PUBLIC_URL}/img/gardens/32pcu61yt/observation-k01.jpeg`, gardenerID: 'gardener-05', replies: [] },
+      { observationID: 'observation-k02', plantingID: 'planting-k104.1', observationDate: '4/5/2023', tags: ['Appearance'], description: 'This lettuce self-seeded, but this is when I began to notice sprouts.', picture: '', gardenerID: 'gardener-05', replies: [] },
+    ],
   },
 ];

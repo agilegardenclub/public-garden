@@ -476,6 +476,7 @@ export const gardenData = [
       { observationID: 'observation-028', plantingID: 'planting-308.1', observationDate: '6/4/2023', tags: ['harvest'], description: 'First harvest from thinnings.', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-028.jpeg`, gardenerID: 'gardener-01', replies: [] },
       { observationID: 'observation-029', plantingID: 'planting-302.5', observationDate: '6/1/2023', tags: ['fail'], description: 'Second round bolted immediately.', picture: '', gardenerID: 'gardener-01', replies: [] },
       { observationID: 'observation-030', plantingID: 'planting-302.6', observationDate: '6/1/2023', tags: ['fail'], description: 'Second round bolted immediately.', picture: '', gardenerID: 'gardener-01', replies: [] },
+      { observationID: 'observation-031', plantingID: 'planting-305.8', observationDate: '8/1/2023', tags: ['help', 'pest/disease resistance'], description: 'What should I know about the discoloration on these cucumber leaves?', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-031.jpg`, gardenerID: 'gardener-01', replies: [] },
     ],
   },
   /*                       JESSIE GARDEN               */

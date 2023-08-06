@@ -155,9 +155,7 @@ export const gardenData = [
 
       { plantingID: 'planting-319.3', year: 2023, bedID: 'GH', varietyID: 'variety-141', startDate: '2/26/2023', transplantDate: '', firstHarvestDate: '4/23/2023', endDate: '5/13/2023', outcomes: { germination: 5, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-p001.2a', year: 2023, bedID: 'PER', varietyID: 'variety-138', startDate: '4/1/2021', transplantDate: '', firstHarvestDate: '6/20/2023', endHarvestDate: '7/29/2023', endDate: '6/15/2041', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false },
-
-      { plantingID: 'planting-p002.2a', year: 2023, bedID: 'PER', varietyID: 'variety-01', startDate: '3/25/2021', transplantDate: '', firstHarvestDate: '', endHarvestDate: '', endDate: '6/15/2041', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false },
+      { plantingID: 'planting-p001.2a', year: 2023, bedID: 'PER', varietyID: 'variety-138', startDate: '6/20/2023', transplantDate: '', firstHarvestDate: '6/20/2023', endHarvestDate: '7/29/2023', endDate: '7/29/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false },
 
       { plantingID: 'planting-310f.1', year: 2023, bedID: 'FLOW', varietyID: 'variety-136', startDate: '4/2/2023', transplantDate: '5/1/2023', firstHarvestDate: '', endDate: '8/31/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: true },
 
@@ -309,9 +307,7 @@ export const gardenData = [
 
       // { plantingID: 'planting-120.12', year: 2022, bedID: 'GH', varietyID: 'variety-106', startDate: '3/26/2022', transplantDate: '', firstHarvestDate: '7/21/2022', endDate: '10/30/2022', outcomes: { germination: 5, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-p001.1b', year: 2022, bedID: 'PER', varietyID: 'variety-138', startDate: '4/1/2021', transplantDate: '', firstHarvestDate: '6/29/2022', endHarvestDate: '10/1/2022', endDate: '6/15/2041', outcomes: { germination: 0, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
-
-      { plantingID: 'planting-p002.1b', year: 2022, bedID: 'PER', varietyID: 'variety-01', startDate: '3/25/2021', transplantDate: '', firstHarvestDate: '', endDate: '6/15/2041', outcomes: { germination: 0, appearance: 5, resistance: 4, yield: 3, flavor: 0 }, usedGreenhouse: false },
+      { plantingID: 'planting-p001.1b', year: 2022, bedID: 'PER', varietyID: 'variety-138', startDate: '6/29/2022', transplantDate: '', firstHarvestDate: '6/29/2022', endHarvestDate: '10/1/2022', endDate: '10/1/2022', outcomes: { germination: 0, appearance: 5, resistance: 4, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
       /* 2021 Data */
 
@@ -403,9 +399,7 @@ export const gardenData = [
 
       { plantingID: 'planting-011.08', year: 2021, bedID: 'GH', varietyID: 'variety-128', startDate: '3/28/2021', transplantDate: '', firstHarvestDate: '7/20/2021', endDate: '10/31/2021', outcomes: { germination: 5, appearance: 4, resistance: 5, yield: 3, flavor: 5 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-p001c', year: 2021, bedID: 'PER', varietyID: 'variety-138', startDate: '4/1/2021', transplantDate: '', firstHarvestDate: '6/10/2021', endHarvestDate: '9/15/2021', endDate: '6/15/2041', outcomes: { germination: 0, appearance: 4, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: false },
-
-      { plantingID: 'planting-p002c', year: 2021, bedID: 'PER', varietyID: 'variety-01', startDate: '3/25/2021', transplantDate: '', firstHarvestDate: '', endDate: '6/15/2041', outcomes: { germination: 0, appearance: 5, resistance: 4, yield: 3, flavor: 0 }, usedGreenhouse: false },
+      { plantingID: 'planting-p001c', year: 2021, bedID: 'PER', varietyID: 'variety-138', startDate: '6/10/2021', transplantDate: '', firstHarvestDate: '6/10/2021', endHarvestDate: '9/15/2021', endDate: '9/15/2021', outcomes: { germination: 0, appearance: 4, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: false },
 
       /* 2020 Data */
 
@@ -460,7 +454,6 @@ export const gardenData = [
       { observationID: 'observation-002', plantingID: 'planting-001.4', observationDate: '9/10/2021', tags: ['pest/disease resistance', 'help'], description: 'Two unknown caterpillar species on lettuce. What are these?', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-002.jpg`, gardenerID: 'gardener-01', replies: [{ gardenerID: 'gardener-02', date: '9/11/21', comment: 'I suspect some sort of Wooly Caterpillar, but not positive' }, { gardenerID: 'gardener-03', date: '9/11/21', comment: 'I had these and needed to apply Neem Oil and rotate my lettuce to a different bed in the following season.' }, { gardenerID: 'gardener-01', date: '9/22/21', comment: 'I ended up removing them manually. After one month, no harm to lettuce and no re-appearance.' }] },
       { observationID: 'observation-003', plantingID: 'planting-001.1', observationDate: '5/1/2021', tags: ['pest/disease resistance', 'help'], description: 'Lettuce died one by one after transplanted.  Wireworms?', picture: '', gardenerID: 'gardener-01', replies: [] },
       { observationID: 'observation-004', plantingID: 'planting-005.1', observationDate: '5/20/2021', tags: ['pest/disease resistance', 'help'], description: 'Cucumber died one by one after transplanted.  More wireworms or bad transplant?', picture: '', gardenerID: 'gardener-01', replies: [] },
-      { observationID: 'observation-005', plantingID: 'planting-p002.1b', observationDate: '4/14/2022', tags: ['phenology', 'first stem'], description: 'First asparagus shoot!', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-019.jpg`, gardenerID: 'gardener-01', replies: [] },
       // { observationID: 'observation-006', plantingID: 'planting-111.6', observationDate: '5/21/2022', tags: ['pest/disease resistance', 'help'], description: "Matina tomatoes showing leaf curl second year in a row.  Other tomatoes look fine.  Can they be saved?  Didn't transplant.", picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-003.jpg`, gardenerID: 'gardener-01', replies: [] },
       { observationID: 'observation-006.1', plantingID: 'planting-111.1', observationDate: '5/21/2022', tags: ['pest/disease resistance', 'help'], description: "Matina tomatoes showing leaf curl second year in a row.  Other tomatoes look fine.  Can they be saved?  Didn't transplant.", picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-003.jpg`, gardenerID: 'gardener-01', replies: [] },
       { observationID: 'observation-007', plantingID: 'planting-103', observationDate: '5/20/2022', tags: ['phenology', 'first flower'], description: 'First pea flower!  Peas looking very happy.', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-004.jpg`, gardenerID: 'gardener-01', replies: [] },
@@ -880,6 +873,7 @@ export const gardenData = [
       { observationID: 'observation-015j', plantingID: 'planting-4007.2', observationDate: '6/18/2022', tags: ['success'], description: 'New strategy for growing potatoes working well!', picture: `${process.env.PUBLIC_URL}/img/gardens/67abh39db/observation-015.jpg`, gardenerID: 'gardener-02', replies: [{ gardenerID: 'gardener-01', date: '6/19/2022', comment: 'I want to try that next year!  Please keep posting updates!' }] },
       { observationID: 'observation-019j', plantingID: 'planting-4014.7', observationDate: '6/2/2022', tags: ['germination'], description: 'Complete fail.  Will resow with sweet onions', gardenerID: 'gardener-02', replies: [] },
       { observationID: 'observation-020j', plantingID: 'planting-4013', observationDate: '6/2/2022', tags: ['pest/disease resistance'], description: 'Slugs ate first set of greenhouse transplants, so trying again.', gardenerID: 'gardener-02', replies: [] },
+      { observationID: 'observation-021j', plantingID: 'planting-5003.1', observationDate: '8/5/2023', tags: [''], description: 'No more sunflower volunteers in beds.  These sunflowers completely shaded out kale and collards.', picture: `${process.env.PUBLIC_URL}/img/gardens/67abh39db/observation-021j.jpg`, gardenerID: 'gardener-02', replies: [] },
     ],
   },
   /*                       KARA GARDEN               */
@@ -922,9 +916,9 @@ export const gardenData = [
 
       { plantingID: 'planting-k105.1', year: 2023, bedID: 'E2', varietyID: 'variety-03', startDate: '5/1/2023', transplantDate: '', firstHarvestDate: '7/5/2023', endDate: '8/30/2023', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: false, seedsSaved: false, seedsToShare: false },
 
-      { plantingID: 'planting-k106', year: 2023, bedID: 'STB', varietyID: 'variety-160', startDate: '4/1/2021', transplantDate: '', firstHarvestDate: '', endDate: '8/30/2075', outcomes: { germination: 4, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false, seedsSaved: false, seedsToShare: false },
+      // { plantingID: 'planting-k106', year: 2023, bedID: 'STB', varietyID: 'variety-160', startDate: '4/1/2021', transplantDate: '', firstHarvestDate: '', endDate: '8/30/2075', outcomes: { germination: 4, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false, seedsSaved: false, seedsToShare: false },
 
-      { plantingID: 'planting-k107', year: 2023, bedID: 'RAS', varietyID: 'variety-233', startDate: '4/1/2021', transplantDate: '', firstHarvestDate: '', endDate: '8/30/2075', outcomes: { germination: 4, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false, seedsSaved: false, seedsToShare: false },
+      // { plantingID: 'planting-k107', year: 2023, bedID: 'RAS', varietyID: 'variety-233', startDate: '4/1/2021', transplantDate: '', firstHarvestDate: '', endDate: '8/30/2075', outcomes: { germination: 4, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false, seedsSaved: false, seedsToShare: false },
     ],
     observationData: [
       { observationID: 'observation-k01', plantingID: 'planting-k104.1', observationDate: '5/27/2023', tags: ['appearance'], description: 'Self-seeded lettuce very happy.', picture: `${process.env.PUBLIC_URL}/img/gardens/32pcu61yt/observation-k01.jpeg`, gardenerID: 'gardener-05', replies: [] },

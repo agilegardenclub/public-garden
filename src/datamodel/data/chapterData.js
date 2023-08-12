@@ -3,7 +3,7 @@
 export const chapterData = [
   {
     id: 'chapter-01',
-    name: 'Bellingham, WA',
+    name: 'Whatcom, WA',
     pictures: [
       {
         url: `${process.env.PUBLIC_URL}/img/chapters/bellingham/bellingham-chapter-map.png`,
@@ -51,7 +51,7 @@ export const chapterData = [
         date: 'July, 2022',
       },
     ],
-    zipCodes: ['98225', '98226', '98227', '98228', '98229'],
+    zipCodes: ['98220', '98225', '98226', '98227', '98228', '98229', '98230', '98231', '98240', '98244', '98247', '98248', '98262', '98264', '98266', '98276', '98281', '98295'],
     zoneIDs: ['zone-8a', 'zone-8b'],
     varietyRatings: [
       {

@@ -474,7 +474,8 @@ export const gardenData = [
       { observationID: 'observation-034', plantingID: 'planting-303', observationDate: '8/22/2023', tags: ['pest/disease resistance'], description: 'First observation of powdery mildew.', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-034.jpg`, gardenerID: 'gardener-01', replies: [] },
       { observationID: 'observation-035', plantingID: 'planting-306', observationDate: '9/13/2023', tags: ['appearance'], description: 'Basil still looking lovely.', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-035.jpeg`, gardenerID: 'gardener-01', replies: [] },
       { observationID: 'observation-036', plantingID: 'planting-305.8', observationDate: '8/10/2023', tags: ['success'], description: 'Tomato cage trellis working reasonably well.', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-036.jpeg`, gardenerID: 'gardener-01', replies: [] },
-
+      { observationID: 'observation-037', plantingID: 'planting-311.1', observationDate: '9/14/2023', tags: ['first harvest'], description: 'Yummy first harvest!', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-037.jpeg`, gardenerID: 'gardener-01', replies: [] },
+      { observationID: 'observation-038', plantingID: 'planting-301.2', observationDate: '8/27/2023', tags: ['first harvest'], description: 'Easy, quick crop of radishes.', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-038.jpeg`, gardenerID: 'gardener-01', replies: [] },
     ],
   },
   /*                       JESSIE GARDEN               */

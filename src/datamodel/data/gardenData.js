@@ -472,6 +472,9 @@ export const gardenData = [
       { observationID: 'observation-032', plantingID: 'planting-317.4', observationDate: '8/21/2023', tags: ['success'], description: 'First time growing eggplant outside and having much better success than previous attempts inside!', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-032.jpg`, gardenerID: 'gardener-01', replies: [] },
       { observationID: 'observation-033', plantingID: 'planting-317.1', observationDate: '8/20/2023', tags: ['first harvest'], description: 'Love these snacking sweet peppers!', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-033.jpg`, gardenerID: 'gardener-01', replies: [] },
       { observationID: 'observation-034', plantingID: 'planting-303', observationDate: '8/22/2023', tags: ['pest/disease resistance'], description: 'First observation of powdery mildew.', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-034.jpg`, gardenerID: 'gardener-01', replies: [] },
+      { observationID: 'observation-035', plantingID: 'planting-306', observationDate: '9/13/2023', tags: ['appearance'], description: 'Basil still looking lovely.', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-035.jpeg`, gardenerID: 'gardener-01', replies: [] },
+      { observationID: 'observation-036', plantingID: 'planting-305.8', observationDate: '8/10/2023', tags: ['success'], description: 'Tomato cage trellis working reasonably well.', picture: `${process.env.PUBLIC_URL}/img/gardens/45ght3cf/observation-036.jpeg`, gardenerID: 'gardener-01', replies: [] },
+
     ],
   },
   /*                       JESSIE GARDEN               */

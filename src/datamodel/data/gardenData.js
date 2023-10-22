@@ -131,13 +131,13 @@ export const gardenData = [
 
       { plantingID: 'planting-317.2', year: 2023, bedID: '17', varietyID: 'variety-226', startDate: '5/13/2023', transplantDate: '5/13/2023', firstHarvestDate: '9/4/2023', endDate: '9/30/2023', outcomes: { germination: 0, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-317.3', year: 2023, bedID: '17', varietyID: 'variety-227', startDate: '5/13/2023', transplantDate: '5/13/2023', firstHarvestDate: '7/22/2023', endDate: '9/30/2023', outcomes: { germination: 0, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-317.3', year: 2023, bedID: '17', varietyID: 'variety-227', startDate: '5/13/2023', transplantDate: '5/13/2023', firstHarvestDate: '7/22/2023', endDate: '10/22/2023', outcomes: { germination: 0, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
       { plantingID: 'planting-317.4', year: 2023, bedID: '17', varietyID: 'variety-228', startDate: '5/13/2023', transplantDate: '5/13/2023', firstHarvestDate: '8/21/2023', endDate: '9/30/2023', outcomes: { germination: 0, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
       { plantingID: 'planting-317.5', year: 2023, bedID: '17', varietyID: 'variety-229', startDate: '5/13/2023', transplantDate: '5/13/2023', firstHarvestDate: '8/23/2023', endDate: '9/30/2023', outcomes: { germination: 0, appearance: 3, resistance: 5, yield: 2, flavor: 5 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-318.1', year: 2023, bedID: '18', varietyID: 'variety-135', startDate: '3/12/2023', transplantDate: '5/14/2023', firstHarvestDate: '7/22/2023', endDate: '9/30/2023', outcomes: { germination: 5, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: true },
+      { plantingID: 'planting-318.1', year: 2023, bedID: '18', varietyID: 'variety-135', startDate: '3/12/2023', transplantDate: '5/14/2023', firstHarvestDate: '7/22/2023', endDate: '10/10/2023', outcomes: { germination: 5, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
       { plantingID: 'planting-319', year: 2023, bedID: 'GH', varietyID: 'variety-223', startDate: '5/6/2023', transplantDate: '', firstHarvestDate: '7/9/2023', endDate: '8/31/2023', outcomes: { germination: 0, appearance: 5, resistance: 5, yield: 3, flavor: 5 }, usedGreenhouse: true },
 
@@ -145,7 +145,7 @@ export const gardenData = [
 
       { plantingID: 'planting-319.3', year: 2023, bedID: 'GH', varietyID: 'variety-141', startDate: '2/26/2023', transplantDate: '', firstHarvestDate: '4/23/2023', endDate: '5/13/2023', outcomes: { germination: 5, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: true },
 
-      { plantingID: 'planting-p001.2a', year: 2023, bedID: 'PER', varietyID: 'variety-138', startDate: '6/20/2023', transplantDate: '', firstHarvestDate: '6/20/2023', endHarvestDate: '9/23/2023', endDate: '9/23/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false },
+      { plantingID: 'planting-p001.2a', year: 2023, bedID: 'PER', varietyID: 'variety-138', startDate: '6/20/2023', transplantDate: '', firstHarvestDate: '6/20/2023', endHarvestDate: '10/5/2023', endDate: '10/5/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false },
 
       { plantingID: 'planting-310f.1', year: 2023, bedID: 'FLOW', varietyID: 'variety-136', startDate: '4/2/2023', transplantDate: '5/1/2023', firstHarvestDate: '9/1/2023', endDate: '9/30/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: true },
 
@@ -506,7 +506,7 @@ export const gardenData = [
 
       { plantingID: 'planting-5001.3', year: 2023, bedID: '01', varietyID: 'variety-02', startDate: '3/23/2023', transplantDate: '5/1/2023', firstHarvestDate: '6/25/2023', endDate: '8/30/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: true, seedsSaved: false, seedsToShare: false },
 
-      { plantingID: 'planting-5001.4', year: 2023, bedID: '01', varietyID: 'variety-164', startDate: '3/23/2023', transplantDate: '5/1/2023', firstHarvestDate: '8/1/2023', endDate: '10/1/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: true, seedsSaved: false, seedsToShare: false },
+      { plantingID: 'planting-5001.4', year: 2023, bedID: '01', varietyID: 'variety-164', startDate: '3/23/2023', transplantDate: '5/1/2023', firstHarvestDate: '8/1/2023', endDate: '10/30/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: true, seedsSaved: false, seedsToShare: false },
 
       { plantingID: 'planting-5002', year: 2023, bedID: '02', varietyID: 'variety-153', startDate: '4/19/2023', transplantDate: '', firstHarvestDate: '6/1/2023', endDate: '7/19/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false, seedsSaved: false, seedsToShare: false },
 
@@ -873,7 +873,8 @@ export const gardenData = [
       { observationID: 'observation-020j', plantingID: 'planting-4013', observationDate: '6/2/2022', tags: ['pest/disease resistance'], description: 'Slugs ate first set of greenhouse transplants, so trying again.', gardenerID: 'gardener-02', replies: [] },
       { observationID: 'observation-021j', plantingID: 'planting-5003.1', observationDate: '8/5/2023', tags: [''], description: 'No more sunflower volunteers in beds.  These sunflowers completely shaded out kale and collards.', picture: `${process.env.PUBLIC_URL}/img/gardens/67abh39db/observation-021j.jpg`, gardenerID: 'gardener-02', replies: [] },
       { observationID: 'observation-022j', plantingID: 'planting-5016', observationDate: '8/5/2023', tags: ['pollination', 'companion plants'], description: 'Nearby wild patch of oregano, echinacea, and calendula abuzz with pollinators.', picture: `${process.env.PUBLIC_URL}/img/gardens/67abh39db/observation-022j.jpg`, gardenerID: 'gardener-02', replies: [] },
-
+      { observationID: 'observation-023j', plantingID: 'planting-5001.4', observationDate: '10/22/2023', tags: [''], description: 'The final cabbages.', picture: `${process.env.PUBLIC_URL}/img/gardens/67abh39db/observation-023j.jpg`, gardenerID: 'gardener-02', replies: [] },
+      { observationID: 'observation-024j', plantingID: 'planting-5003.3', observationDate: '10/22/2023', tags: [''], description: 'Collards and kale going strong.', picture: `${process.env.PUBLIC_URL}/img/gardens/67abh39db/observation-024j.jpg`, gardenerID: 'gardener-02', replies: [] },
     ],
   },
   /*                       KARA GARDEN               */
@@ -892,15 +893,15 @@ export const gardenData = [
       /* 2023 Data */
       { plantingID: 'planting-k101', year: 2023, bedID: 'W1', varietyID: 'variety-230', startDate: '5/1/2023', transplantDate: '', firstHarvestDate: '7/7/2023', endHarvestDate: '7/29/2023', endDate: '8/15/2023', outcomes: { germination: 5, appearance: 5, resistance: 5, yield: 3, flavor: 5 }, usedGreenhouse: false, seedsSaved: true, seedsToShare: true },
 
-      { plantingID: 'planting-k101.1', year: 2023, bedID: 'W1', varietyID: 'variety-231', startDate: '4/15/2023', transplantDate: '', firstHarvestDate: '', endDate: '9/1/2023', outcomes: { germination: 5, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false, seedsSaved: false, seedsToShare: false },
+      { plantingID: 'planting-k101.1', year: 2023, bedID: 'W1', varietyID: 'variety-231', startDate: '4/15/2023', transplantDate: '', firstHarvestDate: '8/25/2023', endDate: '9/20/2023', outcomes: { germination: 5, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false, seedsSaved: false, seedsToShare: false },
 
-      { plantingID: 'planting-k102', year: 2023, bedID: 'W2', varietyID: 'variety-107', startDate: '5/1/2023', transplantDate: '', firstHarvestDate: '7/21/2023', endDate: '9/1/2023', outcomes: { germination: 5, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: false, seedsSaved: false, seedsToShare: false },
+      { plantingID: 'planting-k102', year: 2023, bedID: 'W2', varietyID: 'variety-107', startDate: '5/1/2023', transplantDate: '', firstHarvestDate: '7/21/2023', endDate: '9/10/2023', outcomes: { germination: 5, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: false, seedsSaved: false, seedsToShare: false },
 
       { plantingID: 'planting-k102.1', year: 2023, bedID: 'W2', varietyID: 'variety-230', startDate: '5/1/2023', transplantDate: '', firstHarvestDate: '7/7/2023', endHarvestDate: '7/29/2023', endDate: '8/15/2023', outcomes: { germination: 5, appearance: 5, resistance: 5, yield: 3, flavor: 5 }, usedGreenhouse: false, seedsSaved: true, seedsToShare: true },
 
       { plantingID: 'planting-k102.2', year: 2023, bedID: 'W2', varietyID: 'variety-232', startDate: '5/1/2023', transplantDate: '', firstHarvestDate: '7/1/2023', endHarvestDate: '7/20/2023', endDate: '8/15/2023', outcomes: { germination: 5, appearance: 4, resistance: 4, yield: 4, flavor: 4 }, usedGreenhouse: false, seedsSaved: true, seedsToShare: true },
 
-      { plantingID: 'planting-k103', year: 2023, bedID: 'W3', varietyID: 'variety-234', fromStart: true, startDate: '5/21/2023', transplantDate: '5/21/2023', firstHarvestDate: '', endDate: '8/30/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: true, seedsSaved: false, seedsToShare: false },
+      { plantingID: 'planting-k103', year: 2023, bedID: 'W3', varietyID: 'variety-234', fromStart: true, startDate: '5/21/2023', transplantDate: '5/21/2023', firstHarvestDate: '8/1/2023', endDate: '8/30/2023', outcomes: { germination: 0, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: true, seedsSaved: false, seedsToShare: false },
 
       { plantingID: 'planting-k103.1', year: 2023, bedID: 'W3', varietyID: 'variety-112', fromStart: true, startDate: '5/21/2023', transplantDate: '5/21/2023', firstHarvestDate: '7/29/2023', endDate: '8/30/2023', outcomes: { germination: 0, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: true, seedsSaved: false, seedsToShare: false },
 
@@ -914,7 +915,7 @@ export const gardenData = [
 
       // { plantingID: 'planting-k105', year: 2023, bedID: 'E2', varietyID: 'variety-01', startDate: '4/1/2022', transplantDate: '', firstHarvestDate: '', endDate: '8/30/2075', outcomes: { germination: 5, appearance: 4, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false, seedsSaved: false, seedsToShare: false },
 
-      { plantingID: 'planting-k105.1', year: 2023, bedID: 'E2', varietyID: 'variety-03', startDate: '5/1/2023', transplantDate: '', firstHarvestDate: '7/5/2023', endDate: '8/30/2023', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: false, seedsSaved: false, seedsToShare: false },
+      { plantingID: 'planting-k105.1', year: 2023, bedID: 'E2', varietyID: 'variety-03', startDate: '5/1/2023', transplantDate: '', firstHarvestDate: '7/5/2023', endDate: '10/31/2023', outcomes: { germination: 4, appearance: 5, resistance: 5, yield: 5, flavor: 5 }, usedGreenhouse: false, seedsSaved: false, seedsToShare: false },
 
       // { plantingID: 'planting-k106', year: 2023, bedID: 'STB', varietyID: 'variety-160', startDate: '4/1/2021', transplantDate: '', firstHarvestDate: '', endDate: '8/30/2075', outcomes: { germination: 4, appearance: 0, resistance: 0, yield: 0, flavor: 0 }, usedGreenhouse: false, seedsSaved: false, seedsToShare: false },
 

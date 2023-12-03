@@ -984,7 +984,7 @@ export const varietyData = [
     cropID: 'crop-19',
     variety: 'Hardneck',
     vendorID: 'vendor-00',
-    description: 'Organic variety from farmers market.',
+    description: 'Organic variety from local farm.',
     daysToHarvest: 270,
   },
   {
